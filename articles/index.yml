@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Power Automate ドキュメント
-summary: Power Automate は、よく使うアプリやサービスとの間で自動ワークフローを作成し、ファイルの同期、通知の受信、データの収集などを実行できるようにするためのサービスである。
+summary: Power Automate は、よく使うアプリやサービスとの間に自動化されたワークフローを作成し、ファイルの同期、通知の受信、データの収集などを行うことができるようにするためのサービスです。
 metadata:
   title: Power Automate ドキュメント
   description: Power Automate のドキュメントで、強調表示されている領域にアクセスできます
@@ -12,12 +12,12 @@ metadata:
   author: MSFTMAN
   ms.author: Deonhe
   ms.date: 01/18/2020
-  ms.openlocfilehash: c3a46514627a133e6f90abd6476ecd3d914dcdf2
-  ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
+  ms.openlocfilehash: 1db41def6d71c0aa64e255e3bdb36fa03a44862a
+  ms.sourcegitcommit: 26bd05fc4729481ba09681aea2b82ebbeef1e1ec
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 03/26/2020
-  ms.locfileid: "3295867"
+  ms.lasthandoff: 05/27/2020
+  ms.locfileid: "3407452"
 landingContent:
 - title: Power Automate について
   linkLists:
@@ -36,7 +36,7 @@ landingContent:
   - linkListType: video
     links:
     - text: Power Automate の概要
-      url: https://www.youtube.com/watch?v=hCuxuUaGC6Y
+      url: https://www.youtube.com/channel/UCG98S4lL7nwlN8dxSF322bA
   - linkListType: whats-new
     links:
     - text: リリース計画
@@ -69,13 +69,15 @@ landingContent:
       url: /power-automate/ui-flows/overview
   - linkListType: how-to-guide
     links:
-    - text: UI フローの設定
+    - text: UI flows の設定
       url: /power-automate/ui-flows/setup
     - text: デスクトップ UI フローの作成
       url: /power-automate/ui-flows/create-desktop
-    - text: Web UI フロー の作成
+    - text: Softomotive の WinAutomation の使用 (新機能!)
+      url: /power-automate/ui-flows/create-processes
+    - text: Web UI フローの作成
       url: /power-automate/ui-flows/create-web
-    - text: UI フローの実行
+    - text: UI flows の実行
       url: /power-automate/ui-flows/run-ui-flow
   - linkListType: video
     links:
@@ -91,9 +93,9 @@ landingContent:
     links:
     - text: ソリューションにフローを作成する
       url: /power-automate/create-flow-solution
-    - text: ソリューションをエクスポートする
+    - text: ソリューションのエクスポート
       url: /power-automate/export-flow-solution
-    - text: ソリューションをインポートする
+    - text: ソリューションのインポート
       url: /power-automate/import-flow-solution
 - title: フローでより多くのことを実現する
   linkLists:
@@ -125,7 +127,7 @@ landingContent:
       url: https://powerusers.microsoft.com/t5/Microsoft-Power-Automate/ct-p/MPACommunity
     - text: Power Automate ブログ
       url: https://flow.microsoft.com/en-us/blog/
-    - text: Power Automateライセンス
+    - text: Power Automate ライセンス
       url: /power-automate/billing-questions
-    - text: Power Automate 米国政府機関プラン
+    - text: Power Automate US Government のプラン
       url: /power-automate/us-govt

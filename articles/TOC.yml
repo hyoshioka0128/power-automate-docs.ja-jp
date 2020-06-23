@@ -10,7 +10,7 @@
       href: 'https://docs.microsoft.com/learn/paths/automate-process-using-flow'
     - name: ブラウザーでフローを作成する
       href: get-started-logic-template.md
-    - name: 電話上でフローを作成する
+    - name: スマートフォンでフローを作成する
       href: mobile-create-flow.md
     - name: チーム フローを作成する
       href: create-team-flows.md
@@ -20,7 +20,7 @@
       items:
         - name: ラーニング カタログ
           href: learning-catalog/learning-catalog.md
-        - name: アプリ メーカー
+        - name: アプリ作成者
           href: learning-catalog/learning-catalog-app-maker.md
         - name: 管理者
           href: learning-catalog/learning-catalog-administrator.md
@@ -110,7 +110,7 @@
       href: ./ui-flows/overview.md
     - name: 以前のリリースからの UI flows のアップグレード
       href: ./ui-flows/upgrade.md
-    - name: UI フローの設定
+    - name: UI flows の設定
       href: ./ui-flows/setup.md
     - name: デスクトップ UI フローの作成とテスト
       href: ./ui-flows/create-desktop.md
@@ -119,15 +119,17 @@
     - name: デスクトップ UI フローで入力と出力を使用する
       href: ./ui-flows/inputs-outputs-desktop.md
       items:
-        - name: UI フローでの入力方式エディター (IME) の使用
+        - name: UI flows での入力方式エディター (IME) の使用
           href: ./ui-flows/use-ime.md
     - name: Web UI フローの作成とテスト
       href: ./ui-flows/create-web.md
+    - name: UI flows で WinAutomation を使用する
+      href: ./ui-flows/create-processes.md
     - name: Web UI フローの編集
       href: ./ui-flows/edit-web.md
-    - name: Web UI フローで入力と出力を使用する
+    - name: Web UI flows で入力と出力を使用する
       href: ./ui-flows/inputs-outputs-web.md
-    - name: 有人および無人の UI フローを実行する
+    - name: 有人および無人の UI フローの実行
       href: ./ui-flows/run-ui-flow.md
     - name: UI フローの管理
       href: ./ui-flows/manage.md
@@ -137,9 +139,9 @@
       href: overview-solution-flows.md
     - name: ソリューションにフローを作成する
       href: create-flow-solution.md
-    - name: ソリューションをエクスポートする
+    - name: ソリューションのエクスポート
       href: export-flow-solution.md
-    - name: ソリューションをインポートする
+    - name: ソリューションのインポート
       href: import-flow-solution.md
     - name: ソリューション対応フローを編集する
       href: edit-solution-aware-flow.md
@@ -191,7 +193,7 @@
       href: add-condition.md
     - name: データ操作を使用する
       href: data-operations.md
-    - name: 条件の式を使用する
+    - name: 条件で式を使用する
       href: use-expressions-in-conditions.md
     - name: Visio を使用してフローをモデル化する
       href: visio-flows.md
@@ -219,15 +221,15 @@
           href: acronym-sample.md
         - name: サンプル - リードの生成
           href: lead-collection-sample.md
-    - name: 電話上でフローを管理する
+    - name: スマートフォンでフローを管理する
       href: mobile-manage-flows.md
     - name: テンプレートを発行する
       href: publish-a-template.md
 - name: トラブルシューティング
   items:
-    - name: フローを見る
+    - name: フローの確認
       href: see-a-flow-run.md
-    - name: 電話上でフロー アクティビティを監視する
+    - name: スマートフォンでフロー アクティビティを監視する
       href: mobile-monitor-activity.md
     - name: フローのトラブルシューティング
       href: fix-flow-failures.md
@@ -253,16 +255,16 @@
       href: ./developer/embed-flow-dev.md
     - name: 顧客がフローを体験できるようにする
       href: ./developer/dev-appsource-test-drive.md
-    - name: コードを使用して業務プロセス フローを操作する
+    - name: コードを使用してビジネス プロセス フローを操作する
       href: ./developer/business-process-flows-code.md
       items:
-        - name: 'サンプル: 業務プロセス フローの使用'
+        - name: 'サンプル: ビジネス プロセス フローの使用'
           href: ./developer/sample-work-business-process-flows.md
     - name: カスタム Common Data Service ワークフロー活動
       href: ./developer/custom-cds-for-apps-workflow-activities.md
 - name: 管理
   items:
-    - name: 組織における Flow の Q & A
+    - name: 組織のフローの Q & A
       href: organization-q-and-a.md
     - name: 価格設定
       href: billing-questions.md
@@ -298,7 +300,7 @@
           href: gdpr-dsr-export-msa.md
         - name: 削除要求
           href: gdpr-dsr-delete-msa.md
-        - name: 終了要求
+        - name: 閉鎖要求
           href: gdpr-dsr-accountclose-msa.md
     - name: Power Automate US Government
       href: us-govt.md
