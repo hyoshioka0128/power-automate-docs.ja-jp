@@ -20,17 +20,17 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 96b97fe3e6090a2810c0fa0e1dfae2d4b890da62
-ms.sourcegitcommit: e58c8e6954c8e666497a66dc945fdc16c7c845a9
+ms.openlocfilehash: ca3dc36827423bffaed53b4ce19c50b94e09df81
+ms.sourcegitcommit: 2284143cf147beb7d6071fd8005a41298e51e493
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "3331110"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "3384965"
 ---
 # <a name="create-an-automated-flow-by-using-common-data-service-current-environment"></a>Common Data Service （現在の環境）を使用して自動化されたフローを作成する
 
 >[!IMPORTANT]
->Common Data Service に接続できるコネクタは 3 つ存在します。 この記事では、Common Data Serivce への接続に [Common Data Service（現在の環境）コネクタ](./connection-cds.md) を推奨しています。 推奨するコネクタが使用できない場合は、[Common Data Service Connector](./connection-cds.md) と [Dynamics 365 コネクタ](https://docs.microsoft.com/connectors/dynamicscrmonline/) も使用することができます。
+>Common Data Service に接続できるコネクタは 3 つ存在します。 この記事では、Common Data Service への接続に対して推奨される [Common Data Service (現在の環境) コネクタ](./connection-cds.md)について説明します。 推奨するコネクタが使用できない場合は、[Common Data Service Connector](./connection-cds.md) と [Dynamics 365 コネクタ](https://docs.microsoft.com/connectors/dynamicscrmonline/) も使用することができます。
 
 
 Common Data Service（現在の環境）コネクターを使用するには、[ソリューションを意識した](./overview-solution-flows.md) フローを作成する必要があります。 
@@ -43,7 +43,7 @@ Common Data Service（現在の環境）コネクターを使用するには、[
 
 **レコードの作成、更新、削除時** トリガーを使用してフローを開始します：
 
-   ![トリガーを選択する](./media/cds-connector-native/native-trigger.png)
+   ![トリガーの選択](./media/cds-connector-native/native-trigger.png)
 
 トリガーの選択後は、次の設定を行う必要があります：
 
@@ -55,13 +55,13 @@ Common Data Service（現在の環境）コネクターを使用するには、[
 
 これらの条件のいずれかを追加して、フローがトリガーされるタイミングを正確に決定できます。
 
-   ![トリガーを選択する](./media/cds-connector-native/trigger-conditions.png)
+   ![トリガーの選択](./media/cds-connector-native/trigger-conditions.png)
 
 ### <a name="the-entity-name"></a>エンティティの名前
 
 トリガーが動作するエンティティを示す目的で使用可能な多数のエンティティのいずれかを選択します。
 
-   ![トリガーを選択する](./media/cds-connector-native/entity-names.png)
+   ![トリガーの選択](./media/cds-connector-native/entity-names.png)
 
 ### <a name="scope"></a>Scope
 
@@ -73,24 +73,24 @@ Common Data Service（現在の環境）コネクターを使用するには、[
 
 |Scope|トリガーのタイミング|
 | --- | --- |
-|部署 |自分の部署が所有しているレコードに対して、アクションが実行される|
-|組織全体|組織内またはデータベース内の任意のユーザーによってアクションが実行される|
-|部署配下|自分の部署または配下の部署が所有しているレコードに対して、アクションが実行される|
-|ユーザー |自分が所有しているレコードに対して、アクションが実行される|
+|部署 |自分の部署が所有しているレコードに対して、アクションが実行されます|
+|組織全体|組織内またはデータベース内の任意のユーザーによってアクションが実行されます|
+|親 : 下位の部署|自分の部署または配下の部署が所有しているレコードに対して、アクションが実行されます|
+|User|自分が所有しているレコードに対して、アクションが実行されます|
 
 
-レコードが更新されたときに実行されるトリガーには、フィルター処理の属性も使用できます。 これにより、定義されているいずれかの属性が更新されたときにのみフローが実行されることが確実になります。
+レコードが更新されたときに実行されるトリガーには、フィルター処理の属性を使用することもできます。 これにより、定義された属性のいずれかが更新されたときにのみフローが実行されるようになります。
 
 > [!IMPORTANT]
-> フィルター属性を使用して、フローが不必要に実行されることを防ぎます。
+> フィルター属性を使用することで、不要なフローの実行を防ぎます。
 
-このフローは、フローのユーザーが所有している連絡先の姓または名が更新されたときにトリガーされます。
+このフローは、フローのユーザが所有する連絡先の姓、または名が更新されるたびにトリガーされます。
 
 ![フィルター属性](./media/cds-connector-native/filtering-attributes.png)
 
 ## <a name="trigger-privileges"></a>トリガーの権限
 
-レコードの作成、更新、削除に基づいてトリガーされるフローを作成するには、**コールバック登録** エンティティに対する作成、読み取り、書き込み、削除のユーザー レベル権限が必要となります。 さらに、定義されたスコープによっては、ユーザーは同じエンティティに対して少なくともそのレベルの読み取りを必要とする場合があります。  環境のセキュリティの[詳細については、こちらを参照してください](https://docs.microsoft.com/power-platform/admin/database-security)。
+レコードの作成、更新、削除に基づいてトリガーされるフローを作成するには、**コールバック登録** エンティティに対する作成、読み取り、書き込み、削除のユーザー レベル権限が必要となります。 さらに、定義されたスコープによっては、ユーザーは少なくとも同じエンティティの同等のレベルの読み取り権限が必要となる場合があります。  環境のセキュリティの詳細については、[こちらを参照してください](https://docs.microsoft.com/power-platform/admin/database-security)。
 
 ## <a name="write-data-into-common-data-service"></a>Common Data Service にデータを書き込む
 
@@ -110,22 +110,22 @@ Common Data Service にデータを書き込むには、次のいずれかのア
 
 | フィールドのカテゴリ | 設定の例 |
 | --- | --- |
-| 関連 | 関連 = レコードの ID (アカウント ID など) と一覧から選択した関連の種類。 |
+| 関連 | 関連とは、 レコードの ID (アカウント ID など) と一覧から選択した関連の種類です。 |
 | 顧客 | レコードの ID と一覧から選択した顧客の種類を表します。 |
 | 所有者  | システム ユーザーまたはチームの ID と、一覧から選択した顧客の種類を表します。 |
 
-### <a name="enable-upsert-behavior"></a>upsert 動作を有効にする
+### <a name="enable-upsert-behavior"></a>upsert 動作を有効化する
 
-**レコードを更新する** アクションを利用して upsert アクションを指定することができます。これにより、レコードが既に存在する場合はレコードを更新するか、新しいレコードを作成します。 upsert を呼び出すには、エンティティと GUID キーを指定します。 指定した種類とキーを持つレコードが存在する場合は、更新が発生します。 それ以外の場合、指定したキーを持つレコードが作成されます。
+**レコードを更新する** アクションを利用して upsert アクションを指定することができます。これにより、レコードが既に存在する場合はレコードを更新するか、新しいレコードを作成します。 upsert を呼び出すには、エンティティと GUID キーを指定します。 指定した種類とキーを持つレコードが存在する場合は、更新が行われます。 それ以外の場合は、指定したキーを持つレコードが作成されます。
 
-### <a name="trigger-behavior"></a>トリガー動作
+### <a name="trigger-behavior"></a>トリガーの動作
 
-レコードの更新時に登録されているトリガーがある場合、フローは特定のレコードへの*コミットされた*更新のたびに実行されます。 フローはサービスによって非同期的に呼び出され、呼び出しが発生した時点で取得されたペイロードを含みます。
+レコードの更新に対してトリガーが登録されている場合は、指定されたレコードに対する*コミットされた*更新が行われる度にフローが実行されます。 サービスはフローを非同期的に呼び出し、呼び出しが発生した時点で取得されたペイロードを使用します。
 
 > [!NOTE]
 > 数秒以内に 2 つの更新が発生した場合には、最新バージョンのコンテンツフローが複数回トリガーされる可能性があります。
 
-ご使用の環境内にシステム ジョブのバックログがある場合、フローの実行が遅延することがあります。 この遅延が発生した場合、フローを開始するシステムジョブが実行された際にフローがトリガーされます。
+ご利用の環境内にシステム ジョブのバックログがある場合は、フローの実行が遅延する可能性があります。 この遅延が発生した場合、フローを開始するシステムジョブが実行された際にフローがトリガーされます。
 
 
 

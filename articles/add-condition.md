@@ -1,6 +1,6 @@
 ---
-title: フローへの条件の追加 | Microsoft Docs
-description: 条件が true の場合にのみフローが 1 つ以上のタスクを実行することを指定します。
+title: フローに条件を追加する | Microsoft Docs
+description: 条件が true の場合にのみ、フローが 1 つ以上のタスクの実行を指定します。
 services: ''
 suite: flow
 documentationcenter: na
@@ -13,73 +13,77 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/17/2017
+ms.date: 06/08/2020
 ms.author: stepsic
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 3be9b2414a0f30581763622de0c7d49cb694e3b3
-ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
+ms.openlocfilehash: c717bfcb10fdae3da5d1a3642ece503ad3de4389
+ms.sourcegitcommit: 549224cf13fc761f473c880e8d0d8f2741cc7b0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "3296682"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "3434994"
 ---
-# <a name="add-a-condition-to-a-flow"></a>フローへの条件の追加
+# <a name="add-a-condition-to-a-flow"></a>フローに条件を追加する
 
 
-条件が true の場合にのみフローが 1 つ以上のタスクを実行することを指定します。 たとえば、キーワードを含むツイートが 10 回以上リツイートされた場合のみ電子メールを受け取るように指定します。
+条件が true の場合にのみ、フローが 1 つ以上のタスクの実行を指定します。 たとえば、特定のキーワードを含むツイートが 10 回以上リツイートされた場合のみ電子メールを受け取るように指定します。
 
 ## <a name="prerequisites"></a>前提条件
 
-* テンプレートから[フローを作成する](get-started-logic-template.md) - このチュートリアルでは、例として[こちらのテンプレートを使用](https://flow.microsoft.com/galleries/public/templates/e78571e5c70e4806a18eeacba5a897c8/)します
+* テンプレートから[フローを作成する](get-started-logic-template.md) - このチュートリアルでは、例として[こちらのテンプレートを使用します](https://flow.microsoft.com/galleries/public/templates/e78571e5c70e4806a18eeacba5a897c8/)
 
-## <a name="add-a-condition"></a>条件を追加します
+## <a name="add-a-condition"></a>条件を追加する
 
-1. [Power Automate](https://flow.microsoft.com) にて、上部のナビゲーションの **マイ フロー** を選択します。
+1. [Power Automate](https://flow.microsoft.com) で、**自分のフロー**を選択します。
 
-    まだサインインしていない場合は、サインインしなければならない場合があります。
+    まだサイン インしていない場合は、サイン インが求められる場合があります。
 
-1. フローの一覧で、作成したフローのいずれかを選択します。
+1. **自分のフロー** からいずれかのフローを選択し、続いて**その他のコマンド** (3 つの点で表わされています) を選択します。
+
+   ![編集を選択する](./media/add-condition/select-edit.png)
 
     このチュートリアルでは、Twitter のトリガーと SharePoint のアクションを使用した例を説明します。
 
-1. **[フローの編集]** を選択します。
+1. **編集**を選択します。
 
-1. 最後のアクションの下部にある **[新しいステップ]** をクリックします。
+1. 最後のアクションの配下にある **新規ステップ** > **条件** を選択します。
 
-1. **[条件の追加]** を選択します。
+1. **条件** カードで、左側ボックスの空の領域を選択します。
 
-    ![条件ボタン](./media/add-condition/add-condition.png)
+    **動的コンテンツ** 一覧が表示されます。
 
-1. **[条件]** カードの左側のボックスで空の領域を選択します。
+1. **リツイート数** を選択してボックスに追加します。
 
-    **[動的なコンテンツ]** 一覧が表示されます。
+1. **条件** カード中央のボックスで、**と等しい、またはよりも多い** を選択します。
 
-1. **[Retweet count (リツイート数)]** を選択してボックスに追加します。
+1. 右側のボックスに **10** を入力します。
 
-1. **[条件]** カードの真ん中のボックスで、**[次の値以上]** を選択します。
+    ![パラメーターが設定されているオブジェクト名ボックス](./media/add-condition/specify-condition.png)
 
-1. 右側のボックスに「**10**」を入力します。
+    以上で条件の設定が完了しました。以下の手順を完了すると、 **リツイート数**が 10 以上の場合に電子メールが送信されます。
 
-    ![パラメーターが設定されている [オブジェクト名] ボックス](./media/add-condition/specify-condition.png)
+1. 送信条件が**はいの場合**で、**アクションの追加**を選択します。 
+1. 検索バーに**電子メールの送信**と入力し、続いて**電子メールの送信 (V2)** を選択します。
 
-1. 条件で使用するアクションのヘッダーを選択し (**[項目の作成]** など)、**[はいの場合]** というテキストの下にドラッグします。
+   ![検索して電子メールを送信する](./media/add-condition/if-yes-condition.png)
 
-    カーソルを放すと、アクションはそのボックスに移動します。
+1. **電子メールの送信 (V2)** カードを好みに合わせて構成し、**リツイート数** が 10 より大きい場合にフローが送信するメールの内容を示します。
 
-    ![アクションをドラッグ](./media/add-condition/drag-action.png)
-
-1. 必要に応じてアクションを構成します。
+   また、**リツイート数**が 10 以下の場合に適用する、**いいえの場合**の条件を設定することもできます。
 
 1. フローを保存します。
 
-## <a name="edit-in-advanced-mode"></a>詳細設定モードでの編集
+>[!TIP]
+>条件カードの**追加**ボタンで複雑な条件を作成することができます。
 
-**[詳細設定モードで編集]** を選択して、さらに詳細な条件を記述することもできます。 *ワークフロー定義言語*のすべての式を詳細設定モードで使用することができます。 使用可能なすべての式は[こちら](https://msdn.microsoft.com/library/azure/mt643789.aspx)をご覧ください。
+![複雑な条件の追加](./media/add-condition/add-complex-condition.png)
 
-## <a name="next-steps"></a>次のステップ
+詳細設定モードの*ワークフロー定義言語*では、あらゆる式設定を使用することができます。 利用可能な[式](https://msdn.microsoft.com/library/azure/mt643789.aspx)を身につける。
+
+## <a name="next-steps"></a>次の手順
 
 詳細設定モードで条件に[式を使用する](use-expressions-in-conditions.md)方法について説明します。

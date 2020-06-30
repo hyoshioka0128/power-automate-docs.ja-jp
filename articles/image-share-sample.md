@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 0d310eb96a69f66b8f45718554f36ba8b2a51989
-ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
+ms.openlocfilehash: c804a65eee3b217dd2b6d66d54c7e39d87ef0eae
+ms.sourcegitcommit: 3f582a1e462124d44f63cef7d450fc94be148f3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "3297936"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "3372786"
 ---
 # <a name="image-share-sample"></a>画像共有のサンプル 
 
@@ -33,12 +33,12 @@ ms.locfileid: "3297936"
 
 ![表示専用のアダプティブ カード](media/adaptive-cards/image-share.png)
 
-*入力/出力とノート*
+*入力/出力とメモ*
 
 | 動的トークンの名前 (入力) | プレースホルダー テキスト   | メモ​​                                              |
 |-----------------------------|--------------------|-----------------------------------------------------|
-| acphotoTitle                | {acphotoTitle}     | テキストの表示                                        |
-| acTimestamp                 | {acTimestamp]      | 表示日/時刻                                   |
+| acphotoTitle                | {acphotoTitle}     | 表示テキスト                                        |
+| acTimestamp                 | {acTimestamp}      | 表示日/時刻                                   |
 | acImageThumbnail            | {acImageThumbnail} | 表示する画像 <br>有効な URL に置き換える必要があります|
 | acAltText                   | {acAltText}        | アクセシビリティの代替テキスト                      |
 

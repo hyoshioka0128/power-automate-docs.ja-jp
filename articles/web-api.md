@@ -3,42 +3,42 @@ title: フローは Common Data Service に格納され、豊富な Web API を�
 description: フローは Common Data Service に格納され、豊富な Web API を使用します。
 author: stepsic-microsoft-com
 ms.reviewer: deonhe
-ms.date: 03/05/2019
+ms.date: 04/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: business-applications
 ms.technology: ''
 ms.author: stepsic
 audience: Power user
-ms.openlocfilehash: f446b1b4147b8531ee808447a18058628c2ac0cf
-ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
+ms.openlocfilehash: ebcd4951abae85f843ddaf34c8ce222eb1a83c33
+ms.sourcegitcommit: 4b9261984a554dfccb0d0d77f3d5fdca60e26433
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "3298354"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "3340121"
 ---
 # <a name="power-automate-web-api"></a>Power Automate Web API
 
 
 今後、すべてのフローは Common Data Service に格納され、[豊富な Web API](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/perform-operations-web-api) を利用します。
 
-このコンテンツでは、Power Automate の **ソリューション** タブに含まれるフローの管理について説明しています。 現在、**[マイ フロー]** 以下のフローはこのような API ではサポートされていません。
+このコンテンツでは、Power Automate の **ソリューション** タブに含まれるフローの管理について説明しています。 現在、**マイ フロー** のフローはこのような API ではサポートされていません。
 
 ## <a name="compose-http-requests"></a>HTTP 要求を作成する
 
 要求の作成を始めるには、まず URL を構築する必要があります。 Power Automate Web API のベース URL の形式は `https://{Organization ID}.{Regional Subdomain}.dynamics.com/api/data/v9.1/` です。 次の 2 つのパラメーターがあります。
 
-- **[組織 ID]** は、フローを格納する環境の一意の名前です。 Power Automate の右上にある環境スイッチャーに組織 ID が表示されます。 **[組織 ID]** は **[環境 ID]** (フローの URL に表示される GUID) とは異なります。
+- **組織 ID** は、フローを格納する環境の一意の名前です。 Power Automate の右上にある環境スイッチャーに組織 ID が表示されます。 **組織 ID** は **環境 ID** (フローの URL に表示される GUID) とは異なります。
 
      ![環境スイッチャー](media/web-api/get-organization-id.png "環境スイッチャー")
 
-- **[Regional Subdomain]\(リージョンサブのドメイン\)** は、環境の場所によって変わります。 Power Automate にサインインすると、Web ページの URL でご自分の環境のリージョンを確認できます。 そのリージョン名を使用して、次の表で対応するサブドメインを見つけてください。
+- **リージョンサブのドメイン** は、環境の場所によって変わります。 Power Automate にサインインすると、Web ページの URL でご自分の環境のリージョンを確認できます。 そのリージョン名を使用して、次の表で対応するサブドメインを見つけてください。
 
-     ![フロー URL](media/web-api/get-region-name.png "フロー URL")
+     ![フローの URL](media/web-api/get-region-name.png "フローの URL")
 
      | 地域         | サブドメイン   |
      | -------------- | ----------- |
-     | 米国  | crm         |
+     | 米国  | CRM         |
      | 南米  | crm2        |
      | カナダ         | crm3        |
      | ヨーロッパ         | crm4        |
@@ -48,10 +48,11 @@ ms.locfileid: "3298354"
      | インド          | crm8        |
      |  US Government  | crm9        |
      | 英国 | crm11       |
+     |アラブ首長国連邦 |   crm15|
 
-Online Management API の [[インスタンスの取得]](https://docs.microsoft.com/rest/api/admin.services.crm.dynamics.com/instances/getinstances) メソッドを使用して、利用できるインスタンスの一覧をプログラムで取得することもできます。
+オンライン管理 API の [インスタンスの取得](https://docs.microsoft.com/rest/api/admin.services.crm.dynamics.com/instances/getinstances) メソッドを使用して、利用できるインスタンスの一覧をプログラムで取得することもできます。
 
-Web API に対する各要求で、`Accept` および `Content-type` ヘッダーを `application/json` に設定する必要があります。
+Web API に対する各要求で、`Accept` と `Content-type` ヘッダーを `application/json` に設定する必要があります。
 
 最後に、`Authorization` ヘッダーに Azure AD ベアラー トークンを設定します。 Common Data Service の Azure AD ベアラー トークンを取得する方法について [説明](https://docs.microsoft.com/powerapps/developer/common-data-service/authenticate-oauth) します。 たとえば、次の要求があります。
 
@@ -86,20 +87,20 @@ Authorization: Bearer ey...
 }
 ```
 
-## <a name="list-flows"></a>フローを一覧表示する
+## <a name="list-flows"></a>フローの一覧表示
 
 上記のように、`workflows` に対して `GET` を呼び出すことでワークフローの一覧を取得できます。 各ワークフローには多くのプロパティがありますが、関連性の高いものは次のとおりです。
 
 | プロパティ名     | 内容                                              |
 | ----------------- | -------------------------------------------------------- |
-| category          | フローのカテゴリ。 次の種類があります: 0 - クラシック Common Data Service ワークフロー、1 - クラシック Common Data Service ダイアログ、2 - ビジネス ルール、3 - クラシック Common Data Service アクション、4 - ビジネス プロセス フロー、5 - 自動化されたインスタント フローまたはスケジュールされたフロー。 |
-| statecode         | フローの状態。 状態は **0** - オフ、または **1** - オンです。|
+| カテゴリ          | フローのカテゴリ。 次の種類があります: 0 - クラシック Common Data Service ワークフロー、1 - クラシック Common Data Service ダイアログ、2 - ビジネス ルール、3 - クラシック Common Data Service アクション、4 - ビジネス プロセス フロー、5 - 自動化されたインスタント フローまたはスケジュールされたフロー。 |
+| statecode         | フローの状態。 状態は **0** がオフ、または **1** がオンです。|
 | workflowuniqueid  | フローのこのインストールの一意識別子。 |
 | workflowid        | すべてのインポート全体でのフローの一意識別子。 |
 | createdon         | フローが作成された日付。 |
 | _ownerid_value    | フローを所有するユーザーまたはチームの一意識別子。 これは、Common Data Service での systemusers エンティティの ID です。 |
 | modifiedon        | フローの最終更新日時。 |
-| ismanaged         | フローがマネージド ソリューションを介してインストールされたかどうかを示します。 |
+| ismanaged         | フローが管理ソリューションを介してインストールされたかどうかを示します。 |
 | 名前              | フローに付けた表示名。 |
 | _modifiedby_value | フローを最後に更新したユーザー。 これは、Common Data Service での systemusers エンティティの ID です。 |
 | _createdby_value  | フローを作成したユーザー。 これは、Common Data Service での systemusers エンティティの ID です。 |
@@ -117,7 +118,7 @@ Authorization: Bearer ey...
 
 ## <a name="create-a-flow"></a>フローの作成
 
-フローを作成するには、`workflows` コレクションに対して `POST` を呼び出します。 自動フロー、インスタント フロー、およびスケジュールされたフローの必須のプロパティは、category、name、type、primaryentity、および clientdata です。 このような種類のフローの primaryentity には `none` を使用します。
+フローを作成するには、`workflows` コレクションで `POST` を呼び出します。 自動フロー、インスタント フロー、スケジュールされたフローの必須のプロパティは、category、name、type、primaryentity、clientdata です。 このような種類のフローの primaryentity には `none` を使用します。
 
 description と statecode を指定することもできます。
 
@@ -137,21 +138,21 @@ Content-type: application/json
 }
 ```
 
-最も重要なセクションは、フローが使用する connectionReferences が含まれている `clientdata` と、フローの [definition](https://docs.microsoft.com/azure/logic-apps/logic-apps-workflow-definition-language) です。 connectionReferences は、フローが使用する各接続へのマッピングです。
+最も重要なセクションは、フローが使用する connectionReferences が含まれている `clientdata` と、フローの [定義](https://docs.microsoft.com/azure/logic-apps/logic-apps-workflow-definition-language) です。 connectionReferences は、フローが使用する各接続へのマッピングです。
 
 次の 3 つのプロパティがあります。
 
 | プロパティ名  | 内容                                                 |
 | -------------- | ----------------------------------------------------------- |
-| connectionName | 接続を特定します。 **Connections** ページに移動し、接続の URL からコピーすることで、connectionName を確認することができます。 |
-| ソース         | `Embedded` または `Invoker` です。 `Invoker` はインスタント フロー (ユーザーがボタンを選択してフローを実行したフロー) の場合にのみ有効であり、エンド ユーザーが接続を提供することを示します。 この場合、connectionName は設計時にのみ使用されます。 接続が `Embedded` の場合は、指定した connectionName が常に使用されることを意味します。 |
-| ID             | コネクタの識別子。 id は常に `/providers/Microsoft.PowerApps/apis/` で始まり、次にコネクタ名が含まれます。これは、接続の URL からコピーするか、**[コネクタ]** ページからコネクタを選択してコピーして取得できます。 |
+| connectionName | 接続を特定します。 **接続** ページに移動し、接続の URL からコピーすることで、connectionName を確認することができます。 |
+| ソース         | `Embedded` または `Invoker` のいずれかです。 `Invoker` はインスタント フロー (ユーザーがボタンを選択してフローを実行したフロー) の場合にのみ有効であり、エンド ユーザーが接続を提供することを示します。 この場合、connectionName は設計時にのみ使用されます。 接続が `Embedded` の場合は、指定した connectionName が常に使用されることを意味します。 |
+| ID             | コネクタの識別子。 ID は常に `/providers/Microsoft.PowerApps/apis/` で始まり、次にコネクタ名が含まれます。これは、接続の URL からコピーするか、**コネクタ** ページからコネクタを選択してコピーして取得できます。 |
 
 `POST` 要求を実行すると、新しいフローの `workflowid` を含む `OData-EntityId` ヘッダーを受け取ります。
 
 ## <a name="update-a-flow"></a>フローを更新する
 
-ワークフローに対して `PATCH` を呼び出し、フローの更新、有効化、または無効化を行うことができます。 このような呼び出しには `workflowid` プロパティを使用します。 たとえば、次の呼び出しを使用するとフローの説明と所有者を更新できます。
+ワークフローで `PATCH` を呼び出し、フローの更新、有効化、または無効化を行うことができます。 このような呼び出しには `workflowid` プロパティを使用します。 たとえば、次の呼び出しを使用するとフローの説明と所有者を更新できます。
 
 ```http
 PATCH https://org00000000.crm0.dynamics.com/api/data/v9.1/workflows(00000000-0000-0000-0000-000000000002)
@@ -179,7 +180,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="delete-a-flow"></a>フローの削除
+### <a name="delete-a-flow"></a>フローを削除する
 
 単純な `DELETE` の呼び出しを使用してフローを削除します。
 
@@ -190,7 +191,7 @@ Authorization: Bearer ey...
 ```
 
 > [!NOTE]
-> 有効なフローを削除することはできません。 まずフローをオフにする必要があります (前の「**フローを更新する**」を参照してください)。そうしないと、エラー `Cannot delete an active workflow definition.` が表示されます。
+> 有効になっておりフローを削除することはできません。 まずフローをオフにする (前の **フローの更新** を参照してください) か、そうでなければエラー `Cannot delete an active workflow definition.` が表示されます。
 
 ## <a name="get-all-users-with-whom-a-flow-is-shared"></a>フローが共有されているすべてのユーザーを取得する
 
@@ -202,7 +203,7 @@ Accept: application/json
 Authorization: Bearer ey...
 ```
 
-`Target` パラメーターは、`@odata.id` という単一のプロパティを持つ JSON のような文字列です。 上記の例のワークフロー ID を置き換えます。 戻り値は次のとおりです。
+`Target` パラメーターは、`@odata.id` という単一のプロパティを持つ JSON のような文字列です。 上記の例のワークフロー ID を置き換えます。 次のものが返されます。
 
 ```http
 {
@@ -247,16 +248,16 @@ Content-type: application/json
 
 | 件名         | 内容                                          |
 | ------------ | ---------------------------------------------------- |
-| いいえ​​         | アクセス権がありません。                                           |
+| いいえ         | アクセス権がありません。                                           |
 | 読み取りアクセス権   | フローを読み取る権利。                          |
 | WriteAccess  | フローを更新する権利。                        |
 | DeleteAccess | フローを削除する権利。                        |
 | ShareAccess  | フローを共有する権利。                         |
 | AssignAccess | フローの所有者を変更する権利。           |
 
-コンマを使用して複数のアクセス許可を組み合わせることができます。たとえば、`ReadAccess,WriteAccess` を渡すことで、フローの読み取りと更新の両方を実行できます。
+コンマを使用して複数のアクセス許可を組み合わせることができます。たとえば、`ReadAccess,WriteAccess` を通すことで、フローの読み取りと更新の両方を実行できます。
 
-`RevokeAccess` アクションを使用してフローの*共有を解除*することができます。 次に例を示します。
+`RevokeAccess` アクションを使用してフローの *共有解除* することができます。 次に例を示します。
 
 ```http
 POST https://org00000000.crm0.dynamics.com/api/data/v9.1/RevokeAccess
@@ -279,7 +280,7 @@ Content-type: application/json
 
 ## <a name="export-flows"></a>フローをエクスポートする
 
-フローを .zip ファイルにエクスポートするには、`ExportSolution` アクションを使用します。 まず、目的のフローを[ソリューション](https://flow.microsoft.com/blog/solutions-in-microsoft-flow/)に追加します。
+フローを .zip ファイルにエクスポートするには、`ExportSolution` アクションを使用します。 まず、目的のフローを [ソリューション](https://flow.microsoft.com/blog/solutions-in-microsoft-flow/) に追加します。
 
 ソリューションにフローが追加されたら、次のアクションを呼び出します。
 
@@ -337,6 +338,6 @@ Accept: application/json
 Authorization: Bearer ey...
 ```
 
-この呼び出しで、`progress` (完了の割合)、`startedon`、`completedon` (インポートが完了した場合) などのインポート操作の状態が返されます。
+この呼び出しで、`progress` (完了 %)、`startedon`、`completedon` (インポートが完了した場合) などのインポート操作の状態が返されます。
 
-インポートが正常に完了したら、`connectionNames` は対象の環境で異なる可能性があるため (仮に接続が存在する場合)、フローの接続を設定する必要があります。 対象の環境で新しい接続を設定する場合は、フローの所有者がそれらを Power Automate Designer で作成する必要があります。 新しい環境で接続が既に設定されている場合は、接続の名前を使用してフローの `clientData` に対する `PATCH` を実行できます。
+インポートが正常に完了したら、`connectionNames` は (仮に接続が存在する場合) 対象の環境で異なる可能性があるため、フローの接続を設定する必要があります。 対象の環境で新しい接続を設定する場合は、フローの所有者がそれらを Power Automate Designer で作成する必要があります。 新しい環境で接続が既に設定されている場合は、接続の名前を使用してフローの `clientData` に対する `PATCH` を実行できます。
