@@ -16,6 +16,8 @@
       href: create-team-flows.md
     - name: Common Data Service を使用するフローを作成する
       href: common-data-model-intro.md
+    - name: 最新情報
+      href: whats-new.md
     - name: ラーニング カタログ
       items:
         - name: ラーニング カタログ
@@ -310,8 +312,6 @@
       href: regions-overview.md
     - name: 制限事項と構成
       href: limits-and-config.md
-    - name: リリース ノート
-      href: release-notes.md
     - name: Power Automate Web API
       href: web-api.md
     - name: よく寄せられる質問
@@ -324,3 +324,5 @@
       href: 'https://flow.microsoft.com/blog/'
     - name: フォーラム
       href: 'https://powerusers.microsoft.com/t5/Microsoft-Flow-Community/ct-p/FlowCommunity'
+    - name: サポート
+      href: 'https://us.flow.microsoft.com/support/'
