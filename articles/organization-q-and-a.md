@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: stepsic-microsoft-com
-manager: erikre
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 12/05/2016
+ms.date: 06/18/2020
 ms.author: stepsic
 search.app:
 - Flow
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: fbadbf62760544410cf8fee74f4cecb43cbdefd5
-ms.sourcegitcommit: 4b9261984a554dfccb0d0d77f3d5fdca60e26433
+ms.openlocfilehash: 3e1cf3f96d992036883c4fb0e86553aa9cfa7e1d
+ms.sourcegitcommit: aec3a74472b4e6eb70ed4554d14b57a7324d123d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "3340097"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "3498464"
 ---
 # <a name="power-automate-in-your-organization-qa"></a>組織の Power Automate に関する Q&A
 
@@ -57,7 +57,7 @@ Power Automate は完全なパブリック クラウド サービスです。世
 
 ただし、Power Automate に新規登録したユーザーが、組織内ではサポートしないことを選択した場合、そのユーザーが会社に費用を負担させることはできません。 個人が Power Automate にサインアップすると、その関係は、Bing、OneDrive、Outlook.com のような Microsoft の他のクラウド サービスと同様に、個人と Microsoft 間の関係になります。 Power Automate を個人で利用する場合は、組織がサービスの提供者として解釈されることは決してありません。
 
-最後に、会社が Power Automate 内の組織専用データの使用を制限することを望んでいる場合は、データ消失防止 (DLP) ポリシーによりそれが可能になります。
+最後になりますが、会社が Power Automate 内の組織専用データの使用を制限する場合、[データ損失防止 (DLP) ポリシー](https://docs.microsoft.com/power-platform/admin/wp-data-loss-prevention)でそれを実行できます。
 
 ### <a name="how-can-people-gain-access-to-the-paid-features-of-power-automate"></a>どうすれば Power Automate の有料機能にアクセスできますか？
 個人が Power Automate の有料機能を利用するには、3 つの方法があります。

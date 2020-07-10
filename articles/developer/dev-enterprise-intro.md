@@ -19,12 +19,12 @@ search.app:
 - Flow
 search.audienceType:
 - developer
-ms.openlocfilehash: ca815ad5949da494c1a50c193c040acdd948d3a2
-ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
+ms.openlocfilehash: 2c2b9a29988a3b8f4fd25f5490d5f009c1b52ff3
+ms.sourcegitcommit: 368e3749f64f80cd9b45c35eccba6a2e3685ae44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "3297606"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "3516660"
 ---
 # <a name="power-automate-for-enterprise-developers-isvs-and-partners"></a>企業の開発者、パートナー、ISV が使用する Power Automate
 [!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
@@ -75,13 +75,13 @@ REST API を呼び出し、認証済みの UI を埋め込むには、アプリ�
 
 コネクタを作成した後は、サービスの使用方法を示すテンプレートを公開する必要があります。 これらのテンプレートは、ユーザーがサービスについて理解し、その後で独自のワークフローに拡張できる例として使用されます。 [詳細情報](../publish-a-template.md)
 
-### <a name="5-deployment"></a>5. デプロイ
+### <a name="5-deployment"></a>5. 展開
 
 エンドユーザーが自動的にフローを使用できるようにアクセス権を付与するには、フローをユーザーの Azure AD テナントにデプロイします。 REST API または PowerShell を使用してデプロイするデプロイ パッケージを使用します。 [詳細情報](https://docs.microsoft.com/powerapps/export-import-packages)
 
-### <a name="6-licensing"></a>6. ライセンスに関するよくあるご質問
+### <a name="6-licensing"></a>6. ライセンス
 
-お客様が既に Office 365 または Dynamics 365 を所有していて、ユーザーが Azure AD でログインする ID がそのライセンスと関連付けられている場合、それ以上のライセンス要件はありません。 ただし、お客様が Office 365 または Dynamics 365 を使用しない場合は、アプリケーションに埋め込まれたコンポーネントを利用するライセンスが与えられるように、Power Automate の使用権を代わりに取得する必要があります。
+お客様が既に Office 365 または Dynamics 365 を所有していて、ユーザーが Azure AD でログインする ID がそのライセンスと関連付けられている場合、標準コネクタを使用するためのそれ以上のライセンス要件はありません。 ユーザーは、 プレミアムおよびカスタム コネクタを使用するためにいずれかの [Power Automate ライセンス](https://preview.flow.microsoft.com/pricing/)が必要です。 お客様が Office 365 または Dynamics 365 を使用しない場合は、アプリケーションに埋め込まれたコンポーネントを利用するライセンスが与えられるように、Power Automate の使用権を代わりに取得する必要があります。
 
 お客様の代わりにライセンスを取得するための [Microsoft クラウド ソリューション プロバイダー](https://partner.microsoft.com/cloud-solution-provider) プログラムを提供しています。 Power Automate には 2 種類の[価格プラン](https://flow.microsoft.com/pricing/) があります。プランと機能の詳細をご確認ください。
 

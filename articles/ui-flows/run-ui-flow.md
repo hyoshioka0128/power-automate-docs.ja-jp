@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/24/2020
+ms.date: 06/24/2020
 ms.author: DeonHe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: f893000afea0d554ab911303cbdac2549170f554
-ms.sourcegitcommit: aefd1ebedfbd8c6cc3d08397ac171cb4ba5b5315
+ms.openlocfilehash: a6266b1c6a76d80e46bafd14dcddeb2df9c4aa46
+ms.sourcegitcommit: ab26d3b17cc34c650298ec5ac3b4ea9554e291cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "3412960"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "3502365"
 ---
 # <a name="run-attended-and-unattended-ui-flows"></a>有人および無人の UI フローの実行
 
@@ -177,21 +177,36 @@ UI フローでは次の処理が実行されます。
 ターゲット マシンで有人 UI フローが開始されると、実行が完了するまでデバイスとの対話を避けることをお勧めします。
 
 
-## <a name="schedule-multiple-ui-flows-on-the-same-device"></a>同じデバイスで複数の UI フローをスケジュールする
+## <a name="run-multiple-ui-flows-on-the-same-device-sequentially"></a>同じデバイスで複数の UI フローを順番に実行する 
 
-複数の UI フローを 1 つまたは複数のデバイスで実行するようにスケジュールできます。 複数の UI フローが同じデバイス上で実行するようトリガーされた場合、Power Automate は次の規則に従います:
+複数の UI フローを 1 つまたは複数のデバイスで実行するようにスケジュールできます。 同じデバイスで実行する複数の UI フローがトリガーされた場合、Power Automate では次の規則に従います。
 
 1.  最初の UI フローはターゲット デバイスで実行されます。
 
 1.  その他の UI フローはキューに配置され、UI フローまたはゲートウェイの詳細ページに **待機中** として表示されます。
 
-1.  各実行が完了すると、次の UI フローが選択されます。
+1.  各実行が完了すると、次の **待機中** の UI フローが選択されます。
 
 >[!NOTE]
->これらのオーケストレーション ルールは、同じユーザー、または同じデバイス上の異なるユーザーによってスケジュールされた UI フローの実行に適用されます。
+>これらのオーケストレーション規則は、同じデバイス上のあらゆるユーザーによってスケジュールされた UI フローの実行に適用されます。
 
 >[!IMPORTANT]
 >実行キュー内の UI フローが多すぎると、タイムアウトが発生する可能性があります。 UI フローの実行は、トリガーされてから 30 分以内に実行されないと失敗します。
+
+## <a name="run-ui-flows-concurrently-on-windows-server-devices"></a>Windows Server デバイスで同時に UI フローを実行する
+複数のユーザーが同時に Windows Server 2016 および Windows Server 2019 にサインインできます。 Power Automate は、この OS 機能を利用して、そのようなデバイスで複数の UI フローを同時に実行します。 この機能により、組織はインフラストラクチャ コストを節約できます。
+
+単一のデバイスで複数の UIフ ローを活用するには、次の手順を実行します。
+1. オンプレミスのゲートウェイと最新バージョンの UI フローがインストールされた Windows Server 2016 または 2019デバイスをセットアップします。
+1. 2 つ以上のユーザー アカウントを使用して、このデバイスのゲートウェイをターゲットとする UI フロー接続を作成します。 
+
+Power Automate は、同時 UI フローの実行数を、デバイスでサポートされる最大数まで自動的にスケーリングします。 デバイスの容量を超えた場合、[ここに記載](./run-ui-flow.md#run-multiple-ui-flows-on-the-same-device-sequentially)されているように追加の実行が*待機*します。
+
+>[!IMPORTANT]
+Windows Server で 3 つ以上の並列ユーザー セッションを使用する場合、リモート デスクトップ サービスをオンにする必要があります。 [RDS](https://docs.microsoft.com/en-us/windows-server/remote/remote-desktop-services/rds-client-access-license) の詳細をご覧ください。
+
+>[!NOTE]
+>**同じユーザー**による複数の同時 UI フローの実行はサポートされていません。 この機能を利用するには、異なるユーザーが同時に UI フローを実行する必要があります。
 
 ## <a name="load-balance-requests-across-gateways-in-a-cluster"></a>クラスター内のゲートウェイ間で要求を負荷分散する
 
@@ -218,7 +233,7 @@ Power Automate ゲートウェイの詳細ページから負荷分散を行う�
 
 1. UI フローを 1 日の異なる時間に実行するように計画し、経時的に負荷を分散させることができます。 これは、ワークロードを実行できる 1 つまたは少数セットのマシンがある場合に最適です。また、UI フローを開始するトリガー (スケジュールされたフローなど) を制御できます。
 1. 同じ構成の UI フローを並行して実行できるマシンのクラスターを作成します。 
-1. それぞれが異なるマシンをターゲットとする個別の接続を使用する、複数のフローを作成します。 
+1. それぞれが異なるマシンをターゲットとする個別の接続を使用する、複数のフローを作成します。
 
 これらの戦略に従うことで、同じデバイスでの UI フローの競合や、場合によってはタイムアウトによる失敗を回避できます。 
 

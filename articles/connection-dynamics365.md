@@ -5,38 +5,31 @@ services: ''
 suite: flow
 documentationcenter: na
 author: JimDaly
-manager: kvivek
-editor: ''
-tags: ''
+ms.reviewer: deonhe
 ms.service: flow
-ms.devlang: na
 ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 05/31/2020
-ms.author: matp
+ms.author: jdaly
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 59eb50914015ffa76607b377963b616cbcc00ded
-ms.sourcegitcommit: b77b16f15bceedc9caa948676bcd641bf0bcaf2c
+ms.openlocfilehash: 9f0866b7d1efaa35b7c37324731ff47e797488ed
+ms.sourcegitcommit: aa540779cac1171038c69ca419e8fd1702fc8eb8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "3413427"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "3455794"
 ---
 # <a name="create-a-flow-by-using-dynamics-365-online"></a>Dynamics 365 (online) を使用してフローを作成する
 
 > [!IMPORTANT]
-> Dynamics 365 アプリ (Dynamics 365 Sales、Dynamics 365 Customer Service、Dynamics 365 Field Service、Dynamics 365 Marketing、Dynamics 365 Project Service Automation) は、データ ソースに [Common Data Service](/powerapps/maker/common-data-service/data-platform-intro) を使用します。
+> Dynamics 365 Sales、Dynamics 365 Customer Service、Dynamics 365 Field Service、Dynamics 365 Marketing、Dynamics 365 Project Service Automation などの Dynamics 365 アプリは、データ ソースとして [Common Data Service](/powerapps/maker/common-data-service/data-platform-intro) を使用します。
 >
-> [Dynamics 365 Connector](/connectors/dynamicscrmonline/)は廃止されますが、削除されるまでは機能し続けます。
-> 詳細は、[Dynamics 365 Connector の廃止](/power-platform/important-changes-coming#dynamics-365-connector-is-deprecated)を参照してください。
+> [Dynamics 365 Connector](/connectors/dynamicscrmonline/)は廃止されますが、削除されるまでは機能し続けます。 詳細: [Dynamics 365 Connector が非推奨になりました](/power-platform/important-changes-coming#dynamics-365-connector-is-deprecated)。
 > 
-> 新しいフローには Dynamics 365 connector を使用しないでください。 可能な限り、[Common Data Service (現在の環境) コネクタ](/connectors/commondataserviceforapps/)を使用してください。
-> Common Data Service (現在の環境) コネクタで要件を満たせない場合は、[Common Data Service コネクタ](/connectors/commondataservice/) を使用してください。
+> 新しいフローには Dynamics 365 connector を使用しないでください。 可能な限り、[Common Data Service (現在の環境) コネクタ](/connectors/commondataserviceforapps/)を使用してください。 Common Data Service (現在の環境) コネクタで要件を満たせない場合は、[Common Data Service コネクタ](/connectors/commondataservice/) を使用してください。
 >
 > [Common Data Service (現在の環境) コネクタ](/connectors/commondataserviceforapps/)は、最も多くの機能と最良のパフォーマンスを提供するため、まずはこれを選択してください。 ただし、現時点では、複数の環境に接続する機能などの Dynamics 365 と Common Data Service コネクタで提供されている機能には対応していません。 [Common Data Service コネクタ](/connectors/commondataservice/) は、Dynamics 365 connector と同様の機能を提供しますが、信頼性も大幅に向上します。
 

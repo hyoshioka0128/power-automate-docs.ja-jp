@@ -20,12 +20,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 9c7ed87d62ff6fc7370d5b57053239c8bfbeb591
-ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
+ms.openlocfilehash: c3e1676c5846d36427c83af9e5cc64d2e6eebddc
+ms.sourcegitcommit: 9ee79e5b559429dc0e772b6fed763856dc8b51ee
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "3296814"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "3518007"
 ---
 # <a name="sharing-and-connectors-admin-analytics-reports"></a>管理者分析の共有レポートとコネクタ レポート
 
@@ -39,8 +39,8 @@ ms.locfileid: "3296814"
 ## <a name="view-shared-flows-reports"></a>共有フロー レポートの表示
 
 1. [Power Platform 管理センター](https://admin.powerplatform.microsoft.com/)にサインインします。
-1. 左側にあるナビゲーション バーから **[分析]** を選択します。
-1. **[共有]** タブを選択し、組織で共有されているフローの一覧を表示します。
+1. 左側にあるナビゲーション バーから **分析** を選択します。
+1. **共有** タブを選択し、組織で共有されているフローの一覧を表示します。
  
     ![共有コネクタ ビュー](media/admin-analytics-report/shared-tab.png)
 
@@ -48,23 +48,23 @@ ms.locfileid: "3296814"
 ## <a name="view-connectors-report"></a>コネクタ レポートの表示
 
 1. [Power Platform 管理センター](https://admin.powerplatform.microsoft.com/)にサインインします。
-1. 左側にあるナビゲーション バーから **[分析]** を選択します。
-1. **[コネクタ]** タブを選択し、組織で使用されているコネクタの一覧を表示します。
+1. 左側にあるナビゲーション バーから **分析** を選択します。
+1. **コネクタ** タブを選択し、組織で使用されているコネクタの一覧を表示します。
  
-    ![共有コネクタ ビュー](media/admin-analytics-report/connectors-tab.png)
+    ![コネクタ ビュー](media/admin-analytics-report/connectors-tab.png)
 
 ## <a name="filter-views"></a>ビューをフィルター処理する
 
 これらのレポートの結果は、選択した環境に基づきます。 環境を変更するには:
 
-1. **[フィルターの変更]** リンクを選択します。
+1. **フィルターの変更** リンクを選択します。
     
     ![フィルターの変更](media/admin-analytics-report/filters.png)
 
-1. 関心のあるレポートを表示する **[環境]** と **[期間]** を選択します。
-1. **[適用]** ボタンを選択します。
+1. 関心のあるレポートを表示する **環境** と **期間** を選択します。
+1. **適用**ボタンを選択します。
 
-    ![フィルターの変更](media/admin-analytics-report/filters-detail.png)
+    ![フィルターの詳細](media/admin-analytics-report/filters-detail.png)
 
 ## <a name="learn-more"></a>詳細はこちら
 

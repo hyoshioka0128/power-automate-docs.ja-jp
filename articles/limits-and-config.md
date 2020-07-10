@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/19/2020
+ms.date: 06/24/2020
 ms.author: stepsic
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 4f1ff6a7171ecb31ef1273fdc7dc273755089d5e
-ms.sourcegitcommit: 549224cf13fc761f473c880e8d0d8f2741cc7b0f
+ms.openlocfilehash: fc03b4b6695ec334a6271f67c0eafea2e2d71b29
+ms.sourcegitcommit: ab26d3b17cc34c650298ec5ac3b4ea9554e291cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "3435066"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "3502389"
 ---
 # <a name="limits-and-configuration-in-power-automate"></a>Power Automate における制限事項と構成
 
@@ -165,7 +165,7 @@ webshell.suite.office.com|https|ヘッダーと検索のための Office にア�
 承認メールのルーティングに関する詳細については、[承認メールの送信に関する記事](https://go.microsoft.com/fwlink/?linkid=2128304) を参照してください。
 
 ### <a name="ui-flows-required-services"></a>UI フローに必要なサービス
-次の表に、UI フローのインストールを成功させるためにユーザーのマシンから接続するためのエンドポイント データ要件を示します。
+次の表に、UI フローのインストールと実行を成功させるためのユーザーのコンピューターからの接続に関するエンドポイント データ要件を示します。
 
 エンドポイントの種類 | ドメイン | プロトコル | 使用
 --------| --------|  ---------| -----

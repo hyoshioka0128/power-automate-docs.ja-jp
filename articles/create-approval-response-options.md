@@ -1,6 +1,6 @@
 ---
 title: カスタム応答で承認フローを作成する | Microsoft Docs
-description: カスタム応答で承認フローを作成します
+description: カスタム応答で承認フローを作成します。
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,12 +20,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - maker
-ms.openlocfilehash: dc2eaf9ac0ffc0edb10f5cb096ee98dad6aac55d
-ms.sourcegitcommit: 9cca2a2fca8371ab883b12011c1c4485ceb9c761
+ms.openlocfilehash: b5ba3c826ae1db9991c92bc1217a07205cce491c
+ms.sourcegitcommit: aec3a74472b4e6eb70ed4554d14b57a7324d123d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "3299432"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "3498560"
 ---
 # <a name="create-custom-response-options-for-approval-flows"></a>承認フローのカスタム応答オプションを作成する
 
@@ -35,12 +35,12 @@ ms.locfileid: "3299432"
 
 ## <a name="prerequisites"></a>前提条件
 
-- Power Automate アカウント
+- Power Automate アカウント。
 - 従業員が経費報告書の入力に使用する SharePoint リスト。
 
 ## <a name="create-approval-flow"></a>承認フローを作成する
 1. [Power Automate](https://flow.microsoft.com) にサインインします。
-1. 左側のナビゲーション バーで **[マイ フロー]** を選択します。
+1. 左側のナビゲーション バーで **マイ フロー** を選択します。
 1. **新規**  > **空白から自動化** を選択します。
 
     ![[一から作成] オプション](media/create-approval-response-options/create-approval-response-options.png)
@@ -62,7 +62,7 @@ ms.locfileid: "3299432"
 
 1. **カスタム応答 – 1 つの応答を待機** を選択します。
 
-    ![Approval type (承認の種類)](media/create-approval-response-options/select-approval-type.png)
+    ![承認の種類](media/create-approval-response-options/select-approval-type.png)
 
     次に、承認者が従業員の経費の承認要求に応答するときに使用するカスタム応答を作成します。
 
@@ -78,7 +78,7 @@ ms.locfileid: "3299432"
     ![カスタム応答 3](media/create-approval-response-options/enter-response-3.png)   
     
 
-1. **[タイトル]**、**[割り当て先]** (承認者のメール アドレス)、**[詳細]** (承認要求に含める詳細) を入力します。
+1. **タイトル**、**割り当て先** (承認者のメール アドレス)、**詳細** (承認要求に含める詳細) を入力します。
 
     次に例を示します。
 
@@ -96,13 +96,20 @@ ms.locfileid: "3299432"
 
 最後に、承認者からの応答が**詳細な情報が必要**の場合は、従業員により多くの情報を提供するよう依頼する電子メールを送信します。
 
-フローでこれらのいずれかを実行するには、[**条件**](add-condition.md)または**スイッチ** アクションをフローに追加し、動的コンテンツ ピッカーから承認要求の **[結果]** フィールドを選択します。 値が承認、詳細な情報が必要、却下かどうかを確認します。
+フローでこれらのいずれかを実行するには、[**条件**](add-condition.md)または**スイッチ** アクションをフローに追加し、動的コンテンツ ピッカーから承認要求の **結果** フィールドを選択します。 値が承認、詳細な情報が必要、却下かどうかを確認します。
 
 ## <a name="respond-to-approval-requests-with-a-custom-response"></a>カスタム応答で承認要求に応答する
 
 承認者は、電子メールで承認要求を受け取ります。 要求は、Power Automate の承認センターにも表示されます。 
 
 ![承認要求メール](media/create-approval-response-options/approval-request-email.png)
+
+## <a name="limitations"></a>制限
+
+Outlook および Outlook Web Access (OWA) のアクション可能なメッセージには、5 つのカスタム応答の制限があります。 つまり、フロー内で定義されている最初の 5 つの応答のみが、Power Automate 承認メールのアクション可能なセクションに表示されます。 残りのオプションは、アクション不能な HTML メール、Power Automate 承認センター、Power Automate モバイル アプリケーション、または Teams を通じて送信できます。
+
+>[!NOTE]
+>単一のカスタム応答を使用する承認の場合、Outlook と OWA は応答フィールドを拡張し、複数の承認オプションがある場合にユーザーが応答するためにボタンを選択する必要がないようにします。
 
 ## <a name="learn-more"></a>詳細はこちら
 - [単一承認者フロー](modern-approvals.md)を作成する

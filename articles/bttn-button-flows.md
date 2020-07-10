@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 4eaafb1a551cc3333cde2058aebc41076b0267bd
-ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
+ms.openlocfilehash: 066e9887520a1f6435cb3ab8f93a6dbdf30cb89a
+ms.sourcegitcommit: 9ee79e5b559429dc0e772b6fed763856dc8b51ee
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "3297144"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "3518031"
 ---
 # <a name="run-your-flows-with-physical-buttons-bttns-from-the-button-corporation-preview"></a>Button Corporation (プレビュー) から物理ボタン (bttn) でフローを実行する
 
@@ -55,13 +55,13 @@ ms.locfileid: "3297144"
 
 これらのテンプレートのいずれかを使用すると、bttn 用のフローを簡単に作成し、Zendesk、Google、SharePoint などに接続できます。
 
-![bttn のテンプレート](./media/bttn-button-flows/bttn-templates.png)
+![bttn テンプレートのリストを表示](./media/bttn-button-flows/bttn-templates.png)
 
 ヒント: このチュートリアルの目的上、bttn には一般的なオフィス ビル内の会議室を表す名前を付けます。
 
 bttn の設定は (bttn Web サイトからの) この例のようになります。
 
-![bttn のテンプレート](./media/bttn-button-flows/bttn-config.png)
+![bttn 設定の表示](./media/bttn-button-flows/bttn-config.png)
 
 これで、bttn を登録して構成できました。フローの作成を開始しましょう。
 
@@ -71,7 +71,7 @@ bttn の設定は (bttn Web サイトからの) この例のようになりま�
     ![サインイン](./media/bttn-button-flows/sign-into-flow.png)
    
     メモ: 代わりに、 Power Automate モバイル アプリ、[Android](https://aka.ms/flowmobiledocsandroid)、[iOS](https://aka.ms/flowmobiledocsios)、[Windows Phone](https://aka.ms/flowmobilewindows) 用のフローを作成することも可能です。
-2. 検索ボックスに「**bttn**」と入力し、検索アイコンを選択します。
+2. 検索ボックスに **bttn** と入力し、検索アイコンを選択します。
    
     ![検索](./media/bttn-button-flows/bttn-search-template.png)
    
@@ -83,25 +83,25 @@ bttn の設定は (bttn Web サイトからの) この例のようになりま�
 ### <a name="authorize-power-automate-to-connect-to-your-bttn"></a>Power Automate を承認して、ご利用の bttn に接続します
 1. メッセージが表示されたら、bttn および  Office 365 Outlook サービスにサインインします。これによって **続行** ボタンが有効になります。
    
-    ![資格情報](./media/bttn-button-flows/bttn-provide-credentials.png)
+    ![認証情報](./media/bttn-button-flows/bttn-provide-credentials.png)
 2. bttn サービスにサインインする際、 Power Automate を承認して bttn を使用します。
    
     **重要**：bttn を使用するにあたって Power Automate を承認しない場合、Power Automate から bttn を表示、または接続することができません。
    
-    ![承認](./media/bttn-button-flows/authorize-bttn.png)
-3. 両方のサービスにサインインした後、**[続行]** を選択します。
+    ![認証する](./media/bttn-button-flows/authorize-bttn.png)
+3. 両方のサービスにサインインした後、**続行** を選択します。
    
-    ![続行します](./media/bttn-button-flows/continue.png)
+    ![続行ボタンを選択](./media/bttn-button-flows/continue.png)
 
 ### <a name="select-the-bttn-that-triggers-the-flow"></a>フローをトリガーする bttn を選択する
-1. **[When a bttn is pressed]\(bttn が押されたとき)** カードで、bttn ID の一覧を開き、使用する bttn を選択します。
+1. **bttn が押されたとき** カードで、bttn ID の一覧を開き、使用する bttn を選択します。
    
     ![bttn を選択する](./media/bttn-button-flows/bttn-id.png)
    
     フローはこの例のようになります。
    
     ![フローの概要](./media/bttn-button-flows/bttn-done.png)
-2. フローに名前を付けて、**[フローの作成]** を選択して保存します。
+2. フローに名前を付けて、**フローの作成** を選択して保存します。
    
     ![フローの保存](./media/bttn-button-flows/save.png)
 
@@ -111,19 +111,19 @@ bttn の設定は (bttn Web サイトからの) この例のようになりま�
    
     実行履歴は Power Automate Web サイトまたはモバイル デバイス上でチェックすることができます。
    
-    注: 他のユーザーがサポート リクエスト電子メールで **[Acknowledge]\(確認)** を選択するまで、実行状態は **running (実行中)** に設定されます。
+    注: 他のユーザーがサポート リクエスト電子メールで **確認** を選択するまで、実行状態は **実行中** に設定されます。
 3. サポート チームに電子メールが送信されたことを確認することもできます。
    
     これまでのステップに従った場合、サポート電子メールは次の例のようになります。
    
-    ![](./media/bttn-button-flows/support-request-email.png)
+    ![サポート用電子メール](./media/bttn-button-flows/support-request-email.png)
 
 ## <a name="troubleshooting"></a>トラブルシューティング​​
 * フローがトリガーされなかった場合、Button Corporation のサイトにサインインし、ボタン アクティビティ (ボタン押し) が記録されているかどうかを確認します。
 * Power Automate サイトで実行済みアクティビティをドリル ダウンし、エラー メッセージがないかどうかをチェックすることもできます。
 
 ## <a name="more-information"></a>詳細
-* [ボタン フローを共有する](share-buttons.md)
+* [ボタン フローを共有する](share-buttons.md)。
 * [ボタン トリガー トークン](introduction-to-button-trigger-tokens.md)を使用してボタン フローの実行時に現在のデータを送信する方法について説明します。
 * [Android 用 Power Automate アプリをインストールする](https://aka.ms/flowmobiledocsandroid)。
 * [iOS 用 Power Automate アプリをインストールする](https://aka.ms/flowmobiledocsios)。

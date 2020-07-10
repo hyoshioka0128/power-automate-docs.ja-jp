@@ -13,176 +13,164 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/19/2020
+ms.date: 06/30/2020
 ms.author: DeonHe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 1b9bd3a1f79885d17406e882b4432eff930d342c
-ms.sourcegitcommit: 549224cf13fc761f473c880e8d0d8f2741cc7b0f
+ms.openlocfilehash: dd3019c457316e58f86bda829bc2402b2be824a6
+ms.sourcegitcommit: a51ebdce86c0c2399afa4ba36591fb3230eb82d9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "3435042"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3527300"
 ---
 # <a name="use-softomotives-winautomation-with-ui-flows"></a>UI フローで Softomotive の WinAutomation を使用する
 
-ご利用の有人型 Power Automate RPAライセンス (有料版または試用版) は、Softomotive の [WinAutomation](https://www.winautomation.com/) にフルアクセスできるようになりました。 このドキュメントでは、WinAutomation のプロセスを  Power Automateで動作させる方法を説明します。
 
-既存の WinAutomation ユーザーは、[Softomotive のサポートページ](https://support.softomotive.com/support/home)で詳細情報をご確認いただきます
+ここでは、UI フローで WinAutomation を使い始める前のヒントをいくつか紹介します。
 
-## <a name="overview-for-existing-ui-flows-users"></a>既存の UI フローユーザーの概要
+1.  Power Automate 有人型 RPA ライセンス (有料または試用版) があると、[WinAutomation](https://www.winautomation.com/) にフル アクセスできます。 このドキュメントでは、WinAutomation のプロセスを Power Automateで動作させる方法を説明します。
 
-[ダウンロード](https://aka.ms/rpaDesktopAutomationInstallPage)およびインストール後、Power Automate の職場/学校アカウントで WinAutomation にサインインします。 WinAutomation でプロセスを作成した後は、UI フローを使用して Power Automate からプロセスを有人または無人で実行できます。 これを行うには、次の手順を実行します。
+1.   **プロセス**と呼ばれる、WinAutomation の自動化スクリプトが呼び出されます。 Power Automate では、自動化スクリプトは、 *フロー* または  *UI フロー*と呼ばれます。
 
-1. UIフロー デスクトップの記録を開始します。
-1. コマンド プロンプトを開きます。
-1. コマンドを入力してプロセスをトリガーします。
-   - 入力変数が必要ないプロセスの場合は、*"%programfiles%\WinAutomation\WinAutomationController.exe" /start "/My Robots/MyAutomationName"* と入力します。
-   - 入力変数が必要なプロセスの場合は、プロセス名の後にそれらを入力します。 たとえば、*MyAutomationName* という名前のプロセスに、*変数 A* と*変数 B*の入力が必要な場合は、*"%programfiles%\WinAutomation\WinAutomationController.exe" /start "/My Robots/MyAutomationName" 変数 A 変数 B* のように入力します。
+1.  WinAutomation プロセスを作成する前に、 [コネクタの一覧](https://flow.microsoft.com/connectors/) を確認して、自動化するアプリケーションに既にコネクタがあるかどうかを確認します。 既に存在する場合は、UI フローではなくフローを作成することを検討してください。  [独自のコネクタを作成](https://docs.microsoft.com/connectors/custom-connectors/)することもできます。 一般に、API ベースのコネクタは、拡張性、信頼性、低コストの点でUI自動化よりも全体的に優れたエクスペリエンスを提供します。
 
-   >[!TIP] 
-   >UI フローの入力と動的なコンテンツを使用して、Power Automate からターゲットの WinAutomationプロセスを変更します。
+1.  WinAutomation のライセンスを取得している既存のユーザーは [Softomotive のサポート ページ](https://support.softomotive.com/support/home)で参照を確認できます。
 
-1. コマンド プロンプトでエンター キーを押下し、続いて UI フローの記録を停止します。 
-   UI フローは、WinAutomation プロセスの開始時に必要なすべての情報を取得します。
-   
-1. UI フローをフローに追加後は、実行タイプに*有人*または*無人*を選択します。
-
-   >[!TIP] 
-   >WinAutomation プロセスでは、*コマンドライン引数を取得する*アクションを使用して、コマンドラインの引数を取得すします。 引数は配列となっています。 これらのインデックスを使用して、各引数を参照します。
-   
-## <a name="set-up-winautomation"></a>WinAutomation の設定
-
->[!TIP]
->**プロセス**と呼ばれる、WinAutomation の自動化スクリプトが呼び出されます。 Power Automate では、自動化スクリプトは、*flows* または *UI flows*と呼ばれます。
-
-WinAutomation プロセスを作成する前に、[コネクタの一覧](https://flow.microsoft.com/connectors/)を確認して、自動化するアプリケーションに既にコネクタがあるかどうかを確認します。 既に存在する場合は、UI フローではなくフローを作成することを検討してください。 [独自のコネクタを作成](https://docs.microsoft.com/connectors/custom-connectors/)することもできます。 一般に、API ベースのコネクタは、拡張性、信頼性、低コストの点でUI自動化よりも全体的に優れたエクスペリエンスを提供します。
-
->[!TIP]
->Power Automate から WinAutomation スクリプトを実行するには、まず UI フローからスクリプトの再生を開始する必要があります。
-
-## <a name="prerequisites"></a>前提条件 
+## <a name="prerequisites"></a>前提条件
 
 WinAutomation を Power Automate の一環として実行するには、以下が必要となります :
-1. ご利用のマシンが [UI フローの要件](https://docs.microsoft.com/power-automate/ui-flows/setup#prerequisites)を満たしていることを確認してください。
-1. [UI フロー](https://docs.microsoft.com/power-automate/ui-flows/setup)アプリをインストールし、続いてにオンプレミスのデータ ゲートウェイをインストールして構成します。
+
+1.  ご利用のマシンが  [UI フローの要件](https://docs.microsoft.com/power-automate/ui-flows/setup#prerequisites)を満たしていることを確認してください。
+
+2.   [UI フロー](https://docs.microsoft.com/power-automate/ui-flows/setup)  アプリをインストールし、続いてにオンプレミスのデータ ゲートウェイをインストールして構成します。
+
+>[!IMPORTANT]
+>UI オートメーションを記録、テスト、または実行するには、最新バージョンの WinAutomation と UI フローが必要です。
 
 ## <a name="licensing"></a>ライセンス
 
-UI フローと WinAutomation を使用するには、*有人型 RPA を使用したユーザーごとのプラン*が必要となります。 有料版のプランに登録していない場合は、Power Automate にアクセスして**自分のフロー**配下の**UI フロー**タブを選択して、*有人型 RPA を使用したユーザーごとのプラン* の試用版を開始することができます。 試用版のダイアログが表示され、試用版を開始できます。
+UI フローと WinAutomation を使用するには、Power Automate の*有人型 RPA を使用したユーザーごとのプラン* が必要となります。 有料プランがない場合、Power Automate に移動して試用版を開始できます。
 
-![試用を開始するか、ライセンスを購入する](../media/create-processes/trial.png)
-
-すでに有料プランをお持ちの場合、または以前に試用版を使用している場合は、試用版を新規利用することはできません。 この場合は、管理者に問い合わせを行い、 Power Automate  *有人型 RPA を使用したユーザーごとのプラン* 試用版の購入または開始を依頼する必要があります。 これについては、Microsoft 365 管理センターで、**課金** > **サービスの購入** にアクセスして、適切なプランを検索して購入してください。
-
-![有人型 RPA を使用したユーザーごとのプラン](../media/create-processes/license-plan.png)
-
-プランの購入、または無料試用版の入手後は、プランをユーザーに割り当てる必要があります。 
-
->[!NOTE]
->ユーザーにプランを割り当てる際は、割り当てが有効化されるまでに数分かかる場合があります。
-
->[!WARNING]
->UI の自動化を記録、テスト、実行するには、各コンポーネントの最新バージョンが必要です。
-
+ 
 ## <a name="install-winautomation"></a>WinAutomation をインストールする
 
-マシンに UI フローをインストール後は、以下の手順に従って、WinAutomation をインストールし、デスクトップの自動化スクリプトを記録、編集、テストできます。
+1.   [WinAutomation インストーラー](https://aka.ms/rpaDesktopAutomationInstallPage)をダウンロードします。
 
-1.  [WinAutomation インストーラー](https://aka.ms/rpaDesktopAutomationInstallPage)をダウンロードします。
+1.   **WinAutomationSetup.exe** ファイルを実行します。 このファイルは、 **ダウンロード**  フォルダにある可能性があります。
 
-1.  **WinAutomationSetup.exe** ファイルを開きます。 このファイルは、**ダウンロードフォルダ**にある可能性があります。
+1.  WinAutomation インストーラーの指示に従い、インストールを完了させます。 インストール中に、 **ライセンスの種類**  が  **Microsoft Power Automate** になっていることを確認してください。
 
-1.  WinAutomation インストーラーの指示に従い、インストールを完了させます。 インストール中に、**ライセンスの種類**が**Microsoft Power Automate** になっていることを確認してください。
+## <a name="sign-in-to-winautomation"></a>WinAutomation へのサインイン
 
-## <a name="sign-in-to-winautomation"></a>WinAutomation へのサインイン 
+1.  インストールの完了後は、Windows のスタートメニューから WinAutomation コンソールを起動します。
 
-インストールの完了後は、Windows のスタートメニューから WinAutomation コンソールを起動します。 アプリケーションが起動し、ログインを求められます。 Power Automate の *有人型 RPA を使用したユーザーごとのプラン*のライセンスをすでに持っている場合、または Power Automate の試用版ライセンスを持っている場合は、[Power Automate](https://flow.microsoft.com) で使用しているユーザーの資格情報を入力してください。 [価格ページ](https://flow.microsoft.com/pricing/)にアクセスして、ライセンスの詳細情報の確認や、試用版ライセンスの取得ができます。
+1.  アプリケーションが起動し、ログインを求められます。 [Power Automate](https://flow.microsoft.com/) に使用するユーザー資格情報を入力してください。 有効なライセンスがない場合は、このエラーメッセージが表示されます。  [価格ページ](https://flow.microsoft.com/pricing/) にアクセスして、ライセンスの詳細情報の確認や、試用版ライセンスの取得ができます。
 
-有効なライセンスがない場合は、このエラーメッセージが表示されます。
+      ![ライセンス エラー](../media/create-processes/license-error.png)
 
-![ライセンス エラー](../media/create-processes/license-error.png)
+      >[!IMPORTANT]
+      > WinAutomationを使用した、 Power Automate の職場または学校のアカウントの使用を同意するにはテナント管理者権限が必要です。 そのためには、管理者が WinAutomation をインストールし、テナントの管理者アカウントでログインして、同意を与える必要があります。
 
+      ![アクセス許可の要求](../media/create-processes/request-permissions.png)
 
->[!WARNING]
->WinAutomationを使用した、 Power Automate の職場または学校のアカウントの使用を同意するにはテナント管理者権限が必要です。 そのためには、WinAutomation をインストールし、テナントの管理者アカウントでログインして、同意を与えることができます。
+1.  ログイン中にマスターキーを作成するように求められたら、マスターキーを作成します。
 
-![アクセス許可の要求](../media/create-processes/permissions-request.png)
+1.  サインインすると、WinAutomation コンソールにいくつかのサンプル プロセスが表示されます。 最初のステップとして、 **オプション** \> **ヘルプ** \> **はじめに** に移動した後、簡単なプロセスを作成するいくつかの例を実行するか、[ここ](https://docs.winautomation.com/en/building-a-simple-process.html)で情報を確認します。 詳細は、[WinAutomation 入門チュートリアル](https://www.winautomation.com/support/tutorials/)をご覧ください。
 
-サインインすると、WinAutomation コンソールにいくつかのサンプル プロセスが表示されます。 使用を開始するには、**オプション** > **ヘルプ** > **開始する** にアクセスし、続いて、簡単なプロセスを作成するいくつかの例を参照してください。 さらに、[WinAutomation の入門チュートリアル](https://www.winautomation.com/support/tutorials/)が利用可能となっています。
+これで、独自の WinAutomation プロセスを作成して、ローカルでテストできます。
 
 ## <a name="run-winautomation-processes-from-power-automate"></a>Power Automate から WinAutomation プロセスを実行する
 
-WinAutomation で自動化スクリプトを定義すると、Power Automate のフローから実行できます。これには、コマンド プロンプトでアプリケーションを起動するための UI フローのサポートを使用します。 UI フローの作成とテストの詳細については、[こちら](https://docs.microsoft.com/power-automate/ui-flows/create-desktop)を参照してください。
+1.  WinAutomation でオートメーション プロセスを作成したら、有人または無人の UI フロー (デスクトップ) を介して Power Automate のフローから開始できます。 (**注意**: UI フローの作成と実行の詳細については、 [ここ](https://docs.microsoft.com/power-automate/ui-flows/create-desktop)をご覧ください)。
 
-### <a name="running-winautomation-processes"></a>WinAutomation プロセスを実行する 
+1.  新しいデスクトップ UI フローを作成します。 「アプリの記録」のデフォルトの最初のステップを削除します。
 
-コンソール環境を使用せずに WinAutomation プロセスを実行するには、WinAutomationController.EXE コマンドを使用します。 このプロセスは WinAutomation のインストールフォルダーに配置されており、Windows の**コマンド プロンプト** で起動できます。 多くの便利なパラメータがありますが、オートメーションの起動には、指定したプロセスを開始する「/ start」フラグを使用します。 コマンドの例は次のとおりです : **WinAutomationController /start processPath**
+      ![レコード アプリ ステップの削除](../media/create-processes/delete-record-step.png)
 
-*processPath* は、プロセスが使用する WinAutomation Console のパスであり、左側のフォルダー ウィンドウの [自分のプロセス] ベースディレクトリに由来します。 プロセスをサブフォルダーに配置した場合は、その情報を processPath に含める必要があります。 processPath にスペースが含まれている場合は、二重引用符で囲む必要があります (例 : WinAutomationController /start "/My Processes/../../processName")。
+1.  **新しいステップ** を選択して **WinAutomation** を選択し、**WinAutomation を実行する (プレビュー)** アクションを選択します。
 
-### <a name="launching-winautomation-processes-from-ui-flows"></a>UI フローから WinAutomation プロセスを起動する
+      ![WinAutomation の実行の選択](../media/create-processes/select-run-winautomation.png)
 
-上記の WinAutomation プロセスを実行するコマンドを確認できたら、UI フローから直接このコマンドを呼び出すことができます。 実行手順:
+1.  **WinAutomation を実行する (プレビュー)** カードで、実行する WinAutomation プロセスのプロセス パスとオプションのコマンドライン引数を入力します。
 
-1.  空白の UI フローがある場合は、 **起動レコーダー** をクリックして、UI フローの記録エクスペリエンスに新たなステップを追加します。 UI フローに定義済みのステップがすでにある場合は、**新しいステップ**をクリックし、続いて**アプリの記憶**を選択してレコーダーを起動します。 記録エクスペリエンスに関する詳細情報は、[こちらを](https://docs.microsoft.com/power-automate/ui-flows/create-desktop)参照してください。
+      ![WinAutomation カード](../media/create-processes/winautomation-card.png)
 
-1.  起動したレコーダーで**記録**を選択します。
+   >[!NOTE]
+   >WinAutomation プロセスを作成してローカルに保存する必要があります。 *プロセス パス* は、左側のフォルダー ペインにある My Processes のベース ディレクトリからアクセスできる、プロセスの WinAutomation コンソールにある大文字と小文字が区別されるパスです。 プロセスをサブフォルダーに配置した場合は、その情報を ProcessPath に含める必要があります。 プロセス パスを引用符で囲まないでください。
 
-1.  Windows で、**コマンド プロンプト** を起動します。
+   >[!TIP]
+   >ターゲットの WinAutomation プロセスのパスで UI フロー入力と動的コンテンツを使用し、Power Automate フローで引数を使用できます。
 
-1.  前述の手順でに作成した WinAutomationController コマンドを入力します (例 : WinAutomationController /start "/My Processes/../../process")。
+1.  これで、UI フローを保存およびテストして、WinAutomation プロセスがどのように起動されるかを確認できます。
 
-1.  レコーダーで **完了** を選択します。
+1.  その後、UI フローをフローに追加できます。 他の Power Automate コネクタとトリガーにも接続できます。
 
-レコーダーが、UI フローに新しいステップを追加し、WinAutomationController の起動が含まれます。
+1.  次に、実行タイプとして *有人型* または *無人型* を選択できます。
 
+    >[!TIP]
+    >WinAutomation プロセスでは、 *コマンドライン引数を取得する* アクションを使用して、コマンドライン引数を取得できます。 引数は配列となっています。 これらのインデックスを使用して、各引数を参照します。
 
->[!TIP]
->UI フローは、有人型と無人型の両方において、自動化モードで実行できます。 どちらの場合であっても WinAutomationController を実行できます。 無人型のクラスターで UI フローを実行している場合は、上記で指定した WinAutomationController コマンドがクラスター内のすべてのマシンで実行されることを確認してください。 有人型と無人型 UI フローの詳細については、[こちら](https://docs.microsoft.com/power-automate/ui-flows/run-ui-flow)を参照してください。
+    >[!IMPORTANT]
+    >コマンドライン引数を介してパスワードなどの機密テキストを渡さないでください。
 
-## <a name="waiting-for-a-winautomation-process-to-complete-in-ui-flows"></a>UI フローで WinAutomation プロセスの完了を待機する
+    >[!IMPORTANT]
+    >無人クラスターで UI フローを実行している場合は、ターゲット プロセスがコピーされるすべてのコンピューターに WinAutomation がインストールされていることを確認してください。 有人型と無人型 UI フローの詳細については、 [こちら](https://docs.microsoft.com/power-automate/ui-flows/run-ui-flow)を参照してください。
 
-既定では、WinAutomationController.exe はプロセスをバックグラウンドで実行します。 WinAutomation プロセスの自動化が完了するまで UI フローを待機させる場合は、**メッセージの表示** コマンドを使用して WinAutomation プロセスの最後に情報のメッセージ ボックスを表示し、UI フローで当該メッセージ ボックスのボタンをクリックして待機させることができます。 実行手順:
+1.  フローを保存して実行すると、WinAutomation プロセスが起動することを確認できます。 WinAutomation プロセスの実行が完了すると、UI フローに戻ります。 Power Automate から実行結果を表示できます。 プロセスが失敗した場合は、エラー メッセージも表示されます。
 
-1.  WinAutomation プロセスの最後のステップに、「メッセージの表示」コマンドを追加します。 これを行うには、左側のアクション パネルをフィルター処理して[メッセージの表示]を見つけ、このコマンドをプロセス スクリプト エディターにドラッグ アンド ドロップします。 わかりやすいタイトルと説明を付け、[OK]ボタンが表示されている既定のボタン選択をそのままにしておきます。
-1.  メッセージ ボックスが表示されるまで、WinAutomation プロセスを実行します。 
-1.  新しい UI フローの記録を追加し、[メッセージの表示] ボックスのタイトルをクリックして、[OK] をクリックします。 
-1.  [完了] をクリックして記録を停止します。 以上で、UI フローのスクリプトに、ダイアログ ボックスをクリックしてメッセージボックスを破棄する、新たなアクションが追加されたことがわかります。
-1.  最後に、WinAutomation が完了するまでに一定の時間を与えるよう、UI フローに指示する必要があります。 これを行うには、WinAutomationController.exe コマンドを起動する前の Send Keys コマンドを展開して拡張オプションを表示し、Wait After プロパティを設定して、WinAutomation プロセスのスクリプトが実行されるまでの最大限の時間待機させます。
+    >[!TIP]
+    >例外が発生した場合、最新の UI フローがインストールされていない可能性があります。 [最新の UI フロー](https://docs.microsoft.com/power-automate/ui-flows/upgrade)をインストールします。
 
+1.  プロセスが失敗したときに WinAutomation がスクリーンショットをキャプチャするようにするには、次の手順を実行します。
 
-## <a name="uninstall-winautomation"></a>WinAutomation をアンインストールする
+1.  WinAutomation コンソールから、プロセスを右クリックして、[プロセスのプロパティの編集] を選択します。 [エラー処理] タブに移動し、[既定のオプションを上書きする] を選択します。 [スクリーンショットをログに追加] をクリックして保存します。 このとき、プロセスが失敗した場合、Power Automate UI フロー実行の詳細から実行時にキャプチャされたスクリーンショットを参照できます。  
 
-1.  **スタート** メニュー \> **設定** \> **アプリ**を開きます。
+    ![プロセスのプロパティ画面](../media/create-processes/process-properties.png)
 
-1.  **WinAutomation** を検索して選択します。
+現在、特定の WinAutomation ステップを使用して、プロセスからの結果と出力をクラウド共有のファイルに書き込むか、結果をメールで送信する必要があります。次に、Power Automate からコネクタを使用し、それらの結果にアクセスして使用できます。
 
-1.  **アンインストール** を選択します。
+## <a name="how-to-obtain-an-rpa-trial-license"></a>RPA 試用版ライセンスの取得方法
+
+[Power Automate](https://flow.microsoft.com/) にログインし、次に **マイ フロー**の下の **UI フロー** タブを選択します。 試用版のダイアログが表示され、試用版を開始できます。
+
+![試用を開始するか、ライセンスを購入する](../media/create-processes/trial-buy.png)
+
+すでに有料プランをお持ちの場合、または以前に試用版を使用している場合は、試用版を新規利用することはできません。 この場合は、管理者に問い合わせを行い、Power Automate *有人型 RPA を使用したユーザーごとのプラン*試用版の購入または開始を依頼する必要があります。 これについては、Microsoft 365 管理センターで、 **課金** \> **サービスの購入**  にアクセスして、適切なプランを検索して購入してください。
+
+![有人型 RPA を使用したユーザーごとのプラン](../media/create-processes/per-user-rpa.png)
+
+プランの購入、または無料試用版の入手後は、プランをユーザーに割り当てる必要があります。
+
+>[!IMPORTANT]
+>ユーザーにプランを割り当てる際は、割り当てが有効化されるまでに数分かかる場合があります。
 
 ## <a name="troubleshooting-winautomation-licensing-issues"></a>WinAutomation のライセンスに関する問題のトラブルシューティング
 
-WinAutomation の起動中にライセンス エラーが発生する場合は、ログインしているユーザーが UI フローの有効なライセンスを持っていることを確認してください。 実行する操作: 
+WinAutomation の起動中にライセンス エラーが発生する場合は、ログインしているユーザーに有効な Power Automate RPA ライセンスがあることを確認してください。 これを確認するには、次の手順を実行します。
 
-1.  [Power Automate](https://flow.microsoft.com) に移動してサインインします。
+1.   [Power Automate](https://flow.microsoft.com/)  に移動してサインインします。
+
 1.  左側のナビゲーション バーで [自分のフロー] を選択します。
-1.  右側のページで UI フローを選択します。 試用版を開始する、または管理者に試用版を利用できるように依頼してください。
 
-WinAutomation が保存したライセンス情報をリセットするには、次のファイルを削除できます : %localappdata%\Softomotive\WinAutomation\msalcache.bin3
+1.  右側のページで UI フローを選択します。 正しいライセンスがあれば、そこで新しい UI フローを作成できることがわかるはずです。
 
->[!NOTE]
->このライセンスは、ユーザーがインターネットに接続しているときに WinAutomation を起動するとキャッシュされます。 
+1.  試用版を開始するか、管理者に依頼してください。
 
+    >[!NOTE]
+    >ユーザーがインターネットに接続しているときに WinAutomation を起動すると、ライセンスがキャッシュされます。
+
+WinAutomation が保存したライセンス情報をリセットするには、次のファイルを削除できます: %localappdata%\\Softomotive\\WinAutomation\\msalcache.bin3。
 
 ## <a name="learn-more"></a>詳細はこちら
 
-- [WinAutomation の取得](https://flow.microsoft.com/blog/microsoft-acquires-softomotive-to-expand-low-code-robotic-process-automation-capabilities-in-microsoft-power-automate/)について
-- [WinAutomation](https://support.softomotive.com/support/home) のサポートを受ける。
-- [ WinAutomation チュートリアル](https://www.winautomation.com/support/tutorials/)でスムーズに開始する。
-- [デスクトップ UI フローの作成](https://docs.microsoft.com/power-automate/ui-flows/create-desktop)を身につける。
-- [UI フローの実行](https://docs.microsoft.com/power-automate/ui-flows/run-ui-flow)方法を身につける。
-- [UI フローの管理](https://docs.microsoft.com/power-automate/ui-flows/manage)を身につける。
-- [オンプレミス ゲートウェイ](https://docs.microsoft.com/power-automate/gateway-reference#use-a-gateway)を深く理解する。
+-    [WinAutomation の取得](https://flow.microsoft.com/blog/microsoft-acquires-softomotive-to-expand-low-code-robotic-process-automation-capabilities-in-microsoft-power-automate/)についてご覧ください。
+-    [WinAutomation](https://support.softomotive.com/support/home) のサポートを受ける。
+-    [ WinAutomation チュートリアル](https://www.winautomation.com/support/tutorials/)でスムーズに開始する。
+-    [デスクトップ UI フローの作成](https://docs.microsoft.com/power-automate/ui-flows/create-desktop)を身につける。
+-    [UI フローの実行](https://docs.microsoft.com/power-automate/ui-flows/run-ui-flow)方法を身につける。
+-    [UI フローの管理](https://docs.microsoft.com/power-automate/ui-flows/manage)を身につける。
+-    [オンプレミス ゲートウェイ](https://docs.microsoft.com/power-automate/gateway-reference#use-a-gateway)を深く理解する。

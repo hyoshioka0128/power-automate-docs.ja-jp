@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: bd7d85dc2ec30147202c2838f00c7de6c7c587ad
-ms.sourcegitcommit: 4b9261984a554dfccb0d0d77f3d5fdca60e26433
+ms.openlocfilehash: ace2fc20c5ce4eb17015a632308101b2efcc1e2b
+ms.sourcegitcommit: ab26d3b17cc34c650298ec5ac3b4ea9554e291cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "3340025"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "3502341"
 ---
 # <a name="get-started-with-power-automate"></a>Power Automate に関する入門情報 
 

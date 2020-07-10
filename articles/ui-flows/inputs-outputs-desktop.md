@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/24/2020
+ms.date: 06/30/2020
 ms.author: DeonHe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: bf7f21915b63087911edbdbbe181bb5073ffbfb9
-ms.sourcegitcommit: aefd1ebedfbd8c6cc3d08397ac171cb4ba5b5315
+ms.openlocfilehash: 28f8600e76efb78a3f7e2e359b7c230b2c20b486
+ms.sourcegitcommit: a51ebdce86c0c2399afa4ba36591fb3230eb82d9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "3412936"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3527372"
 ---
 # <a name="use-inputs-and-outputs-in-desktop-ui-flows"></a>デスクトップの UI フローで入力と出力を使用する
 

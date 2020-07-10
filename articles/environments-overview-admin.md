@@ -20,12 +20,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: e1c2a93fb011b6f20ecaf79fb0bf95212a2506d4
-ms.sourcegitcommit: 2c9cffb59ef2382648a80966ebbf0fe8eafebe64
+ms.openlocfilehash: 20483e27364ab113ed669db2ae9f63336afe0d3f
+ms.sourcegitcommit: aec3a74472b4e6eb70ed4554d14b57a7324d123d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "3354439"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "3498536"
 ---
 # <a name="using-environments-within-power-automate"></a>Power Automate 内の環境を使用する
 
@@ -40,7 +40,7 @@ ms.locfileid: "3354439"
 
     > [!IMPORTANT]
     > 環境を削除した場合、その環境内のすべてのフローも削除されます。 これは、接続、ゲートウェイ、Power Apps など、その環境で作成するすべての項目に適用されます。
-* **データ損失の防止**: 管理者としては、内部の場所 (給与情報を含む *OneDrive for Business*や SharePoint リストなど) からデータを取得し、そのデータを公開の場所 (*Twitter* など) に投稿するようなフローは望ましくありません。 Power Automate の展開内のデータを共有できるサービスを制御するには、データ損失防止を使います。
+* **データ損失の防止**: 管理者としては、内部の場所 (給与情報を含む *OneDrive for Business*や SharePoint リストなど) からデータを取得し、そのデータを公開の場所 (*Twitter* など) に投稿するようなフローは望ましくありません。 Power Automate の展開内のデータを共有できるサービスを制御するには、[データ損失防止](https://docs.microsoft.com/power-platform/admin/wp-data-loss-prevention)を使います。
 
     たとえば、*SharePoint* と *OneDrive for Business* サービスを、ビジネス データのみのポリシーに追加することができます。 この環境に作成されるすべてのフローは、 *SharePoint*サービスと *OneDrive for Business*  サービスを使うことができます。 しかし、ビジネス データのみのポリシーに含まれていない他のサービスとデータを共有することはできません。
 

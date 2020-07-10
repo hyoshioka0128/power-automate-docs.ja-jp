@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 3607d41dbe78b591aed97f366dd783db4a0725fb
-ms.sourcegitcommit: 549224cf13fc761f473c880e8d0d8f2741cc7b0f
+ms.openlocfilehash: b16e07cf5d6f4cc5a711646b30b7b0780916d281
+ms.sourcegitcommit: a51ebdce86c0c2399afa4ba36591fb3230eb82d9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "3435018"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3527323"
 ---
 # <a name="introducing-instant-flows"></a>インスタント フローの概要
 
@@ -40,7 +40,7 @@ ms.locfileid: "3435018"
 
 ## <a name="create-a-button"></a>ボタンを作成する
 ### <a name="prerequisites"></a>前提条件
-* Power Automate](https://flow.microsoft.com) へのアクセス。
+* [Power Automate](https://flow.microsoft.com) へのアクセス
 * コネクタを利用してボタンを作成するためのアクセス許可があるアカウント。 たとえば、Dropbox にアクセスするボタンを作成するには、Dropbox アカウントが必要になります。
 
 ### <a name="from-the-portal"></a>ポータルから

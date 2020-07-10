@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/07/2020
+ms.date: 06/18/2020
 ms.author: stepsic
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 5b646d486666b92f0496f7bb5c3f851cc8ab56f0
-ms.sourcegitcommit: 8714786a5b632dfd60099871629cf369a31c4125
+ms.openlocfilehash: b4a1a3e7abd2a2a98254ed98d4dca63dd771d551
+ms.sourcegitcommit: aec3a74472b4e6eb70ed4554d14b57a7324d123d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "3346587"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "3498488"
 ---
 # <a name="frequently-asked-questions"></a>よく寄せられる質問
 
@@ -144,7 +144,7 @@ Power Automate は、42 の言語、[6 つの地域](regions-overview.md) で使
 Power Automate は、承認、ドキュメントの校閲、オンボード/オフボードなど、多くの一般的なビジネス シナリオに対応する SharePoint Designer の後継サービスです。 これは、今後 SharePoint で業務を自動化させる既定のツールとなります。
 
 ### <a name="how-does-power-automate-ensure-that-corporate-data-isnt-accidentally-released-to-social-media-services"></a>Power Automate では企業のデータが誤ってソーシャル メディア サービスに公開されないようにするためにどのような対策が講じられていますか？
-管理者は[データ損失防止ポリシー](prevent-data-loss.md)  を作成して、承認されたサービスのみが Power Automate で使用できるようにすることができます。
+管理者は[データ損失防止ポリシー](https://docs.microsoft.com/power-platform/admin/prevent-data-loss)  を作成して、承認されたサービスのみが Power Automate で使用できるようにすることができます。
 
 ### <a name="does-power-automate-support-service-accounts"></a>Power Automate はサービス アカウントに対応していますか？
 
