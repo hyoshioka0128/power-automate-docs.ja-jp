@@ -94,6 +94,32 @@
       href: approvals-markdown-support.md
     - name: カスタム承認応答オプション
       href: create-approval-response-options.md
+- name: Microsoft Teams フロー
+  items:
+    - name: Teams メッセージからフローをトリガーする
+      href: trigger-flow-teams-message.md
+    - name: アダプティブ カードを使用してフローをモデル化する
+      items:
+        - name: Teams 向けアダプティブ カードの概要
+          href: overview-adaptive-cards.md
+        - name: Teams 向けアダプティブ カードの作成
+          href: create-adaptive-cards.md
+        - name: サンプル - 候補のフィードバック
+          href: candidate-feedback-sample.md
+        - name: サンプル - 画像の共有
+          href: image-share-sample.md
+        - name: サンプル - リードのコレクション
+          href: lead-collection-sample.md
+        - name: サンプル - ポーリング ジェネレーター
+          href: poll-generator-sample.md
+        - name: サンプル - メタデータの更新
+          href: metadata-update-sample.md
+        - name: サンプル - 毎日の天気
+          href: daily-weather-sample.md
+        - name: サンプル - 頭字語フォーム
+          href: acronym-sample.md
+        - name: サンプル - リードの生成
+          href: lead-collection-sample.md
 - name: ビジネス プロセス フロー
   items:
     - name: ビジネス プロセス フローの概要
@@ -125,11 +151,11 @@
           href: ./ui-flows/use-ime.md
     - name: Web UI フローの作成とテスト
       href: ./ui-flows/create-web.md
-    - name: UI flows で WinAutomation を使用する
+    - name: UI flows での WinAutomation の使用
       href: ./ui-flows/create-processes.md
     - name: Web UI フローの編集
       href: ./ui-flows/edit-web.md
-    - name: Web UI flows で入力と出力を使用する
+    - name: Web UI フローで入力と出力を使用する
       href: ./ui-flows/inputs-outputs-web.md
     - name: 有人および無人の UI フローの実行
       href: ./ui-flows/run-ui-flow.md
@@ -141,6 +167,8 @@
       href: overview-solution-flows.md
     - name: ソリューションにフローを作成する
       href: create-flow-solution.md
+    - name: 子フローの作成
+      href: create-child-flows.md
     - name: ソリューションのエクスポート
       href: export-flow-solution.md
     - name: ソリューションのインポート
@@ -201,28 +229,6 @@
       href: visio-flows.md
     - name: '参照: 式で関数を使用する'
       href: 'https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference'
-    - name: アダプティブ カードを使用してフローをモデル化する
-      items:
-        - name: Teams 向けアダプティブ カードの概要
-          href: overview-adaptive-cards.md
-        - name: Teams 向けアダプティブ カードの作成
-          href: create-adaptive-cards.md
-        - name: サンプル - 候補のフィードバック
-          href: candidate-feedback-sample.md
-        - name: サンプル - 画像の共有
-          href: image-share-sample.md
-        - name: サンプル - リードのコレクション
-          href: lead-collection-sample.md
-        - name: サンプル - ポーリング ジェネレーター
-          href: poll-generator-sample.md
-        - name: サンプル - メタデータの更新
-          href: metadata-update-sample.md
-        - name: サンプル - 毎日の天気
-          href: daily-weather-sample.md
-        - name: サンプル - 頭字語フォーム
-          href: acronym-sample.md
-        - name: サンプル - リードの生成
-          href: lead-collection-sample.md
     - name: スマートフォンでフローを管理する
       href: mobile-manage-flows.md
     - name: テンプレートを発行する
