@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: c717bfcb10fdae3da5d1a3642ece503ad3de4389
-ms.sourcegitcommit: 549224cf13fc761f473c880e8d0d8f2741cc7b0f
+ms.openlocfilehash: e6691b853dc5c1a4b0f9ddb0e05813ab927492d9
+ms.sourcegitcommit: b6156ed015e9d4af22704f98a3fadd1d8cfb6f6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "3434994"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "3648653"
 ---
 # <a name="add-a-condition-to-a-flow"></a>フローに条件を追加する
 
@@ -82,7 +82,7 @@ ms.locfileid: "3434994"
 
 ![複雑な条件の追加](./media/add-condition/add-complex-condition.png)
 
-詳細設定モードの*ワークフロー定義言語*では、あらゆる式設定を使用することができます。 利用可能な[式](https://msdn.microsoft.com/library/azure/mt643789.aspx)を身につける。
+利用可能な[式](https://msdn.microsoft.com/library/azure/mt643789.aspx)を身につける。
 
 ## <a name="next-steps"></a>次の手順
 

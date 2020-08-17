@@ -1,6 +1,6 @@
 ---
 title: 応募者のフィードバックのサンプル | Microsoft Docs
-description: このサンプルを使用して、仕事の応募者のフィードバックを収集するアダプティブ カードを作成します。
+description: このサンプルを使用して、アダプティブ カードを作成して仕事の応募者のフィードバックを収集します。
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,31 +20,31 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 0d0157c4e0d392dd8493e5aeca4e97531c95213d
-ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
+ms.openlocfilehash: 8d2cbaa54d4256484bf8d17693e30aec85f2a4df
+ms.sourcegitcommit: 89fca599830de21709b47087302a030d91e5fe29
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "3297276"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "3549730"
 ---
 # <a name="candidate-feedback-sample"></a>応募者のフィードバックのサンプル
 
-**応募者のフィードバック フォーム**のサンプルは、面接ループ中のフィードバックを収集するために設計されたアダプティブ カードの入力フォームです。 共有インスタント フロー ボタンと共にこれを使用して、面接ループ中に、チームの全員が応募者に対するフィードバックを提供できるようにすることをお勧めします。 データベースやその他の望ましいデータ ソースに応答を記録することで、これを拡張し、次のさらなる機会をサポートします。
+**応募者のフィードバック フォーム**のサンプルは、面接のループ中にフィードバックを収集する目的で設計されたアダプティブ カードの入力フォームです。 チーム内の誰もが面接のループ中に候補者にフィードバックを提供できるよう、共有されたインスタント フローボタンと共にこれを使用することを推奨します。 データベースやその他の希望するデータソースに回答を記録することで、これを拡張し、これらの追加の営業案件に対応します。
 
--   その応募者との次のセッションの前にフォローアップ提案を確認することを容易にします。
--   すべての応答が記録された後の集計データの確認を容易にします。
--   プロセスの終了時に、採用/不採用の投票数を人事担当者に通知します
+-   その応募者との次のセッションの前にフォローアップ提案をレビューを容易にします。
+-   すべての応答が記録された後の集計データのレビューを容易にします。
+-   プロセスの最後に、採用/不採用の投票数を人事担当者に通知する
 
      ![応募者のフィードバック フォーム](media/adaptive-cards/candidate-form.png)
 
-*入力/出力とノート*
+*入力/出力とメモ*
 
-| 動的トークンの名前 | プレースホルダー テキスト | 注意:              |
+| 動的トークンの名称 | プレースホルダー テキスト | 注意:              |
 |--------------------|------------------|---------------------|
 | {acFullName}       | {acFullName}     | テキストの表示        |
 | {acComments}       | {acComments}     | テキストの表示        |
-| {acDecision}       |                  | 応答の**出力** |
-| {acFollowUp}       |                  | 応答の**出力** |
+| {acDecision}       |                  | 応答の**結果** |
+| {acFollowUp}       |                  | 応答の**結果** |
 
 ``` json
 {
@@ -55,7 +55,8 @@ ms.locfileid: "3297276"
     {
       "type": "TextBlock",
       "size": "Medium",
-      "weight": "Bolder",      "id": "Title",
+      "weight": "Bolder",
+      "id": "Title",
       "text": "CANDIDATE FEEDBACK FORM",
       "horizontalAlignment": "Left"
     },

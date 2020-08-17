@@ -20,20 +20,21 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: b16e07cf5d6f4cc5a711646b30b7b0780916d281
-ms.sourcegitcommit: a51ebdce86c0c2399afa4ba36591fb3230eb82d9
+ms.openlocfilehash: 81ae2f466fc2bdfa688b35544971871de2e45450
+ms.sourcegitcommit: 3fbffb299dd125a6a9a39fb2c1296abdfc362ba6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3527323"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "3623719"
 ---
 # <a name="introducing-instant-flows"></a>インスタント フローの概要
 
-## <a name="what-are-instant-flows"></a>インスタント フローとは?
-ボタンを 1 回タップするだけで実行できる、多くの反復的なタスクがあります。 たとえば、チームにメールを送信して、毎日おこなわれるチーム同期に参加するように通知する必要がある場合や、その日の予定されているチェックインがもうないことを通知された後、自分のコードベースの新しい Visual Studio Online ビルドを開始したい場合です。 インスタント フローを利用すれば、モバイル デバイスのボタンをタップするだけでこれらのタスクやその他の多くのタスクを実行できます。
+ボタンを 1 回タップするだけで実行できる、多くの反復的なタスクがあります。 たとえば、毎日のチームミーティングに参加するようにチームにメールで注意を促す場合や、その日に予定されているチェックインがなくなったことを通知された後に、コードベースの新しい Visual Studio Codespacesビルドを開始する場合などが考えられます。 インスタント フローを利用すれば、モバイル デバイスのボタンをタップするだけでこれらのタスクやその他の多くのタスクを実行できます。
 
-**注**  インスタント フローは、モバイル デバイスまたは Power Automate から作成できます。  
-  ![概要画像](./media/introduction-to-button-flows/buttons-montage.png)  
+![概要画像](./media/introduction-to-button-flows/buttons-montage.png) 
+
+> [!NOTE]
+> インスタント フローは、モバイル デバイスまたは Power Automate から作成できます。
 
 ## <a name="why-create-buttons"></a>なぜボタンを作成するのか?
 場所や時間に関係なく、モバイル デバイスから繰り返し作業を簡単に実行できるようにボタンを作成します。 ボタンを実行すると時間を節約でき、実行する作業が自動化されるため、手動で行うよりエラーが少なくなります。  
@@ -44,7 +45,7 @@ ms.locfileid: "3527323"
 * コネクタを利用してボタンを作成するためのアクセス許可があるアカウント。 たとえば、Dropbox にアクセスするボタンを作成するには、Dropbox アカウントが必要になります。
 
 ### <a name="from-the-portal"></a>ポータルから
-このチュートリアルでは、 Visual Studio Online (VSO) のビルドを開始し、ビルド開始の通知を送信するボタンを作成します。
+このチュートリアルでは、 Visual Studio Codespaces のビルドを開始し、ビルドの開始を通知を送信するボタンを作成してみましょう。
 
 1. [Power Automate](https://flow.microsoft.com) にサインインします。
 1. 画面の左側から **作成** を選択します。

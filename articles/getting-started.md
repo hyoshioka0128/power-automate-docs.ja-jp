@@ -13,68 +13,75 @@ ms.devlang: na
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/05/2019
+ms.date: 7/29/2020
 ms.author: stepsic
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: ace2fc20c5ce4eb17015a632308101b2efcc1e2b
-ms.sourcegitcommit: ab26d3b17cc34c650298ec5ac3b4ea9554e291cf
+ms.openlocfilehash: b751dadcb4be2bb479981b6f58b797fbc61b0041
+ms.sourcegitcommit: 62c8891c497823be6e7691410072011d7cfc5339
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "3502341"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3652906"
 ---
 # <a name="get-started-with-power-automate"></a>Power Automate に関する入門情報 
 
-ようこそ! Power Automate は、よく使うアプリやサービスとの間で自動ワークフローを作成し、ファイルの同期、通知の受信、データの収集などを実行できるようにするためのサービスである。
+ようこそ! Power Automate ご利用いただく目的は何ですか？ たとえば、次のようなことが実現できます :
+
+* ビジネス プロセスを自動化する
+* 期限を過ぎたタスクのリマインダーを自動送信する
+* スケジュールに基づいてシステム間でビジネス データを移動する
+* 約300のデータソース、または公開されている API に接続する
+* Excel でのデータの計算など、ローカル コンピューターでのタスクを自動化できます。 
+
+マウスクリック、キーストローク、コピー ペーストのステップをデスクトップから記録するだけで、反復的な手動タスクを自動化し、時間の節約ができることを考えてみてください。 Power Automate は自動化を促進します。 
 
 <br/>
 
 > [!VIDEO https://www.youtube.com/embed/hCuxuUaGC6Y]
 
 
+## <a name="who-is-power-automate-for"></a>Power Automate はどういう人に向けたものか 
+
+*どんなスキルが必要なのか？* 基本的なビジネス ユーザーから IT のプロまで、誰でも Power Automate のノーコード/ローコード プラットフォームを使って自動化プロセスを作成することができます。
+
+*どんな業種が Power Automate の恩恵を受けることができるか* 一部の企業が Power Automate を使用して Power Platform のソリューションをどのように実装したのかを確認してみましょう : 
+
+  * [銀行業](https://customers.microsoft.com/en-us/story/821782-illimity-bank-banking-power-automate)
+  * [Retail](https://customers.microsoft.com/en-us/story/drivetime-retail-consumer-goods-azure)
+  * [製造業](https://customers.microsoft.com/en-us/story/810656-hexion-manufacturing-power-platform)
+  * [保険](https://customers.microsoft.com/en-us/story/811345-aioi-nissay-dowa-insurance-microsoft-power-platform)
+  * [ヘルスケア](https://customers.microsoft.com/en-us/story/vnshs-health-provider-microsoft-flow) 
+
+[あなたの業種の例](https://customers.microsoft.com/en-us/search?sq=%22Power%20Automate%22&ff=story_product_categories%26%3EPower%20Automate&p=0&so=story_publish_date%20desc)を探してみましょう
+
+
+自動化を作成する最初のステップとして、[サインアップ](sign-up-sign-in.md)をしてください。あるいはすでに Power Automate のアカウントをお持ちの場合は、[ログイン](https://flow.microsoft.com/signin)してください。
+
 ## <a name="types-of-flows"></a>フローの種類
 
-Power Automate は Power Platform を支える柱の 1 つであり、 ワークフローおよびプロセスの自動化のためのローコード プラットフォームを提供する。 さまざまな種類のフローをまとめると以下のようになります:
+ユース ケースに対応するために構築できるフローの種類については、次の表を参照してください。
 
-| **フローの種類**                                                                       | **ユース ケース**                                                                                  | **対象**                                                                             |
+| **フローの種類**                                                                       | **ユース ケース**                                                                                  | **自動化のターゲット**                                                                             |
 |-------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| [自動化されたフロー](get-started-logic-flow.md)                 | イベントによってトリガーされたら 1 つまたは複数のタスクを自動的に実行するフローを作成します。 | クラウドまたはオンプレミスのサービス向けの [コネクタ](https://docs.microsoft.com/connectors/)。 |
-| [ボタン フロー](introduction-to-button-flows.md)              | モバイル デバイスでいつでも、どこからでも繰り返しタスクを実行します。                        |                                                                                        |
-| [スケジュールされたフロー](run-scheduled-tasks.md)                    | スケジュール上で1つ以上のタスクを実行するフローを作成します。             |                                                                                        |
-| [業務プロセス フロー](business-process-flows-overview.md) | 望む結果を得るためにユーザーが従うべき一連の手順を定義します。                 | 人的プロセス                                                                        |
-| [UI フロー](ui-flows/overview.md)                                                | 従来のソフトウェアで行われていた手動ステップを記録し自動再生します。                    | 自動化に API を利用できないデスクトップと Web アプリケーション。    |
+| [自動化されたフロー](get-started-logic-flow.md)                 | 特定の人からのメールの受信や、ソーシャル メディアでのあなたの会社への参照投稿などのイベントトリガーにした自動化を作成します。| クラウドサービスやオンプレミス サービスの[コネクタ](https://docs.microsoft.com/connectors/)を使用すると、アカウントを接続して相互にやり取りができるようにします。 |
+| [インスタント フロー](introduction-to-button-flows.md)              | ボタンをクリックしてオートメーションを開始します。 デスクトップまたはモバイル デバイスから反復するタスクを自動化できます。 たとえば、モバイル デバイスのボタンを押すだけで、チームにリマインダーをすぐに送信できます。                      |     承認の要求、Teams でのアクションや SharePoint などの幅広いタスクに対応しています。                                                                                |
+| [スケジュールされたフロー](run-scheduled-tasks.md)                    | SharePoint やデータベースへの日次のデータアップロードなどの自動化処理をスケジュールします。             |スケジュールに従って自動化する必要があるタスク。                                                                            |
+| [業務プロセス フロー](business-process-flows-overview.md) | 社員が使用する一連のステップを定義することで、すべての社員が同じプロセスに従うようにします。                 | 顧客サービス リクエスト、承認、IT 開発などのヒューマン プロセス                                                                        |
+| [UI flows](ui-flows/overview.md)                                                | デスクトップや Webア プリケーションを使用してのクリックやキーボードストロークを記録し、レガシー ソフトウェア上での手動ステップの実行を自動化します。                    | 自動化に API を利用できないデスクトップと Web アプリケーション。    |
 
-フローはすべて、Power Automate の **マイ フロー** タブで作成し、管理できます。
 
-Dynamics 365 ユーザーの場合、[ワークフロー](configure-workflow-steps.md)、[アクション](create-actions.md)、 [モバイル タスク フロー](create-mobile-task-flow.md)、[ダイアログ](use-cds-for-apps-dialogs.md) など、従来の Common Data Service  プロセスに慣れている場合も考えられます。
 
-まずは [サインアップ](sign-up-sign-in.md) してください。既に Power Automate のアカウントをお持ちの場合は、タブレットやデスクトップ コンピューター、さらにはスマートフォンで[サインイン](https://flow.microsoft.com/signin)できます。
-
-## <a name="check-out-the-start-page"></a>スタート ページを確認する ##
+## <a name="check-out-the-start-page"></a>スタート ページを確認する 
 
 Power Automate の[スタート ページ](https://flow.microsoft.com)では、[さまざまなテンプレートが用意されている](https://flow.microsoft.com/templates) ほか、Power Automate. のいくつかの主要な機能について説明されています。 Power Automate で何ができるか、またビジネスや普段の生活にどのように役立つかを簡単に把握することができます。
 
-Power Automate では、次のことが可能です。
-
-- テンプレートとサービスを簡単に検索できます。
-
-    ![Flow のスタート ページ 1](./media/getting-started/flowhome1.png)
-
-- 特に人気のあるサービスから選択できます。
-
-    ![Flow のスタート ページ 2](./media/getting-started/flowhome2.png)
-
-- 各フローの概要を参照できます。
-
-    ![Flow のスタート ページ 3](./media/getting-started/flowhome3.png)
-
 各テンプレートは、特定の目的のために設計されています。 たとえば、上司から電子メールが届いたときにテキスト メッセージを送信したり、Twitter の潜在顧客を Dynamics 365 に追加したり、ファイルをバックアップしたりするためのテンプレートがあります。 これらのテンプレートは氷山の一角にすぎません。 必要なプロセスに最適にカスタマイズされたフローを作成するよう促すことを目的としています。
 
-## <a name="create-your-first-flow"></a>最初のフローの作成 ##
+## <a name="create-your-first-flow"></a>最初のフローの作成 
 
 1. 目的に合ったテンプレートを選択します。 単純なテンプレートの 1 つに、[**メールで毎日リマインダーを受け取る**](https://flow.microsoft.com/galleries/public/templates/45a3399aa29345308f08b6db0a9c85b9/) があります:
 
@@ -95,9 +102,9 @@ Power Automate では、次のことが可能です。
 
 [このチュートリアルに従い](get-started-logic-template.md)、テンプレートからフローを作成する方法の詳細を確認してください。
 
-## <a name="get-creative"></a>クリエイティブになる ##
+## <a name="get-creative"></a>クリエイティブになる
 
-テンプレートから最初のフローを作成したら、Power Automate  でサポートされる [150 を超えるデータ ソース](https://flow.microsoft.com/connectors/) のいずれかを使って、[独自のフローをゼロから作成します](get-started-logic-flow.md)。
+テンプレートから最初のフローを作成したら、Power Automate  でサポートされる [380 を超えるデータ ソース](https://flow.microsoft.com/connectors/) のいずれかを使って、[独自のフローをゼロから作成します](get-started-logic-flow.md)。
 
 ![フローの構築](./media/getting-started/build-a-flow.png)
 
@@ -142,10 +149,10 @@ Power Automate には**コードのプレビュー** 機能があり、フロー
 
 ![通知センター](media/getting-started/notification-center.png)
 
-## <a name="use-the-mobile-app"></a>モバイル アプリを使用する ##
+## <a name="use-the-mobile-app"></a>モバイル アプリを使用する 
 
 [Android](https://aka.ms/flowmobiledocsandroid)、 [iOS](https://aka.ms/flowmobiledocsios)、[Windows Phone](https://aka.ms/flowmobilewindows) 用の Power Automate モバイル アプリをダウンロードします。 このアプリを使用して、[フローのアクティビティを監視](mobile-monitor-activity.md) し、[フローを管理](mobile-manage-flows.md) し、[テンプレートからフローを作成](mobile-create-flow.md) します。
 
-## <a name="were-here-to-help"></a>サポート情報 ##
+## <a name="were-here-to-help"></a>サポート情報 
 
 マイクロソフトでは、Power Automate に関する皆様のご意見をお待ちしております。また、 Microsoft Flow が皆様のお役に立つことを心より願っております。 [ガイド付き学習](https://flow.microsoft.com/guided-learning/) のチュートリアルを確認したり、[コミュニティに参加](https://go.microsoft.com/fwlink/?LinkID=787467) して質問したり、アイデアを交換したりすることもできます。 問題が発生した場合は、[サポートにお問い合わせください](https://go.microsoft.com/fwlink/?LinkID=787479)。

@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/24/2020
+ms.date: 08/04/2020
 ms.author: stepsic
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: fc03b4b6695ec334a6271f67c0eafea2e2d71b29
-ms.sourcegitcommit: ab26d3b17cc34c650298ec5ac3b4ea9554e291cf
+ms.openlocfilehash: 869de4c73d29893e54b4345efb2b348bf03c7983
+ms.sourcegitcommit: da9a930a8cf0abd30c83c51f100a039d514ec436
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "3502389"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "3655859"
 ---
 # <a name="limits-and-configuration-in-power-automate"></a>Power Automate における制限事項と構成
 
@@ -43,6 +43,9 @@ ms.locfileid: "3502389"
 | --- | --- |
 | 同期呼び出しの要求タイムアウト |120 秒 |
 | 非同期呼び出しの要求タイムアウト|構成可能。 最大 30 日。 |
+
+>[!NOTE]
+>10分以上実行されるフローをテストすると、バックグラウンドでフローが継続して実行されているにもかかわらず、タイムアウトのメッセージが Power Automate で表示される場合があります。 この場合は、ビューを再度開いて現在の状態を取得してください。 
 
 ### <a name="message-size"></a>メッセージ サイズ
 
@@ -104,8 +107,8 @@ ms.locfileid: "3502389"
 |1 時間ごとの生成が許可されたコンテンツ フローの量 (アクションの入力/出力) - 無料版、Office 365、プラン 1、プラン 2、ユーザーごと、フローごとの各ライセンス|200 GB||
 
 
-## <a name="definition-limits"></a>定義の制限
-1 つのフローに対する制限は次のとおりです。
+## <a name="flow-limits"></a>フローの制限
+これらはフローの制限です。
 
 | 件名 | 制限 | メモ​​ |
 | --- | --- | --- |
@@ -114,6 +117,7 @@ ms.locfileid: "3502389"
 | 式あたりの最大文字 |8,192 | |
 | `action`/`trigger` 名の制限 |80 | |
 | `description` の長さの制限 |256 | |
+| ユーザーごとのソリューションに依存しないフロー  |600 | |
 
 ## <a name="sharepoint-limits"></a>SharePoint の制限
 Microsoft SharePoint で Power Automate と Power Apps の使用をするに当たっては、[制限](https://docs.microsoft.com/connectors/sharepointonline/#limits)があります。

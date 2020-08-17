@@ -19,12 +19,12 @@ search.app:
 - Flow
 search.audienceType:
 - developer
-ms.openlocfilehash: 2c2b9a29988a3b8f4fd25f5490d5f009c1b52ff3
-ms.sourcegitcommit: 368e3749f64f80cd9b45c35eccba6a2e3685ae44
+ms.openlocfilehash: 85a480599c908dfddc17d2d3f78a0570efa3b5aa
+ms.sourcegitcommit: 13dec60229deeac4233c66e625a3d0cf33dfbc43
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "3516660"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "3644210"
 ---
 # <a name="power-automate-for-enterprise-developers-isvs-and-partners"></a>企業の開発者、パートナー、ISV が使用する Power Automate
 [!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
@@ -77,7 +77,7 @@ REST API を呼び出し、認証済みの UI を埋め込むには、アプリ�
 
 ### <a name="5-deployment"></a>5. 展開
 
-エンドユーザーが自動的にフローを使用できるようにアクセス権を付与するには、フローをユーザーの Azure AD テナントにデプロイします。 REST API または PowerShell を使用してデプロイするデプロイ パッケージを使用します。 [詳細情報](https://docs.microsoft.com/powerapps/export-import-packages)
+エンドユーザーが自動的にフローを使用できるようにアクセス権を付与するには、フローをユーザーの Azure AD テナントにデプロイします。 REST API または PowerShell を使用してデプロイするデプロイ パッケージを使用します。 [詳細情報]( https://docs.microsoft.com/powerapps/administrator/export-import-packages)
 
 ### <a name="6-licensing"></a>6. ライセンス
 

@@ -3,19 +3,19 @@ title: フローは Common Data Service に格納され、豊富な Web API を�
 description: フローは Common Data Service に格納され、豊富な Web API を使用します。
 author: stepsic-microsoft-com
 ms.reviewer: deonhe
-ms.date: 04/28/2020
+ms.date: 07/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: business-applications
 ms.technology: ''
 ms.author: stepsic
 audience: Power user
-ms.openlocfilehash: ebcd4951abae85f843ddaf34c8ce222eb1a83c33
-ms.sourcegitcommit: 4b9261984a554dfccb0d0d77f3d5fdca60e26433
+ms.openlocfilehash: f08ea5ff19acb0f9fd30de06001fd19c00eb85ed
+ms.sourcegitcommit: da9a930a8cf0abd30c83c51f100a039d514ec436
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "3340121"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "3655835"
 ---
 # <a name="power-automate-web-api"></a>Power Automate Web API
 
@@ -28,29 +28,22 @@ ms.locfileid: "3340121"
 
 要求の作成を始めるには、まず URL を構築する必要があります。 Power Automate Web API のベース URL の形式は `https://{Organization ID}.{Regional Subdomain}.dynamics.com/api/data/v9.1/` です。 次の 2 つのパラメーターがあります。
 
-- **組織 ID** は、フローを格納する環境の一意の名前です。 Power Automate の右上にある環境スイッチャーに組織 ID が表示されます。 **組織 ID** は **環境 ID** (フローの URL に表示される GUID) とは異なります。
+- **組織 ID** は、フローを格納する環境の一意の名前です。 
 
-     ![環境スイッチャー](media/web-api/get-organization-id.png "環境スイッチャー")
+- **リージョンサブのドメイン** は、環境の場所によって変わります。
 
-- **リージョンサブのドメイン** は、環境の場所によって変わります。 Power Automate にサインインすると、Web ページの URL でご自分の環境のリージョンを確認できます。 そのリージョン名を使用して、次の表で対応するサブドメインを見つけてください。
+これらの2つのパラメーターを取得する方法。
+1. [Power Platform 管理センター](https://admin.powerplatform.microsoft.com/) に移動します。
+2. フローの構築に使用する環境を選択します。
 
-     ![フローの URL](media/web-api/get-region-name.png "フローの URL")
+ ![フローの URL](media/web-api/power-platform-admin-center.png "フローの URL")
 
-     | 地域         | サブドメイン   |
-     | -------------- | ----------- |
-     | 米国  | CRM         |
-     | 南米  | crm2        |
-     | カナダ         | crm3        |
-     | ヨーロッパ         | crm4        |
-     | アジア太平洋   | crm5        |
-     | オーストラリア      | crm6        |
-     | 日本          | crm7        |
-     | インド          | crm8        |
-     |  US Government  | crm9        |
-     | 英国 | crm11       |
-     |アラブ首長国連邦 |   crm15|
+3. 環境の URL から組織の ID と地域のサブ ドメインをコピーします。
 
-オンライン管理 API の [インスタンスの取得](https://docs.microsoft.com/rest/api/admin.services.crm.dynamics.com/instances/getinstances) メソッドを使用して、利用できるインスタンスの一覧をプログラムで取得することもできます。
+ ![フローの URL](media/web-api/power-platform-admin-center-environment-URL.png "フローの URL")
+
+
+オンライン マネジメント API の [インスタンスの取得](https://docs.microsoft.com/rest/api/admin.services.crm.dynamics.com/instances/getinstances) メソッドを使用して、利用可能なインスタンスの一覧をプログラムで取得することも可能です。
 
 Web API に対する各要求で、`Accept` と `Content-type` ヘッダーを `application/json` に設定する必要があります。
 

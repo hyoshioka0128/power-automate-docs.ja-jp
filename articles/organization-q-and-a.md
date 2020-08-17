@@ -20,12 +20,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 3e1cf3f96d992036883c4fb0e86553aa9cfa7e1d
-ms.sourcegitcommit: aec3a74472b4e6eb70ed4554d14b57a7324d123d
+ms.openlocfilehash: b2861423c73ca27a8e677fcb6a1ee4cf6023feb2
+ms.sourcegitcommit: 942f597678c9b351cef05aef4ab6df6cd5845e1e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "3498464"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "3637870"
 ---
 # <a name="power-automate-in-your-organization-qa"></a>組織の Power Automate に関する Q&A
 
@@ -46,13 +46,13 @@ Power Automate は、個人やチームを支援するパブリック クラウ�
 
 組織のユーザーがオプション 2 の方法で Power Automate にサインアップすると、そのユーザーには Power Automate の無料版ライセンスが自動的に割り当てられます。
 
-詳しくは、[Flow にサインアップする](sign-up-sign-in.md) をご覧ください。
+詳しくは、[Power Automate にサインアップする](sign-up-sign-in.md)をご覧ください。
 
 ### <a name="what-is-the-power-automate-free-plan"></a>Power Automate 無料プラン の概要
 
 Power Automate の 無料プランは、追跡目的でのみ使用されます。 これを有効化または無効化しても、フローを作成するユーザーの機能に影響はありません。 Power Automate の無料プランを無効にした場合、ユーザーがログインするともう一度これが有効になります。 これは想定どおりの動作です。
 
-### <a name="can-i-block-another-person-from-signing-up-for-flow"></a>他のユーザーが Flow にサインアップすることを禁止できますか?
+### <a name="can-i-block-another-person-from-signing-up-for-power-automate"></a>Power Automate で他の人の登録を禁止できますか？
 Power Automate は完全なパブリック クラウド サービスです。世界中のすべてのユーザーが Flow にサインアップし、Flow を使って日常のタスクを自動化できます。 Power Automate の使用に際して、Office 365 アカウントの作成や使用をする必要はありません。 このため、現時点では、他のユーザーが Power Automate を使うのを禁止するメカニズムはありません (世界中のすべてのユーザーがメール アドレスに関係なく使用できます)。
 
 ただし、Power Automate に新規登録したユーザーが、組織内ではサポートしないことを選択した場合、そのユーザーが会社に費用を負担させることはできません。 個人が Power Automate にサインアップすると、その関係は、Bing、OneDrive、Outlook.com のような Microsoft の他のクラウド サービスと同様に、個人と Microsoft 間の関係になります。 Power Automate を個人で利用する場合は、組織がサービスの提供者として解釈されることは決してありません。
@@ -66,12 +66,13 @@ Power Automate は完全なパブリック クラウド サービスです。世
 2. ユーザーには、Office 365 管理ポータル内で Power Automate ライセンスを割り当てることができます。
 3. ユーザーには、Power Automate へのアクセスを含む Office 365 と Dynamics 365 プランが割り当てられています。 Power Automate 機能を含む Office 365 および Dynamics 365 プランのリストについては、[Power Automate 価格設定ページ](https://flow.microsoft.com/pricing/) を参照してください。
 
-### <a name="can-i-block-another-person-from-using-the-paid-features-of-flow"></a>他のユーザーが Flow の有料機能を使用することをブロックできますか?
+### <a name="can-i-block-another-person-from-using-the-paid-features-of-power-automate"></a>Power Automate の有料機能を他の人が利用することを禁止できますか？
 個人は誰でも Power Automate  の有料機能を 90 日間無料で試すことができます。コストは発生しません。 ただし、Office 365 管理ポータルを利用すれば、組織内の永久有料ライセンスの割り当てを完全管理できます。
 
 無料提供と同様に、個人と Microsoft の間の直接的な関係である試用版に個人がサインアップすることを選択した場合、必ずしも会社が推奨する必要はありません。
 
-## <a name="administration-of-flow"></a>Flow の管理
+## <a name="administration-of-power-automate"></a>Power Automate の管理
+
 ### <a name="why-has-the-power-automate-icon-appeared-in-the-office-365-app-launcher"></a>なぜ Power Automate のアイコンが Office 365 アプリ起動ツールに表示されるのですか?
 8 月に発表されたように、Power Automate は Office 365 スイートの基本構成要素となりました。 この発表から 3 か月後、 Power Automate  は、すべての既存 の Office 365 でサービスとして有効になりました。 世界中のユーザーが Power Automate を利用できるようになったため、アプリ起動ツールに表示されています。
 
@@ -126,7 +127,7 @@ Office 365 管理ポータルから追加ライセンスをユーザーに自分
 ### <a name="is-this-free-will-i-be-charged-for-these-licenses"></a>これは無料ですか? これらのライセンスに料金は発生しますか?
 明示的な同意なしにユーザーが組織にコストを発生させることはありませんので、無料ライセンスと試用版ライセンスのいずれも、組織に何の料金も発生させません。 また、実行クォータなど、クォータも使用しません。
 
-### <a name="i-removed-the-power-automate-free-license-and-users-can-still-access-flow"></a>Power Automate 無料ライセンスを削除しました。ユーザーは Flow に引き続きアクセスできますか？
+### <a name="i-removed-the-power-automate-free-license-and-users-can-still-access-it"></a>Power Automate の無料版ライセンスを削除したが、ユーザーが引き続きアクセスできてしまう。
 Power Automate の 無料ライセンスは、追跡目的でのみ使用されます。 最初のセクションで説明したように、他のユーザーが個人として Power Automate の使用を禁止することはできません。 そのため、Power Automate の無料ライセンスは実際にはいかなる機能も付与、または削除することはありません。
 
 ### <a name="why-cant-i-see-all-power-automate-licenses-in-the-office-365-admin-portal"></a>Office 365 管理ポータルにすべての Power Automate ライセンスが表示されないのはなぜですか？
