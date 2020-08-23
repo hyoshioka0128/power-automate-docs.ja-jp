@@ -197,9 +197,9 @@ Power Automate 内のアダプティブカードは、情報のブロックを�
 
     - **Visual Studio Code** のアダプティブ カード検証ツールを活用します。 これを Visual Studio Code アプリケーションからインストールするには、拡張機能マーケットプレースを開き、**アダプティブ カード ビューワー** を検索します。
 
-      ![Visual Studio コード拡張子](media/adaptive-cards/visual-studio-code-extension.png)
+      ![Visual Studio Code 拡張機能](media/adaptive-cards/visual-studio-code-extension.png)
   
-Visual Studio コードにインストールされた アダプティブ カード ビューワー 拡張機能のスクリーンショットの一部 （ショートカット:Ctrl+V+A 有効化が必要です）。
+Visual Studio Code にインストールされた アダプティブ カード ビューワー 拡張機能のスクリーンショットの一部 （ショートカット:Ctrl+V+A 有効化が必要です）。
 
 - アダプティブ カードの送信後に発生するエラーは、多くの場合、次が原因です。
 
