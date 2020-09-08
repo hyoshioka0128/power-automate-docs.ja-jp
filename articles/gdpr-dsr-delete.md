@@ -14,18 +14,18 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 4/07/2020
+ms.date: 08/14/2020
 search.app:
 - Flow
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: d15e9d4e9e52c61495ec464e4db46d993deebe8a
-ms.sourcegitcommit: 2284143cf147beb7d6071fd8005a41298e51e493
+ms.openlocfilehash: 07c0f662eae3cebe49009de0730a65494fdbffa2
+ms.sourcegitcommit: 39d7912519ff03dae924023c1a1c320a30efaa81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "3385037"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "3691154"
 ---
 # <a name="responding-to-gdpr-data-subject-delete-requests-for-power-automate"></a>Power Automate の GDPR データ対象者削除依頼に対応する
 
@@ -54,7 +54,7 @@ Power Automate では、組織の日常業務の重要な一部であるオー�
 
 手動での確認が必要なデータとリソースのため、Power Automate  では特定のユーザーの個人データの検索または変更を行う以下のエクスペリエンスが提供されています。
 
-* **Web サイト アクセス:**  [Power Apps 管理センター](https://admin.powerapps.com/)、または [Power Automate 管理センター](https://admin.flow.microsoft.com/) にサインインします
+* **Web サイト アクセス:** [Power Apps 管理センター](https://admin.powerapps.com/)、または [Power Platform 管理センター](https://admin.powerplatform.microsoft.com/) にサインインします
 
 * **PowerShell アクセス:**  [Power Apps 管理者 PowerShell コマンドレット](https://go.microsoft.com/fwlink/?linkid=871804) 
 
@@ -94,7 +94,7 @@ Power Automate では、組織の日常業務の重要な一部であるオー�
 
 これらの手順では、いなくなるユーザーの既存のフローをコピーします。 コピーに新しい所有者を割り当てた場合、これらのフローは既存のビジネス プロセスを引き続きサポートできます。 これらのフローをコピーすることは、いなくなるユーザーへの個人識別子リンクを削除するのに重要であり、フローが他の API および SaaS アプリケーションと接続するように新しい接続を確立する必要があります。
 
-1. [Power Automate 管理センター](https://admin.flow.microsoft.com/)にサインインし、削除されたユーザーが所有するフローを含む環境を選択します。
+1. [Power Platform 管理センター](https://admin.powerplatform.microsoft.com/)にサインインし、削除されたユーザーが所有するフローを含む環境を選択します。
 
     ![環境を表示する](./media/gdpr-dsr-delete/view-environments.png)
 
@@ -272,7 +272,7 @@ Get-AdminConnectorRoleAssignment -PrincipalObjectId $deleteDsrUserId | Remove-Ad
 
 ## <a name="give-access-to-a-users-environments-from-the-power-automate-admin-center"></a>Power Automate 管理センター からユーザー環境へのアクセスを許可する
 
-管理者は、[Power Automate 管理センター](https://admin.flow.microsoft.com/) から、特定のユーザーによって作成された環境への管理アクセス権を付与できます。 環境の管理について詳しくは、 [Power Automate 内の環境を使用する](https://docs.microsoft.com/flow/environments-overview-admin)をご覧ください。
+管理者は、[Power Platform 管理センター](https://admin.powerplatform.microsoft.com/) から、特定のユーザーによって作成された環境への管理アクセス権を付与できます。 環境の管理について詳しくは、 [Power Automate 内の環境を使用する](https://docs.microsoft.com/flow/environments-overview-admin)をご覧ください。
 
 ## <a name="delete-the-users-permissions-to-all-other-environments"></a>他のすべての環境に対するユーザーのアクセス許可を削除する
 

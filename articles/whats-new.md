@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/20/2020
+ms.date: 08/12/2020
 ms.author: deonhe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 08170e2c83160e6efa6ee19a04f79d1553001b46
-ms.sourcegitcommit: 368e3749f64f80cd9b45c35eccba6a2e3685ae44
+ms.openlocfilehash: 0fb51351c01ecffb722b3ed7cab13cf97acef7c7
+ms.sourcegitcommit: b0d4492e70d517a872d9e7850c625a395a66923c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "3516636"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "3689271"
 ---
 # <a name="whats-new-in-power-automate"></a>Power Automate の新機能
 
@@ -38,6 +38,8 @@ ms.locfileid: "3516636"
 > [!NOTE]
 > リリースは、数日間にわたってロールアウトします。 新規または更新された機能はすぐに表示されないことがあります。
 
-## <a name="release-plan"></a>リリース計画
+## <a name="release-plans"></a>リリース計画
 
-[2020 リリース ウェーブ 1 の予定](https://docs.microsoft.com/power-platform-release-plan/2020wave1/power-automate/planned-features)を読み、今後の機能を理解し、ロールアウトを計画してください
+次の内容を読んで、今後の機能について理解し、ロールアウトを計画してください:
+- [2020 年リリース ウェーブ 1 プラン](https://docs.microsoft.com/power-platform-release-plan/2020wave1/power-automate/planned-features)
+- [2020 年リリース ウェーブ 2 プラン](https://docs.microsoft.com/power-platform-release-plan/2020wave2/power-automate/planned-features)

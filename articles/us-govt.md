@@ -7,19 +7,19 @@ author: msftman
 ms.service: flow
 ms.devlang: na
 ms.topic: article
-ms.date: 06/11/2020
+ms.date: 08/11/2020
 ms.author: deonhe
 search.app:
 - Flow
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: d8080bd33c0015a8e0ed6886378feff7a47e2f38
-ms.sourcegitcommit: 4dfd4013e4e632a91041783df64845651a8935c3
+ms.openlocfilehash: e5abbe18e9b350e8b820655fb8280496589d24b6
+ms.sourcegitcommit: 39d7912519ff03dae924023c1a1c320a30efaa81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "3442715"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "3691202"
 ---
 # <a name="power-automate-us-government"></a>Power Automate US Government
 
@@ -170,7 +170,7 @@ Azure AD アカウント管理サービスは Microsoft Global Foundation Servic
 業務用バージョン | US Government バージョン
 ------ | --------
 [https://flow.microsoft.com](https://flow.microsoft.com) | [https://gov.flow.microsoft.us (GCC)](https://gov.flow.microsoft.us) および [https://high.flow.microsoft.us (GCC High)](https://high.flow.microsoft.us)
-[https://admin.flow.microsoft.com](https://admin.flow.microsoft.com) | [https://gov.admin.flow.microsoft.us (GCC)](https://gov.admin.flow.microsoft.us) および [https://high.admin.flow.microsoft.us (GCC High)](https://high.admin.flow.microsoft.us)
+[https://admin.powerplatform.microsoft.com/](https://admin.powerplatform.microsoft.com/) | [https://gov.admin.flow.microsoft.us (GCC)](https://gov.admin.flow.microsoft.us) および [https://high.admin.flow.microsoft.us (GCC High)](https://high.admin.flow.microsoft.us)
 [https://flow.microsoft.com/connectors](https://flow.microsoft.com/connectors) | [https://gov.flow.microsoft.us/connectors (GCC)](https://gov.flow.microsoft.us/connectors) および [https://high.flow.microsoft.us/connectors (GCC High)](https://high.flow.microsoft.us/connectors)
 
 

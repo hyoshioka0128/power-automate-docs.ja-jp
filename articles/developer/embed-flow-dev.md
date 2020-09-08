@@ -19,12 +19,12 @@ search.app:
 - Flow
 search.audienceType:
 - developer
-ms.openlocfilehash: bc2550d7ed20af51010b2091861732f918980a23
-ms.sourcegitcommit: 549224cf13fc761f473c880e8d0d8f2741cc7b0f
+ms.openlocfilehash: b91019880af56dd6d756cb8d74f03bfcf9efbee8
+ms.sourcegitcommit: a09a957460f7495c0b103e1d832f65963025fbac
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "3435090"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "3697031"
 ---
 # <a name="integrate-power-automate-with-websites-and-apps"></a>Power Automate と Web サイトおよびアプリを統合する
 [!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
@@ -59,7 +59,6 @@ ms.locfileid: "3435090"
 | destination |ユーザーがテンプレートを選択したときに開くページ。 テンプレートの詳細を表示するには  `details` と入力し、Power Automate デザイナーを開くには `new` と入力します。 |
 | カテゴリ |フィルター処理で所与のテンプレート カテゴリに絞り込みます。 | 
 | parameters.{name} |フローに渡す追加のコンテキスト。 |
-
 
 宛先パラメーターが `new` の場合、ユーザーがテンプレートを開くと、 Power Automate デザイナーが開きます。 ユーザーはデザイナーでフローを作成できます。 ウィジェットをフルに活用したい場合は、次のセクションをご覧ください。
 

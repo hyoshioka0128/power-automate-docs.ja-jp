@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 07/16/2020
+ms.date: 08/14/2020
 ms.author: deonhe
 search.app:
 - Flow
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 9fbf338c5904d0e0182f114ebf8c5bd23cb5e1c7
-ms.sourcegitcommit: d4857e5ce087f9a72469ff08a1a91349a0a94505
+ms.openlocfilehash: 311a6e49757a59285695abceccef2431dc4aa506
+ms.sourcegitcommit: 39d7912519ff03dae924023c1a1c320a30efaa81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3597986"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "3690962"
 ---
 # <a name="the-admin-center"></a>管理センター
 
@@ -36,7 +36,7 @@ ms.locfileid: "3597986"
 
 ## <a name="access-the-admin-center"></a>管理センターにアクセスする
 
-* [Power Automate 管理センター](https://admin.flow.microsoft.com) に移動します。
+* [Power Automate 管理センター](https://admin.powerplatform.microsoft.com/) に移動します。
 
 ## <a name="environments"></a>環境
 

@@ -14,18 +14,18 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 4/24/2018
+ms.date: 08/14/2020
 search.app:
 - Flow
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: f9fee8a217cdec28f6a3b49dee6335c4f13a3d45
-ms.sourcegitcommit: 2284143cf147beb7d6071fd8005a41298e51e493
+ms.openlocfilehash: b3e28f8504c546ed87b9396a552ad0ead964ddb1
+ms.sourcegitcommit: 39d7912519ff03dae924023c1a1c320a30efaa81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "3384941"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "3691106"
 ---
 # <a name="responding-to-gdpr-data-subject-export-requests-for-power-automate"></a>Power Automate の GDPR データ対象者のエクスポート要求に対応する
 
@@ -38,7 +38,7 @@ ms.locfileid: "3384941"
 
 Power Automate は、特定のユーザーの個人データを検索またはエクスポートする以下のエクスペリエンスがあります:
 
-* **Web サイト アクセス:**  [Power Apps 管理センター](https://admin.powerapps.com/)、または [Power Automate 管理センター](https://admin.flow.microsoft.com/) にサインインします
+* **Web サイト アクセス:** [Power Apps 管理センター](https://admin.powerapps.com/)、または [Power Platform 管理センター](https://admin.powerplatform.microsoft.com/) にサインインします。
 
 * **PowerShell アクセス:**  [Power Apps 管理者 PowerShell コマンドレット](https://go.microsoft.com/fwlink/?linkid=871804)。
 

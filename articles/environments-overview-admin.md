@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/07/2020
+ms.date: 08/14/2020
 ms.author: sunayv
 search.app:
 - Flow
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 20483e27364ab113ed669db2ae9f63336afe0d3f
-ms.sourcegitcommit: aec3a74472b4e6eb70ed4554d14b57a7324d123d
+ms.openlocfilehash: 1f0300f4d9381b669107680ff68e703bff74b00e
+ms.sourcegitcommit: 39d7912519ff03dae924023c1a1c320a30efaa81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "3498536"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "3691178"
 ---
 # <a name="using-environments-within-power-automate"></a>Power Automate 内の環境を使用する
 
@@ -79,13 +79,13 @@ ms.locfileid: "3498536"
    ![設定と管理者ポータル](./media/environments-overview-admin/settings.png)
 1. 管理センターが開きます。
 
-### <a name="option-2-open-adminflowmicrosoftcom"></a>オプション 2: admin.flow.microsoft.com を開く
+### <a name="option-2-open-power-platform-admin-center"></a>オプション 2: Power Platform 管理センターを開く
 
-[admin.flow.microsoft.com](https://admin.flow.microsoft.com) に移動し、職場アカウントでサインインします。
+[Power Platform 管理センター](https://admin.powerplatform.microsoft.com/) にアクセスし、職場アカウントでサインインします。
 
-## <a name="create-an-environment"></a>環境を作成する
+## <a name="create-an-environment"></a>環境の作成
 
-1. [Power Automate 管理センター](https://admin.flow.microsoft.com) で、**環境** を選択します。 既存の環境がすべて表示されます: ![環境](./media/environments-overview-admin/environments-list.png)
+1. [Power Platform 管理センター](https://admin.powerplatform.microsoft.com/) で、**環境** を選択します。 既存の環境がすべて表示されます: ![環境](./media/environments-overview-admin/environments-list.png)
 2. **新しい環境** を選択し、必要な情報を指定します:
 
 
@@ -107,7 +107,7 @@ ms.locfileid: "3498536"
 
 ## <a name="manage-your-existing-environments"></a>既存の環境を管理する
 
-1. [Power Automate 管理センター](https://admin.flow.microsoft.com) で、**環境** を選択します。
+1. [Power Automate 管理センター](https://admin.powerplatform.microsoft.com/) で、**環境** を選択します。
 
    ![環境のメニュー項目](./media/environments-overview-admin/select-environments.png)
 1. 環境を選択してプロパティを開きます。

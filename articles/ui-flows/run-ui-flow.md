@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: a6266b1c6a76d80e46bafd14dcddeb2df9c4aa46
-ms.sourcegitcommit: ab26d3b17cc34c650298ec5ac3b4ea9554e291cf
+ms.openlocfilehash: a402ec01d8c6b502bf39aa999d45696931d4aa5c
+ms.sourcegitcommit: 7b39517611bff350c760e76d0d6eed03739194a7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "3502365"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3710804"
 ---
 # <a name="run-attended-and-unattended-ui-flows"></a>有人および無人の UI フローの実行
 
@@ -203,7 +203,7 @@ UI フローでは次の処理が実行されます。
 Power Automate は、同時 UI フローの実行数を、デバイスでサポートされる最大数まで自動的にスケーリングします。 デバイスの容量を超えた場合、[ここに記載](./run-ui-flow.md#run-multiple-ui-flows-on-the-same-device-sequentially)されているように追加の実行が*待機*します。
 
 >[!IMPORTANT]
-Windows Server で 3 つ以上の並列ユーザー セッションを使用する場合、リモート デスクトップ サービスをオンにする必要があります。 [RDS](https://docs.microsoft.com/en-us/windows-server/remote/remote-desktop-services/rds-client-access-license) の詳細をご覧ください。
+Windows Server で 3 つ以上の並列ユーザー セッションを使用する場合、リモート デスクトップ サービスをオンにする必要があります。 [RDS](https://docs.microsoft.com/windows-server/remote/remote-desktop-services/rds-client-access-license) の詳細をご覧ください。
 
 >[!NOTE]
 >**同じユーザー**による複数の同時 UI フローの実行はサポートされていません。 この機能を利用するには、異なるユーザーが同時に UI フローを実行する必要があります。

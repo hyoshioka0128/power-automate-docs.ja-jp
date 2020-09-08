@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: dfc07db3386f733696418c23814a662eb36787d6
-ms.sourcegitcommit: 62c8891c497823be6e7691410072011d7cfc5339
+ms.openlocfilehash: 30b3488cf3918b5a9bd13c49d44fe49a1cc2120e
+ms.sourcegitcommit: a09a957460f7495c0b103e1d832f65963025fbac
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3652882"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "3697271"
 ---
 # <a name="filter-and-copy-data-with-power-automate"></a>Power Automate を使用してデータのフィルターとコピーをする
 
@@ -33,10 +33,10 @@ ms.locfileid: "3652882"
 
 このチュートリアルで Microsoft SharePoint [リスト](https://support.office.com/article/SharePoint-lists-I-An-introduction-f11cd5fe-bc87-4f9e-9bfe-bbd87a22a194) (ソース) から [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview) テーブル (ターゲット) にデータをコピーする場合、Power Automate でサポートされる [380 のコネクター](https://flow.microsoft.com/connectors/) 以上のサービスのどのサービス間でもデータをコピーできます。
 
+[!INCLUDE [sharepoint-detailed-docs](includes/sharepoint-detailed-docs.md)]
+
 > [!IMPORTANT]
 > 双方向の同期には対応していないため、ターゲットで行われた変更内容はソースにコピーされません。 双方向の同期を設定する場合は、ソースとターゲット間で変更内容が無限に送信される無限ループが発生します。
-> 
-> 
 
 ## <a name="prerequisites"></a>前提条件
 * データ ソースとターゲットへのアクセス権があること。 このチュートリアルには、ソースとターゲットの作成ステップは含まれていません。

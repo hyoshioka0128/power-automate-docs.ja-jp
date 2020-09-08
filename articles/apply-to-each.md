@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: fcd99ea786c03eeac6ceabdf9a97886a8bbee022
-ms.sourcegitcommit: 8714786a5b632dfd60099871629cf369a31c4125
+ms.openlocfilehash: 670b80583cdf07667675f8538b4114781b7b9ba6
+ms.sourcegitcommit: a09a957460f7495c0b103e1d832f65963025fbac
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "3346611"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "3696959"
 ---
 # <a name="use-the-apply-to-each-action-in-power-automate-to-process-a-list-of-items-periodically"></a>Power Automate の 各アクションに適用するアクションを使用して項目の一覧を定期的に処理する
 
@@ -49,6 +49,8 @@ ms.locfileid: "3346611"
 * Office 365 Outlook アカウント。
 * [Android](https://aka.ms/flowmobiledocsandroid) 向けの Power Automate モバイル アプリ、[iOS](https://aka.ms/flowmobiledocsios)、[Windows Phone](https://aka.ms/flowmobilewindows)。
 * Office 365 Outlookへの接続と、プッシュ通知サービス。
+
+[!INCLUDE [sharepoint-detailed-docs](includes/sharepoint-detailed-docs.md)]
 
 ## <a name="create-a-flow"></a>フローの作成
 1. [Power Automate](https://flow.microsoft.com) にサインインする。

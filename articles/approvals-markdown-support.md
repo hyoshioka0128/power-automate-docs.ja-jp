@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 19a6380ccdf5d1eb09f872bc0294d79876dee04c
-ms.sourcegitcommit: 9bb2e400751338357c66d11cfa7054d65d919fdb
+ms.openlocfilehash: 5b0ca1e9bb28b7cb4cad4e5aaedb151b119ea24a
+ms.sourcegitcommit: 5ae78d01c71a359833061c45d54c8c4636d71090
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "3517278"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "3678596"
 ---
 # <a name="use-markdown-in-power-automate-approval-requests"></a>Power Automate の承認リクエストで Markdown を使用する
 
@@ -33,13 +33,9 @@ ms.locfileid: "3517278"
 この記事では、[Markdown](https://en.wikipedia.org/wiki/Markdown) 構文を使って、承認要求に様々なフォーマット設定を追加する方法について説明します。
 
 > [!IMPORTANT]
-> 承認要求の電子メールは、*アクション可能なメッセージ*です。 [Microsoft Outlook  クライアント](https://docs.microsoft.com/outlook/actionable-messages/#outlook-version-requirements-for-actionable-messages) でアクション可能メッセージがサポートされない場合、承認要求は HTML 形式で表示されます。 
-
-> [!IMPORTANT]
-> すべての Markdown レンダラーには異なる実装がされています。 詳細は、[クライアント サポート](#client-support) セクションを参照してください。
-
-> [!IMPORTANT]
-> Markdown は現在、GCC および GCC High のユーザーには対応していません。
+> - 承認要求の電子メールは、*アクション可能なメッセージ*です。 [Microsoft Outlook  クライアント](https://docs.microsoft.com/outlook/actionable-messages/#outlook-version-requirements-for-actionable-messages) でアクション可能メッセージがサポートされない場合、承認要求は HTML 形式で表示されます。 
+> - すべての Markdown レンダラーには異なる実装がされています。 詳細は、[クライアント サポート](#client-support) セクションを参照してください。
+> - Markdown は現在、[GCC および GCC High の顧客](/power-automate/us-govt) には対応していません。
 
 ## <a name="client-support"></a>クライアント サポート
 

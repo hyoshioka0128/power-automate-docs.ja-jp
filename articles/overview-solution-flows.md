@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 7/27/2020
+ms.date: 08/14/2020
 ms.author: deonhe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 860df112928e4d005e2f11bb92db2db68c325572
-ms.sourcegitcommit: d7707928484106e4a8442055111560f9a9cf7c6e
+ms.openlocfilehash: f999bee5227deed7f4102155ffb85c3cf3d7814d
+ms.sourcegitcommit: 39d7912519ff03dae924023c1a1c320a30efaa81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "3641085"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "3691130"
 ---
 # <a name="overview"></a>概要
 
@@ -44,7 +44,7 @@ ms.locfileid: "3641085"
 - [Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
 - バージョン 9.1.0.267 またはそれ以上の環境。
 
-  バージョンを確認するには、[Power Automate 管理センター](https://admin.flow.microsoft.com) に移動して **環境** を選択し、目的の環境を選択してから **詳細** タブを選択します。
+  バージョンを確認するには、[Power Platform 管理センター](https://admin.powerplatform.microsoft.com/) に移動して **環境** を選択し、目的の環境を選択してから **詳細** タブを選択します。
 
 ## <a name="create-a-solution"></a>ソリューションの作成
 
@@ -59,7 +59,7 @@ ms.locfileid: "3641085"
 
 1. 新しいソリューションに必要となるすべての情報を指定します (**表示名**、**発行者**、**バージョン**、**名前**など)。 ソリューションの説明を入力しておくこともお勧めします。
 
-   ![新しいソリューションを選択する](./media/overview-solution-flows/new-solution.png "新しいソリューションのプロパティ画面")
+   ![新しいソリューションの選択](./media/overview-solution-flows/new-solution.png "新しいソリューション プロパティ画面")
 
 1. 上部のメニューから **保存して閉じる**を選択します。
 
@@ -67,7 +67,7 @@ ms.locfileid: "3641085"
    新しいソリューションは次の図のように表示されます :
 
 
-   ![新しいソリューションを表示する](./media/overview-solution-flows/new-solution-created.png "*ソリューション*画面が表示された新しいソリューション")
+   ![新しいソリューションが表示される](./media/overview-solution-flows/new-solution-created.png "*ソリューション* 画面に表示される新しいソリューション")
 
 
   

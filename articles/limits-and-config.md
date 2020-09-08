@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 869de4c73d29893e54b4345efb2b348bf03c7983
-ms.sourcegitcommit: da9a930a8cf0abd30c83c51f100a039d514ec436
+ms.openlocfilehash: 92b186b7a6d8664b39d04effbdcdb149323c2636
+ms.sourcegitcommit: a09a957460f7495c0b103e1d832f65963025fbac
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "3655859"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "3696983"
 ---
 # <a name="limits-and-configuration-in-power-automate"></a>Power Automate における制限事項と構成
 
@@ -121,6 +121,8 @@ ms.locfileid: "3655859"
 
 ## <a name="sharepoint-limits"></a>SharePoint の制限
 Microsoft SharePoint で Power Automate と Power Apps の使用をするに当たっては、[制限](https://docs.microsoft.com/connectors/sharepointonline/#limits)があります。
+
+[!INCLUDE [sharepoint-detailed-docs](includes/sharepoint-detailed-docs.md)]
 
 ## <a name="ip-address-configuration"></a>IP アドレスの構成
 Power Automate  の要求の送信元の IP アドレスは、フローを使用している [環境](environments-overview-admin.md) が置かれている [リージョン](regions-overview.md) によって異なります。 現在、フローのシナリオで使用可能な FQDN は発行されていません。
