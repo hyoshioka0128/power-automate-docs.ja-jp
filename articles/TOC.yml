@@ -1,4 +1,4 @@
-- name: Power Automate ドキュメント
+- name: Power Automate のドキュメント
   href: /power-automate/
 - name: 概要
   items:
@@ -12,7 +12,7 @@
       href: get-started-logic-template.md
     - name: スマートフォンでフローを作成する
       href: mobile-create-flow.md
-    - name: チーム フローを作成する
+    - name: フローを共有する
       href: create-team-flows.md
     - name: Common Data Service を使用するフローを作成する
       href: common-data-model-intro.md
@@ -20,9 +20,9 @@
       href: whats-new.md
     - name: ラーニング カタログ
       items:
-        - name: ラーニング カタログ
+        - name: 概要
           href: learning-catalog/learning-catalog.md
-        - name: アプリ作成者
+        - name: アプリ開発者
           href: learning-catalog/learning-catalog-app-maker.md
         - name: 管理者
           href: learning-catalog/learning-catalog-administrator.md
@@ -32,7 +32,7 @@
           href: learning-catalog/learning-catalog-functional-consultant.md
         - name: パートナーのプリセールスの役割
           href: learning-catalog/learning-catalog-sales.md
-- name: 自動化されたフロー
+- name: 自動フロー
   items:
     - name: ゼロからフローを作成する
       href: get-started-logic-flow.md
@@ -56,9 +56,9 @@
       href: onedrive-business-launch-panel.md
     - name: データのフィルターとコピー
       href: odata-filters.md
-    - name: Flic を使用する
+    - name: Flicsでフローを実行する
       href: flic-button-flows.md
-    - name: bttn を使用する
+    - name: ボタンでフローを実行する
       href: bttn-button-flows.md
 - name: ボタン フロー
   items:
@@ -90,7 +90,7 @@
       href: all-assigned-must-approve.md
     - name: 統合された承認
       href: common-data-model-approve.md
-    - name: 書式設定承認要求
+    - name: 承認要求を書式設定する
       href: approvals-markdown-support.md
     - name: カスタム承認応答オプション
       href: create-approval-response-options.md
@@ -233,6 +233,8 @@
       href: mobile-manage-flows.md
     - name: テンプレートを発行する
       href: publish-a-template.md
+    - name: フローのオン/オフを切り替える
+      href: disable-flow.md
 - name: トラブルシューティング
   items:
     - name: フローの確認

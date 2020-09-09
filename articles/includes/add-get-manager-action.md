@@ -1,13 +1,10 @@
-1. **新しいステップ**、**アクションの追加**の順に選択します。
-   
-    ![新しいステップ](media/modern-approvals/select-sharepoint-add-action.png)
-2. **[アクションの選択]** 検索ボックスに **「get manager」(マネージャー取得)** と入力します。
-3. **Office 365 ユーザー - マネージャー取得 (V2)** アクションを検索して選択します。
+1. **+新しいステップ**を選択し、次に**アクションの選択**の検索ボックスに**上司の取得**と入力します。
+1. **上司の取得 (V2) - Office 365 ユーザー** アクションを見つけて選択します。
 
     ![Office ユーザーの選択](media/modern-approvals/add-get-manager-action.png)
-4. **[Get manager]\(マネージャー取得)** カードの **[User (UPN)]\(ユーザー (UPN)\)** ボックスに **[Created By Email]\(電子メールによって作成)** トークンを挿入します。
+1. **上司の取得**カードの**ユーザー (UPN)** ボックスに**作成者の電子メール** トークンを挿入します。
 
     このアクションを使用すると、SharePoint で休暇申請を作成した従業員のマネージャーを取得できます。
 
-    ![マネージャーの構成を取得する](media/modern-approvals/get-manager-card.png)
+    ![上司の取得の構成](media/modern-approvals/get-manager-card.png)
 

@@ -1,12 +1,3 @@
 1. [Power Automate](https://flow.microsoft.com) にサインインします。
-   
-    ![サインイン](media/modern-approvals/sign-in.png)
-2. **[自分のフロー]** タブを選択します。
-   
-    ![自分のフローの選択](media/modern-approvals/select-my-flows.png)
-3. **[一から作成]** を選択します。
-   
-    ![一から作成する](media/modern-approvals/blank-template.png)
-
-4. **[一から作成]** ボタンを選択します。
-
+1. 左側のナビゲーション ウィンドウで、**マイ フロー**を選択します。
+1. 左上のメニューで、**+新規** > **+ 自動 - 空白から作成**を選択します。

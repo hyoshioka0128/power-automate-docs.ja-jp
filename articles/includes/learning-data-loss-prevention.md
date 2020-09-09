@@ -22,7 +22,7 @@ DLP ポリシーとは、簡単に言えば、相互排他的な 2 つのデー�
 **注**: 1 つのデータ グループにサービスを追加すると、もう一方のデータ グループからそのサービスが自動的に削除されます。 たとえば、Twitter が現在、**ビジネス データのみ**データ グループに読み込まれているとき、ビジネス データを Twitter と共有しない場合、Twitter サービスを**ビジネス データ禁止**データ グループに追加します。 **ビジネス データのみ**データ グループから Twitter が削除されます。
 
 ## <a name="heres-what-you-need-to-create-a-dlp"></a>DLP を作成するために必要なもの
-* Power Automate [管理センター](https://admin.flow.microsoft.com)へのアクセス  
+* Power Automate [Power Platform 管理センター](https://admin.powerplatform.microsoft.com/)へのアクセス  
 * 環境管理者ロールのアカウント  
 * 環境とそれに割り当てられたユーザー  
 
