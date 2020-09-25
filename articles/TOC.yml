@@ -161,6 +161,10 @@
       href: ./ui-flows/run-ui-flow.md
     - name: UI フローの管理
       href: ./ui-flows/manage.md
+  - name: Power Automate Desktop (プレビュー)
+    items: 
+    - name: 既知の問題と制限
+      href: ./ui-flows/desktop/known-issues-limitations.md
 - name: ソリューション
   items:
     - name: 概要
