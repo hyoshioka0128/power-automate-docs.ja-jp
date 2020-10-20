@@ -78,6 +78,8 @@
       href: apply-to-each.md
 - name: 承認フロー
   items:
+    - name: 承認の利用を開始する
+      href: get-started-approvals.md
     - name: 1 つの承認
       href: modern-approvals.md
     - name: 添付ファイルを使用した承認
@@ -96,9 +98,12 @@
       href: create-approval-response-options.md
 - name: Microsoft Teams フロー
   items:
+    - name: 概要
+      href: ./teams/overview.md
     - name: Teams メッセージからフローをトリガーする
       href: trigger-flow-teams-message.md
     - name: アダプティブ カードを使用してフローをモデル化する
+      href: create-adaptive-cards.md
       items:
         - name: Teams 向けアダプティブ カードの概要
           href: overview-adaptive-cards.md
@@ -120,6 +125,8 @@
           href: acronym-sample.md
         - name: サンプル - リードの生成
           href: lead-collection-sample.md
+    - name: Power Apps アプリを使用してフローを作成する (プレビュー)
+      href: ./teams/create-flows-power-apps-app.md
 - name: ビジネス プロセス フロー
   items:
     - name: ビジネス プロセス フローの概要
@@ -157,14 +164,207 @@
       href: ./ui-flows/edit-web.md
     - name: Web UI フローで入力と出力を使用する
       href: ./ui-flows/inputs-outputs-web.md
-    - name: 有人および無人の UI フローの実行
+    - name: 有人および無人の UI flows の実行
       href: ./ui-flows/run-ui-flow.md
     - name: UI フローの管理
       href: ./ui-flows/manage.md
-  - name: Power Automate Desktop (プレビュー)
-    items: 
-    - name: 既知の問題と制限
-      href: ./ui-flows/desktop/known-issues-limitations.md
+    - name: Power Automate Desktop UI フロー (プレビュー)
+      items:
+        - name: Power Automate Desktop の概要
+          href: ./ui-flows/desktop/introduction.md
+        - name: Power Automate Desktop フローを作成する
+          items:
+            - name: ポータルからコンソールをトリガーする
+              href: ./ui-flows/desktop/create-flow-console.md
+            - name: フローを設計する
+              href: ./ui-flows/desktop/design-flow.md
+        - name: Power Automate Desktop フローを実行する
+          href: ./ui-flows/desktop/run-pad-flow.md
+        - name: Power Automate Desktop フローを別のフローからトリガーする
+          href: ./ui-flows/desktop/link-pad-flow-portal.md
+        - name: Power Automate Desktop コンソール
+          href: ./ui-flows/desktop/console.md
+        - name: Power Automate Desktop フロー デザイナー
+          href: ./ui-flows/desktop/flow-designer.md
+          items:
+            - name: アクションとアクション ペイン
+              href: ./ui-flows/desktop/actions-pane.md
+              items:
+                - name: ワークスペースにアクションを追加する
+                  href: ./ui-flows/desktop/adding-action.md
+                - name: アクションを構成する
+                  items:
+                    - name: アクションを構成する
+                      href: ./ui-flows/desktop/configuring-action.md
+                    - name: アクション例外を構成する
+                      href: ./ui-flows/desktop/configuring-actions-exceptions.md
+                - name: アクションを有効または無効にする
+                  href: ./ui-flows/desktop/enabling-disabling-actions.md
+            - name: フロー デザイナーのワークスペース
+              items:
+                - name: フロー デザイナーのワークスペース
+                  href: ./ui-flows/desktop/designer-workspace.md
+                - name: サブフローを設定する
+                  href: ./ui-flows/desktop/setting-subflows.md
+                - name: ワークスペース ツールバーを管理する
+                  href: ./ui-flows/desktop/managing-workspace-toolbar.md
+                  items:
+                    - name: フロー内での検索
+                      href: ./ui-flows/desktop/searching-flow.md
+                    - name: 行に移動オプションを使用する
+                      href: ./ui-flows/desktop/using-line-option.md
+                    - name: レコーダーを利用する
+                      href: ./ui-flows/desktop/making-use-recorders.md
+                - name: フローをデバッグする
+                  href: ./ui-flows/desktop/debugging-flow.md
+                  items:
+                    - name: フロー デザイナーからの実行/停止および一時停止
+                      href: ./ui-flows/desktop/run-stop-pause.md
+                    - name: ブレークポイントを追加する
+                      href: ./ui-flows/desktop/adding-breakpoints.md
+                    - name: フローをアクションごとに実行する
+                      href: ./ui-flows/desktop/running-action.md
+                    - name: Power Automate Desktop デザイナーのステータス バー
+                      href: ./ui-flows/desktop/status-bar.md
+                - name: 変数ペインを管理する
+                  items:
+                    - name: 変数ペインを管理する
+                      href: ./ui-flows/desktop/manage-variables.md
+                    - name: 変数の名前を変更する
+                      href: ./ui-flows/desktop/renaming-variable.md
+                    - name: 入出力変数
+                      href: ./ui-flows/desktop/variables-inputs-outputs.md
+                    - name: 変数のデータ型
+                      items:
+                        - name: 変数のデータ型
+                          href: ./ui-flows/desktop/variable-data-types.md
+                        - name: リスト
+                          href: ./ui-flows/desktop/lists.md
+                        - name: データ テーブル
+                          href: ./ui-flows/desktop/datatables.md
+                        - name: Datatype プロパティ
+                          href: ./ui-flows/desktop/datatype-properties.md
+                    - name: 変数の操作と % 表記
+                      href: ./ui-flows/desktop/variable-manipulation.md
+                - name: UI 要素
+                  href: ./ui-flows/desktop/ui-elements.md
+                - name: 画像
+                  href: ./ui-flows/desktop/images.md
+                - name: エラー
+                  items:
+                    - name: エラー
+                      href: ./ui-flows/desktop/errors.md
+                    - name: エラー詳細表示
+                      href: ./ui-flows/desktop/error-detail-view.md
+                - name: フロー内での使用法の検索
+                  href: ./ui-flows/desktop/finding-usages.md
+                - name: Power Automate Desktop フローでの記録
+                  href: ./ui-flows/desktop/recording-flow.md
+                - name: フローに基本的なロジックを実装する
+                  items:
+                    - name: ループを利用する
+                      items:
+                        - name: ループを利用する
+                          href: ./ui-flows/desktop/use-loops.md
+                        - name: 単純なループ
+                          href: ./ui-flows/desktop/simple-loops.md
+                        - name: ループ条件
+                          href: ./ui-flows/desktop/loop-condition.md
+                        - name: For each ループ
+                          href: ./ui-flows/desktop/for-each-loop.md
+                    - name: 条件を利用する
+                      items:
+                        - name: 条件を利用する
+                          href: ./ui-flows/desktop/use-conditionals.md
+                        - name: If/else
+                          href: ./ui-flows/desktop/if-else.md
+                        - name: If のバリエーション
+                          href: ./ui-flows/desktop/if-variations.md
+                        - name: スイッチケースモデル
+                          href: ./ui-flows/desktop/switch–case-model.md
+                - name: Web でのオートメーション
+                  items:
+                    - name: Web でのオートメーション
+                      href: ./ui-flows/desktop/automation-web.md
+                    - name: Web および API の操作
+                      href: ./ui-flows/desktop/interacting-web-services.md
+                    - name: ブラウザーの使用と拡張機能の管理
+                      href: ./ui-flows/desktop/using-browsers.md
+                    - name: 実際の Internet Explorer とオートメーション ブラウザーの使用
+                      href: ./ui-flows/desktop/internet-explorer-vs-automation-browser.md
+                - name: デスクトップ オートメーション
+                  href: ./ui-flows/desktop/desktop-automation.md
+            - name: アクション リファレンス
+              href: ./ui-flows/desktop/actions-reference.md
+              items:
+                - name: 変数
+                  href: ./ui-flows/desktop/actions-reference/variables.md
+                - name: 条件
+                  href: ./ui-flows/desktop/actions-reference/conditionals.md
+                - name: ループ
+                  href: ./ui-flows/desktop/actions-reference/loops.md
+                - name: 待機
+                  href: ./ui-flows/desktop/actions-reference/wait.md
+                - name: フロー コントロール
+                  href: ./ui-flows/desktop/actions-reference/flowcontrol.md
+                - name: システム
+                  href: ./ui-flows/desktop/actions-reference/system.md
+                - name: ファイル
+                  href: ./ui-flows/desktop/actions-reference/file.md
+                - name: フォルダー
+                  href: ./ui-flows/desktop/actions-reference/folder.md
+                - name: 圧縮
+                  href: ./ui-flows/desktop/actions-reference/compression.md
+                - name: UI オートメーション
+                  href: ./ui-flows/desktop/actions-reference/uiautomation.md
+                - name: Web
+                  href: ./ui-flows/desktop/actions-reference/web.md
+                - name: Web オートメーション
+                  href: ./ui-flows/desktop/actions-reference/webautomation.md
+                - name: Excel
+                  href: ./ui-flows/desktop/actions-reference/excel.md
+                - name: データベース
+                  href: ./ui-flows/desktop/actions-reference/database.md
+                - name: 電子メール
+                  href: ./ui-flows/desktop/actions-reference/email.md
+                - name: Exchange
+                  href: ./ui-flows/desktop/actions-reference/exchange.md
+                - name: Outlook
+                  href: ./ui-flows/desktop/actions-reference/outlook.md
+                - name: メッセージ ボックス
+                  href: ./ui-flows/desktop/actions-reference/display.md
+                - name: マウスとキーボード
+                  href: ./ui-flows/desktop/actions-reference/mouseandkeyboard.md
+                - name: クリップボード
+                  href: ./ui-flows/desktop/actions-reference/clipboard.md
+                - name: テキスト
+                  href: ./ui-flows/desktop/actions-reference/text.md
+                - name: 日時
+                  href: ./ui-flows/desktop/actions-reference/datetime.md
+                - name: CMD セッション
+                  href: ./ui-flows/desktop/actions-reference/cmd.md
+                - name: ターミナル エミュレーション
+                  href: ./ui-flows/desktop/actions-reference/terminalemulation.md
+                - name: OCR
+                  href: ./ui-flows/desktop/actions-reference/ocr.md
+                - name: 暗号化
+                  href: ./ui-flows/desktop/actions-reference/cryptography.md
+                - name: サービス
+                  href: ./ui-flows/desktop/actions-reference/services.md
+                - name: XML
+                  href: ./ui-flows/desktop/actions-reference/xml.md
+                - name: Active Directory
+                  href: ./ui-flows/desktop/actions-reference/activedirectory.md
+                - name: AWS
+                  href: ./ui-flows/desktop/actions-reference/aws.md
+                - name: Azure
+                  href: ./ui-flows/desktop/actions-reference/azure.md
+                - name: コグニティブ
+                  href: ./ui-flows/desktop/actions-reference/cognitive.md
+                - name: FTP
+                  href: ./ui-flows/desktop/actions-reference/ftp.md
+        - name: 既知の問題と制限事項
+          href: ./ui-flows/desktop/known-issues-limitations.md
 - name: ソリューション
   items:
     - name: 概要
@@ -187,24 +387,14 @@
       items:
         - name: 概要
           href: workflow-processes.md
-        - name: ワークフローのステージとステップを構成する
+        - name: バックグラウンド ワークフローのステージとステップを構成する
           href: configure-workflow-steps.md
-        - name: ワークフロー プロセスの監視と管理
+        - name: バックグラウンド ワークフロー プロセスの監視と管理
           href: monitor-manage-processes.md
-        - name: ワークフロー プロセスのベスト プラクティス
+        - name: バックグラウンド ワークフロー プロセスのベスト プラクティス
           href: best-practices-workflow-processes.md
-        - name: フローでワークフローを置き換える
+        - name: フローでバックグラウンド ワークフローを置き換える
           href: replace-workflows-with-flows.md
-    - name: クラシック Common Data Service アクション
-      items:
-        - name: アクションの使用
-          href: actions.md
-        - name: カスタム アクションを作成する
-          href: create-actions.md
-        - name: ワークフローからカスタム アクションを構成する
-          href: configure-actions.md
-        - name: ワークフローからカスタム アクションを呼び出す
-          href: invoke-custom-actions-workflow-dialog.md
     - name: クラシック Common Data Service タスク フロー
       items:
         - name: モバイル タスク フローを作成する
@@ -280,9 +470,9 @@
   items:
     - name: 組織のフローの Q & A
       href: organization-q-and-a.md
-    - name: 価格設定
+    - name: 価格
       href: billing-questions.md
-    - name: 管理センターの概要
+    - name: 管理センター
       href: admin-center-introduction.md
     - name: 環境を管理する
       href: environments-overview-admin.md
@@ -326,9 +516,11 @@
       href: limits-and-config.md
     - name: Power Automate Web API
       href: web-api.md
-    - name: よく寄せられる質問
+    - name: よくあるご質問
       href: frequently-asked-questions.md
-- name: 他のユーザーの声
+    - name: Power Automate 用語集
+      href: glossary.md
+- name: 他のユーザーから学ぶ
   items:
     - name: ウェビナー
       href: 'https://flow.microsoft.com/blog/category/webinars/'
