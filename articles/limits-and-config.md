@@ -4,7 +4,7 @@ description: 制限事項と構成
 services: ''
 suite: flow
 documentationcenter: na
-author: stepsic-microsoft-com
+author: msftman
 manager: anneta
 editor: ''
 tags: ''
@@ -14,18 +14,18 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/04/2020
-ms.author: stepsic
+ms.author: deonhe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 92b186b7a6d8664b39d04effbdcdb149323c2636
-ms.sourcegitcommit: a09a957460f7495c0b103e1d832f65963025fbac
+ms.openlocfilehash: 4ff6b57aff8971272ef5f4e24ef9acb877c37074
+ms.sourcegitcommit: e96d865ddf7a68586b3afc604bccc5d9f1be8af6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "3696983"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "3961562"
 ---
 # <a name="limits-and-configuration-in-power-automate"></a>Power Automate における制限事項と構成
 
@@ -79,9 +79,9 @@ ms.locfileid: "3696983"
 >個々のコネクタにも独自の制限がある場合があります。
 
 ## <a name="looping-and-debatching-limits"></a>ループおよびバッチ解除の制限
-1 つのフロー実行に対する制限は次のとおりです。 日単位の制限については、[要求の制限と割り当て](https://aka.ms/platformlimits) を参照してください。
+1 つのフロー実行に対する制限は次のとおりです。 
 
-| 件名 | 制限 | メモ​​ |
+| 件名 | 最大 | メモ  |
 | --- | --- | --- |
 | 各項目に適用する - Office 365 ライセンスおよび無料ライセンス|5,000 |必要に応じて、フィルター アクションを使って大きい配列をフィルター処理できます。 |
 | 各項目に適用 - プラン 1、プラン 2、ユーザーごと、フローごとのライセンス|100,000 |必要に応じて、フィルター アクションを使って大きい配列をフィルター処理できます。 |
@@ -89,14 +89,29 @@ ms.locfileid: "3696983"
 | SplitOn 項目 - Office 365 ライセンスおよび無料ライセンス |5,000 ||
 | SplitOn 項目 - プラン 1、プラン 2、ユーザーごと、フローごとのライセンス |100,000 ||
 | それぞれに適用の並列処理 |50 |既定では、ループは順番に実行されます (基本的に、並列処理は 1 です)。 並列では最大 50 まで構成できます。 |
-| 5 分ごとのアクション実行数 – 無料、Office 365、プラン 1 のライセンスと試用版 | 2,000 | 必要に応じて、複数のフローにワークロードを分散することもできます。 |
-|5 分ごとのアクション実行数 – 有料プラン 2、ユーザーごと、フローごとのライセンス|100,000|必要に応じて、複数のフローにワークロードを分散することもできます。|
 | アクションの同時発信呼び出し – 無料版、Office 365、プラン 1 の各ライセンスと試用版 | ~500 | 必要に応じて、同時要求の数を減らすか、継続時間を短縮します。 |
 | アクションの同時発信呼び出し – プラン 2、ユーザーごと、フローごとのライセンス | ~2,500 | 必要に応じて、同時要求の数を減らすか、継続時間を短縮します。 | 
 
+## <a name="daily-limits"></a>1 日あたりの制限
+1 日あたりの制限は、24 時間枠にスライド式で適用されます。 データ使用制限とは、フローの実行履歴を保存するために使用するストレージ容量を指します。  これらはプランごとにストレージで許可される上限です。 Power Platform の 1 日あたりの制限については [制限と割り当てを要求する](https://aka.ms/platformlimits) を参照してください。
+
+| **ユーザー ライセンス**                                        |    **24 時間あたりのアクション**                       |    **24 時間あたりのデータ使用量**   |
+|----------------------------------------------------------|-------------------------------------------------|--------------------------------------|
+| フロー プランごとの Power Automate                             | フローごとのライセンス付与済みフローに対して 15,000 件               | 50 GB                                 |
+| Dynamics 365 Enterprise アプリケーション<sup>1</sup>         | ユーザー 1 人が所有するフロー全体で 20,000 件  | 10GB                                 |
+| Dynamics 365 プロフェッショナル<sup>2</sup>                   | ユーザー 1 人が所有するフロー全体で 10,000 件  | 10GB                                 |
+| Dynamics 365 チーム メンバー、ユーザーごとの Power Apps、Power Automate のユーザーごとのプラン | ユーザー 1 人が所有するフロー全体で 5,000 件   | 10GB            | 
+| Office ライセンス (Power Apps/Power Automate を含む)<sup>3</sup>、Power Apps アプリごとプラン、アプリケーション ユーザー / 非インタラクティブ ユーザー | ユーザー 1 人が所有するフロー全体で 2,000 件 | 1GB                        |
+
+<sup>1 </sup>Dynamics 365 Enterprise アプリケーションには、Dynamics 365 Sales Enterprise、Dynamics 365 Customer Service Enterprise、Dynamics 365 Field Service、Dynamics 365 Project Service Automation、Dynamics 365 Retail、Dynamics 365 Talent、Dynamics 365 Customer Engagement プランが含まれています。
+
+<sup>2</sup>Dynamics 365 Professionalには、Dynamics 365 Sales Professional、Dynamics 365 Customer Service Professional が含まれています。
+
+[ライセンス ガイド](https://go.microsoft.com/fwlink/p/?linkid=2085130) にある Power Apps および Power Automate 機能を含む Microsoft 365 ライセンスについては、<sup>3 </sup>**付録 C** を参照してください。
+
 ## <a name="throughput-limits"></a>スループットの制限
 
-|件名|制限|メモ​​|
+|件名|最大|メモ |
 |---|---|---|
 |ランタイム エンドポイント - 5 分ごとに許可される読み取り呼び出し回数 – 無料版、Office 365、プラン 1 の各ライセンスと試用版|6,000||
 |ランタイム エンドポイント - 5 分ごとに許可される読み取り呼び出し回数 – 有料プラン 2、ユーザーごと、フローごとのライセンス|60,000||
@@ -104,13 +119,11 @@ ms.locfileid: "3696983"
 |ランタイム エンドポイント: 5 分ごとの Invoke 呼び出し回数 – 有料プラン 2、ユーザーごと、フローごとのライセンス|45,000||
 |5 分ごとに許可されるスループットの量 – 無料版、Office 365、プラン 1 の各ライセンスと試用版|600 MB||
 |5 分ごとに許可されるスループットの量 – 有料プラン 2、ユーザーごと、フローごとのライセンス|6 GB||
-|1 時間ごとの生成が許可されたコンテンツ フローの量 (アクションの入力/出力) - 無料版、Office 365、プラン 1、プラン 2、ユーザーごと、フローごとの各ライセンス|200 GB||
-
 
 ## <a name="flow-limits"></a>フローの制限
 これらはフローの制限です。
 
-| 件名 | 制限 | メモ​​ |
+| 件名 | 最大 | メモ  |
 | --- | --- | --- |
 | ワークフローごとのアクション |500|必要に応じて、入れ子になったワークフローを追加してこの機能を拡張できます。 |
 | 許可されるアクションの入れ子の深さ |8 |必要に応じて、入れ子になったワークフローを追加してこの機能を拡張できます。 |

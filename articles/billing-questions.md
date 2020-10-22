@@ -20,12 +20,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: a8b4ee39a7d40df41a1c8012a33860a77a51a092
-ms.sourcegitcommit: 8714786a5b632dfd60099871629cf369a31c4125
+ms.openlocfilehash: 768f447ab644fcf94e3c971929e7813efa4af66b
+ms.sourcegitcommit: 9f0460d80aa368ad25e7ec85bfab0754a17a5526
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "3346563"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3803396"
 ---
 # <a name="billing-and-metering-questions"></a>課金と使用状況の計測に関する質問
 
@@ -33,7 +33,7 @@ ms.locfileid: "3346563"
 この記事では、Power Automate の課金と使用状況の測定についてよく寄せられる質問とその回答を扱います。
 
 >[!NOTE]
-> 2019 年 10 月 1 日からは、Power Apps と Power Automate は [新しいライセンスモデル](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq) を使用します。 
+> Power Apps と Power Automate は 2019 年 10 月 1 日から [新しいライセンス モデル](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq) を使用しています。 
 
 ## <a name="where-can-i-find-out-what-pricing-plans-are-available"></a>利用可能な価格プランはどこで確認できますか？
 

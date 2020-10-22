@@ -4,7 +4,7 @@ description: Office 365 テナントで Power Automate にサインアップす�
 services: ''
 suite: flow
 documentationcenter: na
-author: stepsic-microsoft-com
+author: msftman
 manager: kvivek
 editor: ''
 tags: ''
@@ -14,18 +14,18 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/18/2020
-ms.author: stepsic
+ms.author: deonhe
 search.app:
 - Flow
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 816a2ab2e04c6f17e6174c0b07b23604e496ca0d
-ms.sourcegitcommit: 7b39517611bff350c760e76d0d6eed03739194a7
+ms.openlocfilehash: 037b7e7abdf771507c9e76ed4d181e22cdcec643
+ms.sourcegitcommit: 2971e852bdb76efbe012b9de8df8e7f492063184
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "3710756"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "3900434"
 ---
 # <a name="power-automate-in-your-organization-qa"></a>組織の Power Automate に関する Q&A
 

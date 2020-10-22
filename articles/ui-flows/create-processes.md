@@ -20,15 +20,17 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 0821546df5c68b20d1812d6cd07a50b4d4246691
-ms.sourcegitcommit: 1f9da3e1a22b95e266ffd445017203b153942860
+ms.openlocfilehash: d4df7419712b406004c029c3bea75295c0e2990e
+ms.sourcegitcommit: c3eee935e8e8c64963817d2a692a38e8c90400b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "3545393"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3835141"
 ---
 # <a name="use-softomotives-winautomation-with-ui-flows"></a>UI flows で Softomotive の WinAutomation を使用する
 
+>[!IMPORTANT]
+>WinAutomation の新機能については [Power Automate Desktop (プレビュー)](./desktop/introduction.md) のドキュメントを参照してください。
 
 UI フローで WinAutomation を使い始める前のヒントをいくつか紹介します。
 
@@ -36,7 +38,7 @@ UI フローで WinAutomation を使い始める前のヒントをいくつか�
 
 1.  WinAutomation における自動化スクリプト、 **プロセス**とは呼ばれます。 Power Automate では、自動化スクリプトは、 *フロー* または  *UI フロー*と呼ばれます。
 
-1.  WinAutomation プロセスを作成する前に、 [コネクタの一覧](https://flow.microsoft.com/connectors/) を調べて、自動化を行うアプリケーションに既にコネクタがあるかどうかを確認します。 既に存在する場合は、UI フローではなくフローを作成することを検討してください。  [独自のコネクタを作成](https://docs.microsoft.com/connectors/custom-connectors/)することもできます。 一般に、API ベースのコネクタは、拡張性、信頼性、低コストの点でUI自動化よりも全体的に優れたエクスペリエンスを提供します。
+1.  WinAutomation プロセスを作成する前に、 [コネクタの一覧](https://flow.microsoft.com/connectors/) を調べて、自動化を行うアプリケーションに既にコネクタがあるかどうかを確認します。 既に存在する場合は、UI フローではなくフローを作成することを検討してください。  [独自のコネクタを作成](https://docs.microsoft.com/connectors/custom-connectors/)することもできます。 一般に API ベースのコネクタは、スケーラビリティ、信頼性、低コストの点で UI 自動化より優れたエクスペリエンスを提供します。
 
 1.  既存の WinAutomation ライセンスが付与されているユーザーは、 [Softomotive のサポート ページ](https://support.softomotive.com/support/home)で詳細を確認できます
 
@@ -77,7 +79,7 @@ UI フローや WinAutomation を利用するためには、*RPA を利用した
 
       ![アクセス許可の要求](../media/create-processes/request-permissions.png)
 
-1.  ログイン中にマスターキーを作成するように求められたら、マスターキーを作成します。
+1.  サインイン時にマスターキーの作成を求められる場合はマスターキーを作成します。
 
 1.  ログインすると、いくつかのプロセス例とともに WinAutomation のコンソールが表示されます。 使用を開始するには、 **オプション** \> **ヘルプ** \> **開始する**に移動し、続いて簡単なプロセスを作成するいくつかの例を実行するか、または[WinAutomation ドキュメント : 簡単なプロセスの構築](https://docs.winautomation.com/en/building-a-simple-process.html)に記載の情報を確認してください。 [WinAutomation チュートリアル](https://www.winautomation.com/support/tutorials/)にて詳細を参照することができます。
 
@@ -85,7 +87,10 @@ UI フローや WinAutomation を利用するためには、*RPA を利用した
 
 ## <a name="run-winautomation-processes-from-power-automate"></a>Power Automate から WinAutomation のプロセスを実行する
 
-1.  WinAutomation で自動化のプロセスを作成後は、有人または無人の UIフロー (デスクトップ) を介して Power Automate のフローからこのプロセスを実行できます。 (**注意**: UI フローの作成と実行の詳細については、 [ここ](https://docs.microsoft.com/power-automate/ui-flows/create-desktop)をご覧ください)。
+1.  WinAutomation で自動化のプロセスを作成後は、有人または無人の UIフロー (デスクトップ) を介して Power Automate のフローからこのプロセスを実行できます。 
+    
+    >[!TIP]
+    >[UI フローの作成と実行](https://docs.microsoft.com/power-automate/ui-flows/create-desktop) に関する詳細情報。
 
 1.  新しいデスクトップ UI フローを作成します。 「アプリの記録」のデフォルトの最初のステップを削除します。
 
@@ -148,7 +153,9 @@ UI フローや WinAutomation を利用するためには、*RPA を利用した
 >[!IMPORTANT]
 >ユーザーにプランを割り当てる際は、割り当てが有効化されるまでに数分かかる場合があります。
 
-## <a name="troubleshooting-winautomation-licensing-issues"></a>WinAutomation のライセンスに関する問題のトラブルシューティング
+## <a name="troubleshooting"></a>トラブルシューティング​​
+
+### <a name="troubleshooting-winautomation-licensing-issues"></a>WinAutomation のライセンスに関する問題のトラブルシューティング
 
 WinAutomation の起動中にライセンス エラーが発生した場合、ログインしているユーザーに有効な Power Automate RPAライセンスが付与されていることを確認してください。 これを確認するには、次の手順を実行します。
 
@@ -165,7 +172,70 @@ WinAutomation の起動中にライセンス エラーが発生した場合、�
 
 WinAutomation が保存したライセンス情報をリセットするには、次のファイルを削除します : %localappdata%\\Softomotive\\WinAutomation\\msalcache.bin3
 
-## <a name="learn-more"></a>詳細はこちら
+### <a name="troubleshooting-other-issues"></a>その他の問題のトラブルシューティング
+
+発生する可能性がある問題のトラブルシューティングについては、このセクションのリンクをご利用ください。
+
+WinAutomation
+- [インストール エラー](https://support.softomotive.com/support/solutions/folders/35000220522)
+- [コンソール](https://support.softomotive.com/support/solutions/folders/35000220523)
+- [プロセス エラー](https://support.softomotive.com/support/solutions/folders/35000220524)
+- [Web オートメーション](https://support.softomotive.com/support/solutions/folders/35000220531)
+- [UI オートメーション](https://support.softomotive.com/support/solutions/folders/35000220532)
+- [Excel の自動化](https://support.softomotive.com/support/solutions/folders/35000220533)
+- [画像の処理](https://support.softomotive.com/support/solutions/folders/35000220534)
+- [メールの自動化](https://support.softomotive.com/support/solutions/folders/35000220535)
+- [データベース](https://support.softomotive.com/support/solutions/folders/35000220536)
+
+ProcessRobot
+- [コントロール デスク](https://support.softomotive.com/support/solutions/folders/35000220525)
+- [プロセス スタジオ](https://support.softomotive.com/support/solutions/folders/35000220526)
+- [ProcessRobot データベース](https://support.softomotive.com/support/solutions/folders/35000220528)
+- [ロボット エラー](https://support.softomotive.com/support/solutions/folders/35000220529)
+- [プロセス エラー](https://support.softomotive.com/support/solutions/folders/35000220530)
+- [Web オートメーション](https://support.softomotive.com/support/solutions/folders/35000220531)
+- [UI オートメーション](https://support.softomotive.com/support/solutions/folders/35000220532)
+- [Excel の自動化](https://support.softomotive.com/support/solutions/folders/35000220533)
+- [画像の処理](https://support.softomotive.com/support/solutions/folders/35000220534)
+- [メールの自動化](https://support.softomotive.com/support/solutions/folders/35000220535)
+- [データベース](https://support.softomotive.com/support/solutions/folders/35000220536)
+
+
+## <a name="best-practices-for-creating-processes"></a>プロセス作成のベスト プラクティス
+
+プロセス作成時に考慮すべきヒントを以下にいくつか示します。
+
+
+WinAutomation
+
+- [トリガー](https://support.softomotive.com/support/solutions/folders/35000220511)
+- [Web オートメーション](https://support.softomotive.com/support/solutions/folders/35000220512)
+- [UI 自動化](https://support.softomotive.com/support/solutions/folders/35000220513)
+- [Excel の自動化](https://support.softomotive.com/support/solutions/folders/35000220514)
+- [テキスト操作](https://support.softomotive.com/support/solutions/folders/35000220515)
+- [画像の処理](https://support.softomotive.com/support/solutions/folders/35000220516)
+- [メールの自動化](https://support.softomotive.com/support/solutions/folders/35000220517)
+- [データベース](https://support.softomotive.com/support/solutions/folders/35000220518)
+- [数学演算](https://support.softomotive.com/support/solutions/folders/35000220519)
+- [変数](https://support.softomotive.com/support/solutions/folders/35000220520)
+
+ProcessRobot
+
+- [コントロール デスク](https://support.softomotive.com/support/solutions/folders/35000220537)
+- [ダッシュボード](https://support.softomotive.com/support/solutions/folders/35000220538)
+- [トリガー](https://support.softomotive.com/support/solutions/folders/35000220521)
+- [Web オートメーション](https://support.softomotive.com/support/solutions/folders/35000220512)
+- [UI 自動化](https://support.softomotive.com/support/solutions/folders/35000220513)
+- [Excel の自動化](https://support.softomotive.com/support/solutions/folders/35000220514)
+- [テキスト操作](https://support.softomotive.com/support/solutions/folders/35000220515)
+- [画像の処理](https://support.softomotive.com/support/solutions/folders/35000220516)
+- [メールの自動化](https://support.softomotive.com/support/solutions/folders/35000220517)
+- [データベース](https://support.softomotive.com/support/solutions/folders/35000220518)
+- [数学演算](https://support.softomotive.com/support/solutions/folders/35000220519)
+- [変数](https://support.softomotive.com/support/solutions/folders/35000220520)
+
+
+## <a name="learn-more"></a>詳細情報を見る
 
 -    [WinAutomation の取得](https://flow.microsoft.com/blog/microsoft-acquires-softomotive-to-expand-low-code-robotic-process-automation-capabilities-in-microsoft-power-automate/)について参照する。
 -   詳細については、[WinAutomation ドキュメント](https://docs.winautomation.com/index.html?lang=en) を参照してください。

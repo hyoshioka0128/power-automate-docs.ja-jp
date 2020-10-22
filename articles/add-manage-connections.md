@@ -4,8 +4,8 @@ description: SharePoint、SQL Server、OneDrive for Business、Salesforce、Offi
 services: ''
 suite: flow
 documentationcenter: na
-author: stepsic-microsoft-com
-manager: anneta
+author: MSFTMan
+manager: KVIVEK
 editor: ''
 tags: ''
 ms.service: flow
@@ -13,92 +13,109 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/15/2017
-ms.author: stepsic
+ms.date: 09/23/2020
+ms.author: Deonhe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 881a0a99e6570e20d748ea65c2fd003133cace06
-ms.sourcegitcommit: a09a957460f7495c0b103e1d832f65963025fbac
+ms.openlocfilehash: 0edd05a5c08b71c534a6b6b4a58bf96dcb33a6cf
+ms.sourcegitcommit: 3732af8b39dcbc028de934694b54afc919e7eeef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "3697127"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "3893758"
 ---
 # <a name="manage-connections-in-power-automate"></a>Power Automate での接続の管理
 
-Power Automate で接続を作成する場合は、フローを作成しながら、データに簡単にアクセスできます。 Power Automate には、SharePoint、SQL Server、Office 365、OneDrive for Business、Salesforce、Excel、Dropbox、Twitter など、よく使用される接続が含まれています。 接続は Power Apps と共有されるため、一方の製品で接続を作成すると、その接続は他方の製品にも表示されます。
+Power Automate が *接続* を使用するとフローの構築中にデータを簡単に利用できます。 Power Automate には、SharePoint、SQL Server、Office 365、OneDrive for Business、Salesforce、Excel、Dropbox、Twitter など、よく使用される接続が含まれています。 接続は Power Apps と共有されるため、一方のサービスで接続を作成すると、その接続は他方のサービスにも表示されます。
 
-たとえば、接続を使用すると、次のタスクを実行できます:
+接続を使用して次のタスクを実行できます:
 
-* SharePoint リストを更新します。
-* OneDrive for Business または Dropbox アカウントで使用している Excel ファイルからデータを取得する。
-* Office 365 で電子メールを送信する。
-* ツイートを送信します。
+- SharePoint リストを更新します。
+- OneDrive for Business や Dropbox のアカウントにある Microsoft Excel ファイルからデータを取得します。
+- Office 365 で電子メールを送信する。
+- ツイートを送信します。
 
-次のような複数のシナリオで、接続を作成できます。
+以下を含む複数のシナリオで接続を作成できます:
 
-* [テンプレートからフロー](get-started-logic-template.md) を作成する
-* [ゼロからフロー](get-started-logic-flow.md) を作成するか、既存のフローを更新する
-* サービスでのレポートの直接作成[Power Automate の Web サイト][1] で直接接続を作成する
+-  [テンプレートからフロー](./get-started-logic-template.md) を作成する
 
-[!INCLUDE [sharepoint-detailed-docs](includes/sharepoint-detailed-docs.md)]
+-  [最初からフロー](./get-started-logic-flow.md) を作成するか、既存のフローを更新する
+
+- [Power Automate](https://flow.microsoft.com/) に接続を作成しています。
+
+>[!TIP]
+> Power Automate での SharePoint の使用について詳しくは、 [SharePoint のドキュメント](https://docs.microsoft.com/sharepoint/dev/business-apps/power-automate/sharepoint-connector-actions-triggers)を参照してください。
 
 ## <a name="add-a-connection"></a>接続の追加
-1. [Power Automate の Web サイト][1] で、ご自身の職場または組織のアカウントを使用してサインインします。
-2. 右上隅近くにある歯車アイコンを選択し、**接続** を選択します。
-   
-    ![接続を選択する](./media/add-manage-connections/connections-menu.png)
-3. **接続の作成** を選択します。
-4. **利用可能な接続** の一覧で、SharePoint などの、設定する接続を選択します。
-5. **接続の作成** ボタンを選択し、接続をセットアップするための資格情報を入力します。
 
-接続がセットアップされると、**自分の接続** の一覧に表示されます。
+1. [Power Automate](https://flow.microsoft.com/) に仕事用や組織のアカウントでサインインします。
+
+1. 左側のナビゲーション バーから **データ** > **接続** を選択します。
+
+   ![接続オプションを表示する画像](media/add-manage-connections/data-connections-link.png)
+
+1. ページの上部から **新しい接続** を選択します。
+
+1. 使用可能な接続リストから **+** アイコンを選択して、設定する (SharePoint などの) 接続を選択します。
+
+   ![構成可能な接続リスト](media/add-manage-connections/new-connections-list.png)
+
+1. 手順に従って資格情報を入力して接続を構成します。
+
+   > [!TIP]
+   > **データ** > **接続** で作成したすべての接続を確認できます。
 
 ## <a name="connect-to-your-data-through-an-on-premises-data-gateway"></a>オンプレミス データ ゲートウェイを介してデータに接続する
-この記事の執筆時点では、SQL Server と SharePoint  Server はオンプレミス データ ゲートウェイに対応しています。 ゲートウェイを使用する接続を作成するには:
 
-1. このトピックの前述の手順に従って、接続を追加します。
-2. **利用可能な接続** の一覧で **SQL Server** を選択し、**オンプレミスのデータ ゲートウェイ経由で接続** チェック ボックスを選択します。
-   
-    ![ゲートウェイの選択](./media/add-manage-connections/select-gateway.png)
-   
-   > [!IMPORTANT]
-   > Microsoft SharePoint データ ゲートウェイは、HTTP トラフィックに対応していますが、HTTPS トラフィックには対応していません。
-   > 
-   > 
-3. 接続の資格情報を指定し、使用するゲートウェイを選択します。
-   
-    詳細については、[ゲートウェイの管理](gateway-manage.md) と [ゲートウェイについて](gateway-reference.md) を参照してください。
-   
-    接続がセットアップされると、**自分の接続** の一覧に表示されます。
+SharePoint コネクタなど一部のコネクタは、オンプレミス データ ゲートウェイをサポートします。 ゲートウェイを使用する接続を作成するには:
 
-## <a name="delete-a-connection"></a>つながりの削除
-1. **自分の接続** ページに移動し、削除する接続に対してごみ箱アイコンを選択します。
-   
-    ![接続の削除](./media/add-manage-connections/delete-connection.png)
-2. **OK** を選択して、接続を削除することを確認します。
-   
-    ![削除の確認](./media/add-manage-connections/delete-confirmation.png)
+1. このトピックの前述の手順に従って [接続を追加します](#add-a-connection)。
+
+1. 使用可能な接続の一覧で **SharePoint** を選択します。
+
+1. **オンプレミス データ ゲートウェイを使用して接続する** オプションを選択します。
+
+   ![オンプレミス オプションを選択する](media/add-manage-connections/select-on-prem-option.png)
+
+1. 接続の資格情報を指定し、使用するゲートウェイを選択します。
+
+   >[!TIP]
+   > 詳細については [ゲートウェイの管理](./gateway-manage.md) と [ゲートウェイの概要](./gateway-reference.md) を参照してください。
+
+   > [!NOTE]
+   > 接続を構成すると **接続** に表示されます。
+
+**接続の削除**
+
+1. **データ** > **接続** に移動して削除する接続を選択します。
+
+1. **…** を選択します その他のコマンドを表示してから **削除** を選択します。
+
+   ![レコードを削除する際は [削除] を選択する](media/add-manage-connections/delete-connection.png)
+
+1.  **削除** を選択して接続の削除を確認します。
+
+   ![接続を削除する確認](media/add-manage-connections/delete-connection-confirmation.png)
 
 接続を削除すると、Power Apps と Power Automate の両方から削除されます。
 
 ## <a name="update-a-connection"></a>接続を更新する
+
 アカウントの詳細またはパスワードが変更されたために機能していない接続を更新できます。
 
-1. **自分の接続** ページで、更新する接続の **パスワードの確認** リンクを選択します。
-   
-    ![パスワードの確認](./media/add-manage-connections/verify-password.png)
-2. メッセージが表示されたら、新しい資格情報で接続を更新します。
+1. **データ** > **接続** に移動して、更新する接続の **接続を修正する** リンクを選択します。
+
+   ![リンクを選択して接続を修正する](media/add-manage-connections/fix-connection-link.png)
+
+1. メッセージが表示されたら、新しい資格情報で接続を更新します。
 
 接続を更新すると、Power Apps と Power Automate の両方で更新されます。
 
 ## <a name="troubleshoot-a-connection"></a>接続のトラブルシューティングを行う
+
 組織のポリシーによっては、 Power Automate にサインインする場合と、SharePoint、Office 365、または OneDrive  for Business への接続を作成する場合に同じアカウントを使用する必要がある可能性があります。
 
 たとえば、*yourname@outlook.com* を使用して Power Automate にサインインしているにも関わらず、*yourname@contoso.com* を使用して SharePoint に接続できない場合があります。 *yourname@contoso.com* を使用して Power Automate にサインインすると、SharePoint に接続できるようになります。
-
-<!--Reference links in article-->
-[1]: https://flow.microsoft.com

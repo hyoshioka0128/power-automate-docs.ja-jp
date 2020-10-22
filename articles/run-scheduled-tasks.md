@@ -4,8 +4,8 @@ description: 毎日、毎時間などのスケジュールに従ってフロー�
 services: ''
 suite: flow
 documentationcenter: na
-author: stepsic-microsoft-com
-manager: anneta
+author: msftman
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -14,18 +14,18 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/29/2020
-ms.author: nijemcevic
+ms.author: deonhe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: cb5c1d522a522aa1ef2dce2bc0757e4efa3fcc42
-ms.sourcegitcommit: 71dd515fb482312e2878c3eb8642441780290cb5
+ms.openlocfilehash: 86633b3f976107aeaa8138405aecb2f2b493e9e4
+ms.sourcegitcommit: 2971e852bdb76efbe012b9de8df8e7f492063184
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "3742430"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "3900266"
 ---
 # <a name="run-flows-on-a-schedule"></a>スケジュールに従ったフローの実行
 
@@ -38,8 +38,8 @@ ms.locfileid: "3742430"
 ## <a name="create-a-recurring-flow"></a>定期的なフローの作成
 
 1. [Power Automate](https://flow.microsoft.com) にサインインし、左側のナビゲーション ウィンドウで **マイ フロー** を選択します。
-1. **+ 新規** を選択した後、**+ スケジュール-空白から作成** を選択します。
-    ![フローを白紙から作成します](./media/run-scheduled-tasks/create-flow.png)
+1. **新規** を選択した後、**スケジュール-空白から作成** を選択します。
+    ![フローを一から作成する](./media/run-scheduled-tasks/create-flow.png)
 1. **開始** ボックスを編集してフローを開始するタイミングを指定し、**繰り返し間隔** ボックスを編集してフローの繰り返しを指定し、**作成** を選択します。
     ![定期的なアイテムの設定](./media/run-scheduled-tasks/select-recurrence.png)
 

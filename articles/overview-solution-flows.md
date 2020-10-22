@@ -20,17 +20,17 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: f999bee5227deed7f4102155ffb85c3cf3d7814d
-ms.sourcegitcommit: 39d7912519ff03dae924023c1a1c320a30efaa81
+ms.openlocfilehash: a0e986c9d98d8a928cde139f9e21a78331c4f039
+ms.sourcegitcommit: c748e9804f4f03d18f3c81d40f1d6fc5862a24c2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "3691130"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "3968747"
 ---
 # <a name="overview"></a>概要
 
 
-フローを [ソリューション](https://docs.microsoft.com/powerapps/maker/common-data-service/solutions-overview) でホストすると、フローが移植可能となり、フローとそのすべてのコンポーネントをある環境から別の環境に移動させることが容易になります。 典型的なユースケースとしては、独立系ソフトウェア ベンダー (ISV) がサンドボックス環境でフローを開発し、このフローをテスト環境に移動させる場合などが考えられます。 テスト後、ISV はこれらフローを購入した顧客に向けて本番環境に移行します。 このプロセスは、ソリューションでフローを作成し、ソリューションとそのコンテンツを移動させることで、はるかに簡易化を図ることができます。
+フローを [ソリューション](/power-platform/alm/solution-concepts-alm) でホストすると、フローが移植可能となり、フローとそのすべてのコンポーネントをある環境から別の環境に移動させることが容易になります。 典型的なユースケースとしては、独立系ソフトウェア ベンダー (ISV) がサンドボックス環境でフローを開発し、このフローをテスト環境に移動させる場合などが考えられます。 テスト後、ISV はこれらフローを購入した顧客に向けて本番環境に移行します。 このプロセスは、ソリューションでフローを作成し、ソリューションとそのコンテンツを移動させることで、はるかに簡易化を図ることができます。
 
 ソリューション内に作成するフローは、*ソリューションに対応した*フローと呼ばれます。 1 つのソリューションに複数のフローを追加することができます。 ソリューションに対応していないフロー (ソリューションで作成されたのではないフロー) を別のソリューションに移動することはできません。
 

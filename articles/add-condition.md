@@ -4,8 +4,8 @@ description: 条件が true の場合にのみ、フローが 1 つ以上のタ�
 services: ''
 suite: flow
 documentationcenter: na
-author: stepsic-microsoft-com
-manager: anneta
+author: msftman
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -14,18 +14,18 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/08/2020
-ms.author: stepsic
+ms.author: deonhe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: e6691b853dc5c1a4b0f9ddb0e05813ab927492d9
-ms.sourcegitcommit: b6156ed015e9d4af22704f98a3fadd1d8cfb6f6e
+ms.openlocfilehash: cb914dc888d11d2e0abf96211898d78015256505
+ms.sourcegitcommit: 2971e852bdb76efbe012b9de8df8e7f492063184
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "3648653"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "3900194"
 ---
 # <a name="add-a-condition-to-a-flow"></a>フローに条件を追加する
 

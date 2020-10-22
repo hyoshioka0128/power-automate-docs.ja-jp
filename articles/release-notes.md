@@ -4,7 +4,7 @@ description: Power Automate リリースの一般的な問題と新機能
 services: ''
 suite: flow
 documentationcenter: na
-author: stepsic-microsoft-com
+author: msftman
 manager: kvivek
 editor: ''
 tags: ''
@@ -14,18 +14,18 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/07/2020
-ms.author: stepsic
+ms.author: deonhe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 82e175f463e9cbc264b6ac388e90eaa3433211b4
-ms.sourcegitcommit: 4b9261984a554dfccb0d0d77f3d5fdca60e26433
+ms.openlocfilehash: c020703182becc6460c3630adb4e8735cbdd407b
+ms.sourcegitcommit: 2971e852bdb76efbe012b9de8df8e7f492063184
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "3340145"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "3900386"
 ---
 # <a name="release-notes"></a>リリース ノート
 

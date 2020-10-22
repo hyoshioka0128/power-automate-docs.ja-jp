@@ -5,7 +5,6 @@ services: ''
 suite: flow
 documentationcenter: na
 author: gcorvera
-manager: KVivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -13,19 +12,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 6/27/2020
+ms.date: 09/29/2020
 ms.author: gcorvera
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 5b0ca1e9bb28b7cb4cad4e5aaedb151b119ea24a
-ms.sourcegitcommit: 5ae78d01c71a359833061c45d54c8c4636d71090
+ms.openlocfilehash: b27effa7a904687141d606532d37927b87f69300
+ms.sourcegitcommit: 741ae960b733c4569236089a1f00114508bbb451
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "3678596"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "3905054"
 ---
 # <a name="use-markdown-in-power-automate-approval-requests"></a>Power Automate の承認リクエストで Markdown を使用する
 
@@ -33,6 +32,7 @@ ms.locfileid: "3678596"
 この記事では、[Markdown](https://en.wikipedia.org/wiki/Markdown) 構文を使って、承認要求に様々なフォーマット設定を追加する方法について説明します。
 
 > [!IMPORTANT]
+>
 > - 承認要求の電子メールは、*アクション可能なメッセージ*です。 [Microsoft Outlook  クライアント](https://docs.microsoft.com/outlook/actionable-messages/#outlook-version-requirements-for-actionable-messages) でアクション可能メッセージがサポートされない場合、承認要求は HTML 形式で表示されます。 
 > - すべての Markdown レンダラーには異なる実装がされています。 詳細は、[クライアント サポート](#client-support) セクションを参照してください。
 > - Markdown は現在、[GCC および GCC High の顧客](/power-automate/us-govt) には対応していません。
@@ -49,7 +49,10 @@ ms.locfileid: "3678596"
 | **テーブル** | 有効 | 有効 | 有効 | 有効 | **_No_** | **_No_** |
 | **画像** | **_No_** | **_No_** | **_No_** | **_No_** | **_No_** | **_No_** |
 | **強制改行** | 有効 | 有効 | **_番号_**（代わりに空白行を使用してください） | 有効 | 有効 | 有効 |
-| **空白行** | **_No_** | **_No_** | 有効 | 有効 | **_No_** | 有効 |
+| **空白行** | **_無効_** | **_無効_** | 有効 | 有効 | **_無効_** | 有効 |
+
+> [!NOTE]
+> Outlook Mobile で以前に使用したパラメーターは、使用中の Outlook クライアント アプリやバージョンにより異なる場合があります。
 
 ## <a name="headers"></a>ヘッダー
 
@@ -72,18 +75,17 @@ ms.locfileid: "3678596"
 ## <a name="paragraphs-and-line-breaks"></a>段落と改行
 
 段落や改行をすることで、テキストを読みやすくします。 改行の前に 2 つのスペースを入力すると、ほとんどのクライアントで強制的に新規行を開始させます。  
-   
+
 **用例:**  
 ```Markdown
-This is line 1.(space, space)
+This is line 1.(space)
 Now text will appear on the next line.
 ```
 
-**結果 :**   
-これは 1 行目です。  
+**結果:** これは1行目です。  
 テキストが次の行に表示されます。 
 
-**例 2:**  
+**例 2:**
 ```Markdown
 This is line 1.(space, space)  
 
@@ -95,16 +97,16 @@ Line 2 has extra space before it.
 
 行 2 の前には余分なスペースがあります。
   
-
 ## <a name="lists"></a>リスト
 
 関連する項目をリスト化して整理します。 番号付きの順序りスト、または行頭文字だけの順序なしリストを追加できます。
 
-順序化されたリストは、リスト項目ごとに数字とピリオドで開始します。 順序なしリストは、`*` で開始します。 各リスト項目は新たな行で開始します。 新たな段落を始めるには、Markdown ファイルまたはウィジェットで、改行の前に 2 つのスペースを入力するか、連続して 2 つの改行を入力します。   
+順序化されたリストは、リスト項目ごとに数字とピリオドで開始します。 順序なしリストは、`*` で開始します。 各リスト項目は新たな行で開始します。 新たな段落を始めるには、Markdown ファイルまたはウィジェットで、改行の前に 2 つのスペースを入力するか、連続して 2 つの改行を入力します。
 
 ### <a name="ordered-or-numbered-lists"></a>順序化されたリスト、または番号付きリスト
 
-**用例:**  
+**用例:**
+
 ```Markdown
 0. First item.
 0. Second item.
@@ -118,21 +120,24 @@ Line 2 has extra space before it.
 
 ### <a name="bullet-lists"></a>箇条書きリスト
 
-**用例:**  
+**用例:**
+
 ```Markdown
 - Item 1
 - Item 2
 - Item 3
 ```
 
-**結果 :**  
+**結果 :**
+
 - 項目 1
 - 項目 2
 - 項目 3
 
 ### <a name="nested-lists"></a>入れ子になったリスト
 
-**用例:**  
+**用例:**
+
 ```Markdown
 1. First item.
    - Item 1
@@ -144,7 +149,7 @@ Line 2 has extra space before it.
    - Nested item 3
 ```
 
-**結果 :**  
+**結果 :** 
 1. 最初の項目。
 
     - 項目 1
@@ -204,10 +209,10 @@ HTTP および HTTPS の URL は、自動的に書式設定されリンク化さ
  
 ## <a name="emphasis-bold-italics-strikethrough"></a>強調 (太字、斜体、取り消し線)  
 
-文字に太字、斜体や取り消し線を適用することで、テキストを強調できます。 
-- 斜体を適用するには: テキストをアスタリスク `*` またはアンダースコア `_` で囲みます   
+文字に太字、斜体や取り消し線を適用することで、テキストを強調できます。
+- 斜体を適用するには: テキストをアスタリスク `*` またはアンダースコア `_` で囲みます
 - 太字を適用するには、テキストを 2 つのアスタリスク `**` で囲みます。    
-- 取り消し線を適用するには、テキストを 2 個のチルダ文字 `~~` で囲みます。   
+- 取り消し線を適用するには、テキストを 2 個のチルダ文字 `~~` で囲みます。
 
 これらの要素を組み合わせて、複数の強調表現をテキストに適用できます。    
 

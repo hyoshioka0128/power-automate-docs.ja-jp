@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/18/2020
+ms.date: 09/14/2020
 ms.author: deonhe
 search.app:
 - Flow
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 50acd79de3575843364a0aef95129b17b956ac09
-ms.sourcegitcommit: 39d7912519ff03dae924023c1a1c320a30efaa81
+ms.openlocfilehash: eb6143e9656c96005d2773a46d584ce107701132
+ms.sourcegitcommit: 9f0460d80aa368ad25e7ec85bfab0754a17a5526
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "3690986"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3803348"
 ---
 # <a name="data-loss-prevention-dlp-policies"></a>データの消失防止 (DLP) ポリシー
 
@@ -36,7 +36,7 @@ ms.locfileid: "3690986"
 
 組織の成功にはデータが重要です。 意志決定をするためにデータを利用できる必要がありますが、アクセスすべきでない対象者に共有されないよう保護する必要があります。 このデータを保護するため、Power Automate では、ビジネス データにアクセスして共有できるコネクタを定義するポリシーを作成して適用できます。 データを共有する方法を定義するポリシーは、データ損失防止 (DLP) ポリシーと呼ばれます。
 
-データ保護の詳細については、[データ損失防止ポリシー文書](https://docs.microsoft.com/power-platform/admin/wp-data-loss-prevention)をご覧ください。
+データ保護の詳細については Power Platform 管理者ガイドの [データ損失防止ポリシー](https://docs.microsoft.com/power-platform/admin/wp-data-loss-prevention) を参照してください。
 
 >[!IMPORTANT]
 >管理者は、データ損失防止ポリシーを制御します。 データ損失防止ポリシーがフローの実行をブロックしている場合は、管理者にお問い合わせください。
@@ -47,4 +47,3 @@ ms.locfileid: "3690986"
 * [環境に関する詳細](environments-overview-admin.md)
 * [Power Automate に関する詳細](getting-started.md)
 * [管理センターの詳細](admin-center-introduction.md)
-* [データ統合の詳細](https://docs.microsoft.com/common-data-service/entity-reference/dynamics-365-integration)

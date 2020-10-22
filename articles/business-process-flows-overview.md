@@ -1,5 +1,6 @@
 ---
 title: 業務プロセス フローの概要 | MicrosoftDocs
+description: Power Automate のビジネス プロセス フローの概要。
 ms.custom: ''
 ms.date: 05/06/2019
 ms.reviewer: ''
@@ -21,14 +22,14 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 0a819c9ccaa3dd3e8ba60088fb8a9c197b74d15b
-ms.sourcegitcommit: ab26d3b17cc34c650298ec5ac3b4ea9554e291cf
+ms.openlocfilehash: dfe66657340e1d9ec742706690064c26d27f33f1
+ms.sourcegitcommit: 9f96e86aca714b803d16bebf7957cdf3e1e8c124
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "3502413"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "3820693"
 ---
-# <a name="business-process-flows-overview"></a>業務プロセス フローの概要
+# <a name="business-process-flows-overview"></a>ビジネス プロセス フローの概要
 
 
 業務プロセス フローを作成することによって、データを一貫して入力し、顧客と作業するたびに同じステップを実行するように確認することができます。 たとえば、すべてのユーザーが顧客のサービス要求を同じ方法で処理できるようにビジネス プロセス フローを作成したり、注文を送信する前に請求書の承認を得ることを必要としたりすることができます。 業務プロセス フローはそのほかのプロセスと同じテクノロジを使用しますが、その機能はプロセスを使用する他機能と大きく異なります。 業務プロセス フローの作成または編集の方法については、「[業務プロセス フローの作成](create-business-process-flow.md)」を参照してください。  
@@ -50,6 +51,9 @@ ms.locfileid: "3502413"
  各ステージには、手順のグループが含まれています。 各手順は、データを入力するフィールドを表します。 ユーザーは、**次のステージ**ボタンを使用して次のステージに進みます。 次のステージに進む前に、対応するフィールドのデータを入力するように要求する手順を作成することができます。 これは通常 "ステージ ゲーティング" と呼びます。  
   
  業務プロセス フローは、他のプロセスに比べて比較的簡単に感じます。ステージへのデータ入力や入力制御のための効率化されたエクスペリエンス以外は、条件付きビジネス ロジックまたは自動化が提供されないからです。 ただし、他のプロセスやカスタマイズと結合するすると、時間の節約、トレーニングのコストの削減、およびユーザーの適用向上に重要な役割を果たします。  
+ 
+> [!NOTE]
+> 現在のステージを含むステージのいずれかに必須フィールドが存在する場合は、フォームの保存や新しいステージへの移動の *前* に、それらのステージのフィールドに入力する必要があります。
 
 <a name="BKMK_BPFwithOtherCustomizations"></a>   
 ### <a name="business-process-flows-integrated-with-other-customizations"></a>他のカスタマイズと統合された業務プロセス フロー  

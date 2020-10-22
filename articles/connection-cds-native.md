@@ -20,20 +20,18 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: ca3dc36827423bffaed53b4ce19c50b94e09df81
-ms.sourcegitcommit: 2284143cf147beb7d6071fd8005a41298e51e493
+ms.openlocfilehash: 5b144f376640c1de3a1bbd165850555eeb444663
+ms.sourcegitcommit: 1ac37360193f30d33c9a689ae6fe9ca7c7d991f2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "3384965"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "3789821"
 ---
 # <a name="create-an-automated-flow-by-using-common-data-service-current-environment"></a>Common Data Service （現在の環境）を使用して自動化されたフローを作成する
 
 >[!IMPORTANT]
 >Common Data Service に接続できるコネクタは 3 つ存在します。 この記事では、Common Data Service への接続に対して推奨される [Common Data Service (現在の環境) コネクタ](./connection-cds.md)について説明します。 推奨するコネクタが使用できない場合は、[Common Data Service Connector](./connection-cds.md) と [Dynamics 365 コネクタ](https://docs.microsoft.com/connectors/dynamicscrmonline/) も使用することができます。
 
-
-Common Data Service（現在の環境）コネクターを使用するには、[ソリューションを意識した](./overview-solution-flows.md) フローを作成する必要があります。 
 
 作成したフローは、Common Data Service レコードが作成、更新、削除されたタイミングでトリガーできます。
 

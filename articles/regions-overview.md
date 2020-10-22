@@ -13,49 +13,31 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/14/2020
-ms.author: deonhe
+ms.date: 08/25/2020
+ms.author: hamenon
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 8b36b2cf5b4d400c1f2cb8a4094c984c57e5c76e
-ms.sourcegitcommit: 39d7912519ff03dae924023c1a1c320a30efaa81
+ms.openlocfilehash: 81f9a3533d8180184b12b07ab6379e86ce20c198
+ms.sourcegitcommit: dc401f03be124fffb1cb34e368784e8072a73ccb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "3691058"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3892763"
 ---
-# <a name="faq-for-regions-in-power-automate"></a>Power Automate のリージョンに関する FAQ
+# <a name="power-automate-regions-overview"></a>Power Automate リージョンの概要
 
-このドキュメントでは、Power Automate についてよく寄せられる質問の一覧を示します。
+Power Automate ではフローを Power Platform 環境に作成します。 これらの環境は、Power Platform 環境を保存するデータセンターの所在地に対応するリージョンに固有です。
 
-## <a name="how-do-i-find-out-where-my-flow-is-deployed"></a>自分のフローがデプロイされる場所を確認する方法は?
-フローは、[環境](environments-overview-admin.md) をホストする [リージョン](https://azure.microsoft.com/regions/) にデプロイされます。 たとえば、環境がヨーロッパ リージョンで作成されている場合、フローはヨーロッパのデータ センターに保存されます。
+つまり、フローは [Power Platform 環境](environments-overview-admin.md) をホストする [データセンター リージョン](https://azure.microsoft.com/regions/) に展開されます。
 
-管理者は、Power Platform [管理センター](https://admin.powerplatform.microsoft.com/) にサインインすると、リージョンを識別できます。 **環境** タブには、既存のすべての環境とそのリージョンが一覧表示されます。
+## <a name="more-information-about-power-platform-regions"></a>Power Platform リージョンに関する詳細情報
 
-![環境を表示する](media/regions-overview/environments-list.png)
+[Power Platform リージョンの概要](/power-platform/admin/regions-overview)
 
-## <a name="what-regions-are-available"></a>どの地域が有効ですか。
-* 米国
-* 欧州
-* アジア
-* オーストラリア
-* インド
-* 日本
-* カナダ
-* 南米
-* 英国
-* 米国の政府機関 (GCC)
-* フランス
-
-## <a name="what-features-are-specific-to-a-given-region"></a>特定地域に特定の機能は何ですか。
-
-環境はさまざまな地域で作成でき、地理的場所にバインドされます。 環境にフローを作成すると、そのフローはその地理的な場所のデータ センターにデプロイされます。 これは、Common Data Model、フロー、接続、ゲートウェイ、アプリ、カスタム コネクタなど、その環境で作成するすべての項目に適用されます。
-
-最適なパフォーマンスのためには、ユーザーに最も近いリージョンに環境を作成します。 たとえば、ユーザーがヨーロッパにいる場合は、ヨーロッパ リージョンに環境を作成します。 ユーザーが米国にいる場合は、米国リージョンに環境を作成します。
+[Azure の地域](https://azure.microsoft.com/global-infrastructure/geographies/)
 
 ## <a name="region-mappings-for-power-automate-and-gateways"></a>Power Automate とゲートウェイのリージョン マッピング
 
@@ -73,12 +55,23 @@ Power Platform 地域|ゲートウェイ リージョン
 フランス|フランス中部、フランス南部
 インド|インド中部、インド南部、インド西部
 日本|東日本、西日本
-南米|ブラジル南部
-英国|英国南部、英国西部
+南アメリカ|ブラジル南部
+イギリス|英国南部、英国西部
 
-## <a name="is-power-automate-available-in-national-clouds"></a>Power Automate は国内クラウドで利用できますか?
+## <a name="frequently-asked-questions"></a>よくあるご質問
+
+### <a name="what-region-should-i-use"></a>使用するリージョンはどれですか?
+
+顧客に最も近いリージョンに存在する環境にフローを作成することを推奨します。 環境をホストするデータセンターが情報を利用するユーザーの近くに存在すると、パフォーマンスの向上が見込まれます。
+
+### <a name="how-can-i-find-out-the-region-where-my-flow-is-deployed"></a>フローを展開したリージョンを確認する方法は?
+
+管理者は Power Platform [管理センター](https://admin.powerplatform.microsoft.com/) にサインインしてリージョンを確認できます。 **環境** タブには、既存のすべての環境とそのリージョンが一覧表示されます。
+
+### <a name="is-power-automate-available-in-national-clouds"></a>Power Automate は国内クラウドで利用できますか?
+
 はい。 [詳細情報](./us-govt.md)
 
-## <a name="what-outbound-ip-addresses-are-used-in-each-region"></a>各リージョンではどのような送信 IP アドレスが使われますか?
-[制限事項と構成](limits-and-config.md) を参照してください。
+### <a name="what-outbound-ip-addresses-are-used-in-each-region"></a>各リージョンではどのような送信 IP アドレスが使われますか?
 
+[制限事項と構成](limits-and-config.md) を参照してください。

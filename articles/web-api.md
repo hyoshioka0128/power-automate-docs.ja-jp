@@ -1,21 +1,21 @@
 ---
 title: フローは Common Data Service に格納され、豊富な Web API を使用する
 description: フローは Common Data Service に格納され、豊富な Web API を使用します。
-author: stepsic-microsoft-com
+author: msftman
 ms.reviewer: deonhe
 ms.date: 07/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: business-applications
 ms.technology: ''
-ms.author: stepsic
+ms.author: deonhe
 audience: Power user
-ms.openlocfilehash: f08ea5ff19acb0f9fd30de06001fd19c00eb85ed
-ms.sourcegitcommit: da9a930a8cf0abd30c83c51f100a039d514ec436
+ms.openlocfilehash: 425e74cca78d53dca8c6e184bcfc63206f36c9f7
+ms.sourcegitcommit: 2971e852bdb76efbe012b9de8df8e7f492063184
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "3655835"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "3900410"
 ---
 # <a name="power-automate-web-api"></a>Power Automate Web API
 

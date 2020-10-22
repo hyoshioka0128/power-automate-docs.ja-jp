@@ -13,18 +13,18 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/05/2020
+ms.date: 09/29/2020
 ms.author: Deonhe
 search.app:
 - Flow
 search.audienceType:
 - developer
-ms.openlocfilehash: b91019880af56dd6d756cb8d74f03bfcf9efbee8
-ms.sourcegitcommit: a09a957460f7495c0b103e1d832f65963025fbac
+ms.openlocfilehash: 8ff34fc4190f5a0285e15c55779885016108c22b
+ms.sourcegitcommit: 741ae960b733c4569236089a1f00114508bbb451
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "3697031"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "3905078"
 ---
 # <a name="integrate-power-automate-with-websites-and-apps"></a>Power Automate と Web サイトおよびアプリを統合する
 [!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
@@ -212,7 +212,7 @@ flowsSettings?: {
 | パラメーター | 必須/任意 | 内容 | 
 |-----------|-------------------|-------------| 
 | `createFromBlankTemplateId` | 必要な領域 | ユーザーが Flow ウィジェットで **一から作成** ボタンを選択したとき、テンプレートの GUID を使用します | 
-| `flowsFilter` | 任意 | Power Automate ウィジェットは、フローを一覧表示するとき、指定されたフィルターを適用します。 たとえば、特定の SharePoint サイトを参照するフローを表示します。 <br /> ```flowFilter: "operations/any(operation: operation/sharepoint.site eq 'https://microsoft.sharepoint.com/teams/ProcessSimple' )"   ``` |                 
+| `flowsFilter` | 任意 | Power Automate ウィジェットは、フローを一覧表示するとき、指定されたフィルターを適用します。 たとえば、特定の SharePoint サイトを参照するフローを表示します。 <br /> ```flowsFilter: "operations/any(operation: operation/sharepoint.site eq 'https://microsoft.sharepoint.com/teams/ProcessSimple' )"   ``` |                 
 | `tab` | 任意 | Power Automate ウィジェットに表示するようにアクティブ タブを既定値に設定します。 <br /> たとえば、 <br /> ```tab:'sharedFlows' ``` は、[チーム] タブを表示し<br /> ``` tab:'myFlows' ``` は、[マイ フロー] タブを表示します。 |   
 
 ### <a name="templatessettings"></a>TemplatesSettings 

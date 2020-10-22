@@ -4,7 +4,7 @@ description: Power Automate を使用して、仕事や生活をすばやく自�
 services: ''
 suite: flow
 documentationcenter: na
-author: stepsic-microsoft-com
+author: msftman
 manager: kvivek
 editor: ''
 tags: ''
@@ -14,18 +14,18 @@ ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 7/29/2020
-ms.author: stepsic
+ms.author: deonhe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: b751dadcb4be2bb479981b6f58b797fbc61b0041
-ms.sourcegitcommit: 62c8891c497823be6e7691410072011d7cfc5339
+ms.openlocfilehash: 05f2f6eeca98a23e20abefc24e43302ef300de48
+ms.sourcegitcommit: 2971e852bdb76efbe012b9de8df8e7f492063184
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3652906"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "3900218"
 ---
 # <a name="get-started-with-power-automate"></a>Power Automate に関する入門情報 
 
@@ -41,8 +41,7 @@ ms.locfileid: "3652906"
 
 <br/>
 
-> [!VIDEO https://www.youtube.com/embed/hCuxuUaGC6Y]
-
+> [!VIDEO https://www.youtube.com/embed/H4H_jPJWlxU]
 
 ## <a name="who-is-power-automate-for"></a>Power Automate はどういう人に向けたものか 
 
@@ -129,7 +128,7 @@ Power Automate には**コードのプレビュー** 機能があり、フロー
 
 1. アクションとトリガーが完全に JSON で表現されていることにご注目ください。 これには、ユーザーが直接入力するテキストや使用されている式など、あらゆる入力が含まれます。 ここで式を選択し、**動的コンテンツ** 式エディターに貼り付けます。 必要なデータがフローに存在することも確認できます。
 
-    ![コードのプレビュー](media/getting-started/peek-code-details.png)
+    ![コードの詳細を確認する](media/getting-started/peek-code-details.png)
    
 
 ## <a name="find-your-flows-easily"></a>フローを簡単に見つける

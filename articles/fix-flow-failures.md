@@ -4,8 +4,8 @@ description: フローが失敗する最も一般的な原因のいくつかを�
 services: ''
 suite: flow
 documentationcenter: na
-author: stepsic-microsoft-com
-manager: anneta
+author: msftman
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -14,18 +14,18 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/16/2019
-ms.author: stepsic
+ms.author: deonhe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 8e0344411dbda57009822376cc3c980f599b1877
-ms.sourcegitcommit: d4857e5ce087f9a72469ff08a1a91349a0a94505
+ms.openlocfilehash: f11464b653dd7e3ce18200447372a93b390fba46
+ms.sourcegitcommit: 2971e852bdb76efbe012b9de8df8e7f492063184
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3598034"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "3900362"
 ---
 # <a name="troubleshooting-a-flow"></a>フローのトラブルシューティング
 
