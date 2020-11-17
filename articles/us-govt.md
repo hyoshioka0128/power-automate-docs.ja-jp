@@ -14,12 +14,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 1322dc6b3d391033e3283356798bf5d91a729aba
-ms.sourcegitcommit: eedb45292b26b4729d74e09262706c5085327dba
+ms.openlocfilehash: c009c5f46a4ced0fd7c86d11c38e7b65d38e8ace
+ms.sourcegitcommit: a881042f3de3cce8087986174fed53fd26b163f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "3970190"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "4365208"
 ---
 # <a name="power-automate-us-government"></a>Power Automate US Government
 
@@ -140,19 +140,19 @@ Power Automate US Government には、[コネクタ](https://docs.microsoft.com/
 
 [Power Apps と Power Automate のガバナンスに関する考慮事項](https://docs.microsoft.com/power-platform/admin/governance-considerations) を利用すると、アーキテクチャ、セキュリティ、アラートとアクション、監視など、関連するテーマで組織が利用できる機能を認識できます。
 
-## <a name="configure-mobile-clients"></a>モバイル クライアントの構成
+## <a name="configure-mobile-client"></a>モバイル クライアントの構成
 
-Power Apps Mobile クライアントでサインインする際に必要な手順は次のとおりです。
+Power Automate モバイル アプリケーションでサインインするために必要な手順は次のとおりです (iOSデバイスのみ):
 
 1. サインイン ページの右下隅から歯車アイコンを選択します。
-1. **リージョンの設定** を選択します。
-1. 次のいずれかを選択してください。
-   - GCC: 米国政府 GCC
-   - GCC High: 米国政府 GCC High。
+1. **GCC** を選択します。
 1. OK を選択します。
-1. サインイン ページで、**サインイン**を選択します。
+1. サインイン ページで、**開始する** を選択します。
 
-今後はモバイル アプリケーションが米国政府クラウドを使用します。
+モバイル アプリは、US Government Cloud (GCC) を使用するようになります。
+
+>[!NOTE]
+>Power Automate モバイル アプリは、US Government GCC High のお客様にはご利用いただけません。  
 
 ## <a name="power-automate-us-government-and-azure-services"></a>Power Automate US Government および Azure サービス
 

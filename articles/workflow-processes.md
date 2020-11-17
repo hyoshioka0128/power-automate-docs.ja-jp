@@ -1,5 +1,5 @@
 ---
-title: 従来の Common Data Service バックグラウンド ワークフロー | MicrosoftDocs
+title: クラシック Common Data Service ワークフローの概要| MicrosoftDocs
 ms.custom: ''
 ms.date: 07/27/2020
 ms.reviewer: matp
@@ -14,25 +14,25 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 561c0effd6265e939c8c4e342016f7a56cb1fa7c
-ms.sourcegitcommit: 6aead6aa695ef3dd09a397f7e2df85e3f480071f
+ms.openlocfilehash: 733f15a09b6a4491ee1b8d9a7bbeb16d15a9098b
+ms.sourcegitcommit: dbe05fc5136f724705e66ad795a9391ec47414e1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "3795037"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "3973161"
 ---
 # <a name="classic-common-data-service-background-workflows"></a>従来の Common Data Service バックグラウンド ワークフロー 
 
-ワークフローは、ユーザー インターフェイスを使用しないビジネス プロセスを自動化します。 通常、ワークフロー プロセスは、ユーザーの操作を必要としない自動化のために使用します。
+ワークフローは、ユーザー インターフェイスを持たないビジネス プロセスを自動化します。 通常、ワークフロー プロセスは、ユーザーの操作を必要としない自動化のために使用します。
 
 ワークフローは 2 種類あります:
 1. リアルタイム ワークフロー。 リアルタイム ワークフローの詳細については [Power Apps](https://docs.microsoft.com/powerapps/maker/common-data-service/overview-realtime-workflows) のドキュメントを参照してください。
-1. バックグラウンド ワークフロー。 
+1. バックグラウンド ワークフロー 
 
 
-バックグラウンド ワークフローを作成する場合は、以下の図に示すように **このワークフローをバックグラウンドで実行する (推奨)** チェックボックスを設定する必要があります。
+バックグラウンド ワークフローを作成するには、次の図に示すように、**このワークフローをバックグラウンドで実行する (推奨)** チェックボックスをオンにする必要があります。
 
-![未満/以上の演算子を使ったワークフロー プロセス](media/wfp-under-not-under.PNG "未満/以上の演算子を使ったワークフロー プロセス")
+![未満/以上の演算子を使ったワークフロー プロセスを示したスクリーンショット。](media/wfp-under-not-under.PNG "未満/以上の演算子を使ったワークフロー プロセス")
 
 バックグラウンド ワークフローの詳細については Power Automate ドキュメントでここに示すその他のトピックを参照してください。
 

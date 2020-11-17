@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/25/2020
+ms.date: 10/25/2020
 ms.author: hamenon
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 81f9a3533d8180184b12b07ab6379e86ce20c198
-ms.sourcegitcommit: dc401f03be124fffb1cb34e368784e8072a73ccb
+ms.openlocfilehash: f7bc45f7ff7d6ebdb263cf1124cf8b266d28f2e4
+ms.sourcegitcommit: 7a3df04b817ecf8ad99ca7bb551804fe83b0861d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3892763"
+ms.lasthandoff: 10/25/2020
+ms.locfileid: "4109932"
 ---
 # <a name="power-automate-regions-overview"></a>Power Automate リージョンの概要
 
@@ -53,6 +53,7 @@ Power Platform 地域|ゲートウェイ リージョン
 カナダ|カナダ中部、カナダ東部
 欧州|北ヨーロッパ、西ヨーロッパ
 フランス|フランス中部、フランス南部
+ドイツ|ドイツ中西部、ドイツ北
 インド|インド中部、インド南部、インド西部
 日本|東日本、西日本
 南アメリカ|ブラジル南部

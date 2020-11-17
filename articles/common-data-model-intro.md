@@ -18,12 +18,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 9c20fa8c888ba780f64cd9f55afdf11bbd08680e
-ms.sourcegitcommit: 2971e852bdb76efbe012b9de8df8e7f492063184
+ms.openlocfilehash: dd4e736a5f761b96c65b0953dd37a057d24bfef2
+ms.sourcegitcommit: 1870645e09fafe1d529a24828c4bb3fa629a2b9a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "3900170"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4366548"
 ---
 # <a name="create-a-flow-that-uses-common-data-service"></a>Common Data Service を使用するフローを作成する
 
@@ -35,14 +35,14 @@ ms.locfileid: "3900170"
 * データのインポート、データのエクスポート、データ変更時のアクションの実行 (通知の送信など) を行うフローを作成します。 詳細な手順については、このトピックの後半にある手順を参照してください。
 * [電子メールを介した承認ループを作成する](wait-for-approvals.md)代わりに、承認状態をエンティティに格納するフローを作成した後、ユーザーが項目を承認または却下できるカスタム アプリをビルドします。 詳細な手順については、[Common Data Service を使用した承認ループの作成](common-data-model-approve.md) を参照してください。
 
-この記事では、Common Data Service で*見込みのある潜在顧客に関するプロセス*により新しい*営業案件*が作成された時にメール通知を送信するフローを作成します。 通知には*潜在顧客*からの*メモ*が含まれています。
+この記事では、Common Data Service で *見込みのある潜在顧客に関するプロセス* により新しい *営業案件* が作成された時にメール通知を送信するフローを作成します。 通知には *潜在顧客* からの *メモ* が含まれています。
 
 ## <a name="prerequisites"></a>前提条件
 
 * [Power Automate](https://flow.microsoft.com) と [Power Apps](https://make.powerapps.com) に登録します。
   
     問題が発生した場合は、所有するアカウントの種類が [Power Automate](sign-up-sign-in.md)  と [Power Apps](https://powerapps.microsoft.com/tutorials/signup-for-powerapps/) で対応しているかどうか、および組織が登録をブロックしていないことを確認してください。
-* これまで Common Data Service を使ったことがない場合、[Power Apps](https://web.powerapps.com/#/entities) の **エンティティ** タブを開き、**データベースを作成** を選択します。
+* 今まで Common Data Service を使用したことがない場合は、Power Platform 管理センターのデータベースを使って [Common Data Service 環境を作成](https://docs.microsoft.com/power-platform/admin/create-environment#create-an-environment-with-a-database)します。
 
 ## <a name="sign-in-to-your-environment"></a>環境にサインイン
 
@@ -58,7 +58,7 @@ ms.locfileid: "3900170"
 
 ## <a name="use-a-template"></a>テンプレートの使用
 
-1. 画面上部にある **アプリ、タスク、または業界のテンプレートを検索する** ボックスに、**一般**と入力し、**Enter** キーを押します。
+1. 画面上部にある **アプリ、タスク、または業界のテンプレートを検索する** ボックスに、**一般** と入力し、**Enter** キーを押します。
 
    Common Data Model を使用するテンプレートを含め、名前に「一般」という単語が含まれるテンプレートのリストが表示されます。
    
@@ -96,7 +96,7 @@ ms.locfileid: "3900170"
 
 1. **Apply to each** カードを展開し、**潜在顧客メモを新しいメモにコピー** カードを削除します。
 
-1. **アクションを追加** を選択して**通知**を検索し、**メール通知を受け取る** を選択します。
+1. **アクションを追加** を選択して **通知** を検索し、**メール通知を受け取る** を選択します。
 
    ![電子メール通知](./media/common-data-model-intro/apply-to-each.png)
 

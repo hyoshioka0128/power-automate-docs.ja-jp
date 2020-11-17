@@ -15,14 +15,14 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/06/2020
 ms.author: deonhe
-ms.openlocfilehash: a505c10591c39e92465ef8b4b8aacc289cf495fb
-ms.sourcegitcommit: a09a957460f7495c0b103e1d832f65963025fbac
+ms.openlocfilehash: 5ddb783eba69f9f4926778390175d6eac672a730
+ms.sourcegitcommit: dd1d04d6e899174c474291ae415e6272ad4c381a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "3696911"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "4068738"
 ---
-# <a name="sharepoint-remind-me"></a>SharePoint で通知する
+# <a name="create-sharepoint-reminder-flows"></a>SharePoint リマインダー フローを作成する
 
 
 SharePoint のリストとライブラリを使用すると、カスタム メタデータ列を定義して日付を追跡できます。 Power Automate と SharePoint の統合により、SharePoint の DateTime 列に基づいたリマインダー フローを簡単に作成できます。 リマインダー フローを使用すると、SharePoint のドキュメントまたはアイテムの日付より事前に指定した日数だけ前に、個人用のメール アラートを受け取ります。

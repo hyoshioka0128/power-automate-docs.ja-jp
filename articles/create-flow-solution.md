@@ -1,5 +1,5 @@
 ---
-title: ソリューション対応フローを作成する方法に関する説明 | Microsoft Docs
+title: ソリューション対応フローの作成方法に関する説明 | Microsoft Docs
 description: ソリューション対応フローを作成する方法について説明します。
 services: ''
 suite: flow
@@ -13,24 +13,24 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/05/2018
+ms.date: 10/11/2020
 ms.author: deonhe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: d74cbdb6c03d65a7902a81194491ef67feda6bb2
-ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
+ms.openlocfilehash: fe2fdf5b1eb5dc20597a0d086ad70c810e7908e7
+ms.sourcegitcommit: ad8c043d9ad0c188237c0fc3bbd8fd0c7cec83c2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "3297474"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "3988252"
 ---
 # <a name="create-a-flow-in-a-solution"></a>ソリューションにフローを作成する
 
 
-ソリューション内に作成するフローは、"*ソリューション対応*" フローと呼ばれます。 次の手順に従って、ソリューション対応フローを作成します。
+ソリューションで作成するフローは、*ソリューション対応* フローと呼ばれます。 次の手順に従って、ソリューション対応フローを作成します。
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -39,17 +39,17 @@ ms.locfileid: "3297474"
 ## <a name="create-the-flow"></a>フローを作成する 
 
 1. [Power Automate](https://flow.microsoft.com) にサインインします。
-1. ナビゲーション バーから **[ソリューション]** を選択します。
+1. ナビゲーション バーから **ソリューション** を選択します。
 
-   ![](./media/create-flow-solution/select-solutions-from-left-nav.png)
+   ![ソリューション オプションが強調表示された左側のナビゲーション バーを示す画面](./media/create-flow-solution/select-solutions-from-left-nav.png)
 
-1. 内部にフローを作成するソリューションを選択します。
+1. フローを作成するソリューションを選択します。
 
-   ![](./media/create-flow-solution/new-solution-created.png)
+   ![ソリューションの一覧を表示する画面](./media/create-flow-solution/new-solution-created.png)
 
-1. **[+ 新規]** を選択した後、**[フロー]** を選択します。
+1. **新規** を選択して **フロー** を選択します。
 
-   ![](./media/create-flow-solution/select-new-flow.png)
+   ![フローを強調表示して作成できるさまざまな種類のアイテムを示す画面](./media/create-flow-solution/select-new-flow.png)
 
    Power Automate が開きます。
 
@@ -57,21 +57,21 @@ ms.locfileid: "3297474"
 
    この例では、受信トレイにメールが届いたときに通知を送信する、単純なフローを作成します。
 1. **Office 365 Outlook** を検索して選択します。
-1. **[新しいメールが届いたとき]** トリガーを選択します。
-1. **+ 新しいステップ**を選択します。
-1. **[Send me a mobile notification]\(モバイル通知を受け取る\)** アクションを選択します。
-1. **[Send me a mobile notification]\(モバイル通知を受け取る\)** ボックスの **[テキスト]** フィールドに、**[件名]** 動的トークンを追加します。
+1. **新しいメールが届いたとき (V3)** トリガーを選択します。
+1. **新しいステップ** を選択します。
+1. 「通知」 という単語を検索し、**モバイルに通知を送信** アクションを選択します。
+1. **モバイルに通知を送信** ボックスの **テキスト** フィールドに、**件名** 動的トークンを追加します。
 1. フローに名前を付けた後、フローを保存します。
 
-   フローは次のようになります。
+   フローは次のようになります:
 
-   ![](./media/create-flow-solution/new-email-notification-flow.png)
+   ![作成されたフローを示すスクリーンショット](./media/create-flow-solution/new-email-notification-flow.png)
    
-1. **[ソリューション]** を選択して、ソリューション内のフローを確認します。
+1. **ソリューション** を選択して、ソリューション内のフローを確認します。
 
-   ![](./media/create-flow-solution/new-flow-inside-solution.png)
+   ![ソリューション内のフローを示すスクリーンショット](./media/create-flow-solution/new-flow-inside-solution.png)
 
-## <a name="learn-more"></a>詳細はこちら
+## <a name="learn-more"></a>詳細情報を見る
 
 * [ソリューションの作成](./overview-solution-flows.md)
 * [ソリューションのエクスポート](./export-flow-solution.md)

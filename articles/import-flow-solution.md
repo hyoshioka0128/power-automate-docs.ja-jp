@@ -13,43 +13,43 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/05/2018
+ms.date: 10/10/2020
 ms.author: deonhe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: dae11e0a355d4e3f40b3829981c1b8da6f363748
-ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
+ms.openlocfilehash: 4d5fd403aa0cd74cf81535bd3ad35e046cf41f33
+ms.sourcegitcommit: ad8c043d9ad0c188237c0fc3bbd8fd0c7cec83c2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "3298134"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "3988204"
 ---
 # <a name="import-a-solution"></a>ソリューションのインポート
 
 
 > [!TIP]
-> ソリューションのインポート後、フローを自動的に開始するには、作成中のフローで Common Data Service (現在の環境) コネクタを使用します。
+> ソリューションのインポート後、フローを自動的に開始するには、フローを作成する時に Common Data Service (現在の環境) コネクタを使用します。
 
-ソリューションをエクスポートした後は、前提条件を満たす任意の環境にそれをインポートできます。 ソリューションをインポートするには、次の手順に従います。
+ソリューションをエクスポートした後、前提条件を満たす任意の環境にそれをインポートできます。 ソリューションをインポートするには、次の手順に従います。
 
-1. Power Automate にサインインし、左側のナビゲーション バーから **ソリューション** を選択します。
+1. Power Automate のサインインして、スクリーンの左側のナビゲーションバーから **ソリューション** を選択します。
 
-   ![](./media/import-flow-solution/select-solutions-from-left-nav.png)
+   ![ナビゲーション バーで選択された "ソリューション" を示すイメージ](./media/import-flow-solution/select-solutions-from-left-nav.png)
 
 1. **インポート** を選択します。
 
-   ![](./media/import-flow-solution/select-import.png)
+   !["インポート" が選択されていることを示すイメージ。](./media/import-flow-solution/select-import.png)
 
-1. 開かれた **[ソリューションをインポートする]** ページから、**[参照]** を選択します。
-1. インポートするソリューションを検索して選択します。
+1. 開いた **ソリューションをインポートする** ページから、**参照する** を選択します。
+1. 見つけたら、その後インポートするソリューションを検索して選択します。
 1. **開く** を選択します。
 
-   これで、次の図のような **[ソリューション パッケージの選択]** ページが表示されます。
+   これで、次のイメージのような **ソリューション パッケージの選択** ページが表示されます。
 
-   ![](./media/import-flow-solution/import-solution.png)
+   ![ソリューションのインポートのダイアログ ボックスのスクリーンショット](./media/import-flow-solution/import-solution.png)
 
 1. **次へ** を選択します。
 
@@ -59,11 +59,10 @@ ms.locfileid: "3298134"
 > ソリューションが既に存在している環境にソリューションをインポートすることはできません。
 
 
-## <a name="learn-more"></a>詳細はこちら
-
-<!--from editor: Do you want to add Remove a solution-aware flow to this list?-->
+## <a name="learn-more"></a>詳細情報を見る
 
 - [ソリューションの作成](./overview-solution-flows.md)
 - [ソリューションにフローを作成する](./create-flow-solution.md)
 - [ソリューションのエクスポート](./export-flow-solution.md)
 - [ソリューション対応フローを編集する](./edit-solution-aware-flow.md)
+- [ソリューション対応フローを削除する](.//remove-solution-aware-flow.md)
