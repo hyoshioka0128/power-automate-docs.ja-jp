@@ -6,23 +6,25 @@
       href: sign-up-sign-in.md
     - name: 開始する
       href: getting-started.md
+    - name: トリガーの基本
+      href: triggers-introduction.md
     - name: ガイド付き学習
       href: 'https://docs.microsoft.com/learn/paths/automate-process-using-flow'
-    - name: ブラウザーでフローを作成する
+    - name: テンプレートからフローを作成する
       href: get-started-logic-template.md
     - name: スマートフォンでフローを作成する
       href: mobile-create-flow.md
     - name: フローを共有する
       href: create-team-flows.md
-    - name: Common Data Service を使用するフローを作成する
+    - name: Microsoft Dataverse を使用するフローを作成する
       href: common-data-model-intro.md
-    - name: 最新情報
+    - name: 新機能
       href: whats-new.md
     - name: ラーニング カタログ
       items:
         - name: 概要
           href: learning-catalog/learning-catalog.md
-        - name: アプリ開発者
+        - name: アプリ作成者
           href: learning-catalog/learning-catalog-app-maker.md
         - name: 管理者
           href: learning-catalog/learning-catalog-administrator.md
@@ -36,11 +38,9 @@
   items:
     - name: ゼロからフローを作成する
       href: get-started-logic-flow.md
-    - name: 電子メールでフローをトリガーする
-      href: email-triggers.md
-    - name: Common Data Service (現在の環境) でフローを作成する
+    - name: Common Data Service (current environment) コネクタでフローを作成する
       href: connection-cds-native.md
-    - name: Common Data Service でフローを作成する
+    - name: Common Data Service コネクタでフローを作成する
       href: connection-cds.md
     - name: Dynamics 365 でフローを作成する
       href: connection-dynamics365.md
@@ -88,6 +88,21 @@
       href: approvals-markdown-support.md
     - name: カスタム承認応答オプション
       href: create-approval-response-options.md
+- name: フローを Office 365 Outlook メールと共に使用する
+  items:
+    - name: 概要
+      href: email-overview.md
+      displayName: Use flows with Outlook
+    - name: メールを管理するフローを作成する
+      href: create-email-flows.md
+    - name: 一般的なメール シナリオのフローを作成する
+      href: email-top-scenarios.md
+    - name: 電子メールでフローをトリガーする
+      href: email-triggers.md
+    - name: フロー内のメールをカスタマイズする
+      href: email-customization.md
+    - name: フロー内のメールに関する問題のトラブルシューティング
+      href: email-troubleshooting.md
 - name: SharePoint でのフローの使用
   items:
     - name: 概要
@@ -102,8 +117,16 @@
     - name: 概要
       href: ./teams/overview.md
       displayName: Use flows with Microsoft Teams
+    - name: Power Automate アプリをインストールする
+      href: ./teams/install-teams-app.md
+    - name: Microsoft Teams でフローを作成する
+      href: ./teams/teams-app-create.md
+    - name: Microsoft Teams でフローを管理する
+      href: ./teams/teams-app-home.md
     - name: Teams メッセージからフローをトリガーする
       href: trigger-flow-teams-message.md
+    - name: Power Apps アプリを使用してフローを作成する
+      href: ./teams/create-flows-power-apps-app.md
     - name: アダプティブ カードを使用してフローをモデル化する
       href: create-adaptive-cards.md
       items:
@@ -127,8 +150,6 @@
           href: acronym-sample.md
         - name: サンプル - リードの生成
           href: lead-collection-sample.md
-    - name: Power Apps アプリを使用してフローを作成する (プレビュー)
-      href: ./teams/create-flows-power-apps-app.md
 - name: ビジネス プロセス フロー
   items:
     - name: ビジネス プロセス フローの概要
@@ -141,13 +162,13 @@
       href: custom-controls-business-process-flows.md
     - name: ビジネス プロセス フロー属性のベスト プラクティス
       href: best-practices-entity-attributes.md
-- name: UI flows
+- name: UI フロー
   items:
-    - name: UI flows の概要
+    - name: UI フローの概要
       href: ./ui-flows/overview.md
-    - name: 以前のリリースからの UI flows のアップグレード
+    - name: 以前のリリースからの UI フローのアップグレード
       href: ./ui-flows/upgrade.md
-    - name: UI flows の設定
+    - name: UI フローの設定
       href: ./ui-flows/setup.md
     - name: デスクトップ UI フローの作成とテスト
       href: ./ui-flows/create-desktop.md
@@ -156,11 +177,11 @@
     - name: デスクトップ UI フローで入力と出力を使用する
       href: ./ui-flows/inputs-outputs-desktop.md
       items:
-        - name: UI flows での入力方式エディター (IME) の使用
+        - name: UI フローでの入力方式エディター (IME) の使用
           href: ./ui-flows/use-ime.md
     - name: Web UI フローの作成とテスト
       href: ./ui-flows/create-web.md
-    - name: UI flows での WinAutomation の使用
+    - name: UI フローでの WinAutomation の使用
       href: ./ui-flows/create-processes.md
     - name: Web UI フローの編集
       href: ./ui-flows/edit-web.md
@@ -170,8 +191,6 @@
       href: ./ui-flows/run-ui-flow.md
     - name: UI フローの管理
       href: ./ui-flows/manage.md
-    - name: センター オブ エクセレンスの UI フローを監視する
-      href: ./ui-flows/monitor.md
     - name: Power Automate Desktop UI フロー (プレビュー)
       items:
         - name: Power Automate Desktop の概要
@@ -308,9 +327,9 @@
       href: edit-solution-aware-flow.md
     - name: ソリューション対応フローを削除する
       href: remove-solution-aware-flow.md
-- name: Common Data Service
+- name: Microsoft Dataverse
   items:
-    - name: クラシック Common Data Service ワークフロー
+    - name: クラシック Microsoft Dataverse ワークフロー
       items:
         - name: 概要
           href: workflow-processes.md
@@ -322,21 +341,21 @@
           href: best-practices-workflow-processes.md
         - name: フローでバックグラウンド ワークフローを置き換える
           href: replace-workflows-with-flows.md
-    - name: クラシック Common Data Service タスク フロー
+    - name: クラシック Microsoft Dataverse タスク フロー
       items:
         - name: モバイル タスク フローを作成する
           href: create-mobile-task-flow.md
-    - name: クラシック Common Data Service ダイアログ
+    - name: クラシック Microsoft Dataverse ダイアログ
       items:
-        - name: クラシック Common Data Service ダイアログを使用する
+        - name: クラシック Microsoft Dataverse ダイアログを使用する
           href: use-cds-for-apps-dialogs.md
-        - name: クラシック Common Data Service ダイアログを置き換える
+        - name: クラシック Microsoft Dataverse ダイアログを置き換える
           href: replace-dialogs.md
 - name: AI Builder
   items:
     - name: Power Automate で AI Builder を使用する
       href: use-ai-builder.md
-- name: 操作方法
+- name: 方法
   items:
     - name: アクションを追加する
       href: multi-step-logic-flow.md
@@ -366,7 +385,7 @@
       href: fix-flow-failures.md
     - name: エラー チェッカーでエラーを検索して修正する
       href: error-checker.md
-- name: データに接続する
+- name: データへの接続
   items:
     - name: 利用可能な接続
       href: 'https://go.microsoft.com/fwlink/?linkid=832211'
@@ -391,7 +410,7 @@
       items:
         - name: 'サンプル: ビジネス プロセス フローの使用'
           href: ./developer/sample-work-business-process-flows.md
-    - name: カスタム Common Data Service ワークフロー活動
+    - name: カスタム Microsoft Dataverse ワークフロー活動
       href: ./developer/custom-cds-for-apps-workflow-activities.md
 - name: 管理
   items:
@@ -403,6 +422,8 @@
       href: admin-center-introduction.md
     - name: 環境を管理する
       href: environments-overview-admin.md
+    - name: UI フロー分析を表示する
+      href: ./ui-flows/overview-analytics.md
     - name: データ損失の防止に役立つポリシーを設定する
       href: prevent-data-loss.md
     - name: モバイル アプリで Intune をサポートする

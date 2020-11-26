@@ -11,12 +11,12 @@ metadata:
   ms.author: deonhe
   ms.date: 09/22/2020
   hide_bc: false
-  ms.openlocfilehash: 28a151863c0670f09a9cd76b78aab95db3b57dfa
-  ms.sourcegitcommit: f8e35c134b712d60dfade1b9648fa677cd974457
+  ms.openlocfilehash: 7b7c619405dab757cd3fbc199590ed939aabc03e
+  ms.sourcegitcommit: df7fb20065cfafc153b4bc4019dff2c94f4ef567
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 10/27/2020
-  ms.locfileid: "4114621"
+  ms.lasthandoff: 11/17/2020
+  ms.locfileid: "4553748"
 highlightedContent:
   items:
   - title: Power Automate とは
@@ -58,12 +58,12 @@ conceptualContent:
     - text: ビジネス プロセス フロー
       url: /power-automate/business-process-flows-overview
       itemType: overview
-  - title: RPA のための UI flows の使用
+  - title: RPA のための UI フローの使用
     links:
-    - text: UI flows とは
+    - text: UI フローとは
       url: /power-automate/ui-flows/overview
       itemType: overview
-    - text: UI flows の設定
+    - text: UI フローの設定
       url: /power-automate/ui-flows/setup
       itemType: how-to-guide
     - text: Power Automate Desktop の使用 (プレビュー)
@@ -78,7 +78,7 @@ conceptualContent:
       url: /power-automate/sharepoint-overview
       itemType: overview
     - text: Microsoft 365 Outlook
-      url: /power-automate/email-triggers
+      url: /power-automate/email-overview
       itemType: how-to-guide
   - title: ALM 用のソリューションの使用
     links:
@@ -104,7 +104,7 @@ conceptualContent:
       itemType: how-to-guide
   - title: ラーニング カタログ
     links:
-    - text: アプリ開発者
+    - text: アプリ作成者
       url: /power-automate/learning-catalog/learning-catalog-app-maker
       itemType: reference
     - text: 管理者
