@@ -1,5 +1,5 @@
 ---
-title: Microsoft Teams の Power Apps アプリを使用してフローを作成する (プレビュー) | Microsoft Docs
+title: Power Apps で Microsoft Teams アプリを使用してフローを作成する | Microsoft Docs
 description: Teams で Power Apps アプリを使用してフローを作成します。
 author: msftman
 manager: kvivek
@@ -8,36 +8,32 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/22/2020
+ms.date: 11/16/2020
 ms.author: DeonHe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 7cdc6bc5298e656b193df890fd014cfe7b43c570
-ms.sourcegitcommit: 2971e852bdb76efbe012b9de8df8e7f492063184
+ms.openlocfilehash: ea9c4d0d1e7c59d8ccc3f0ecc714bb20042c3cb1
+ms.sourcegitcommit: df7fb20065cfafc153b4bc4019dff2c94f4ef567
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "3900290"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4553916"
 ---
-# <a name="create-flows-using-the-power-apps-app-in-microsoft-teams-preview"></a>Microsoft Teams で Power Apps アプリを使用してフローを作成する (プレビュー)
+# <a name="create-flows-using-the-power-apps-app-in-microsoft-teams"></a>Microsoft Teams で Power Apps アプリを使用してフローを作成する
 
-[!INCLUDE [cc-beta-prerelease-disclaimer.md](../includes/cc-beta-prerelease-disclaimer.md)]
-
-Teams の新しい Power Apps アプリでフローを作成してカスタマイズし、Teams にさらなる価値を追加できます。 350 を超えるコネクタを利用して [インスタント](../introduction-to-button-flows.md)、[スケジュール済み](../run-scheduled-tasks.md)、[自動化](../get-started-logic-flow.md) などのフローを作成できます。 これは Teams で [Project Oakdale テーブル](/powerapps/teams/overview-data-platform#tables-in-project-oakdale) と連携するコネクタも含みます。
+Teams の新しい Power Apps アプリでフローを作成してカスタマイズし、Teams にさらなる価値を追加できます。 350 を超えるコネクタを利用して [インスタント](../introduction-to-button-flows.md)、[スケジュール済み](../run-scheduled-tasks.md)、[自動化](../get-started-logic-flow.md) などのフローを作成できます。 これには、Teams 内の [Microsoft Dataverse for Teams テーブル](/powerapps/teams/overview-data-platform#tables-in-dataverse-for-teams) と連携するためのコネクタも含まれます。
 
 > [!NOTE]
-> - これはプレビュー機能です。
-> - [!INCLUDE [cc-preview-features-definition.md](../includes/cc-preview-features-definition.md)]
-> - プレミアム コネクタを含むすべての Power Automate [コネクタ](https://docs.microsoft.com/Connectors/connector-reference/) にアクセスするには [Power Automate ライセンス](https://flow.microsoft.com/pricing/) が必要です。 Microsoft 365 ライセンスを持つユーザーは標準コネクタをすべて使用できます。
+> プレミアム コネクタを含むすべての Power Automate [コネクタ](https://docs.microsoft.com/Connectors/connector-reference/) にアクセスするには [Power Automate ライセンス](https://flow.microsoft.com/pricing/) が必要です。 Microsoft 365 ライセンスを持つユーザーは標準コネクタをすべて使用できます。
 
 ## <a name="prerequisites"></a>前提条件 
 
 - Teams でフローを作成する前に Power Apps アプリをインストールする必要があります。 詳細情報: [Microsoft Teams に Power Apps パーソナル アプリをインストールする](/powerapps/teams/install-personal-app)
 
-- Teams で Power Apps アプリを使用してフローを作成する前に、そのチームに既存の Project Oakdale 環境が必要です。 [Teams で最初のアプリを作成する](/powerapps/teams/create-first-app) と、Project Oakdale 環境が自動でプロビジョニングされます。
+- Teams で Power Apps アプリを使用してフローを作成する前に、そのチーム用の Dataverse for Teams 環境がすでに存在している必要があります。 Dataverse for Teams 環境は、[Teams で最初のアプリを作成する](/powerapps/teams/create-first-app) ときに、自動的にプロビジョニングされます。
 
 ## <a name="create-a-flow-in-teams"></a>Teams でフローを作成する
 
@@ -92,6 +88,6 @@ Teams で、インストール済みのアプリからフローを取得した�
 
 ## <a name="related-articles"></a>関連記事
 
-[Microsoft Teams で新しい Power Apps アプリを使用する](/powerapps/teams/create-app-overview)<br/>
-[Project Oakdale の概要](/powerapps/teams/overview-data-platform)<br/>
-[Project Oakdale 環境の詳細](/power-platform/admin/about-teams-environment)
+[Microsoft Teams で新しい Power Apps アプリを使用する](/powerapps/teams/create-apps-overview)<br/>
+[ Dataverse for Teams とは?](/powerapps/teams/overview-data-platform)<br/>
+[Dataverse for Teams 環境について](/power-platform/admin/about-teams-environment)

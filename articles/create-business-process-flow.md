@@ -22,15 +22,16 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: f8f1c8016ec76a61037d9cae5399c3b4691e2808
-ms.sourcegitcommit: 9bf10fd76d178c257434b9401c19dc709ee240fc
+ms.openlocfilehash: b1b726761a12e4945553c58f8bc5a0511745de3f
+ms.sourcegitcommit: df7fb20065cfafc153b4bc4019dff2c94f4ef567
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "4035599"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4553388"
 ---
 # <a name="tutorial-create-a-business-process-flow-to-standardize-processes"></a>チュートリアル: プロセスを標準化するビジネス プロセス フローの作成
 
+[!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
 
 このチュートリアルでは、Power Apps を使用してビジネス プロセス フローを作成する方法について説明します。 業務プロセス フローを使用する理由に関する詳細については、「[業務プロセス フローの概要](business-process-flows-overview.md)」を参照してください。 モバイル タスク フローの作成の詳細については、「[モバイル タスク フローの作成](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-mobile-task-flow)」を参照してください。  
   
@@ -353,13 +354,13 @@ Dynamics 365 (online) バージョン 9.0 更新プログラムでは、新し�
 
 ![統合アクション センターの承認フロー ビュー](media/action-center-bpf.png "統合アクション センターの承認フロー ビュー")
 
-統合アクション センターでは、プロセスで使用する Common Data Service エンティティ レコードが 1 つ以上割り当てられているすべてのビジネス プロセスが表示されます。 たとえば、ビジネス プロセスで Common Data Service の **リード**  エンティティと **営業案件** エンティティが使用される場合、このプロセスのインスタンスのうち、リードまたは営業案件レコードのうちで、自分に割り当てられているものがすべて表示されます。
+統合アクション センターでは、プロセスで使用する Microsoft Dataverse エンティティ レコードが 1 つ以上割り当てられているすべてのビジネス プロセスが表示されます。 たとえば、ビジネス プロセスで Dataverse の **リード** エンティティと **営業案件** エンティティが使用される場合、このプロセスのインスタンスのうち、リードまたは営業案件レコードが自分に割り当てられているものがすべて表示されます。
 
 **アクティブ** タブ配下の、現在作業中のすべてのインスタンスを表示します。このタブからは、次の詳細を表示できます。
 
 - プロセスの名前。
 - 各プロセスの現在のステージ。
-- アクティブなステージに関連付けられている  Common Data Service レコードの所有者。
+- アクティブなステージに関連付けられている Dataverse レコードの所有者。
 - インスタンスが作成されてからの時間。
 
 表示する

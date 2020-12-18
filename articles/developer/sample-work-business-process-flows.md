@@ -1,6 +1,6 @@
 ---
 title: 'サンプル: 業務プロセス フローの使用 | MicrosoftDocs'
-description: このサンプルでは、エンティティ レコードのビジネス プロセス フロー インスタンスを取得する、ビジネス プロセス フロー インスタンスのアクティブなパスとそのプロセス ステージを取得する、およびアクティブなステージを変更するなどの業務プロセス フローをプログラムで操作する方法を説明します。
+description: このサンプルでは、エンティティ レコードの業務プロセス フロー インスタンスの取得、業務プロセス フロー インスタンスとそのプロセス ステージのアクティブパスの取得、アクティブ ステージの変更などの業務プロセス フローをプログラムで処理する方法を示します。
 ms.custom: ''
 ms.date: 04/05/2018
 ms.reviewer: ''
@@ -18,27 +18,28 @@ search.app:
 - Flow
 search.audienceType:
 - developer
-ms.openlocfilehash: 4f7566c6d6430c9167c0d1b7cc082792d0939780
-ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
+ms.openlocfilehash: 90afbd14d09e937dcabdb0eabbfbba01479dc65f
+ms.sourcegitcommit: df7fb20065cfafc153b4bc4019dff2c94f4ef567
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "3297760"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4553244"
 ---
 # <a name="sample-work-with-business-process-flows"></a>サンプル: 業務プロセス フローの使用
-[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
-このサンプルでは、エンティティ レコードのビジネス プロセス フロー インスタンスを取得する、ビジネス プロセス フロー インスタンスのアクティブなパスとそのプロセス ステージを取得する、およびアクティブなステージを変更するなどの業務プロセス フローをプログラムで操作する方法を説明します。 これらの概念については、「[Work with business process flows using code](business-process-flows-code.md)」 (コードを使用して業務プロセス フローを操作する) を参照してください  
+[!INCLUDE[cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
+このサンプルでは、エンティティ レコードの業務プロセス フロー インスタンスの取得、業務プロセス フロー インスタンスとそのプロセス ステージのアクティブパスの取得、アクティブ ステージの変更などの業務プロセス フローをプログラムで処理する方法を示します。 これらの概念については、[Work with business process flows using code (コードを使用して業務プロセス フローを操作する) ](business-process-flows-code.md)を参照してください  
 
  このサンプルは [サンプル : ビジネス プロセス フローを使って作業する](https://go.microsoft.com/fwlink/p/?LinkId=846108) からダウンロードできます。  
 
 <a name="BKMK_Prerequisites"></a>   
 ## <a name="prerequisites"></a>前提条件  
- サンプルを実行するには、次が必要です。  
+ サンプルを実行するには:  
 
-1. Common Data Service 環境にアクセスできる。  
+1. Microsoft Dataverse 環境にアクセスできる。  
 
-2. このサンプルで使用されている潜在顧客、営業案件、およびワークフロー エンティティと業務プロセス フロー定義エンティティ レコードへの適切なアクセス許可を持つ。  
+2. このサンプルで使用されている潜在顧客、営業案件、ワークフロー エンティティおよび業務プロセス フロー定義エンティティ レコードに関する適切な権限があります。  
 
 3. サンプルを実行するために Visual Studio 2015 以降がある。  
 
@@ -73,16 +74,16 @@ ms.locfileid: "3297760"
 
 3. サンプル プロジェクトでは、サンプルを実行する前に復元する必要のある NuGet パッケージを使用します。 NuGet パッケージの自動復元が Visual Studio で有効になっていることを確認します。 詳細: [NuGet パッケージの復元の有効化および無効化](https://go.microsoft.com/fwlink/?linkid=846106)  
 
-    また、**プロジェクト** > **NuGet パッケージの管理**の順に選択してから、**復元**を選択し、サンプルで使用するパッケージを手動で復元します。  
+    また、**プロジェクト** > **NuGet パッケージの管理** の順に選択してから、**復元** を選択し、サンプルで使用するパッケージを手動で復元します。  
 
-4. F5 キーを押すか、または**デバッグ** > **デバッグ開始**の順に選択します。  
+4. F5 キーを押すか、または **デバッグ** > **デバッグ開始** の順に選択します。  
 
 5. これまでどのサンプルも実行したことがない場合は、コードを実行するために情報を入力する必要があります。実行したことがある場合は、以前に設定したいずれかのインスタンスの番号を入力します。  
 
 
    |                                 プロンプト                                  |                                                                                             内容                                                                                             |
    |-------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-   |      Enter a Dynamics 365 server name and port\(Dynamics 365 のサーバー名とポートを入力してください\) [crm.dynamics.com]       | Dynamics 365 Server の名前を入力します。 北米では、既定は Dynamics 365 (online)  (crm.dynamics.com) です。<br /><br /> 例:  <br />crm5.dynamics.com |
+   |      Dynamics 365 Server の名前とポート [crm.dynamics.com] を入力してください       | Dynamics 365 Server の名前を入力します。 北米では、既定は Dynamics 365 (online)  (crm.dynamics.com) です。<br /><br /> 例:  <br />crm5.dynamics.com |
    | この組織は Microsoft Online Services でプロビジョニングされていますか (y/n) [n] |                                                 Microsoft Online Services でプロビジョニングされている組織の場合は、**y** を入力します。 その他の場合、**n** を入力します。                                                  |
    |                          domain\username を入力してください                          |                                                                                    Microsoft アカウントを入力します。                                                                                     |
    |                             パスワードを入力してください                              |                      パスワードを入力します。 文字はウィンドウに “\*” で表示されます。 パスワードは、後で再利用できるように Microsoft Credential Manager で安全に保存されます。                       |
@@ -91,5 +92,5 @@ ms.locfileid: "3297760"
 
 6. このサンプルでは、「[このサンプルの概要](#what-this-sample-does)」で説明されている操作を実行します。また、追加オプションの入力が求められる場合があります。  
 
-7. サンプルが完了したら、Enter キーを押してコンソール ウィンドウを閉じます。  
+7. サンプルが完了したら、[Enter] を押して、コンソール ウィンドウを閉じます。  
 

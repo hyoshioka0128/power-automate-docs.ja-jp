@@ -1,6 +1,6 @@
 ---
-title: ガイド プロセスで Common Data Service ダイアログを使用する (非推奨) | MicrosoftDocs
-description: ダイアログは、プロセスからユーザーに指示するためにステップバイステップのスクリプトを使用することによって、情報を収集および処理する同期または対話型のプロセスです。
+title: ガイド プロセスで Microsoft Dataverse ダイアログを使用する (非推奨) | MicrosoftDocs
+description: ダイアログは、手順ごとのスクリプトによってユーザーをプロセスに誘導することで情報の収集と処理を行う、同期した対話型のプロセスです
 ms.custom: ''
 ms.date: 10/31/2017
 ms.reviewer: ''
@@ -16,23 +16,25 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 69b8d448a3bb2636f4804fe75645467ca6bd081d
-ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
+ms.openlocfilehash: 9f4998a4cfc3e9e2652fe37ed7456c4b7333c7b7
+ms.sourcegitcommit: df7fb20065cfafc153b4bc4019dff2c94f4ef567
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "3298420"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4553700"
 ---
-# <a name="use-common-data-service-dialogs-for-guided-processes-deprecated"></a>ガイド プロセスで Common Data Service ダイアログを使用する (非推奨)
+# <a name="use-microsoft-dataverse-dialogs-for-guided-processes-deprecated"></a>ガイド プロセスで Microsoft Dataverse ダイアログを使用する (非推奨)
+
+[!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
 
 
-[ダイアログは非推奨となっています](/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#dialogs-are-deprecated)。 ダイアログを業務プロセス フローまたはキャンバス アプリに置き換える必要があります。 詳細: [ダイアログから業務プロセス フローまたはキャンバス アプリへの置き換え](replace-dialogs.md) 
+[ダイアログの廃止](/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#dialogs-are-deprecated)。 ダイアログを業務プロセス フローまたはキャンバス アプリに置き換える必要があります。 詳細: [ダイアログから業務プロセス フローまたはキャンバス アプリへの置き換え](replace-dialogs.md) 
 
-Common Data Service のダイアログは、手順ごとのスクリプトによってユーザーをプロセスに誘導することで情報の収集と処理を行う、同期したプロセスまたは対話型のプロセスです。 たとえば、サービス担当者向けにサポート案件の解決やエスカレーションをガイドするダイアログを作成できます。 また、営業案件の見込み評価や潜在顧客の採点などの営業プロセスを標準化するダイアログを作成することもできます。
+Dataverse のダイアログは、手順ごとのスクリプトによってユーザーをプロセスに誘導することで情報の収集と処理を行う、同期した対話型のプロセスです。 たとえば、サービス担当者向けにサポート案件の解決やエスカレーションをガイドするダイアログを作成できます。 また、営業案件の見込み評価や潜在顧客の採点などの営業プロセスを標準化するダイアログを作成することもできます。
 
 ## <a name="differences-between-workflows-and-dialogs"></a>ワークフローとダイアログの違い
 
-次の表に、Common Data Service のワークフローとダイアログの違いに関する情報を示します。  
+以下の表に、Dataverse のワークフローとダイアログの違いに関する情報を示します。  
 
 
 | ワークフロー     |    ダイアログ      |

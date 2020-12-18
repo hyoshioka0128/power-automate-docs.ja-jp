@@ -20,14 +20,16 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 037b7e7abdf771507c9e76ed4d181e22cdcec643
-ms.sourcegitcommit: 2971e852bdb76efbe012b9de8df8e7f492063184
+ms.openlocfilehash: 103e2f9ca0bcd781407eaad78767ae2fb74804e0
+ms.sourcegitcommit: 83e22ff7d539b02573548df5ca2a8bc41ea48227
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "3900434"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "4477255"
 ---
 # <a name="power-automate-in-your-organization-qa"></a>組織の Power Automate に関する Q&A
+
+[!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
 
 このトピックでは、組織内のユーザーが Power Automate を使用する方法と、Power Automate サービスを制御する方法について説明します。
 
@@ -135,7 +137,7 @@ Power Automate によって作成された新規テナントが作成された�
 
    1. [https://admin.microsoft.com](https://admin.microsoft.com/Start?sku=flow_free) に移動します。
    1. 左上のアプリ起動ツール アイコンを選んで、[管理者] を選びます。
-   1. **管理者になる**ページの指示を参照し、**はい、管理者になります**を選択します。  
+   1. **管理者になる** ページの指示を参照し、**はい、管理者になります** を選択します。  
 
        >[!TIP]
        >このオプションが表示されない場合は、Office 365 管理者は既に存在しています。

@@ -1,5 +1,5 @@
 ---
-title: クラシック Common Data Service ワークフロー を Power Automate に置き換える | Microsoft Docs
+title: クラシック Microsoft Dataverse ワークフロー を Power Automate に置き換える | Microsoft Docs
 description: クラシック ワークフローではなく、フローを使用するための Power Automate の機能と推奨されるパターンについて説明します。
 author: MSFTMAN
 manager: KVIVEK
@@ -12,20 +12,22 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 2e40680970ec2a5eae505b97acb6b34883ca1ded
-ms.sourcegitcommit: dbe05fc5136f724705e66ad795a9391ec47414e1
+ms.openlocfilehash: 9ea3276725a66092643eae71f2cca28b1814a806
+ms.sourcegitcommit: df7fb20065cfafc153b4bc4019dff2c94f4ef567
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "3973257"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4553892"
 ---
-# <a name="replace-classic-common-data-service-workflows-with-flows"></a>クラシック Common Data Service ワークフローをフローに置き換える
+# <a name="replace-classic-microsoft-dataverse-workflows-with-flows"></a>クラシック Microsoft Dataverse ワークフローをフローに置き換える
+
+[!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
 
 このトピックでは、Power Automate の機能をクラシック ワークフローと比較します。
 
 Power Automate には、クラシック バックグラウンド ワークフロー モデルよりも大きな利点があります。クラシック ワークフローではなく、プロセスを自動化するための Power Automate の使用を検討してください。
 
-新しい自動化プロセスを構築するために、クラシック Common Data Service ワークフローではなくフローを作成します。 また、既存のクラシック バックグラウンド ワークフロー プロセスを確認し、それらをフローに置き換えることを検討する必要があります。
+新しい自動化プロセスを構築するために、クラシック Dataverse ワークフローではなくフローを作成します。 また、既存のクラシック バックグラウンド ワークフロー プロセスを確認し、それらをフローに置き換えることを検討する必要があります。
 
 ## <a name="feature-capability-comparison"></a>機能の性能比較
 
@@ -148,7 +150,7 @@ Power Automate には、クラシック バックグラウンド ワークフロ
                 </td>
                 <td>
                     
-   No
+   無効
                     
                 </td>
                 <td>
@@ -177,7 +179,7 @@ Power Automate には、クラシック バックグラウンド ワークフロ
             <tr>
                 <td>
                     
-   Common Data Service アクション (カスタムを含む) の実行
+   Dataverse アクションの実行 (カスタムを含む)
                     
                 </td>
                 <td>
@@ -272,19 +274,19 @@ Power Automate には、クラシック バックグラウンド ワークフロ
                 </td>
                 <td>
                     
-   No
+   無効
                     
                 </td>
                 <td>
                     
-   No
+   無効
                     
                 </td>
             </tr>
             <tr>
                 <td>
                     
-   複数の Common Data Service エンティティ イベントでのトリガー
+   複数の Dataverse エンティティ イベントでトリガーする
                     
                 </td>
                 <td>
@@ -459,7 +461,7 @@ Power Automate には、クラシック バックグラウンド ワークフロ
 フローでは、このシナリオ構築はより簡単になります。このシナリオをサポートするためのいくつかの Power Automate 機能については、チュートリアルの後半で説明します。 たとえば、次のような機能があります。
 
 - オンデマンドで実行するフローの作成。
-- Common Data Service エンティティに関連するレコードの一覧を取得します。
+- Dataverse エンティティに関連するレコードのリストを取得します。
 - レコードの一覧でのループ。
 - 承認要求の送信。
 
@@ -467,11 +469,11 @@ Power Automate には、クラシック バックグラウンド ワークフロ
 
 1. [Power Automate](https://flow.microsoft.com/) にサインインして [ソリューションにフローを作成します](create-flow-solution.md)。 
 
-1. トリガーの一覧から **Common Data Service (現在の環境) – レコードの選択時** を選択し、エンティティとして **見積もり** を選択します。 
+1. トリガーのリストから、**Dataverse (現在の環境) – レコードが選択されたとき** を選び、エンティティとして **見積もり** を選択します。 
 
    このトリガーを使用して、レコードやレコード セットでフローをオンデマンドに実行できます。
 
-1. トリガーが構成されたら、フローで実行するアクションを追加します。 これにより、見積品目と値を識別するために必要な集計の詳細が承認者に提供されます。 まず、**Common Data Service (現在の環境) - レコードの一覧表示** アクションを追加します。 目標は見積もりから個別の項目を取得することなので、**エンティティ名** を **見積依頼明細行** に設定します。 フローをトリガーした見積もりに属する見積依頼明細行項目のみをリストに含むように、OData スタイル フィルター条件を指定します。 **フィルター クエリ** フィールドに、*\_quoteid_value eq* と入力し、表示される動的な値のリストから **見積もり** を選択します。
+1. トリガーが構成されたら、フローで実行するアクションを追加します。 これにより、見積品目と値を識別するために必要な集計の詳細が承認者に提供されます。 まず、**Dataverse (現在の環境) - レコードの一覧表示** アクションを追加します。 目標は見積もりから個別の項目を取得することなので、**エンティティ名** を **見積依頼明細行** に設定します。 フローをトリガーした見積もりに属する見積依頼明細行項目のみをリストに含むように、OData スタイル フィルター条件を指定します。 **フィルター クエリ** フィールドに、*\_quoteid_value eq* と入力し、表示される動的な値のリストから **見積もり** を選択します。
 
     ![アクションを追加する方法を示すスクリーンショット。](media/define-flow-1.png "完全なリスト レコード カード")
 
@@ -506,7 +508,7 @@ Power Automate には、クラシック バックグラウンド ワークフロ
 
   トリガーから開始するようにフローを再設計することをお勧めします:
 
-  - Common Data Service トリガーを使用して、その中のイベントに基づいてフローを実行します。
+  - Dataverse トリガーを使用して、その中のイベントに基づいてフローを実行します。
 
   - 外部サービスのイベントに基づいてフローを実行するには、260 を超える既定のコネクタを利用します。
 
@@ -542,7 +544,7 @@ Power Automate には、クラシック バックグラウンド ワークフロ
 
 - **フローはどのくらいの頻度でトリガーできますか?**
 
-   Dynamics 365 (または Common Data Service) のフローは、Webhook を使用する (ポーリングは必要ありません) ため、トリガー後にほぼリアルタイムで実行されます
+   Dynamics 365 (または Dataverse) のフローは、Webhook を使用する (ポーリングは必要ありません) ため、トリガー後にほぼリアルタイムで実行されます。
 
   - API への直接アクセスと同様に、システムにはスロットル/制限があります。 詳細: [Power Automate での制限と構成](limits-and-config.md)
   - 具体的には、フローごとに 5 分あたり 100,000 アクションの制限があります。 フロー内の 1 つのループで、一度に 100,000 を超えるアイテムを処理することはできません。
@@ -556,17 +558,17 @@ Power Automate には、クラシック バックグラウンド ワークフロ
 
   クラシック ワークフローと同じように、ソリューションにフローを作成し、プロセスの完全なアプリケーション ライフサイクルをサポートすることができます。
 
-- **Power Automate の依存関係は Common Data Service で追跡されますか?**  
+- **Power Automate の依存関係は Dataverse で追跡されますか?**  
 
-  ソリューション内の他のコンポーネントと同様に、ソリューション内のフローのすべての依存関係は Common Data Service で追跡されます。
+  ソリューション内の他のコンポーネントと同様に、ソリューション内のフローのすべての依存関係は Dataverse で追跡されます。
 
 - **同期ワークフローについてはどうですか?**
 
   同期ワークフローがエンド ユーザーのパフォーマンスの問題に大きく貢献するというフィードバックがあります。 目的やバックグラウンド ワークフローの一部を、フローを使用して構築可能かどうか評価することを推奨します。 非同期にアクションを分割できる場合、Power Automate がアクションを完了する間にユーザーが活動を継続できます。
 
-- **Power Automate を使用すると、データはリージョン (つまり、Dynamics 365 または Common Data Service 環境と同じリージョン) 内にとどまりますか?**  
+- **Power Automate を使用すると、データはリージョン (つまり、Dynamics 365 または Dataverse 環境と同じリージョン) 内にとどまりますか?**  
 
-  はい、Power Automate は常に Common Data Service と同じリージョンを使用します。
+  はい、Power Automate は常に Dataverse と同じリージョンを使用します。
 
 - **プロキシ/ファイアウォールの変更を行う必要がありますか?**  
 

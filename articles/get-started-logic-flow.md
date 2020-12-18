@@ -20,17 +20,14 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 40567569036916699d7014852f9169da8ebdb8c9
-ms.sourcegitcommit: 6714fe9d5217e6aaa07656c7048c1c82ba7312c1
+ms.openlocfilehash: ca1a7f570eb76528c8d384cd08f92bb816f1e397
+ms.sourcegitcommit: df7fb20065cfafc153b4bc4019dff2c94f4ef567
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "3821036"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4553172"
 ---
 # <a name="create-a-flow-in-power-automate"></a>Power Automate でフローを作成する
-
-
-> [!VIDEO https://www.youtube.com/embed/Gt3CMhLAQqE?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF]
 
 イベントによってトリガーされたら 1 つまたは複数のタスクを自動的に実行するフローを作成します。 たとえば、指定したキーワードを含むツイートを送信した場合にメールで通知するというフローを作成するとします。 この例では、ツイートを送信するのがイベント、メールを送信するのがアクションです。
 
@@ -77,7 +74,7 @@ ms.locfileid: "3821036"
 
 ## <a name="specify-an-action"></a>アクションを指定する
 
-1. **新しいステップ**を選択します。
+1. **新しいステップ** を選択します。
 
     <!-- ![Add action](./media/get-started-logic-flow/add-action-icon.png) -->
 

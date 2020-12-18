@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 10cc09d492dc6323c3846ac7911671156f4dba98
-ms.sourcegitcommit: bbf1a3bf0d61c856af28f24edad98e56c2fc07df
+ms.openlocfilehash: c94ca32053c3326c56e4f50137065efe9b303fbb
+ms.sourcegitcommit: df7fb20065cfafc153b4bc4019dff2c94f4ef567
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "3765760"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4553124"
 ---
 # <a name="get-started-with-approvals"></a>承認を開始する
 
@@ -35,18 +35,18 @@ ms.locfileid: "3765760"
 
 承認の開始に必要なものを以下に示します。
 
-- Common Data Service データベースを作成するアクセス許可。
+- Microsoft Dataverse データベースを作成するアクセス許可。
 - フローを作成するライセンス。
 
 
-## <a name="permissions-to-create-a-common-data-service-database"></a>Common Data Service データベースを作成するアクセス許可
+## <a name="permissions-to-create-a-dataverse-database"></a>Dataverse データベースを作成するためのアクセス許可
 
-承認フローを作成すると Common Data Service に保存されます。 最初に既定ではない環境に存在するフローで承認コネクタを使用すると、システムは自動的にデータベースをプロビジョニングします。 正常に実行するためには、最初の承認フローを実行するユーザーがその環境の管理者ロールを持っている必要があります。
+作成した承認フローは、Dataverse に保存されます。 最初に既定ではない環境に存在するフローで承認コネクタを使用すると、システムは自動的にデータベースをプロビジョニングします。 正常に実行するためには、最初の承認フローを実行するユーザーがその環境の管理者ロールを持っている必要があります。
 
 データベースのプロビジョニングが完了するまでに数分かかる場合があり、フローを初めて実行する際はこの遅延は明らかです。 承認フローを作成する他のユーザーに対して、環境の昇格したアクセス許可は必要ありません。
 
 >[!NOTE]
->既定の環境を使用する場合は Common Data Service データベースのプロビジョニングは必要はありません。 
+>既定の環境を使用している場合は、Dataverse データベースをプロビジョニングする必要はありません。 
 
 ## <a name="license-to-create-flows"></a>フローを作成するライセンス
 
@@ -57,14 +57,14 @@ ms.locfileid: "3765760"
 
 ## <a name="assign-approvals-to-any-user-in-your-tenant"></a>テナントで任意のユーザーに承認を割り当てる
 
-現在の Common Data Service 環境のユーザーやゲスト ユーザーを含む Azure Active Directory (Azure AD) テナントに承認を割り当てできます。 
+現在の Dataverse 環境または Azure Active Directory (Azure AD) テナントのユーザー (ゲスト ユーザーも含む) に承認を割り当てることができます。 
 
 現在の環境に存在しないユーザーに承認を割り当てる場合は、自動的に追加されるため応答を処理して承認履歴で保持できます。 
 
 これは以下のテナント構成で許可されていません:
 
 - Azure Active Directory (Azure AD) の AllowAdHocSubscriptions 設定が無効の場合。 この場合、テナント管理者に有効化を依頼できます。 この詳細はセルフサービス サインアップでご確認ください。
-- セキュリティ グループを使用して Common Data Service 環境にアクセスできるユーザーを制御している場合。
+- セキュリティ グループを使用して、Dataverse 環境にアクセスできるユーザーを制御している場合。
 - Power Automate [米国政府機関プラン](https://docs.microsoft.com/power-automate/us-govt)。
 
 

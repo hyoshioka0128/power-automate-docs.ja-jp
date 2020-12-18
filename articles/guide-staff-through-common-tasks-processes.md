@@ -22,15 +22,16 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 2eb9b35a0ba00accb553275aa9995184190a2678
-ms.sourcegitcommit: dbe05fc5136f724705e66ad795a9391ec47414e1
+ms.openlocfilehash: f375d3287fb8baa4f39852ee14fac4f28ee80a54
+ms.sourcegitcommit: 83e22ff7d539b02573548df5ca2a8bc41ea48227
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "3973281"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "4476871"
 ---
 # <a name="create-custom-business-logic-through-processes"></a>プロセスを通じてカスタム ビジネス ロジックを作成する
 
+[!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
 
 一貫したビジネス プロセスの定義と実施は、ユーザーがモデル駆動型アプリを使用する大きな理由の1つです。 一貫性のあるプロセスにより、システムを使用することが、一連の手動の手順を忘れずに実行することに集中するのではなく、自分たちの仕事に確実に集中することができます。 プロセスは単純または複雑な場合があり、徐々に変更できます。  
   

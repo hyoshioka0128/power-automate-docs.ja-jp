@@ -20,18 +20,18 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 4d5fd403aa0cd74cf81535bd3ad35e046cf41f33
-ms.sourcegitcommit: ad8c043d9ad0c188237c0fc3bbd8fd0c7cec83c2
+ms.openlocfilehash: 93805fd7aa297e6c36e1427e6e18133b572e2384
+ms.sourcegitcommit: df7fb20065cfafc153b4bc4019dff2c94f4ef567
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "3988204"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4553052"
 ---
 # <a name="import-a-solution"></a>ソリューションのインポート
 
 
 > [!TIP]
-> ソリューションのインポート後、フローを自動的に開始するには、フローを作成する時に Common Data Service (現在の環境) コネクタを使用します。
+> ソリューションのインポート後、フローを自動的に開始するには、フローを作成する時に Microsoft Dataverse (現在の環境) コネクタを使用します。
 
 ソリューションをエクスポートした後、前提条件を満たす任意の環境にそれをインポートできます。 ソリューションをインポートするには、次の手順に従います。
 

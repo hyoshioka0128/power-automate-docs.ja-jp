@@ -1,5 +1,6 @@
 ---
-title: クラシック Common Data Service ワークフローの概要| MicrosoftDocs
+title: クラシック Microsoft Dataverse ワークフローの概要| MicrosoftDocs
+description: クラシック Microsoft Dataverse ワークフローの概要
 ms.custom: ''
 ms.date: 07/27/2020
 ms.reviewer: matp
@@ -14,14 +15,16 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 733f15a09b6a4491ee1b8d9a7bbeb16d15a9098b
-ms.sourcegitcommit: dbe05fc5136f724705e66ad795a9391ec47414e1
+ms.openlocfilehash: e1e193a043d9beb8ea9492d6310e08b5b6a4dcef
+ms.sourcegitcommit: df7fb20065cfafc153b4bc4019dff2c94f4ef567
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "3973161"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4553796"
 ---
-# <a name="classic-common-data-service-background-workflows"></a>従来の Common Data Service バックグラウンド ワークフロー 
+# <a name="classic-microsoft-dataverse-background-workflows"></a>従来の Microsoft Dataverse バックグラウンド ワークフロー 
+
+[!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
 
 ワークフローは、ユーザー インターフェイスを持たないビジネス プロセスを自動化します。 通常、ワークフロー プロセスは、ユーザーの操作を必要としない自動化のために使用します。
 

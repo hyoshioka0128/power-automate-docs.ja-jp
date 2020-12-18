@@ -14,14 +14,16 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: c009c5f46a4ced0fd7c86d11c38e7b65d38e8ace
-ms.sourcegitcommit: a881042f3de3cce8087986174fed53fd26b163f3
+ms.openlocfilehash: 3dcd72460fdb8433d5d9e1a96db624f8bab24a10
+ms.sourcegitcommit: df7fb20065cfafc153b4bc4019dff2c94f4ef567
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "4365208"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4553964"
 ---
 # <a name="power-automate-us-government"></a>Power Automate US Government
+
+[!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
 
 
 米国の公的機関の特有の進化し続ける要件に応じるために、Microsoft は Power Automate US Government プランを作成しました。 このセクションでは、Power Automate US Government に特有の機能の概要を示します。 この補足セクションと、Power Automate サービス [はじめに](https://docs.microsoft.com/flow/getting-started) トピックをお読みになることをお勧めします。 簡潔にするため、このサービスは一般に Power Automate 政府コミュニティ クラウド (GCC) もしくは Power Automate 政府コミュニティクラウド – High (GCC High) と呼ばれます。
@@ -71,7 +73,7 @@ Power Automate US Government は、ボリューム ライセンスおよびク�
 
 オンライン サービスのご利用条件で定義されている顧客データとは、オンライン サービスの使用を介してお客様から直接的または間接的に Microsoft に提供されたすべてのテキスト ファイル、サウンド ファイル、ビデオ ファイルやイメージ ファイル、ソフトウェアを含む、あらゆるデータを指します。
 
-顧客コンテンツは、ユーザーによって直接作成された [Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro) のエンティティ (たとえば、連絡先情報) のエントリからデータベースに格納されている内容など、顧客データの一部を示します。 一般的に、コンテンツは機密情報と見なされ、通常のサービス運用では、暗号化せずにインターネットを介して送信されることはありません。
+顧客コンテンツは、ユーザーによって直接作成された [Microsoft Dataverse](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro) のエンティティ (たとえば、連絡先情報) のエントリからデータベースに格納されている内容など、顧客データの一部を示します。 一般的に、コンテンツは機密情報と見なされ、通常のサービス運用では、暗号化せずにインターネットを介して送信されることはありません。
 
 Power Automate による顧客データを保護する方法の詳細については、[Microsoft Online Services のセキュリティ センター](https://www.microsoft.com/trustcenter/cloudservices/business-application-platform/default.aspx) を参照してください。
 
@@ -198,7 +200,7 @@ Azure AD アカウント管理サービスは Microsoft Global Foundation Servic
 * .azure.net
 * .crm9.dynamics.com
 
-ユーザーおよび管理者がお客様のテナント内に作成できる Common Data Service インスタンスにアクセスできるようにするには、AzureCloud.usgovtexas および AzureCloud.usgovvirginia に対する [IP 範囲](https://www.microsoft.com/download/confirmation.aspx?id=57063) を参照してください。 
+ユーザーおよび管理者がお客様のテナント内に作成できる Dataverse インスタンスにアクセスできるようにするには、AzureCloud.usgovtexas および AzureCloud.usgovvirginia に対する [IP 範囲](https://www.microsoft.com/download/confirmation.aspx?id=57063)を参照してください。 
 
 ### <a name="gcc-high-customers"></a>GCC High の顧客:
 * .microsoft.us
@@ -210,7 +212,7 @@ Azure AD アカウント管理サービスは Microsoft Global Foundation Servic
 * .azure.net
 * .crm.microsoftdynamics.us
 
-ユーザーおよび管理者がお客様のテナント内に作成できる Common Data Service インスタンスにアクセスできるようにするには、AzureCloud.usgovtexas および AzureCloud.usgovvirginia に対する [IP 範囲](https://www.microsoft.com/download/confirmation.aspx?id=57063) を参照してください。 
+ユーザーおよび管理者がお客様のテナント内に作成できる Dataverse インスタンスにアクセスできるようにするには、AzureCloud.usgovtexas および AzureCloud.usgovvirginia に対する [IP 範囲](https://www.microsoft.com/download/confirmation.aspx?id=57063)を参照してください。 
 
 
 ## <a name="connectivity-between-power-automate-us-government-and-public-azure-cloud-services"></a>Power Automate US Government とパブリック Azure Cloud Services 間の接続

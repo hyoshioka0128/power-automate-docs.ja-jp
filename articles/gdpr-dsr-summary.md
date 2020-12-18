@@ -1,6 +1,6 @@
 ---
 title: GDPR データ主体の要求の概要 | Microsoft Docs
-description: Power Automate に対する GPDR データ主体の要求に応答する方法を説明します。
+description: この記事では、Power Automate に対する GPDR データ主体の要求に対応する方法を説明します。
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,17 +20,17 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 9acc41d0aec22f5adcdfb72e0e2dea8583a6013b
-ms.sourcegitcommit: 39d7912519ff03dae924023c1a1c320a30efaa81
+ms.openlocfilehash: 274f56988ce2d1eb68105ca49ca326a2378697bc
+ms.sourcegitcommit: df7fb20065cfafc153b4bc4019dff2c94f4ef567
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "3691034"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4553100"
 ---
 # <a name="responding-to-gdpr-data-subject-requests-for-power-automate"></a>Power Automate の GDPR データ対象者の要求に対応する
 
 
-この記事では、ユーザーと組織のために EU の一般データ保護規則 (GDPR) について説明します。 この記事では、GDPR に対する Microsoft の対応について説明するだけでなく、 Power Apps、 Power Automate、Common Data Service を使用するときに GDPR コンプライアンスがサポートされるようにするために実行できる手順の例を示します。
+この記事では、ユーザーと組織のために EU の一般データ保護規則 (GDPR) について説明します。 この記事では、GDPR に対する Microsoft の対応について説明するだけでなく、 Power Apps、 Power Automate、Microsoft Dataverse を使用するときに GDPR コンプライアンスがサポートされるようにするために実行できる手順の例を示します。
 
 ## <a name="prerequisites"></a>前提条件
 

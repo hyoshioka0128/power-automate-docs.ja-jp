@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: e536612ab2cd3bba2f478d5ce38861ec24310a0b
-ms.sourcegitcommit: 71dd515fb482312e2878c3eb8642441780290cb5
+ms.openlocfilehash: 51dd34c072a28a325c747927d839c9fbd5caf38b
+ms.sourcegitcommit: df7fb20065cfafc153b4bc4019dff2c94f4ef567
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "3742454"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4553724"
 ---
 # <a name="create-and-test-an-approval-workflow-with-power-automate"></a>Power Automate での承認ワークフローを作成し、テストします
 
@@ -35,10 +35,10 @@ Power Automate では、SharePoint、Dynamics 365、Salesforce、OneDrive for Bu
 
 承認者は、受信トレイ、 Power Automate  Web サイトの [承認センター](https://flow.microsoft.com/manage/approvals/received/) 、または Power Automate アプリから要求に対応できます。
 
-## <a name="create-an-approval-flow"></a>承認フローを作成する
+## <a name="create-an-approval-flow"></a>承認フローの作成
 ここで、作成し、テストするフローの概要を次に示します:
 
-   ![フローの概要](./media/modern-approvals/create-flow-overview.png)
+   ![この記事で作成されたフローの概要を示すスクリーンショット](./media/modern-approvals/create-flow-overview.png)
 
 フローでは次の手順を実行します:
 
@@ -96,7 +96,7 @@ SharePoint Online リストの名前と URL をメモします。 これらの�
 > [!NOTE]
 > このアクションを実行すると、**担当者** ボックス内の電子メール アドレスに承認要求が送信されます。
 >
-> シナリオで必要な場合は、Common Data Service を使用する承認要求にファイルを添付できます。
+> シナリオで必要な場合は、Microsoft Dataverse を使用する承認要求にファイルを添付できます。
 
 ## <a name="add-a-condition"></a>条件を追加する
 
@@ -138,7 +138,7 @@ SharePoint Online リストの名前と URL をメモします。 これらの�
 
 以上の手順に従うと、フローは次のスクリーンショットのようになります:
 
-![フローの概要](./media/modern-approvals/completed-flow.png)
+![完了フローを表示するスクリーンショット](./media/modern-approvals/completed-flow.png)
 
 これでフローが作成されたので、テストしてみましょう!
 
@@ -149,7 +149,7 @@ SharePoint Online リストの名前と URL をメモします。 これらの�
 
 ## <a name="create-long-running-approvals"></a>長期にわたる承認の作成
 
-フローが 30 日以上実行される可能性が高い場合は、Common Data Service に承認を保存することを検討してください。 これにより、元のフローの実行がタイムアウトした後でも、承認リクエストへの応答に基づいて動作するフローを作成できます。これを行うには、**承認を作成する（v2）** アクションに基づいて、2 つのフローを使用します。1 つは承認リクエストを送信し、もう 1 つは承認リクエストへの応答に基づいてビジネスロジックを実行します。 [長期にわたる承認](https://docs.microsoft.com/business-applications-release-notes/april19/microsoft-flow/increased-run-duration) について詳細情報を確認します。
+フローが 30 日以上実行される可能性が高い場合は、Dataverse に承認を保存することを検討してください。 これにより、元のフローの実行がタイムアウトした後でも、承認リクエストへの応答に基づいて動作するフローを作成できます。これを行うには、**承認を作成する（v2）** アクションに基づいて、2 つのフローを使用します。1 つは承認リクエストを送信し、もう 1 つは承認リクエストへの応答に基づいてビジネスロジックを実行します。 [長期にわたる承認](https://docs.microsoft.com/business-applications-release-notes/april19/microsoft-flow/increased-run-duration) について詳細情報を確認します。
 
 >[!TIP]
 > 最新の電子メール クライアントを使用している場合、要求が引き続き必要かどうかを気にする必要はありません。これは、Power Automate によって承認が完了していることを示すように電子メールが自動的に更新されるためです。

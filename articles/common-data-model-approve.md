@@ -1,5 +1,5 @@
 ---
-title: Common Data Service で承認ループを構築する | Microsoft Docs
+title: Microsoft Dataverse で承認ループを構築する | Microsoft Docs
 description: レビュー担当者が Dropbox に追加したファイルを承認や拒否できるように、連携するエンティティ、フロー、アプリを作成します。
 services: ''
 suite: flow
@@ -20,16 +20,18 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 28b7ba179ba96efcc479a4b939e6c3cab3f5de7c
-ms.sourcegitcommit: 2971e852bdb76efbe012b9de8df8e7f492063184
+ms.openlocfilehash: 27d969d28ace46123324d02004c3bc773f0b1b4a
+ms.sourcegitcommit: df7fb20065cfafc153b4bc4019dff2c94f4ef567
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "3900314"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4553580"
 ---
-# <a name="build-an-approval-loop-by-using-power-automate-and-common-data-service"></a>Power Automate と Common Data Service を使用して承認ループを構築する
+# <a name="build-an-approval-loop-by-using-power-automate-and-microsoft-dataverse"></a>Power Automate と Microsoft Dataverse を使用して承認ループを構築する
 
-Common Data Service を使用すると、フローから独立しているデータベースに情報が格納されるフローを作成できます。 この最も良い例が承認です。 承認の状態をエンティティに格納すると、フローはそれを元にして動作できます。
+[!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
+
+Dataverse を使用すると、フローから独立してデータベースに情報が格納されているフローを構築することができます。 この最も良い例が承認です。 承認の状態をエンティティに格納すると、フローはそれを元にして動作できます。
 
 この例では、ユーザーが Dropbox にファイルを追加したときに開始される承認プロセスを作成します。 ファイルが追加されると関連する情報がアプリに表示され、その変更をレビュー担当者が承認または拒否できます。 レビュー担当者が変更を承認または却下すると通知メールを送信し、却下されたファイルは Dropbox から削除されます。
 
@@ -68,7 +70,7 @@ Common Data Service を使用すると、フローから独立しているデー
 7. **表示名** にフレンドリ名を指定します。
    
     ![表示名を指定する](./media/common-data-model-approve/display-name.png)
-8. **次へ**をクリックまたはタップします。
+8. **次へ** をクリックまたはタップします。
    
     ![[次へ] ボタン](./media/common-data-model-approve/next-button.png)
 
@@ -138,9 +140,9 @@ Common Data Service を使用すると、フローから独立しているデー
 1. **新しいステップ** をクリックまたはタップし、**アクションの追加** をクリックまたはタップします。
    
     ![アクションを追加します](./media/common-data-model-approve/add-action.png)
-2. **その他のアクションを検索する** と表示されているボックスで **Common Data Service** と入力し、**Common Data Service - オブジェクトを作成する** をクリックまたはタップします。
+2. **他のアクションを検索する** を含むボックスで、**Common Data Service** と入力または貼り付けをしてから、**Dataverse - オブジェクトの作成** をクリックまたはタップします。
    
-    ![Common Data Service でオブジェクトを作成する](./media/common-data-model-approve/cdm-create-object.png)
+    ![Dataverse でオブジェクトを作成する](./media/common-data-model-approve/cdm-create-object.png)
 3. **エンティティ** に **レビュー** と入力または貼り付けてから **Dropbox ファイルをレビューする** をクリックまたはタップします。
    
     ![エンティティを選択する](./media/common-data-model-approve/choose-entity-flow.png)
@@ -182,7 +184,7 @@ Common Data Service を使用すると、フローから独立しているデー
 6. **Do until** アクションの下部から **アクションの追加** をクリックまたはタップします。
    
     ![Do until にアクションを追加する](./media/common-data-model-approve/add-action-in-dountil.png)
-7. **その他のアクションを検索する** と表示されているボックスで **Common** と入力し、**Common Data Service - オブジェクトを取得する** をクリックまたはタップします。
+7. **他のアクションを検索する** を含むボックスで、 **Common** と入力または貼り付けをしてから、**Dataverse - オブジェクトの取得** をクリックまたはタップします。
    
     ![オブジェクトを取得する](./media/common-data-model-approve/get-object.png)
 8. **名前空間** 配下のデータベースをクリックまたはタップします。
@@ -268,7 +270,7 @@ Common Data Service を使用すると、フローから独立しているデー
     ![エンティティの選択](./media/common-data-model-approve/choose-entity.png)
 7. 画面右下隅付近の **接続** をクリックまたはタップします。
    
-    ![接続ボタン](./media/common-data-model-approve/connect-button.png)
+    ![接続ボタンを表示するスクリーンショット](./media/common-data-model-approve/connect-button.png)
 8. 紹介ツアーの開始画面が表示されたら、ツアーを実行して Power Apps の概要を理解します (または、**スキップ** をクリックまたはタップします)。
    
     ![概要ツアー](./media/common-data-model-approve/quick-tour.png)
@@ -281,7 +283,7 @@ Common Data Service を使用すると、フローから独立しているデー
 ## <a name="customize-the-app"></a>アプリをカスタマイズする
 1. 右側のナビゲーション バーで、ヘッダーと説明が表示されたレイアウトをクリックまたはタップします。
    
-    ![接続ボタン](./media/common-data-model-approve/choose-layout.png)
+    ![レイアウトのオプションを表示するスクリーンショット](./media/common-data-model-approve/choose-layout.png)
 2. **BrowseScreen** で検索バーのすぐ下をクリックまたはタップし、大きいテキストボックス コントロールを選択します。
    
     ![ヘッダーを選択する](./media/common-data-model-approve/select-header.png)

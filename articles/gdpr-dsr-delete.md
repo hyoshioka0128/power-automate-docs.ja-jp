@@ -20,14 +20,16 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 07c0f662eae3cebe49009de0730a65494fdbffa2
-ms.sourcegitcommit: 39d7912519ff03dae924023c1a1c320a30efaa81
+ms.openlocfilehash: b24c8dffbc9b988bb498ce5872a9c28e5b4d7858
+ms.sourcegitcommit: df7fb20065cfafc153b4bc4019dff2c94f4ef567
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "3691154"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4553220"
 ---
 # <a name="responding-to-gdpr-data-subject-delete-requests-for-power-automate"></a>Power Automate の GDPR データ対象者削除依頼に対応する
+
+[!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
 
 
 組織の顧客データから個人データを削除することによる "忘れられる権利" は、GDPR での重要な保護です。 個人データの削除では、監査ログ情報を除くすべての個人データとシステム生成ログが削除されます。
@@ -50,7 +52,7 @@ Power Automate では、組織の日常業務の重要な一部であるオー�
 
 *これらの各リソースには、個人データを含む "作成者" および "変更者" のレコードが含まれます。 セキュリティ上の理由から、これらのレコードはリソースが削除されるまで保持されます。
 
-** Common Data Service  データベースが含まれる環境では、環境のアクセス許可 (たとえば、環境作成者および環境管理者のロールが割り当てられているユーザー) が、Common Data Service にレコードとして格納されます。 Common Data Service を使用するユーザーのDSRへの応答方法に関するガイダンスについては、[Common Data Service 顧客データに対する DSR の実行](https://go.microsoft.com/fwlink/?linkid=872251)を参照してください。
+**Microsoft Dataverse データベースを含む環境の場合、環境アクセス許可 (例えば、どのユーザーが環境作成者および管理者ロールに割り当てられているか) は、Dataverse にレコードとして保存されます。 Dataverse を使用するユーザーに対する DSR に応答する方法のガイダンスについては、[Dataverse の顧客データに対する DSR の実行](https://go.microsoft.com/fwlink/?linkid=872251)に関するページをご覧ください。
 
 手動での確認が必要なデータとリソースのため、Power Automate  では特定のユーザーの個人データの検索または変更を行う以下のエクスペリエンスが提供されています。
 
@@ -77,7 +79,7 @@ Power Automate では、組織の日常業務の重要な一部であるオー�
 |カスタム コネクタのアクセス許可|Power Automate メーカー ポータル| ||
 |承認履歴|Microsoft Power Apps メーカー ポータル*|||
 
-* Common Data Service の導入により、環境内にデータベースが作成された場合、環境のアクセス許可とモデル駆動型アプリのアクセス許可が、Common Data Service 内のレコードとして格納されます。 Common Data Service を使用するユーザーのDSRへの応答方法に関するガイダンスについては、[Common Data Service 顧客データに対する DSR の実行](https://go.microsoft.com/fwlink/?linkid=872251)を参照してください。
+*Dataverse の導入により、環境内でデータベースが作成された場合、環境アクセス許可とモデル駆動型アプリのアクセス許可が Dataverse 内のレコードとして保存されます。 Dataverse を使用するユーザーに対する DSR に応答する方法のガイダンスについては、[Dataverse の顧客データに対する DSR の実行](https://go.microsoft.com/fwlink/?linkid=872251)に関するページをご覧ください。
 
 \*\* 管理者は、Power Automate フロー管理センターからアクセス権を割り当てられている場合、Power Automate 作成者ポータルからのみ、これらのリソースにアクセスできます。
 
@@ -138,7 +140,7 @@ Power Automate では、組織の日常業務の重要な一部であるオー�
 
 ## <a name="delete-approval-history-from-power-automate"></a>Power Automate から承認履歴を削除する
 
- Power Automate の承認データは、現在または以前のバージョンの Common Data Service に格納されています。 承認には、承認の割り当ておよび承認応答に含まれるコメントの形式で、個人情報が存在します。 管理者は、次の手順でそのデータにアクセスできます:
+ Power Automate の承認データは、Dataverse の現在または以前のバージョン内に保存されます。 承認には、承認の割り当ておよび承認応答に含まれるコメントの形式で、個人情報が存在します。 管理者は、次の手順でそのデータにアクセスできます:
 
 1. [PowerApps](https://make.powerapps.com/) にサインインする。
 
@@ -148,7 +150,7 @@ Power Automate では、組織の日常業務の重要な一部であるオー�
 
 1. Microsoft Excel で、必要に応じて承認データを検索し、フィルター処理して、削除します。
 
-Common Data Service を使用するユーザーのDSRへの応答方法に関する詳細なガイダンスについては、[Common Data Service 顧客データに対する DSR の実行](https://go.microsoft.com/fwlink/?linkid=872251)を参照してください。
+Dataverse を使用するユーザーに対する DSR に応答する方法の他のガイダンスについては、[Dataverse の顧客データに対する DSR の実行](https://go.microsoft.com/fwlink/?linkid=872251)に関するページをご覧ください。
 
 
 ## <a name="delete-connections-created-by-a-user"></a>ユーザーによって作成された接続を削除する
@@ -278,7 +280,7 @@ Get-AdminConnectorRoleAssignment -PrincipalObjectId $deleteDsrUserId | Remove-Ad
 
 ユーザーには環境内のアクセス許可 (環境管理者、環境作成者など) を割り当てることができ、アクセス許可は "ロールの割り当て" として Power Automate サービスに格納されます。
 
-Common Data Service の導入により、環境内にデータベースが作成された場合、これら役割の割り当てが、Common Data Service 内のレコードとして格納されます。
+Dataverse の導入により、環境内にデータベースが作成された場合、これらの "ロールの割り当て" が、Dataverse 内のレコードとして格納されます。
 
 環境でのユーザーのアクセス許可の削除についての詳細は、[Power Automate 内の環境を使用する](https://docs.microsoft.com/flow/environments-overview-admin)をご覧ください。
 

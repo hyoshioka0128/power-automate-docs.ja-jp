@@ -18,15 +18,16 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: a6fcbe8cb09877eae2121efabbe9f4eaace8250b
-ms.sourcegitcommit: dbe05fc5136f724705e66ad795a9391ec47414e1
+ms.openlocfilehash: e458423f45a83ebeb77c3506ca2a76072d1844f4
+ms.sourcegitcommit: 83e22ff7d539b02573548df5ca2a8bc41ea48227
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "3973209"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "4477159"
 ---
 # <a name="configure-background-workflow-stages-and-steps"></a>バックグラウンド ワークフローのステージとステップを構成する
 
+[!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
 
 ワークフローを設計する際には、実行するロジックを **ステージ** や **ステップ** に含めるオプションがあります。  
   

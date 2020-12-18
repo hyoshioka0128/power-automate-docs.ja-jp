@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: c4a5ae6a2f5b1bccc81f5e7add3b6380b01b3847
-ms.sourcegitcommit: d31569a29a01119c22feaa3012761b24c426f60b
+ms.openlocfilehash: e9970521741f26607cc105d92ee20944bad1801c
+ms.sourcegitcommit: df7fb20065cfafc153b4bc4019dff2c94f4ef567
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3791313"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4553076"
 ---
 # <a name="create-a-flow-from-a-template-in-power-automate"></a>Power Automate でテンプレートからフローを作成します
 
@@ -71,6 +71,6 @@ ms.locfileid: "3791313"
 
 * [実行中のフローを確認する](see-a-flow-run.md)
 * [独自のテンプレートを公開する](publish-a-template.md)
-* [Common Data Service で使用するテンプレートをアップロードします](common-data-model-intro.md)
+* [Microsoft Dataverse で使用するテンプレートをアップロードします](common-data-model-intro.md)
 * [チーム フローを開始し](create-team-flows.md)、他のユーザーを招待して一緒にフローを設計します。
 

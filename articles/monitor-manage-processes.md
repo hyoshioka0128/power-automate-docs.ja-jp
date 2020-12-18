@@ -1,5 +1,6 @@
 ---
 title: Power Apps を使用したバックグラウンド ワークフロー プロセスの監視と管理 | MicrosoftDocs
+description: Power Apps を使用して、バックグラウンド ワークフロー プロセスを監視および管理する方法のウォークスルーを取得します。
 ms.custom: To monitor and manage processes, you must locate the process, evaluate the status, and perform any actions necessary to address problems.
 ms.date: 07/27/2020
 ms.reviewer: ''
@@ -21,15 +22,16 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 37d02ad3b0e81a748172b0bb1f48dd1bda0dc194
-ms.sourcegitcommit: dbe05fc5136f724705e66ad795a9391ec47414e1
+ms.openlocfilehash: 83d7e02a3abd96f5eded7fc8378c91f14e59e0ee
+ms.sourcegitcommit: 83e22ff7d539b02573548df5ca2a8bc41ea48227
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "3973185"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "4477111"
 ---
 # <a name="monitor-and-manage-background-workflow-processes"></a>バックグラウンド ワークフロー プロセスの監視と管理
 
+[!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
 
 プロセスを監視および管理するには、プロセスを特定し、状態を評価し、問題に対処するために必要なアクションを実行する必要があります。  
   

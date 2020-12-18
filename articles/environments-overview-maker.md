@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: b1ad11b90b9682f68c6c8f22d350313f0c2edb75
-ms.sourcegitcommit: 7a42629c7bc15208c5a9d692ab89616fc0aa40cb
+ms.openlocfilehash: 8172bf0ae718ebc420acbbc959fe4a92602d529d
+ms.sourcegitcommit: df7fb20065cfafc153b4bc4019dff2c94f4ef567
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "3352042"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4553292"
 ---
 # <a name="choosing-an-environment"></a>環境の選択
 
@@ -45,11 +45,11 @@ ms.locfileid: "3352042"
 
 シナリオ|推奨事項
 -----|-----
-Common Data Service への接続を使用するフローを作成する。|フローと Common Data Service を同じ環境に配置します。 このため、すべてのデータは環境 (分離境界) 内で分離されます。
+Microsoft Dataverse への接続を使用するフローを作成する。|フローと Dataverse を同じ環境に配置します。 このため、すべてのデータは環境 (分離境界) 内で分離されます。
 人事部門向けのフローを作成しています。 人事部門のユーザーのみがそのフローにアクセスできるようにする必要があります。|環境を作成し、人事部のユーザーのみをそこに追加します。 フローおよびフローが使用する他のリソースをこの環境に置きます。
 ヨーロッパには、フローを使用して SharePoint のデータを表示するユーザーがいます。|ヨーロッパに環境を作成し、フローと SharePoint 接続をその環境内に作成します。 このヨーロッパの環境では、すべてのリソースがヨーロッパに存在するため (データのローカリティ)、ヨーロッパのユーザーは最高のパフォーマンスを得られます。
 
-**運用環境の作成者** の既定の設定が **全員** から **特定の管理者のみ**に変更されなければ、適切にライセンスされたユーザーであれば、既定で Power Platform 管理センターで環境を作成できます。
+**運用環境の作成者** の既定の設定が **全員** から **特定の管理者のみ** に変更されなければ、適切にライセンスされたユーザーであれば、既定で Power Platform 管理センターで環境を作成できます。
 
 
 環境の作成と管理方法の詳細については、[環境の管理](environments-overview-admin.md) トピックを参照してください。
@@ -86,7 +86,7 @@ Power Automateフローでは、簡単に環境を切り替えることができ
 
 フローをホストする環境を選択するときは、次のことを考慮してください:
 
-* Common Data Service は特定の環境に関連付けられています。 そのため、Common Data Service を使用するフローを作成する場合は、データベースがホストされている環境にフローを作成する必要があります。
+* Dataverse は特定の環境に関連付けられています。 そのため、Dataverse を使用するフローを作成する場合は、データベースがホストされている環境にフローを作成する必要があります。
 * リソースを編集できるすべての環境が表示されます。 ただし、フローを作成する必要があるすべての環境への作成者としての追加は、管理者に依頼する必要があります。
 
 > [!NOTE]

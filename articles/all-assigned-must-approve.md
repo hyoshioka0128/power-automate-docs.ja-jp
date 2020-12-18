@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 675092cda84f17bb1c9d9b63efb7457d98d5d9a2
-ms.sourcegitcommit: a09a957460f7495c0b103e1d832f65963025fbac
+ms.openlocfilehash: aca38c990387befebd5cb90f73298433bfba94b2
+ms.sourcegitcommit: df7fb20065cfafc153b4bc4019dff2c94f4ef567
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "3696935"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4553532"
 ---
 # <a name="create-an-approval-flow-that-requires-everyone-to-approve"></a>全員が承認する必要のある承認フローを作成する
 
@@ -74,12 +74,12 @@ ms.locfileid: "3696935"
 
     **メールで作成** トークンは、**動的コンテンツ** 一覧の **項目が作成または変更されたとき** カテゴリにあります。 このトークンは、 SharePoint で項目を作成したユーザーのマネージャーに関するデータに対するアクセスを動的に提供します。
 
-1. **新規ステップ** を選択し、Office 365 **上司を取得する (V2)** アクションをさらに追加します。続いて **ユーザー (UPN)** ボックスに**メール** トークンを追加します。
+1. **新規ステップ** を選択し、Office 365 **上司を取得する (V2)** アクションをさらに追加します。続いて **ユーザー (UPN)** ボックスに **メール** トークンを追加します。
 
     **メール** トークンは、**動的なコンテンツ** 一覧の **上司を取得する  (V2)** カテゴリ配下にあります。 このトークンは、マネージャーのマネージャーのメール アドレスへのアクセスを動的に提供します。
 
     **上司を取得する (V2)** カードの名前は、"特定階層の上司をスキップする" のようなわかりやすい名前に変更できます。
-1. **新規ステップ**を選択し、**開始して承認を待つ**アクションを追加します。続いて、**承認タイプ**リストから **承認/拒否-全員が承認必須** を追加します。
+1. **新規ステップ** を選択し、**開始して承認を待つ** アクションを追加します。続いて、**承認タイプ** リストから **承認/拒否-全員が承認必須** を追加します。
 
    > [!IMPORTANT]
    > いずれかの承認者が却下した場合、承認要求はすべての承認者について却下されたものと見なされます。
@@ -112,7 +112,7 @@ ms.locfileid: "3696935"
 
     フローを続行して、承認リクエストで決定が下され際にメールを送信しましょう。
 
-1. **新規ステップ** を選択し、「メールを送信する」を検索し、Office 365 Outlook の**メールを送信する（V2）** アクションを追加します。続いて、休暇に行きたい人に申請結果をメールで送信するようにアクションを設定します。
+1. **新規ステップ** を選択し、「メールを送信する」を検索し、Office 365 Outlook の **メールを送信する（V2）** アクションを追加します。続いて、休暇に行きたい人に申請結果をメールで送信するようにアクションを設定します。
 
     **メールを送信する (V2)** カードの例を次に示します。
 
@@ -153,5 +153,5 @@ SharePoint のリストに項目が追加される、または項目が変更さ
 * [1 人の承認者による最新の承認](modern-approvals.md)
 * [シーケンシャルな最新の承認](sequential-modern-approvals.md)
 * [並列の最新の承認](parallel-modern-approvals.md)
-* [承認と Common Data Service](common-data-model-approve.md)
+* [承認と Microsoft Dataverse](common-data-model-approve.md)
 * [外出先で要求を承認する](mobile-approvals.md)

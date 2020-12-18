@@ -1,6 +1,6 @@
 ---
-title: フローは Common Data Service に格納され、豊富な Web API を使用する
-description: フローは Common Data Service に格納され、豊富な Web API を使用します。
+title: フローは Microsoft Dataverse に格納され、豊富な Web API を使用する
+description: フローは Microsoft Dataverse に格納され、豊富な Web API を使用します。
 author: msftman
 ms.reviewer: deonhe
 ms.date: 07/28/2020
@@ -10,17 +10,18 @@ ms.service: business-applications
 ms.technology: ''
 ms.author: deonhe
 audience: Power user
-ms.openlocfilehash: 425e74cca78d53dca8c6e184bcfc63206f36c9f7
-ms.sourcegitcommit: 2971e852bdb76efbe012b9de8df8e7f492063184
+ms.openlocfilehash: f31c3f7399f276ab7130b14a1fd5ba469fde32f0
+ms.sourcegitcommit: df7fb20065cfafc153b4bc4019dff2c94f4ef567
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "3900410"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4553676"
 ---
 # <a name="power-automate-web-api"></a>Power Automate Web API
 
+[!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
 
-今後、すべてのフローは Common Data Service に格納され、[豊富な Web API](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/perform-operations-web-api) を利用します。
+今後、すべてのフローは Microsoft Dataverse に格納され、[豊富な Web API](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/perform-operations-web-api) を利用します。
 
 このコンテンツでは、Power Automate の **ソリューション** タブに含まれるフローの管理について説明しています。 現在、**マイ フロー** のフローはこのような API ではサポートされていません。
 
@@ -36,18 +37,18 @@ ms.locfileid: "3900410"
 1. [Power Platform 管理センター](https://admin.powerplatform.microsoft.com/) に移動します。
 2. フローの構築に使用する環境を選択します。
 
- ![フローの URL](media/web-api/power-platform-admin-center.png "フローの URL")
+ ![Power Platform 管理センターのスクリーンショット](media/web-api/power-platform-admin-center.png "Power Platform 管理センターのスクリーンショット")
 
 3. 環境の URL から組織の ID と地域のサブ ドメインをコピーします。
 
- ![フローの URL](media/web-api/power-platform-admin-center-environment-URL.png "フローの URL")
+ ![Power Platform 管理センター環境 URL のスクリーンショット](media/web-api/power-platform-admin-center-environment-URL.png "Power Platform 管理センター環境 URL のスクリーンショット")
 
 
 オンライン マネジメント API の [インスタンスの取得](https://docs.microsoft.com/rest/api/admin.services.crm.dynamics.com/instances/getinstances) メソッドを使用して、利用可能なインスタンスの一覧をプログラムで取得することも可能です。
 
 Web API に対する各要求で、`Accept` と `Content-type` ヘッダーを `application/json` に設定する必要があります。
 
-最後に、`Authorization` ヘッダーに Azure AD ベアラー トークンを設定します。 Common Data Service の Azure AD ベアラー トークンを取得する方法について [説明](https://docs.microsoft.com/powerapps/developer/common-data-service/authenticate-oauth) します。 たとえば、次の要求があります。
+最後に、`Authorization` ヘッダーに Azure AD ベアラー トークンを設定します。 Dataverse 用 Azure ADベアラー トークンを取得する方法を[参照](https://docs.microsoft.com/powerapps/developer/common-data-service/authenticate-oauth)してください。 たとえば、次の要求があります。
 
 ```http
 GET https://org00000000.crm0.dynamics.com/api/data/v9.1/workflows
@@ -74,7 +75,7 @@ Authorization: Bearer ey...
         "_modifiedby_value": "00000000-0000-0000-0000-000000000003",
         "_createdby_value": "00000000-0000-0000-0000-000000000003",
         "type": 1,
-        "description": "This flow updates some data in Common Data Service.",
+        "description": "This flow updates some data in Dataverse.",
         "clientdata": "{\"properties\":{\"connectionReferences\":{\"shared_commondataservice\":{\"source\":\"NotSpecified\",\"id\":\"/providers/Microsoft.PowerApps/apis/shared_commondataservice\",\"tier\":\"NotSpecified\"}},\"definition\":{...}},\"schemaVersion\":\"1.0.0.0\"}"
     }]
 }
@@ -86,22 +87,22 @@ Authorization: Bearer ey...
 
 | プロパティ名     | 内容                                              |
 | ----------------- | -------------------------------------------------------- |
-| カテゴリ          | フローのカテゴリ。 次の種類があります: 0 - クラシック Common Data Service ワークフロー、1 - クラシック Common Data Service ダイアログ、2 - ビジネス ルール、3 - クラシック Common Data Service アクション、4 - ビジネス プロセス フロー、5 - 自動化されたインスタント フローまたはスケジュールされたフロー。 |
+| カテゴリ          | フローのカテゴリ。 異なる種類は次のとおりです。0 - クラシック Dataverse ワークフロー、1 - クラシック Dataverse ダイアログ、2 - ビジネス ルール、3 - クラシック Dataverse アクション、4 - 業務プロセス フロー、5 - 自動化されたインスタント フローまたはスケジュールされたフロー。 |
 | statecode         | フローの状態。 状態は **0** がオフ、または **1** がオンです。|
 | workflowuniqueid  | フローのこのインストールの一意識別子。 |
 | workflowid        | すべてのインポート全体でのフローの一意識別子。 |
 | createdon         | フローが作成された日付。 |
-| _ownerid_value    | フローを所有するユーザーまたはチームの一意識別子。 これは、Common Data Service での systemusers エンティティの ID です。 |
+| _ownerid_value    | フローを所有するユーザーまたはチームの一意識別子。 これは、Dataverse での systemusers エンティティの ID です。 |
 | modifiedon        | フローの最終更新日時。 |
 | ismanaged         | フローが管理ソリューションを介してインストールされたかどうかを示します。 |
 | 名前              | フローに付けた表示名。 |
-| _modifiedby_value | フローを最後に更新したユーザー。 これは、Common Data Service での systemusers エンティティの ID です。 |
-| _createdby_value  | フローを作成したユーザー。 これは、Common Data Service での systemusers エンティティの ID です。 |
+| _modifiedby_value | フローを最後に更新したユーザー。 これは、Dataverse での systemusers エンティティの ID です。 |
+| _createdby_value  | フローを作成したユーザー。 これは、Dataverse での systemusers エンティティの ID です。 |
 | 種類              | フローが実行中のフローか、追加のフローを作成するために使用できるテンプレートかを示します。 1 - フロー、2 - アクティブ化、または 3 - テンプレート。 |
 | 説明       | ユーザーが指定したフローの説明。 |
 | clientdata        | connectionReferences とフローの定義を含むオブジェクトの文字列エンコードされた JSON。 |
 
-また、[データのクエリを実行するための Common Data Service API ドキュメント](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/query-data-web-api) で説明されているように、特定のプロパティを要求する、フローの一覧をフィルター処理するなどの操作も実行できます。 たとえば、このクエリからは、現在有効な自動フロー、インスタント フロー、またはスケジュールされたフローのみが返されます。
+特定のプロパティを要求する、フローの一覧をフィルター処理するなどの操作も実行できます。詳細については、[データのクエリを実行するための Dataverse API ドキュメント](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/query-data-web-api)に関するページを参照してください。 たとえば、このクエリからは、現在有効な自動フロー、インスタント フロー、またはスケジュールされたフローのみが返されます。
 
 ```http
 GET https://org00000000.crm0.dynamics.com/api/data/v9.1/workflows?$filter=category eq 5 and statecode eq 1
@@ -125,7 +126,7 @@ Content-type: application/json
         "statecode": 0,
         "name": "Sample flow name",
         "type": 1,
-        "description": "This flow reads some data from Common Data Service.",
+        "description": "This flow reads some data from Dataverse.",
         "primaryentity":"none",
         "clientdata": "{\"properties\":{\"connectionReferences\":{\"shared_commondataservice\":{\"connectionName\":\"shared-commondataser-00000000-0000-0000-0000-000000000004\",\"source\":\"Invoker\",\"id\":\"/providers/Microsoft.Power Apps/apis/shared_commondataservice\"}},\"definition\":{\"$schema\": \"https:\/\/schema.management.azure.com\/providers\/Microsoft.Logic\/schemas\/2016-06-01\/workflowdefinition.json#\",\"contentVersion\": \"1.0.0.0\",\"parameters\": {\"$connections\": {\"defaultValue\": {},\"type\": \"Object\"},\"$authentication\": {\"defaultValue\": {},\"type\": \"SecureObject\"}},\"triggers\": {\"Recurrence\": {\"recurrence\": {\"frequency\": \"Minute\",\"interval\": 1},\"type\": \"Recurrence\"}},\"actions\": {\"List_records\": {\"runAfter\": {},\"metadata\": {\"flowSystemMetadata\": {\"swaggerOperationId\": \"GetItems_V2\"}},\"type\": \"ApiConnection\",\"inputs\": {\"host\": {\"api\": {\"runtimeUrl\": \"https:\/\/firstrelease-001.azure-apim.net\/apim\/commondataservice\"},\"connection\": {\"name\": \"@parameters('$connections')['shared_commondataservice']['connectionId']\"}},\"method\": \"get\",\"path\": \"\/v2\/datasets\/@{encodeURIComponent(encodeURIComponent('default.cds'))}\/tables\/@{encodeURIComponent(encodeURIComponent('accounts'))}\/items\",\"queries\": {\"$top\": 1},\"authentication\": \"@parameters('$authentication')\"}}},\"outputs\": {}}},\"schemaVersion\":\"1.0.0.0\"}"
 }
@@ -188,7 +189,7 @@ Authorization: Bearer ey...
 
 ## <a name="get-all-users-with-whom-a-flow-is-shared"></a>フローが共有されているすべてのユーザーを取得する
 
-アクセス権を持つユーザーを一覧表示するには、Common Data Service の *関数* を使用します。 この関数は、`Target` の 1 つのパラメーターを受け取ります。
+アクセス権を持つユーザーを一覧表示するには、Dataverse の *関数* を使用します。 この関数は、`Target` の 1 つのパラメーターを受け取ります。
 
 ```http
 GET https://org00000000.crm0.dynamics.com/api/data/v9.1/RetrieveSharedPrincipalsAndAccess(Target=@tid)?@tid={'@odata.id':'workflows(00000000-0000-0000-0000-000000000002)'}
@@ -305,8 +306,8 @@ Content-type: application/json
 
 | プロパティ名                    | 内容                               |
 | -------------------------------- | ----------------------------------------- |
-| OverwriteUnmanagedCustomizations | Common Data Service にこのようなフローの既存のインスタンスがある場合、インポートするには、このフラグを `true` に設定する必要があります。 それ以外の場合は上書きされません。 |
-| PublishWorkflows                 | インポート時にクラシック Common Data Service ワークフローをアクティブ化するかどうかを示します。 この設定は他の種類のフローには適用されません。 |
+| OverwriteUnmanagedCustomizations | Dataverse にこのようなフローの既存のインスタンスがある場合、インポートするには、このフラグを `true` に設定する必要があります。 それ以外の場合は上書きされません。 |
+| PublishWorkflows                 | インポート時にクラシック Dataverse ワークフローをアクティブ化するかどうかを示します。 この設定は他の種類のフローには適用されません。 |
 | ImportJobId                      | インポート ジョブを追跡するために新しい一意の GUID を指定します。 |
 | CustomizationFile                | ソリューションを含む base 64 でエンコードされた zip ファイル。 |
 

@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: d14d32ced99b7e717328369bfcbd87f069db0298
-ms.sourcegitcommit: 2971e852bdb76efbe012b9de8df8e7f492063184
+ms.openlocfilehash: 79783d346165e2c5b82ccd303a889373bf81e683
+ms.sourcegitcommit: df7fb20065cfafc153b4bc4019dff2c94f4ef567
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "3900338"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4553196"
 ---
 # <a name="frequently-asked-questions"></a>よく寄せられる質問
 
@@ -43,7 +43,7 @@ Power Automate には 2 つの異なるオーディエンスがあります：
 Power Automate では、基幹業務ユーザーがワークフローを自動化する機能を提供します。 Logic Apps は、Power Automate の強力な機能のみならず、Azure Resource Manager および Azure Portal との統合、PowerShell と xPlat CLI、Visual Studio、より多くのコネクタなどの機能も提供する Azure サービスです。 [Logic Apps の詳細情報](https://azure.microsoft.com/services/app-service/logic/)。
 
 ### <a name="how-does-power-automate-fit-in-microsofts-overall-business-application-platform-strategy"></a>Power Automate は、マイクロソフトのビジネス アプリケーション プラットフォーム戦略全体でどのような役割を果たしますか？
-Power Automate は、強力で適応性のあるビジネス アプリケーション プラットフォームの一部であり、Power Apps、Common Data Service、Dynamics 365、Office 365 が含まれています。 お客様、パートナー、および ISV パートナーは、機能的な役割を果たす、または特定の地域に特化した専用のソリューションを、このプラットフォームで、自身の企業や業界専用に構築できます。 ビジネス ニーズを最もよく理解している基幹業務ユーザーは、データおよびプロセスを簡単に、分析、構成および合理化できるようになります。 プロフェッショナルな開発者は、自動化、分析、アプリの基幹業務を簡単に拡張して、Functions、App Service および Logic Apps などの Azure サービスを活用できます。 API コネクタ、ゲートウェイ、Common Data Service を使用すると、クラウドまたはオンプレミスのいずれかで、既に使用中のサービスやデータから、より多くのデータを引き出すことができるようになります。
+Power Automate は、強力で適応性のあるビジネス アプリケーション プラットフォームの一部であり、Power Apps、Microsoft Dataverse、Dynamics 365、Office 365 が含まれています。 お客様、パートナー、および ISV パートナーは、機能的な役割を果たす、または特定の地域に特化した専用のソリューションを、このプラットフォームで、自身の企業や業界専用に構築できます。 ビジネス ニーズを最もよく理解している基幹業務ユーザーは、データおよびプロセスを簡単に、分析、構成および合理化できるようになります。 プロフェッショナルな開発者は、自動化、分析、アプリの基幹業務を簡単に拡張して、Functions、App Service および Logic Apps などの Azure サービスを活用できます。 API コネクタ、ゲートウェイ、Dataverse を使用すると、クラウドまたはオンプレミスのいずれかで、既に使用中のサービスやデータから、より多くの価値を引き出すことができるようになります。
 
 ## <a name="functionality"></a>機能
 
@@ -101,7 +101,7 @@ Power Automate は最初から 100 以上のデータ ソースに接続でき�
 
 ### <a name="what-data-sources-will-i-be-able-to-connect-to"></a>どのデータ ソースに接続できますか?
 
-Office 365、Twitter、SharePoint、OneDrive、Dropbox、SQL Server など、Microsoft とサード パーティの 100 以上の標準的なサービスに接続することができます。 Salesforce や Common Data Service などのプレミアム サービスに接続することもできます。
+Office 365、Twitter、SharePoint、OneDrive、Dropbox、SQL Server など、Microsoft とサード パーティの 100 以上の標準的なサービスに接続することができます。 Salesforce や Dataverse などのプレミアム サービスに接続することもできます。
 
 ### <a name="how-do-i-connect-to-a-rest-api-in-my-flow"></a>フローで REST API に接続するにはどうすればよいですか?
 

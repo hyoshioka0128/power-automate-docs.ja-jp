@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: c020703182becc6460c3630adb4e8735cbdd407b
-ms.sourcegitcommit: 2971e852bdb76efbe012b9de8df8e7f492063184
+ms.openlocfilehash: a3f712e6e620a106aeb55b475f50f3671a2cc015
+ms.sourcegitcommit: df7fb20065cfafc153b4bc4019dff2c94f4ef567
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "3900386"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4553988"
 ---
 # <a name="release-notes"></a>リリース ノート
 
@@ -95,7 +95,7 @@ Power Automate プレビュー プログラムは、Power Automate の今後の�
 ### <a name="release-2018-07-23"></a>2018 年 7 月 23 日リリース
 
 - **Excel からのフローの構築と実行** - 新しい **フロー** ボタン (リボンの **データ** タブからアクセス) を使用して、Power Automate から Excel のテーブル データ上でオートメーションを作成してトリガーできます。 データ処理またはデータのコピー/インポートを自動化します。
-- **ビジネス プロセス フローの作成** - ビジネス プロセス フローとは、Common Data Service に基づく、ステートフルでヒューマン インタラクティブな新しい種類のフローです。 これらの新しいフローを使用して、ユーザーが従う一連のステージと手順を定義します。 これは必要に応じて前後できます。
+- **ビジネス プロセス フローの作成** - ビジネス プロセス フローとは、Microsoft Dataverse に基づく、ステートフルでヒューマン インタラクティブな新しい種類のフローです。 これらの新しいフローを使用して、ユーザーが従う一連のステージと手順を定義します。 これは必要に応じて前後できます。
 - **Outlook Web App での Microsoft To-Do のフローの作成** - Outlook Web App で \@ 誰かが言及した場合、フローを作成するためのショートカットが表示されます。 このフローでは、メールのコンテンツに基づき、Microsoft To-Do で \@言及されたユーザーのタスクが自動的に作成されます。
 - **SharePoint ビューのサポート** - SharePoint コネクタで、トリガーとアクションでの特定の SharePoint ビューの選択がサポートされるようになりました。 これによって列が、選択したビュー内にあるフィールドのみにフィルター処理されます。
 - **4 つの新しいコネクタ** - Azure IoT Central が追加されました - 拡張性の高い IoT ソフトウェアとしてのサービス (SaaS) ソリューション - Survey 123、LMS365、ProjectWise Design Integration。
@@ -150,7 +150,7 @@ Power Automate プレビュー プログラムは、Power Automate の今後の�
 
 ### <a name="release-2018-04-04"></a>2018 年 4 月 4 日リリース
 
-- **Common Data Service での承認** - 最新バージョンの Common Data Service に最新の承認が構築されます。 つまり、Common Data Service コネクタとの間で送受信する承認の状態を読み取るフローを構築することができます。
+- **Dataverse の承認** - 最新の承認は、Dataverse の最新バージョンに基づいて構築されています。 つまり、Common Data Service コネクタとの間で送受信する承認の状態を読み取るフローを構築することができます。
 - **それぞれに適用でのエラーの検出** - ループ内に大量の項目がある場合でも、フロー実行ビューでエラーのループに直接移動します。
 - **承認の再割り当て** - 受け取った承認を組織内の別のユーザーに割り当てて、承認を委任することができます。 
 - **会議室の一覧** - Office 365 の Outlook Connector で、組織の会議室データを取得するアクションが追加されました。
@@ -382,7 +382,7 @@ Power Automate プレビュー プログラムは、Power Automate の今後の�
 * **SharePoint ドキュメント ライブラリの統合** - ドキュメント ライブラリの任意のファイルを選択して、フローを開始できます、たとえば、承認を得るためにマネージャーに送信したり、[さらに多くのこと](https://flow.microsoft.com/blog/flow-in-spo-document-libraries/) を実行できます。
 * **Microsoft Planner コネクタ** - Microsoft Planner を使うと、より良い結果を得るためにチーム、タスク、ドキュメント、会話を簡単にまとめることができます。
 * **ライセンスの管理ビュー** - 管理者は、Power Automate と Power Apps のすべてのライセンス (試用版と有料版) を Power Automate 管理センターで表示できます。
-* **Power Apps コミュニティ プラン** - Power Apps コミュニティ プランは、個人が Power Apps、Power Automate、およびCommon Data Service のスキルを探索、学習、および構築するための無料のプランです。
+* **Power Apps コミュニティ プラン** - Power Apps コミュニティ プランは、個人が Power Apps、Power Automate、および Dataverse のスキルを探求、学習、構築するための無料プランです。
 
 このリリースに関する [詳細や質問についてはこちらをご覧ください](https://flow.microsoft.com/blog/planner-community-and-licenses/)。
 
@@ -600,7 +600,7 @@ Power Automate の統合を含む新しい SharePoint Online の最新のリス�
 このリリースに関する [詳細や質問についてはこちらをご覧ください](https://flow.microsoft.com/blog/visual-studio-team-services-enhancements-to-sharepoint-and-o365-outlook-and-boolean-control/)。
 
 ### <a name="release-2016-08-08"></a>2016 年 8 月 8 日リリース
-Power Automate に統合された Common Data Service のパブリック プレビュー。 このリリースに関する [詳細や質問についてはこちらをご覧ください](https://flow.microsoft.com/blog/flow-and-common-data-model/)。
+Power Automate に統合された Dataverse のパブリック プレビュー。 このリリースに関する [詳細や質問についてはこちらをご覧ください](https://flow.microsoft.com/blog/flow-and-common-data-model/)。
 
 ### <a name="release-2016-08-05"></a>2016 年 8 月 5 日リリース
 * **オンプレミスの SharePoint** - SharePoint Online と同様に、事前に定義済みのテンプレートを使用するかテンプレートを一から作成することで、オンプレミスの SharePoint のリストとドキュメント ライブラリに関するフローを作成できます。
