@@ -11,12 +11,12 @@ metadata:
   ms.author: deonhe
   ms.date: 09/22/2020
   hide_bc: false
-  ms.openlocfilehash: 7b7c619405dab757cd3fbc199590ed939aabc03e
-  ms.sourcegitcommit: df7fb20065cfafc153b4bc4019dff2c94f4ef567
+  ms.openlocfilehash: efcd7f3ab25bc51af84f6390a824902374c14578
+  ms.sourcegitcommit: 970ad18a7ef795bff294f39ccfc8578bab9387d2
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/17/2020
-  ms.locfileid: "4553748"
+  ms.lasthandoff: 12/10/2020
+  ms.locfileid: "4714129"
 highlightedContent:
   items:
   - title: Power Automate とは
@@ -44,7 +44,7 @@ conceptualContent:
     - text: Power Automate に関するよくあるご質問
       url: /power-automate/frequently-asked-questions
       itemType: reference
-  - title: フローの作成
+  - title: クラウド フローの作成
     links:
     - text: 自動フロー
       url: /power-automate/get-started-logic-flow
@@ -55,37 +55,37 @@ conceptualContent:
     - text: 承認フロー
       url: /power-automate/modern-approvals
       itemType: overview
-    - text: ビジネス プロセス フロー
-      url: /power-automate/business-process-flows-overview
-      itemType: overview
-  - title: RPA のための UI フローの使用
+  - title: RPA のためのデスクトップ フローの作成
     links:
-    - text: UI フローとは
-      url: /power-automate/ui-flows/overview
+    - text: デスクトップ フローとは
+      url: /power-automate/desktop-flows/introduction
       itemType: overview
-    - text: UI フローの設定
-      url: /power-automate/ui-flows/setup
+    - text: Power Automate Desktop のセットアップ
+      url: /power-automate/desktop-flows/setup
       itemType: how-to-guide
-    - text: Power Automate Desktop の使用 (プレビュー)
-      url: /power-automate/ui-flows/desktop/introduction
-      itemType: concept
+    - text: デスクトップ フローの作成
+      url: /power-automate/desktop-flows/create-flow
+      itemType: how-to-guide
   - title: '...でのフローの使用'
     links:
-    - text: Microsoft Teams
+    - text: Teams
       url: /power-automate/teams/overview
       itemType: overview
     - text: SharePoint
       url: /power-automate/sharepoint-overview
       itemType: overview
-    - text: Microsoft 365 Outlook
+    - text: 電子メール
       url: /power-automate/email-overview
-      itemType: how-to-guide
+      itemType: overview
+    - text: フォーム
+      url: /power-automate/forms/overview
+      itemType: overview
   - title: ALM 用のソリューションの使用
     links:
     - text: ソリューションを使用してフローを配布する
       url: /power-automate/overview-solution-flows
       itemType: overview
-    - text: ソリューションにフローを作成する
+    - text: ソリューションにクラウド フローを作成する
       url: /power-automate/create-flow-solution
       itemType: overview
     - text: ソリューションを使用して健全な ALM を実装する
@@ -104,7 +104,7 @@ conceptualContent:
       itemType: how-to-guide
   - title: ラーニング カタログ
     links:
-    - text: アプリ作成者
+    - text: アプリ開発者
       url: /power-automate/learning-catalog/learning-catalog-app-maker
       itemType: reference
     - text: 管理者
@@ -115,7 +115,7 @@ conceptualContent:
       text: その他
   - title: サポートとライセンス
     links:
-    - text: フローのトラブルシューティング
+    - text: クラウド フローのトラブルシューティング
       url: /power-automate/fix-flow-failures
       itemType: how-to-guide
     - text: Power Automate のコミュニティ
@@ -123,6 +123,20 @@ conceptualContent:
       itemType: reference
     - text: Power Automate ライセンス
       url: /power-automate/billing-questions
+      itemType: reference
+  - title: プロジェクトのガイダンスを表示...
+    links:
+    - text: フローの計画
+      url: /power-automate/guidance/planning/planning-phase
+      itemType: reference
+    - text: フローの設計
+      url: /power-automate/guidance/planning/process-design
+      itemType: reference
+    - text: フローの作成とテスト
+      url: /power-automate/guidance/planning/making-phase
+      itemType: reference
+    - text: フローの展開
+      url: /power-automate/guidance/planning/deploy-to-production
       itemType: reference
 additionalContent:
   sections:

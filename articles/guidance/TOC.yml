@@ -1,0 +1,54 @@
+- name: ガイダンス
+  items:
+    - name: Power Automate ガイダンスのドキュメント
+      href: index.yml
+    - name: Power Automate プロジェクトの計画
+      items:
+        - name: 概要
+          href: planning/introduction.md
+        - name: さまざまなタイプのプロセス自動化
+          href: planning/various-types-process-automation.md
+        - name: 計画フェーズ
+          href: planning/planning-phase.md
+        - name: 設計フェーズ
+          items:
+            - name: プロセスの設計
+              href: planning/process-design.md
+            - name: アーキテクチャの設計
+              items:
+                - name: 使用する自動化方法の決定
+                  href: planning/determine-automation-methods.md
+                - name: 有人および無人のシナリオ
+                  href: planning/attended-unattended.md
+                - name: フローをより小さな自動化プロセスに分ける
+                  href: planning/separate-flows.md
+                - name: 認証とセキュリティ
+                  href: planning/authentication-security.md
+                - name: 入力と出力の定義
+                  href: planning/define-input-output.md
+                - name: データの変換と書式設定
+                  href: planning/transforming-formatting-data.md
+                - name: メッセージとアラートの形式化
+                  href: planning/formalizing-messages-alerts.md
+                - name: リスクの軽減とエラー処理の計画
+                  href: planning/reducing-risk.md
+                - name: Microsoft Dataverse への分析データの追加
+                  href: planning/adding-analytical-data.md
+                - name: 設計の意思決定フローチャート
+                  href: planning/decision-making-flow.md
+        - name: 作成フェーズ
+          href: planning/making-phase.md
+        - name: テスト フェーズ
+          items:
+            - name: テスト戦略
+              href: planning/testing-strategy.md
+            - name: 自動化をテストするためのツールと設定
+              href: planning/tools-and-settings.md
+        - name: デプロイと調整フェーズ
+          items:
+            - name: 自動化を運用環境に展開する
+              href: planning/deploy-to-production.md
+            - name: ビジネスへの影響の評価
+              href: planning/analyze-and-assess.md
+            - name: パフォーマンス上の問題の検出
+              href: planning/discover-performance-issues.md

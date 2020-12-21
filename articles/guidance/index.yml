@@ -1,0 +1,49 @@
+### YamlMime:Landing
+title: Power Automate ガイダンスのドキュメント
+summary: Power Automate ガイダンスのドキュメントは、法人のお客様に対応するチームから得られたベスト プラクティス情報を提供します。 ガイダンスの内容は定期的に追加および更新されます。
+metadata:
+  title: Power Automate ガイダンスのドキュメント
+  description: Power Automate に関するベスト プラクティスのガイダンス情報を提供します。
+  services: service
+  ms.service: powerautomate
+  ms.subservice: subservice
+  ms.topic: landing-page
+  ms.collection: collection
+  author: taiki-yoshida
+  ms.author: tayoshi
+  ms.date: 11/01/2020
+  ms.openlocfilehash: d693045c2ef71851d24ed7ffe118ac4b9f72f6bf
+  ms.sourcegitcommit: 970ad18a7ef795bff294f39ccfc8578bab9387d2
+  ms.translationtype: HT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 12/10/2020
+  ms.locfileid: "4717562"
+landingContent:
+- title: Power Automate プロジェクトの計画
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 概要
+      url: planning/introduction.md
+    - text: 計画フェーズ
+      url: planning/planning-phase.md
+    - text: 設計フェーズ
+      url: planning/process-design.md
+    - text: 作成フェーズ
+      url: planning/making-phase.md
+    - text: テスト フェーズ
+      url: planning/testing-strategy.md
+    - text: デプロイと調整フェーズ
+      url: planning/deploy-to-production.md
+- title: 関連するコンテンツ
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 最初のフローの作成
+      url: /power-automate/getting-started#create-your-first-flow
+    - text: デスクトップ フローとは
+      url: /power-automate/desktop-flows/overview
+    - text: Power Platform センター オブ エクセレンス (CoE) キット
+      url: /power-platform/guidance/coe/starter-kit
+    - text: Power Platform ALM ガイド
+      url: /power-platform/alm/
