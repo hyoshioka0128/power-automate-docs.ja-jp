@@ -14,16 +14,14 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 3dcd72460fdb8433d5d9e1a96db624f8bab24a10
-ms.sourcegitcommit: df7fb20065cfafc153b4bc4019dff2c94f4ef567
+ms.openlocfilehash: 71c52f82451bf6a9fcfd7de6eb6e078acaccc0ca
+ms.sourcegitcommit: b043b7e8c29afee4f4f25bbf0d5a662d9af9272c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4553964"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4710263"
 ---
 # <a name="power-automate-us-government"></a>Power Automate US Government
-
-[!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
 
 
 米国の公的機関の特有の進化し続ける要件に応じるために、Microsoft は Power Automate US Government プランを作成しました。 このセクションでは、Power Automate US Government に特有の機能の概要を示します。 この補足セクションと、Power Automate サービス [はじめに](https://docs.microsoft.com/flow/getting-started) トピックをお読みになることをお勧めします。 簡潔にするため、このサービスは一般に Power Automate 政府コミュニティ クラウド (GCC) もしくは Power Automate 政府コミュニティクラウド – High (GCC High) と呼ばれます。
@@ -73,7 +71,7 @@ Power Automate US Government は、ボリューム ライセンスおよびク�
 
 オンライン サービスのご利用条件で定義されている顧客データとは、オンライン サービスの使用を介してお客様から直接的または間接的に Microsoft に提供されたすべてのテキスト ファイル、サウンド ファイル、ビデオ ファイルやイメージ ファイル、ソフトウェアを含む、あらゆるデータを指します。
 
-顧客コンテンツは、ユーザーによって直接作成された [Microsoft Dataverse](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro) のエンティティ (たとえば、連絡先情報) のエントリからデータベースに格納されている内容など、顧客データの一部を示します。 一般的に、コンテンツは機密情報と見なされ、通常のサービス運用では、暗号化せずにインターネットを介して送信されることはありません。
+顧客コンテンツは、ユーザーによって直接作成された [Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro) のエンティティ (たとえば、連絡先情報) のエントリからデータベースに格納されている内容など、顧客データの一部を示します。 一般的に、コンテンツは機密情報と見なされ、通常のサービス運用では、暗号化せずにインターネットを介して送信されることはありません。
 
 Power Automate による顧客データを保護する方法の詳細については、[Microsoft Online Services のセキュリティ センター](https://www.microsoft.com/trustcenter/cloudservices/business-application-platform/default.aspx) を参照してください。
 
@@ -142,19 +140,19 @@ Power Automate US Government には、[コネクタ](https://docs.microsoft.com/
 
 [Power Apps と Power Automate のガバナンスに関する考慮事項](https://docs.microsoft.com/power-platform/admin/governance-considerations) を利用すると、アーキテクチャ、セキュリティ、アラートとアクション、監視など、関連するテーマで組織が利用できる機能を認識できます。
 
-## <a name="configure-mobile-client"></a>モバイル クライアントの構成
+## <a name="configure-mobile-clients"></a>モバイル クライアントの構成
 
-Power Automate モバイル アプリケーションでサインインするために必要な手順は次のとおりです (iOSデバイスのみ):
+Power Apps Mobile クライアントでサインインする際に必要な手順は次のとおりです。
 
 1. サインイン ページの右下隅から歯車アイコンを選択します。
-1. **GCC** を選択します。
+1. **リージョンの設定** を選択します。
+1. 次のいずれかを選択してください。
+   - GCC: 米国政府 GCC
+   - GCC High: 米国政府 GCC High。
 1. OK を選択します。
-1. サインイン ページで、**開始する** を選択します。
+1. サインイン ページで、**サインイン** を選択します。
 
-モバイル アプリは、US Government Cloud (GCC) を使用するようになります。
-
->[!NOTE]
->Power Automate モバイル アプリは、US Government GCC High のお客様にはご利用いただけません。  
+今後はモバイル アプリケーションが米国政府クラウドを使用します。
 
 ## <a name="power-automate-us-government-and-azure-services"></a>Power Automate US Government および Azure サービス
 
@@ -200,7 +198,7 @@ Azure AD アカウント管理サービスは Microsoft Global Foundation Servic
 * .azure.net
 * .crm9.dynamics.com
 
-ユーザーおよび管理者がお客様のテナント内に作成できる Dataverse インスタンスにアクセスできるようにするには、AzureCloud.usgovtexas および AzureCloud.usgovvirginia に対する [IP 範囲](https://www.microsoft.com/download/confirmation.aspx?id=57063)を参照してください。 
+ユーザーおよび管理者がお客様のテナント内に作成できる Common Data Service インスタンスにアクセスできるようにするには、AzureCloud.usgovtexas および AzureCloud.usgovvirginia に対する [IP 範囲](https://www.microsoft.com/download/confirmation.aspx?id=57063) を参照してください。 
 
 ### <a name="gcc-high-customers"></a>GCC High の顧客:
 * .microsoft.us
@@ -212,7 +210,7 @@ Azure AD アカウント管理サービスは Microsoft Global Foundation Servic
 * .azure.net
 * .crm.microsoftdynamics.us
 
-ユーザーおよび管理者がお客様のテナント内に作成できる Dataverse インスタンスにアクセスできるようにするには、AzureCloud.usgovtexas および AzureCloud.usgovvirginia に対する [IP 範囲](https://www.microsoft.com/download/confirmation.aspx?id=57063)を参照してください。 
+ユーザーおよび管理者がお客様のテナント内に作成できる Common Data Service インスタンスにアクセスできるようにするには、AzureCloud.usgovtexas および AzureCloud.usgovvirginia に対する [IP 範囲](https://www.microsoft.com/download/confirmation.aspx?id=57063) を参照してください。 
 
 
 ## <a name="connectivity-between-power-automate-us-government-and-public-azure-cloud-services"></a>Power Automate US Government とパブリック Azure Cloud Services 間の接続
@@ -250,7 +248,7 @@ Flow US Government の顧客は、Flow の業務用バージョンで使用で�
 
 ### <a name="see-also"></a>関連項目
 
-- [UI flows](https://docs.microsoft.com/power-automate/ui-flows/overview)。
+- [UI flows](https://docs.microsoft.com/power-automate/desktop-flows/overview)。
 
 - [Dynamics 365 US Government](https://docs.microsoft.com/power-platform/admin/microsoft-dynamics-365-government)。
 

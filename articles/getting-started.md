@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 05f2f6eeca98a23e20abefc24e43302ef300de48
-ms.sourcegitcommit: 2971e852bdb76efbe012b9de8df8e7f492063184
+ms.openlocfilehash: 114fcc8f93e5b4ac641326a80a191e3a7e7cea4d
+ms.sourcegitcommit: 970ad18a7ef795bff294f39ccfc8578bab9387d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "3900218"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "4714057"
 ---
 # <a name="get-started-with-power-automate"></a>Power Automate に関する入門情報 
 
@@ -60,19 +60,9 @@ ms.locfileid: "3900218"
 
 自動化を作成する最初のステップとして、[サインアップ](sign-up-sign-in.md)をしてください。あるいはすでに Power Automate のアカウントをお持ちの場合は、[ログイン](https://flow.microsoft.com/signin)してください。
 
-## <a name="types-of-flows"></a>フローの種類
+## <a name="what-are-the-different-types-of-flows"></a>フローには何の種類がありますか?
 
-ユース ケースに対応するために構築できるフローの種類については、次の表を参照してください。
-
-| **フローの種類**                                                                       | **ユース ケース**                                                                                  | **自動化のターゲット**                                                                             |
-|-------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| [自動化されたフロー](get-started-logic-flow.md)                 | 特定の人からのメールの受信や、ソーシャル メディアでのあなたの会社への参照投稿などのイベントトリガーにした自動化を作成します。| クラウドサービスやオンプレミス サービスの[コネクタ](https://docs.microsoft.com/connectors/)を使用すると、アカウントを接続して相互にやり取りができるようにします。 |
-| [インスタント フロー](introduction-to-button-flows.md)              | ボタンをクリックしてオートメーションを開始します。 デスクトップまたはモバイル デバイスから反復するタスクを自動化できます。 たとえば、モバイル デバイスのボタンを押すだけで、チームにリマインダーをすぐに送信できます。                      |     承認の要求、Teams でのアクションや SharePoint などの幅広いタスクに対応しています。                                                                                |
-| [スケジュールされたフロー](run-scheduled-tasks.md)                    | SharePoint やデータベースへの日次のデータアップロードなどの自動化処理をスケジュールします。             |スケジュールに従って自動化する必要があるタスク。                                                                            |
-| [業務プロセス フロー](business-process-flows-overview.md) | 社員が使用する一連のステップを定義することで、すべての社員が同じプロセスに従うようにします。                 | 顧客サービス リクエスト、承認、IT 開発などのヒューマン プロセス                                                                        |
-| [UI flows](ui-flows/overview.md)                                                | デスクトップや Webア プリケーションを使用してのクリックやキーボードストロークを記録し、レガシー ソフトウェア上での手動ステップの実行を自動化します。                    | 自動化に API を利用できないデスクトップと Web アプリケーション。    |
-
-
+タスクを自動化するために作成できるさまざまなタイプのフローの詳細については、[フロー タイプ](flow-types.md) の記事を参照してください。
 
 ## <a name="check-out-the-start-page"></a>スタート ページを確認する 
 
@@ -97,7 +87,7 @@ Power Automate の[スタート ページ](https://flow.microsoft.com)では、[
     > [!NOTE]
     > フローをトリガーする条件と、そのイベントから発生するアクションを確認できます。 さまざまな設定を試して、フローをカスタマイズします。 アクションを追加または削除することもできます。
 
-1. **完了**を選択します。
+1. **完了** を選択します。
 
 [このチュートリアルに従い](get-started-logic-template.md)、テンプレートからフローを作成する方法の詳細を確認してください。
 
@@ -105,21 +95,21 @@ Power Automate の[スタート ページ](https://flow.microsoft.com)では、[
 
 テンプレートから最初のフローを作成したら、Power Automate  でサポートされる [380 を超えるデータ ソース](https://flow.microsoft.com/connectors/) のいずれかを使って、[独自のフローをゼロから作成します](get-started-logic-flow.md)。
 
-![フローの構築](./media/getting-started/build-a-flow.png)
+![クラウド フローをビルディング](./media/getting-started/build-a-flow.png)
 
-最初からフローを作成するときは、ワークフロー全体を制御します。 開始するためのアイデアをいくつか示します:
+最初からクラウド フローを作成するときは、ワークフロー全体を制御します。 開始するためのアイデアをいくつか示します:
 
 - [多くのステップが含まれるフロー](multi-step-logic-flow.md)。
 - [スケジュールに従ってタスクを実行します](run-scheduled-tasks.md)。
 - [承認フローを作成します](wait-for-approvals.md)。
-- [実行中のフローを確認します](see-a-flow-run.md)。
+- [実行中のクラウド フローを確認](see-a-flow-run.md)。
 - [テンプレートを発行します](publish-a-template.md)。
 - [Microsoft Teams のテンプレートから フローを作成する](https://flow.microsoft.com/connectors/shared_teams/microsoft-teams/)。
 
 
 ## <a name="peek-at-the-code"></a>コードのプレビュー
 
-Power Automate には**コードのプレビュー** 機能があり、フロー内のあらゆるアクションとトリガーに対して生成されるコードを誰でも詳しく調べることができます。開発者でなくてもフローを作成できます。 コードをプレビューすることで、トリガーやアクションで使用されているデータに対する理解度が上がります。 フローに対して生成されたコードは、Power Automate デザイナー内から次の手順でプレビューできます。 
+Power Automate には **ピーク コード** 機能があり、クラウド フロー内のあらゆるアクションとトリガーに対して生成されるコードを誰でも詳しく調べることができます。開発者でなくてもフローを作成できます。 コードをプレビューすることで、トリガーやアクションで使用されているデータに対する理解度が上がります。 フローに対して生成されたコードは、Power Automate デザイナー内から次の手順でプレビューできます。 
 
 1. **アクション** または **トリガー** の右上隅にある **...** メニュー項目を選択します。 
 1. **コードのプレビュー** を選択します。
@@ -151,6 +141,10 @@ Power Automate には**コードのプレビュー** 機能があり、フロー
 ## <a name="use-the-mobile-app"></a>モバイル アプリを使用する 
 
 [Android](https://aka.ms/flowmobiledocsandroid)、 [iOS](https://aka.ms/flowmobiledocsios)、[Windows Phone](https://aka.ms/flowmobilewindows) 用の Power Automate モバイル アプリをダウンロードします。 このアプリを使用して、[フローのアクティビティを監視](mobile-monitor-activity.md) し、[フローを管理](mobile-manage-flows.md) し、[テンプレートからフローを作成](mobile-create-flow.md) します。
+
+## <a name="get-help-planning-your-power-automate-projects"></a>Power Automate プロジェクト計画の助けを得る
+
+Power Automate プロジェクトを開始する準備ができたら、[ガイダンスおよび計画の記事](./guidance/planning/introduction.md)にアクセスして、すばやく実行してください。
 
 ## <a name="were-here-to-help"></a>サポート情報 
 
