@@ -1,5 +1,5 @@
 ---
-title: フローを他のユーザーと共有する方法についての説明 | Microsoft Docs
+title: クラウド フローを他のユーザーと共有する方法 | Microsoft Docs
 description: Power Automate を使用すると、反復的なタスクを簡単に自動化できます。 ユーザーまたはグループを所有者として追加し、共同作業によりフローを設計、管理できます。
 services: ''
 suite: flow
@@ -20,42 +20,42 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: f2f0187c7c2acea8cc825fdebb98b3e412b2e298
-ms.sourcegitcommit: 4db6edd51883e28e14a2a7064cf487c167d47649
+ms.openlocfilehash: 3629e57cd3156713376a700e71766248ba6a52a7
+ms.sourcegitcommit: b043b7e8c29afee4f4f25bbf0d5a662d9af9272c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "3964652"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4709111"
 ---
-# <a name="share-a-flow"></a>フローを共有する
+# <a name="share-a-cloud-flow"></a>クラウド フローを共有する
 
-組織内の他のユーザーとフローを共有して、作成した自動化の恩恵を受けることができるようにします。 Power Automate でフローを共有する主な方法は 3 つあります:
+クラウド フローを組織内の他の人と共有して、作成した自動化の益を得ることができるようにします。 Power Automate でクラウド フローを共有する主な方法は 3 つあります。
 
-- フローに所有者を追加します。
-- 実行専用権限でフローを共有します。
-- フローのコピーを共有します。
+- クラウド フローに所有者を追加する。
+- 実行専用の特権でクラウド フローを共有する。
+- クラウド フローのコピーを共有する。
 
 ## <a name="prerequisites"></a>前提条件
 
-- フローを共有するには [Power Automate の有料ライセンス](https://flow.microsoft.com/pricing/) が必要です。
-- フローの所有者を追加や削除するには、作成者または所有者である必要があります。
+- クラウド フローを共有するには、[Power Automate の有料ライセンス](https://flow.microsoft.com/pricing/) が必要です。
+- クラウド フローの所有者を追加または削除するには、作成者または所有者である必要があります。
 
 ### <a name="about-embedded-and-other-connections"></a>埋め込み接続とその他の接続について
 
-フローで使う接続は、次の 2 つのカテゴリに分類されます :
+クラウド フローで使う接続は、2 つのカテゴリに分類されます。
 
 - **埋め込み**: これらの接続はフローで使用されます。
-- **その他**: これらの接続はフローに対して定義されていますが、フロー内では使用されていません。
+- **その他**: これらの接続はクラウド フローに対して定義されていますが、使用されません。
 
-フロー内で使われなくなった接続は **その他の接続** 一覧に表示され、所有者が接続を再びフロー内に含めるまではそのままになります。 埋め込み接続に変更を加える場合は、この記事で後述する [接続を更新する](#modify-a-connection) の手順に従います。<!--What is the significance of this? Embedded versus other?  DH: Its described in this section-->
+クラウド フロー内で使われなくなった接続は **その他の接続** の一覧に表示され、所有者が接続を再びフローに含めるまでそのままになります。 埋め込み接続に変更を加える場合は、この記事で後述する [接続を更新する](#modify-a-connection) の手順に従います。<!--What is the significance of this? Embedded versus other?  DH: Its described in this section-->
 
-次の図に示すように、フロー プロパティの所有者一覧の下に接続一覧が表示されます。
+次の図に示すように、接続の一覧は、クラウド フローのプロパティの所有者のリストの下に表示されます。
 
 ![埋め込み接続](./media/create-team-flows/embeddedconnections.png "埋め込み接続")
 
-## <a name="add-an-owner-to-a-flow"></a>フローへの所有者の追加
+## <a name="add-an-owner-to-a-cloud-flow"></a>クラウド フローに所有者を追加する
 
-フローへの所有者の追加は、フローを共有する最も一般的な方法です。 フローの所有者は、次の操作を実行できます:
+所有者をクラウド フローに追加することは、クラウド フローを共有するための最も一般的な方法です。 クラウド フローのすべての所有者は、次の操作を実行できます。
 
 - 実行履歴を表示します。
 - フローのプロパティを管理する (たとえば、フローの開始または停止、所有者の追加、接続に使用する資格情報の更新)。
@@ -63,17 +63,17 @@ ms.locfileid: "3964652"
 - 他の所有者を追加または削除します (ただし、フローの作成者ではありません)。
 - フローを削除します。
 
-フローの作成者または所有者は、Power Automate の **チーム フロー** タブにリストされています。
+クラウド フローの作成者または所有者は、Power Automate の **チーム フロー** タブでそのリストを見つけることができます。
 
 ![チーム フローのタブ](./media/create-team-flows/addowner5.png "チーム フローのタブ")
 
 >[!NOTE]
->共有された接続は、それらが作成されたフローの中で*のみ*使うことができます。
+>共有された接続は、それらが作成されたフローの中で *のみ* 使うことができます。
 
-所有者は、フロー内のサービスを使うことはできますが、別の所有者が作成した接続の資格情報を変更することはできません。<!--I'm confused by this. In line 42, you say that "any owner of a flow can...update credentials for a connection." It seems that there's a difference between being added as an owner of a flow and owning a connection within a flow - will this be obvious to the reader? -->
+所有者は、クラウド フローのサービスを使うことはできますが、別の所有者が作成した接続の資格情報を変更することはできません。<!--I'm confused by this. In line 42, you say that "any owner of a cloud flow can...update credentials for a connection." It seems that there's a difference between being added as an owner of a cloud flow and owning a connection within a cloud flow - will this be obvious to the reader? -->
 
 <!--markdownlint-disable MD036-->
-**フローに所有者を追加する**
+**クラウド フローにさらに所有者を追加するには**
 
 1. [Power Automate](https://flow.microsoft.com) にサインインして **マイ フロー** を選択します。
 1. 共有するフローを選択し、**その他のコマンド** ![その他のコマンド](./media/create-team-flows/more-commands.png) を選択してから **共有** を選択します。
@@ -92,7 +92,7 @@ ms.locfileid: "3964652"
 
 ## <a name="add-a-list-as-a-co-owner"></a>共同所有者として一覧を追加する
 
-SharePoint の一覧の編集アクセス許可を持つすべてのユーザーが自動的にフローに編集アクセスできるように、一覧を共同所有者としてフローに追加することができます。 フローを共有した後で、フローへのリンクを簡単に配布できます。 詳細情報: [トレーニング: SharePoint リストの作成と設定](https://support.microsoft.com/office/training-create-and-set-up-a-list-1ddc1f5a-a908-478b-bb6d-608f34b71f94)
+SharePoint の一覧をクラウド フローの共有者として追加すると、リストに対する編集アクセス権を持つすべてのユーザーが自動的にそのフローに対する編集アクセス権を取得できます。 フローを共有した後で、フローへのリンクを簡単に配布できます。 詳細情報: [トレーニング: SharePoint リストの作成と設定](https://support.microsoft.com/office/training-create-and-set-up-a-list-1ddc1f5a-a908-478b-bb6d-608f34b71f94)
 
 > [!TIP]
 > フローが SharePoint に接続される場合は一覧を使用し、それ以外すべての場合はグループを使用します。
@@ -119,13 +119,13 @@ SharePoint の一覧の編集アクセス許可を持つすべてのユーザー
 
 ## <a name="modify-a-connection"></a>接続を変更する
 
-既存の所有者を削除したり、別のアカウントを使用してアクションやトリガーにサインインしたりする場合は、フローの接続の所有者を変更する必要がある場合があります。
+既存の所有者を削除する場合や、アクションまたはトリガーにサインインするために別のアカウントを使用する場合は、クラウド フローで接続の所有者を変更する必要があります。
 
 1. 変更するフローへの移動します。
 
-1. **編集**を選択します。
+1. **編集** を選択します。
 
-   ![フローの編集](./media/create-team-flows/Edit-flow-details.png "フローの編集")
+   ![クラウド フローの編集](./media/create-team-flows/Edit-flow-details.png "クラウド フローの編集")
 
 1. 接続を編集するステップで **その他のコマンド** (...) を選択します。
 
@@ -133,7 +133,7 @@ SharePoint の一覧の編集アクセス許可を持つすべてのユーザー
 
    ![新しい接続を追加する](./media/create-team-flows/edit-connection.png "新しい接続を追加する")
 
-## <a name="share-a-flow-with-run-only-permissions"></a>実行のみのアクセス許可でフローを共有する
+## <a name="share-a-cloud-flow-with-run-only-permissions"></a>実行専用のアクセス許可でクラウド フローを共有する
 
 (ボタンや選択したアイテムなどの手動トリガーを使用するフローである) インスタント フローは、実行専用のアクセス許可を使用して共有できます。 実行専用ユーザーとして追加されたユーザーは、フローを編集や変更するアクセス許可を持たず、フローをトリガーする権限のみを持ちます。
 
@@ -162,14 +162,14 @@ SharePoint の一覧の編集アクセス許可を持つすべてのユーザー
 
 これでユーザーやグループは、このフローを実行するアクセス許可を失います。
 
-## <a name="share-a-copy-of-a-flow"></a>フローのコピーを共有する
+## <a name="share-a-copy-of-a-cloud-flow"></a>クラウド フローのコピーを共有する
 
-フローのコピーを別のユーザーと共有でき、そのユーザーはそのフローの定義をテンプレートとして使用できます。 これは、接続を共有せずにフローの一般的な構造を共有する優れた方法を提供し、同時に受信者が元のフローに関係なくニーズに合わせて変更できます。
+クラウド フローのコピーを別のユーザと共有し、そのユーザがフローの定義をテンプレートとして使用できます。 これは、接続を共有せずにクラウド フローの一般的な構造を共有するための優れた方法を提供すると同時に、受信者が自分のニーズに合うように自分のフローを独自に変更できるようにします。
 
 > [!NOTE]
 > コピーを共有すると、受信者用に独立したフローのインスタンスが作成されます。 フローを共有した後は、フローのアクセス許可を取り消せません。
 
-**フローのコピーを送信する**
+**クラウド フローのコピーを送信するには**
 
 1. フローの詳細ページのコマンド バーで **コピーを送る** を選択します。
 
@@ -179,7 +179,7 @@ SharePoint の一覧の編集アクセス許可を持つすべてのユーザー
 
    ![コピーの詳細を送信する](./media/create-team-flows/send-a-copy3.png "コピーの詳細を送信する")
 
-1. 受信者にフロー テンプレートの共有を伝えるメールが送信され、その後受信者はそのフローの独自のインスタンスを作成できます。
+1. 受信者には、クラウド フロー テンプレートが共有されたことを示すメールが届きます。その後、受信者はそのフローの独自のインスタンスを作成できます。
 
    ![コピーを受信する](./media/create-team-flows/send-a-copy5.png "コピーを受信する")
 

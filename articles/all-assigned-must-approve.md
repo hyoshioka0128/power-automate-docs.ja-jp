@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: aca38c990387befebd5cb90f73298433bfba94b2
-ms.sourcegitcommit: df7fb20065cfafc153b4bc4019dff2c94f4ef567
+ms.openlocfilehash: 7eb289ab295802c378f83221e49e9dea5e8a9371
+ms.sourcegitcommit: b043b7e8c29afee4f4f25bbf0d5a662d9af9272c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4553532"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4708606"
 ---
 # <a name="create-an-approval-flow-that-requires-everyone-to-approve"></a>全員が承認する必要のある承認フローを作成する
 
@@ -103,9 +103,9 @@ ms.locfileid: "4553532"
 
     **開始して承認を待つ** カードは、承認者に送信される承認要求のテンプレートです。 組織にとって便利なようにこれを構成します。 次に例を示します。
 
-    ![開始して承認を待つ](media/all-assigned-must-approve/start-an-approval-card.png)
+    ![開始して承認を待機](media/all-assigned-must-approve/start-an-approval-card.png)
 
-    **開始して承認を待つ** アクションは、**承認/拒否-全員の承認が必須** にて設定されています。ここでは、承認のリクエストをすべての **割り当て先** が承認する、または最低でもひとりの **割り当て先** が拒否するまで待機します。
+    **開始して承認を待機** アクションが **承認/拒否 - すべてのユーザーの承認が必須** で構成されているクラウド フローは、**割り当て先ユーザー/グループ** がすべて承認するか、少なくとも 1 つの **割り当て先ユーザー/グループ** が承認リクエストを拒否するまで待機します。
 
     >[!TIP]
     >ご利用のフローが承認リクエストの応答を確認し、**結果** に応じて異なるアクションをさせたい場合は、**状態** ステップを追加します。 **結果** では **承認** または **拒否** することができます。 
@@ -153,5 +153,5 @@ SharePoint のリストに項目が追加される、または項目が変更さ
 * [1 人の承認者による最新の承認](modern-approvals.md)
 * [シーケンシャルな最新の承認](sequential-modern-approvals.md)
 * [並列の最新の承認](parallel-modern-approvals.md)
-* [承認と Microsoft Dataverse](common-data-model-approve.md)
+* [承認と Common Data Service](common-data-model-approve.md)
 * [外出先で要求を承認する](mobile-approvals.md)

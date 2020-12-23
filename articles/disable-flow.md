@@ -20,20 +20,20 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 60024491712abf7f1940ccb7c55f169d3ba26a5e
-ms.sourcegitcommit: 1e8b307d647bfeca47186cc5f846cd23c0a28e77
+ms.openlocfilehash: 161f17afd88131138102114f4a47f4bd1c10f55b
+ms.sourcegitcommit: b043b7e8c29afee4f4f25bbf0d5a662d9af9272c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "3673169"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4709700"
 ---
 # <a name="turn-flows-on-or-off"></a>フローのオン/オフを切り替える
 
-フローを実行しないようにするために、フローをオフにすることが必要になる場合があります。 次の手順に従って、フローのオンとオフを切り替えます。
+場合によっては、クラウド フローをオフにして、実行されないようにすることができます。 次の手順に従って、フローのオンとオフを切り替えます。
 
 ## <a name="turn-flows-off"></a>フローをオフにする
 
-フローを作成すると、既定でオンになります。 次の手順に従って、フローをオフにします。
+クラウド フローを作成すると、デフォルトでオンになります。 クラウド フローをオフにするには、次の手順に従います。
 
 1. **マイ フロー ページ** で、オフにするフローの省略記号 (...) を選択します。
     
@@ -48,7 +48,7 @@ ms.locfileid: "3673169"
 
 ## <a name="turn-flows-on"></a>フローをオンにする
 
-フローをオフにしたが、再度実行するためにオンに戻す場合は、次の手順に従います: 
+クラウド フローをオフにしたが、再び実行できるようにオンに戻したい場合は、次の手順に従います。 
 
 1. **マイ フロー ページ** で、変更するフローを選択します。
 

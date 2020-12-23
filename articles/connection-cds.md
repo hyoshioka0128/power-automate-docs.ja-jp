@@ -20,24 +20,24 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: b937ccf2b1e52c0bc0d744cfce3f733966c187ad
-ms.sourcegitcommit: df7fb20065cfafc153b4bc4019dff2c94f4ef567
+ms.openlocfilehash: 4fecc748f77dd201c142f8bc7f88c0bf9020617c
+ms.sourcegitcommit: b043b7e8c29afee4f4f25bbf0d5a662d9af9272c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4553436"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4708390"
 ---
 # <a name="create-an-automated-flow-by-using-microsoft-dataverse"></a>Microsoft Dataverse を使用して自動化されたフローを作成する
 
 [!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
 
 >[!IMPORTANT]
->Dataverse への接続に使用できるコネクターには 3つの種類があります。 推奨される [Common Data Service（現在の環境）コネクタ](./connection-cds-native.md) を使用してください。 この記事に記載している **Common Data Serviceコネクタ**、[Dynamics 365 Connector](https://docs.microsoft.com/connectors/dynamicscrmonline/) は、推奨コネクタが使用できない場合にご利用いただけます。
+>Dataverse に接続できるコネクタは 3 つ存在します。 推奨される [Common Data Service（現在の環境）コネクタ](./connection-cds-native.md) を使用してください。 この記事に記載している **Common Data Serviceコネクタ**、[Dynamics 365 Connector](https://docs.microsoft.com/connectors/dynamicscrmonline/) は、推奨コネクタが使用できない場合にご利用いただけます。
 
 
-Common Data Service コネクターを使用すると、Dataverse 内のイベントの作成と更新によって開始されるフローを作成できます。 さらに、Dataverse 内のレコードに対して、作成、更新、取得、削除のアクションを実行できます。
+Common Data Service コネクタを使用すると、Dataverse 内で作成、更新されるイベントによって開始するフローを作成できます。 さらに、Dataverse 内のレコードに対して、作成、更新、取得、削除のアクションを実行できます。
 
-## <a name="initiate-a-flow-from-dataverse"></a>Dataverse からフローを開始する
+## <a name="initiate-a-cloud-flow-from-dataverse"></a>Dataverse からクラウド フローを開始する
 
 次のいずれかのトリガーを使用してフローを開始できます。
 
@@ -79,13 +79,13 @@ Common Data Service コネクターを使用すると、Dataverse 内のイベ�
 
 ## <a name="trigger-privileges"></a>トリガーの権限
 
-レコードの作成、更新、削除に基づいてトリガーされるフローを作成するには、コールバック登録 エンティティに対する作成、読み取り、書き込み、削除のユーザー レベル権限が必要となります。 さらに、定義されたスコープによっては、ユーザーは少なくとも同じエンティティの同等のレベルの読み取り権限が必要となる場合があります。  環境のセキュリティの詳細については、[こちらを参照してください](https://docs.microsoft.com/power-platform/admin/database-security)。
+レコードに対する作成、更新、または削除に基づいてトリガーされるクラウド フローを作成するには、コールバック登録エンティティに対する作成、読み取り、書き込み、削除のユーザー レベル権限がユーザーに必要です。 さらに、定義されたスコープによっては、ユーザーは少なくとも同じエンティティの同等のレベルの読み取り権限が必要となる場合があります。  環境のセキュリティの詳細については、[こちらを参照してください](https://docs.microsoft.com/power-platform/admin/database-security)。
 
-## <a name="write-data-into-dataverse"></a>Dataverse へのデータの書き込み
+## <a name="write-data-into-dataverse"></a>Dataverse にデータを書き込む
 
-Dataverse にデータを書き込むには、次のいずれかのアクションを使用します :
+Dataverse にデータを書き込むには、次のいずれかのアクションを使用します：
 
-- 新しいレコードの作成
+- 新しいレコードを作成します
 - レコードの更新
 
 特定のユーザーが新しいアカウント レコードを作成したときのフォロー アップ タスクを作成する例を次に示します。  

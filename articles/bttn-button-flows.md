@@ -20,16 +20,16 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: c79a160649ac2cd643a579f9661fa688cc47e62f
-ms.sourcegitcommit: 6714fe9d5217e6aaa07656c7048c1c82ba7312c1
+ms.openlocfilehash: 67cc87efdd74fc51795449ccbdb3441c0879c331
+ms.sourcegitcommit: b043b7e8c29afee4f4f25bbf0d5a662d9af9272c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "3821084"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4708463"
 ---
 # <a name="run-your-flows-with-bttns-from-the-button-corporation-preview"></a>Button Corporation の bttn でフローを実行する (プレビュー)
 
-フローをトリガーするには、bttn ([Button Corporation](https://my.bt.tn/) によって作成された物理ボタン) を押します。 たとえば、以下のタスクを実行するフローをトリガーする bttn を押すことができます。
+フローをトリガーするには、bttn ([Button Corporation](https://my.bt.tn/) によって作成された物理ボタン) を押します。 たとえば、以下のタスクを実行するクラウド フローをトリガーする bttn を押すことができます。
 
 * 位置情報を使用してヘルプデスクに問い合わせる
 * 自分のチームに電子メールを送信する
@@ -37,21 +37,21 @@ ms.locfileid: "3821084"
 * 供給物を並べ替える
 
 > [!IMPORTANT]
-> bttn は、フローで使用する前に[登録](https://my.bt.tn/)する必要があります。
+> bttn は、クラウド フローで使用する前に[登録](https://my.bt.tn/)する必要があります。
 > 
 > [!TIP]
 > フローを作成する前に、[bttn Web サイト](https://my.bt.tn/)で名前、場所、電子メール アドレスなどのすべての bttn プロパティを構成してください。
 > 
 > 
 
-[Flic 物理ボタン](flic-button-flows.md)を使用してフローをトリガーすることもできます。
+[Flic 物理ボタン](flic-button-flows.md) を使用してクラウド フローをトリガーすることもできます。
 
 ## <a name="prerequisites"></a>前提条件
 * [Power Automate](https://flow.microsoft.com) へのアクセス
 * 少なくとも 1 つの[登録済み bttn](https://my.bt.tn/) がある
 
-## <a name="create-a-flow-thats-triggered-from-a-bttn"></a>bttn によってトリガーされるフローを作成する
-このチュートリアルでは、ヘルプデスク テンプレートを使用して、[bttn](https://my.bt.tn/) を 1 回押すだけでトリガーできるフローを作成します。 フローを実行すると、サポート要求が生成されてヘルプデスクに送信されます。 サポート要求により、ヘルプが必要な部屋の位置がヘルプ デスクに提供されます。 このチュートリアルではテンプレートからこのフローを作成する方法を示しますが、フローのすべての側面を完全に制御できる空のテンプレートを使用することもできます。
+## <a name="create-a-cloud-flow-thats-triggered-from-a-bttn"></a>bttn によってトリガーされるクラウド フローを作成する
+このチュートリアルでは、ヘルプデスク テンプレートを使用して、[bttn](https://my.bt.tn/) を 1 回押すだけでトリガーできるクラウド フローを作成します。 フローを実行すると、サポート要求が生成されてヘルプデスクに送信されます。 サポート要求により、ヘルプが必要な部屋の位置がヘルプ デスクに提供されます。 このチュートリアルではテンプレートからこのフローを作成する方法を示しますが、フローのすべての側面を完全に制御できる空のテンプレートを使用することもできます。
 
 これらのテンプレートのいずれかを使用すると、bttn 用のフローを簡単に作成し、Zendesk、Google、SharePoint などに接続できます。
 

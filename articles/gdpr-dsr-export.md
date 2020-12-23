@@ -20,12 +20,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: b3e28f8504c546ed87b9396a552ad0ead964ddb1
-ms.sourcegitcommit: 39d7912519ff03dae924023c1a1c320a30efaa81
+ms.openlocfilehash: 92d79850ecea3fffdb709a66cad8a4f881237bee
+ms.sourcegitcommit: b043b7e8c29afee4f4f25bbf0d5a662d9af9272c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "3691106"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4709567"
 ---
 # <a name="responding-to-gdpr-data-subject-export-requests-for-power-automate"></a>Power Automate の GDPR データ対象者のエクスポート要求に対応する
 
@@ -56,7 +56,7 @@ Power Automate は、特定のユーザーの個人データを検索または�
 |ゲートウェイ|Power Automate メーカー ポータル|オンプレミス データ ゲートウェイ PowerShell コマンドレット|
 |ゲートウェイのアクセス許可|Power Automate メーカー ポータル|オンプレミス データ ゲートウェイ PowerShell コマンドレット|
 
-## <a name="export-a-flow"></a>フローをエクスポートする
+## <a name="export-a-cloud-flow"></a>クラウド フローをエキスポート
 
 エンド ユーザーまたは自分自身にフローへのアクセス権を付与した管理者は、次の手順に従ってフローをエクスポートできます:
 
@@ -70,11 +70,11 @@ Power Automate は、特定のユーザーの個人データを検索または�
 
 1. **パッケージ (.zip)** を選択します。
 
-フローが zip 形式のパッケージとして使用可能になります。 詳しくは、[フローをエクスポートおよびインポートする方法](https://flow.microsoft.com/blog/import-export-bap-packages/) に関するブログ記事をご覧ください。
+フローが zip 形式のパッケージとして使用可能になります。 詳細については、[クラウド フローをエクスポートおよびインポートする方法](https://flow.microsoft.com/blog/import-export-bap-packages/)に関するブログ投稿をご覧ください。
 
 ## <a name="export-run-history"></a>実行履歴をエクスポートする
 
-実行履歴には、フローで発生したすべての実行の一覧が含まれています。 このデータには、トリガーとアクションに対するフローの状態、期間、継続時間、および入出力データが含まれます。
+実行履歴には、クラウド フローで発生したすべての実行の一覧が含まれています。 このデータには、トリガーとアクションに対するフローの状態、期間、継続時間、および入出力データが含まれます。
 
 エンド ユーザーまたは  Power Automate 管理センターでフローへのアクセス権を付与した管理者は、次の手順に従ってこのデータをエクスポートできます。
 

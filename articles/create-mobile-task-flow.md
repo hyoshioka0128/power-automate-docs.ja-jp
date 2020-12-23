@@ -1,6 +1,5 @@
 ---
 title: Power Apps でモバイル タスク フローを作成する | MicrosoftDocs
-description: このチュートリアルでは、Power Apps を使用してモバイル タスク フローを作成する方法を示します
 ms.custom: ''
 ms.date: 06/11/2018
 ms.reviewer: ''
@@ -22,19 +21,17 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 5b69da011aa4a330e7a820fe2268a3603d29e540
-ms.sourcegitcommit: 83e22ff7d539b02573548df5ca2a8bc41ea48227
+ms.openlocfilehash: 005f075b0a03fd1c7998c337b28d3c1f3bf79ab4
+ms.sourcegitcommit: b043b7e8c29afee4f4f25bbf0d5a662d9af9272c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "4477063"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4709135"
 ---
 # <a name="create-a-mobile-task-flow"></a>モバイル タスク フローを作成する
 
-[!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
 
-
-電話用 Dynamics 365 またはタブレット PC 用 Dynamics 365 で、ユーザーが実行する一般的なタスクに基づいてフローを設計します。 たとえば、顧客との打ち合わせの後に、定期的に一連のフォローアップ手順を実行する必要がある場合は、タスク フローを作成します。 ユーザーがモバイル アプリケーションで新しいタスクをタップすると、開始から終了までリードするので、重要なステップを忘れません。  
+電話用 Dynamics 365 またはタブレット PC 用 Dynamics 365 で、ユーザーが実行する一般的なタスクに基づいてクラウド フローを設計します。 たとえば、顧客との打ち合わせの後に、定期的に一連のフォローアップ手順を実行する必要がある場合は、タスク フローを作成します。 ユーザーがモバイル アプリケーションで新しいタスクをタップすると、開始から終了までリードするので、重要なステップを忘れません。  
   
  タスク フローは複数のエンティティ フォームとロジックを使用でき、タスク フローのページにわたって実行されるフォームのロジックを持つことができます。  
   

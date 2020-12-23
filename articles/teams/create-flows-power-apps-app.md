@@ -1,5 +1,5 @@
 ---
-title: Power Apps で Microsoft Teams アプリを使用してフローを作成する | Microsoft Docs
+title: Microsoft Teams で Power Apps アプリを使用してフローを作成する | Microsoft Docs
 description: Teams で Power Apps アプリを使用してフローを作成します。
 author: msftman
 manager: kvivek
@@ -15,12 +15,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: ea9c4d0d1e7c59d8ccc3f0ecc714bb20042c3cb1
-ms.sourcegitcommit: df7fb20065cfafc153b4bc4019dff2c94f4ef567
+ms.openlocfilehash: 41a99e0a7dd2c1ba53906043fc23b0539e11118f
+ms.sourcegitcommit: b043b7e8c29afee4f4f25bbf0d5a662d9af9272c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4553916"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4709855"
 ---
 # <a name="create-flows-using-the-power-apps-app-in-microsoft-teams"></a>Microsoft Teams で Power Apps アプリを使用してフローを作成する
 
@@ -33,17 +33,17 @@ Teams の新しい Power Apps アプリでフローを作成してカスタマ�
 
 - Teams でフローを作成する前に Power Apps アプリをインストールする必要があります。 詳細情報: [Microsoft Teams に Power Apps パーソナル アプリをインストールする](/powerapps/teams/install-personal-app)
 
-- Teams で Power Apps アプリを使用してフローを作成する前に、そのチーム用の Dataverse for Teams 環境がすでに存在している必要があります。 Dataverse for Teams 環境は、[Teams で最初のアプリを作成する](/powerapps/teams/create-first-app) ときに、自動的にプロビジョニングされます。
+- Teams で Power Apps アプリを使用してクラウド フローを作成する前に、そのチーム用の Dataverse for Teams 環境がすでに存在している必要があります。 Dataverse for Teams 環境は、[Teams で最初のアプリを作成する](/powerapps/teams/create-first-app) ときに、自動的にプロビジョニングされます。
 
-## <a name="create-a-flow-in-teams"></a>Teams でフローを作成する
+## <a name="create-a-cloud-flow-in-teams"></a>Teams クラウド でフローを作成する
 
 1. Power Apps アプリの **ビルド** タブに移動して **すべて表示する** を選択します。
 
 1. **新規** を選択して **フロー** を選択し、作成するフローのタイプを選択します。 次の種類のフローのみを作成できます: [インスタント](../introduction-to-button-flows.md)、[スケジュール済み](../run-scheduled-tasks.md)、[自動化](../get-started-logic-flow.md)。
  
-   ![フローの作成](..\media\overview-teams-flows\new-flow.png)
+   ![クラウド フローを作成](..\media\overview-teams-flows\new-flow.png)
 
-1. 初めてフローを作成する場合は、国/地域を選択してから **開始する** を選択する必要があります。
+1. クラウド フローを作成するのが初めての場合は、国/地域を選択してから、**開始する** を選択する必要があります。
 
    ![場所を選択する](..\media\overview-teams-flows\select-location.png)
 
@@ -68,11 +68,11 @@ Teams の新しい Power Apps アプリでフローを作成してカスタマ�
 
    ![すべてのフロー](..\media\overview-teams-flows\all-flows.png)
 
-## <a name="customize-a-flow"></a>フローをカスタマイズする
+## <a name="customize-a-cloud-flow"></a>クラウド フローをカスタマイズ
 
 Teams で、インストール済みのアプリからフローを取得したか、独自に作成した可能性があります。 これらのタイプのフローのいずれかを更新またはカスタマイズできます。 
 
-1. フローを更新する際は **ビルド** タブを選択して **すべて表示する** を選択し、このチームのアプリとフローをすべて表示します。
+1. クラウド フローを更新するには、**ビルド** タブを選択し、**すべて表示** を選択して、このチームのすべてのアプリとフローを表示します。
 
 1. 編集するフローを選択して **編集** を選択します。  
 
@@ -80,7 +80,7 @@ Teams で、インストール済みのアプリからフローを取得した�
 
 ## <a name="view-details-and-run-history"></a>詳細と実行履歴を表示する
 
-1. フローの詳細と実行履歴を表示する場合は **ビルド** タブを選択してから **すべて表示する** を選択します。
+1. クラウド フローの詳細と実行履歴を表示するには、**ビルド** タブを選択してから、**すべて表示** を選択します。
 
 1. 詳細を表示するフローを選択してから **詳細** を選択します。
 
@@ -89,5 +89,5 @@ Teams で、インストール済みのアプリからフローを取得した�
 ## <a name="related-articles"></a>関連記事
 
 [Microsoft Teams で新しい Power Apps アプリを使用する](/powerapps/teams/create-apps-overview)<br/>
-[ Dataverse for Teams とは?](/powerapps/teams/overview-data-platform)<br/>
+[Dataverse for Teams とは](/powerapps/teams/overview-data-platform)<br/>
 [Dataverse for Teams 環境について](/power-platform/admin/about-teams-environment)

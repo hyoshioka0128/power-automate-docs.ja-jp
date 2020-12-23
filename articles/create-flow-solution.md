@@ -20,14 +20,14 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: fe2fdf5b1eb5dc20597a0d086ad70c810e7908e7
-ms.sourcegitcommit: ad8c043d9ad0c188237c0fc3bbd8fd0c7cec83c2
+ms.openlocfilehash: 4a883d108b479d210ce98d8710dfbfae0c7d1c2e
+ms.sourcegitcommit: b043b7e8c29afee4f4f25bbf0d5a662d9af9272c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "3988252"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4708775"
 ---
-# <a name="create-a-flow-in-a-solution"></a>ソリューションにフローを作成する
+# <a name="create-a-cloud-flow-in-a-solution"></a>ソリューションにクラウド フローを作成
 
 
 ソリューションで作成するフローは、*ソリューション対応* フローと呼ばれます。 次の手順に従って、ソリューション対応フローを作成します。

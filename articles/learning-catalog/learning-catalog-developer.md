@@ -1,17 +1,17 @@
 ---
 title: 開発者学習カタログ
 description: Power Automate のすべてのトレーニング オプションを検索します
-author: loreleishannonmsft
+author: msftman
 ms.topic: article
 ms.date: 03/21/2020
+ms.author: deonhe
 ms.service: flow
-ms.author: margoc
-ms.openlocfilehash: 7a85eb9dfad63048c3dad2994d5c4f0396732ec8
-ms.sourcegitcommit: df7fb20065cfafc153b4bc4019dff2c94f4ef567
+ms.openlocfilehash: ab0f423863f9e4aeae97319e93fafda5fe19d036
+ms.sourcegitcommit: b043b7e8c29afee4f4f25bbf0d5a662d9af9272c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4553652"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4708943"
 ---
 # <a name="developer-learning-catalog"></a>開発者学習カタログ
 
@@ -22,5 +22,5 @@ ms.locfileid: "4553652"
 ## <a name="extend"></a>延長<a name="extend"></a>
 | 内容   | 内容  | フォーマット | 長さ    |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|-------------------|
-| [Power Platform Microsoft Dataverse の拡張](https://docs.microsoft.com/learn/paths/extend-power-platform-model-driven-app/)                     | このラーニング パスでは、クライアント スクリプトの作成、クライアント スクリプトでの一般的なアクションの実行、クライアント スクリプトを使用した業務プロセス フローの自動化について説明します。 クライアント スクリプトで実行できる処理、ルール、およびスクリプトの管理について学習します。 クライアント スクリプトを使用する場合と使用しない場合を検出します。                                                                                           | マイペースで進められる無料のラーニング パス | 4 時間           |
-| [モデル駆動型アプリで Power Platform のユーザー エクスペリエンスを拡張する](https://docs.microsoft.com/learn/paths/extend-power-platform-common-data-service/) | Power Platform の Dataverse の拡張は、ときに大変な作業になります。 このラーニング パスでは、Power Platform の拡張に必要なツールとリソースについて取り上げます。 まず、SDK、機能拡張モデル、イベント フレームワークについて説明します。 また、どのような場合にプラグインを使用するか、プラグインの構成、登録、デプロイについても、このラーニング パス内で取り上げます。 | マイペースで進められる無料のラーニング パス | 2 時間 3 分 |
+| [Power Platform Common Data Service の拡張](https://docs.microsoft.com/learn/paths/extend-power-platform-model-driven-app/)                     | このラーニング パスでは、クライアント スクリプトの作成、クライアント スクリプトでの一般的なアクションの実行、クライアント スクリプトを使用した業務プロセス フローの自動化について説明します。 クライアント スクリプトで実行できる処理、ルール、およびスクリプトの管理について学習します。 クライアント スクリプトを使用する場合と使用しない場合を検出します。                                                                                           | マイペースで進められる無料のラーニング パス | 4 時間           |
+| [モデル駆動型アプリで Power Platform のユーザー エクスペリエンスを拡張する](https://docs.microsoft.com/learn/paths/extend-power-platform-common-data-service/) | Power Platform の Common Data Service の拡張は、ときに大変な作業になります。 この学習パスでは、Power Platform の拡張に必要なツールとリソースについて確認します。 まず、SDK、機能拡張モデル、イベント フレームワークについて説明します。 また、どのような場合にプラグインを使用するか、プラグインの構成、登録、デプロイについても、このラーニング パス内で取り上げます。 | マイペースで進められる無料のラーニング パス | 2 時間 3 分 |

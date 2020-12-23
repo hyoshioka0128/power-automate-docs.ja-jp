@@ -1,5 +1,5 @@
 ---
-title: Microsoft Teams の任意のメッセージからフローをトリガーする | Microsoftドキュメント
+title: Microsoft Teams のメッセージからクラウド フローをトリガーする | Microsoft Docs
 description: Microsoft Teams の任意のメッセージからインスタント フローをトリガーする方法
 services: ''
 suite: flow
@@ -15,18 +15,18 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/16/2020
 ms.author: hamenon
-ms.openlocfilehash: 0e6e1ede6491e376c19397aa0d35f17ff270e016
-ms.sourcegitcommit: 2971e852bdb76efbe012b9de8df8e7f492063184
+ms.openlocfilehash: d30634d753187f5dd691065e949c9822da8d54de
+ms.sourcegitcommit: b043b7e8c29afee4f4f25bbf0d5a662d9af9272c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "3900482"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4709807"
 ---
-# <a name="trigger-a-flow-from-any-message-in-microsoft-teams"></a>Microsoft Teams のメッセージからフローをトリガーする
+# <a name="trigger-a-cloud-flow-from-any-message-in-microsoft-teams"></a>Microsoft Teams のメッセージからクラウド フローをトリガーする
 
 メッセージを使用して Teams のプロセスをトリガーできます。 ここでは例として、Teams のメッセージを起点として Azure DevOps で作業項目の作成や、Dynamics 365 で営業案件を作成する方法を説明します。 
 
-Teams のコネクターの**選択したメッセージ**トリガーを使用して、Teams 内から直接フローをトリガーします。
+Teams コネクタの **選択したメッセージに対して** のトリガーを使用し、Teams 内からクラウド フローを直接トリガーします。
 
 ## <a name="create-the-flow"></a>フローを作成する
 
@@ -36,12 +36,12 @@ Teams のコネクターの**選択したメッセージ**トリガーを使用�
 
    ![選択したメッセージトリガー](media/trigger-flow-teams-message/trigger-for-a-selected-message.png)
 
-1. **作成**を選びます。
+1. **作成** を選びます。
 
 >[!NOTE]
 >まだサインインしていない場合は Teams にサインインする必要があります。
 
-**選択したメッセージ**トリガーには、アダプティブ カード形式のオプションの入力があります。 アダプティブ カードを使用してフォームを作成し、フローのトリガーをするユーザーから情報を収集します。 たとえば、フローがタスクを作成する場合、アダプティブ カードを使用してタスクのタイトルや説明などの情報を収集できます。
+**選択したメッセージ** トリガーには、アダプティブ カード形式のオプションの入力があります。 アダプティブ カードを使用してフォームを作成し、フローのトリガーをするユーザーから情報を収集します。 たとえば、フローがタスクを作成する場合、アダプティブ カードを使用してタスクのタイトルや説明などの情報を収集できます。
 
 ## <a name="collect-information-from-the-user"></a>ユーザーから情報を収集する
 
@@ -77,7 +77,7 @@ Teams のコネクターの**選択したメッセージ**トリガーを使用�
 >[!IMPORTANT]
 >**Teams で選択したメッセージの場合** トリガーで作成したフローが表示されない場合は、Teams 管理センター https://admin.teams.microsoft.com/policies/manage-apps で Power Automate アクション アプリが有効かどうか確認するよう管理者に依頼してください。 
 
-**選択したメッセージ**トリガーを使用するフローは、フローの**その他のアクション**メニュー内の Teams メッセージのメッセージ アクションとして表示されます。<!--note from editor: I assume Joni Sherman, Isaiah Langer, and Megan Bowen are names from sample data?-->
+**選択したメッセージ** トリガーを使用するフローは、フローの **その他のアクション** メニュー内の Teams メッセージのメッセージ アクションとして表示されます。<!--note from editor: I assume Joni Sherman, Isaiah Langer, and Megan Bowen are names from sample data?-->
 
 ![Teams からトリガーする](media/trigger-flow-teams-message/more-actions-menu.png)
 
@@ -88,7 +88,7 @@ Teams のコネクターの**選択したメッセージ**トリガーを使用�
 
 フローの完了後には必ずユーザーに対する確認フォームを含めてください。 トリガーしたフローの完了時に **ユーザーにフロー ボットとしてメッセージを投稿する** または **チャネルにフロー ボットとしてメッセージを投稿する** を使用して Teams のユーザーに通知することを推奨します。
 
-これは Azure DevOps で作業項目を作成して元のユーザーに確認を投稿するフローの例です。<!--note from editor: This image needs more detailed alt text to describe what's going on. It probably will take more than 150 characters, so this might be a good place to use the new image extension.-->
+Azure DevOps で作業項目を作成し、操作元ユーザーに確認を投稿するクラウド フローの例を次に示します。<!--note from editor: This image needs more detailed alt text to describe what's going on. It probably will take more than 150 characters, so this might be a good place to use the new image extension.-->
 
 ![タスク フローを作成する](media/trigger-flow-teams-message/complete-flow.png)
 

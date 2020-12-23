@@ -20,18 +20,18 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 93805fd7aa297e6c36e1427e6e18133b572e2384
-ms.sourcegitcommit: df7fb20065cfafc153b4bc4019dff2c94f4ef567
+ms.openlocfilehash: c099e250477e7e6ed4dbac1c7fdce75f4b796170
+ms.sourcegitcommit: b043b7e8c29afee4f4f25bbf0d5a662d9af9272c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4553052"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4707959"
 ---
 # <a name="import-a-solution"></a>ソリューションのインポート
 
 
 > [!TIP]
-> ソリューションのインポート後、フローを自動的に開始するには、フローを作成する時に Microsoft Dataverse (現在の環境) コネクタを使用します。
+> ソリューションのインポート後、フローを自動的に開始するには、フローを作成する時に Common Data Service (現在の環境) コネクタを使用します。
 
 ソリューションをエクスポートした後、前提条件を満たす任意の環境にそれをインポートできます。 ソリューションをインポートするには、次の手順に従います。
 
@@ -62,7 +62,7 @@ ms.locfileid: "4553052"
 ## <a name="learn-more"></a>詳細情報を見る
 
 - [ソリューションの作成](./overview-solution-flows.md)
-- [ソリューションにフローを作成する](./create-flow-solution.md)
+- [ソリューションにクラウド フローを作成する](./create-flow-solution.md)
 - [ソリューションのエクスポート](./export-flow-solution.md)
 - [ソリューション対応フローを編集する](./edit-solution-aware-flow.md)
 - [ソリューション対応フローを削除する](.//remove-solution-aware-flow.md)

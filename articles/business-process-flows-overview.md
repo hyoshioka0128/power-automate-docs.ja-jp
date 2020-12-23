@@ -22,12 +22,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: a3076b9fbeed8cdfe1ec3cff1118dfeb6b018802
-ms.sourcegitcommit: 83e22ff7d539b02573548df5ca2a8bc41ea48227
+ms.openlocfilehash: be14939a0238c237319bc7ee126b05aa06524411
+ms.sourcegitcommit: f365315b3daaf31556e5e029fee3d5b37624fb3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "4477087"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4638353"
 ---
 # <a name="business-process-flows-overview"></a>ビジネス プロセス フローの概要
 
@@ -100,6 +100,8 @@ ms.locfileid: "4477087"
   
 ### <a name="business-process-flows-that-call-a-workflow"></a>ワークフローを呼び出す業務プロセス フロー  
  業務プロセス フローの内部からオンデマンド ワークフローを呼び出すことができます。 ワークフロー コンポーネントをプロセス ステージまたはグローバル ワークフロー セクションにドラッグすることによリ、新しい業務プロセス フロー デザイナーからこれを設定できます。 業務プロセス フローでのワークフローの使用の詳細については、「[ブログ: Dynamics 365 での業務プロセス フローの自動化](https://blogs.msdn.microsoft.com/crm/2017/03/28/business-process-flow-automation-in-dynamics-365/)」を参照してください。  
+ 
+ ビジネス プロセス フローのステージの **ステージの終了** にトリガーするようにワークフローを設定した場合、そのステージを終了するたびにワークフローがトリガーされます。 これは、*次* のステージまたは *前* のステージに移動する場合に発生します。 
   
  業務プロセス フローの [ステージの終了] ステージでトリガーするワークフローを含め、そのステージがフローの最後のステージである場合は、デザイナーは、そのステージが完了したときにワークフローがトリガーされるという印象を与えます。 ただし、ステージの移行が行われないため、ワークフローはトリガされません。 ステージにワークフローを含めることを妨げる警告またはエラーは表示されません。 ユーザーが業務プロセス フローと対話するとき、プロセスの終了または放棄はステージの移行にはならず、したがってワークフローはトリガーされません。 以下の例を参照してください:  
   
@@ -191,7 +193,16 @@ Dynamics 365 (online) バージョン 9.0 更新プログラムでは、業務�
 - 前のステージ
 - アクティブなステージを設定します
 
-### <a name="limitations-of-using-business-process-flow-entities"></a>業務プロセス フロー エンティティの使用上の制限
+### <a name="lookup-field-in-a-business-process-flow-stage"></a>ビジネス プロセス フロー ステージの検索フィールド
+
+最近のレコードは、統一インターフェイスの検索フィールドに表示されます。 最近使用したアイテムが検索に表示されないようにするには、次の手順に従います。
+1. [Power Apps メーカー ポータル](https://make.powerapps.com/home) を開いて、画面の右上から正しい環境を選択します。 
+2. **データ** の下にある **テーブル** に移動します。 ビジネス プロセス フロー エンティティを検索します。
+3. **フォーム** を選択してから、**情報** エディターを選択します。
+4. **ツリー ビュー** から検索データステップを選択して、**最近使用したアイテムを無効にする** をオンにします。
+5. 保存して公開します。 
+
+### <a name="limitations-of-using-business-process-flow-entities"></a>ビジネス プロセス フロー エンティティの使用に関する制限
 
 - 現在、業務プロセス フローに基づいてエンティティのユーザー定義フォームを作成することはできません。
 - ソリューションに業務プロセス フロー エンティティが含まれる場合、このビジネス プロセス フローのエンティティは、エクスポートを行う前に手動でソリューションに追加しておく必要があります。 これが行われていない場合、ビジネス プロセス フロー エンティティがソリューション パッケージに含まれません。 詳細は、[エンティティの作成と編集](https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-entities-solution-explorer)を参照してください。

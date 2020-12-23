@@ -1,17 +1,17 @@
 ---
 title: アプリ作成者の学習カタログ
 description: Power Automate のすべてのトレーニング オプションを検索します
-author: loreleishannonmsft
+author: msftman
 ms.topic: article
 ms.date: 03/17/2020
+ms.author: deonhe
 ms.service: flow
-ms.author: margoc
-ms.openlocfilehash: a28cc8e6670e62affeb7d580bd4c7cb14f4f1e53
-ms.sourcegitcommit: df7fb20065cfafc153b4bc4019dff2c94f4ef567
+ms.openlocfilehash: 1616ace1086e973abe20dc07b5aa6f4aa1cf5aab
+ms.sourcegitcommit: b043b7e8c29afee4f4f25bbf0d5a662d9af9272c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4553628"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4710071"
 ---
 # <a name="app-maker-learning-catalog"></a>アプリ作成者の学習カタログ
 
@@ -30,7 +30,7 @@ ms.locfileid: "4553628"
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|-----------|
 | [Power Automate を使用したビジネス プロセスの自動化](https://docs.microsoft.com/learn/paths/automate-process-power-automate/) | このラーニング パスでは、Power Automate の概要と、ワークフローの構築とフローの管理方法について説明します。  | マイペースで進められる無料のラーニング パス | 3 時間 11 分 |
 | [Power Automate ボタンの概要](https://docs.microsoft.com/learn/paths/get-started-power-automate-buttons/)       | ビジネス上の問題を解決するためにボタン フローを作成しますか? その場合は、このラーニング パスを受講してください。ここでは、Power Automate のボタンについて紹介し、ボタン フローの作成方法を示します。                   | マイペースで進められる無料のラーニング パス | 4 時間 30 分 |
-| [Power Automate のビジネス プロセス フローの概要](https://docs.microsoft.com/learn/modules/intro-business-process-flows/)    |ビジネス プロセス フローを作成しますか? このモジュールでは、ビジネス プロセス フローの概要と、それを使用してビジネス ソリューションを解決する方法について説明します。 組織にとってビジネス プロセスを自動化することが重要である理由と、Power Platform と Microsoft Dataverse を使用してビジネス プロセス フロー ソリューションを構築する方法が明らかになります。 また、ビジネス プロセス フローが、通常の Power Automate ワークフローとどのように異なっているか、およびそれぞれを使用するタイミングについて学習します。|  マイペースで進められる無料のラーニング パス|  31 分 |
+| [Power Automate のビジネス プロセス フローの概要](https://docs.microsoft.com/learn/modules/intro-business-process-flows/)    |ビジネス プロセス フローを作成しますか? このモジュールでは、ビジネス プロセス フローの概要と、それを使用してビジネス ソリューションを解決する方法について説明します。 組織にとってビジネス プロセスを自動化することが重要である理由と、Power Platform と Common Data Service を使用してビジネス プロセス フロー ソリューションを構築する方法が明らかになります。 また、ビジネス プロセス フローが、通常の Power Automate ワークフローとどのように異なっているか、およびそれぞれを使用するタイミングについて学習します。|  マイペースで進められる無料のラーニング パス|  31 分 |
 | [Power Automate のドキュメント](https://docs.microsoft.com/power-automate/) | Power Automate は、よく使うアプリやサービスとの間に自動化されたワークフローを作成し、ファイルの同期、通知の受信、データの収集などを行うことができるようにするためのサービスです。 | Web サイトのランディング ページ                  |                    |
 | [Power Automateよく寄せられる質問](https://docs.microsoft.com/power-automate/frequently-asked-questions)           | Power Automate のよくあるご質問   | 読み込みは 5 分  |
 ## <a name="exam"></a>試験<a name="exam"></a>

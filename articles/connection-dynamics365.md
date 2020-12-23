@@ -1,5 +1,5 @@
 ---
-title: Dynamics 365 (online) でフローを作成する | Microsoft Docs
+title: Dynamics 365 (online) でクラウド フローを作成する | Microsoft Docs
 description: Dynamics 365 Connector の廃止。 Microsoft Dataverse (現在の環境) コネクタ、または Common Data Service コネクタを使用してください。
 services: ''
 suite: flow
@@ -15,14 +15,14 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 7d112205a6b4c26a9bcffc80aff42ca6d03df51c
-ms.sourcegitcommit: df7fb20065cfafc153b4bc4019dff2c94f4ef567
+ms.openlocfilehash: c165b9c85eaeaf115d57c3b410deba136c80ba70
+ms.sourcegitcommit: b043b7e8c29afee4f4f25bbf0d5a662d9af9272c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4553412"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4708751"
 ---
-# <a name="create-a-flow-by-using-dynamics-365-online"></a>Dynamics 365 (online) を使用してフローを作成する
+# <a name="create-a-cloud-flow-by-using-dynamics-365-online"></a>Dynamics 365 (online) を使用してクラウド フローを作成する
 
 [!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
 
@@ -31,9 +31,9 @@ ms.locfileid: "4553412"
 >
 > [Dynamics 365 Connector](/connectors/dynamicscrmonline/)は廃止されますが、削除されるまでは機能し続けます。 詳細: [Dynamics 365 Connector が非推奨になりました](/power-platform/important-changes-coming#dynamics-365-connector-is-deprecated)。
 > 
-> 新しいフローには Dynamics 365 connector を使用しないでください。 [Dataverse (現在の環境) コネクタ](/connectors/commondataserviceforapps/) を使用してください。 Dataverse (現在の環境) コネクタが要件に適合しない場合は、[Common Data Service コネクタ](/connectors/commondataservice/)を使用する必要してください。
+> 新しいフローには Dynamics 365 connector を使用しないでください。 可能な限り、[Dataverse (現在の環境) コネクタ](/connectors/commondataserviceforapps/)を使用してください。 Dataverse (現在の環境) コネクタで要件を満たせない場合は、[Common Data Service コネクタ](/connectors/commondataservice/) を使用してください。
 >
-> [Dataverse (現在の環境) コネクタ](/connectors/commondataserviceforapps/)は、最高の機能と最高のパフォーマンスを提供するため、最初の選択肢となるはずです。 ただし、現時点では、複数の環境に接続する機能などの Dynamics 365 と Common Data Service コネクタで提供されている機能には対応していません。 [Common Data Service コネクタ](/connectors/commondataservice/) は、Dynamics 365 connector と同様の機能を提供しますが、信頼性も大幅に向上します。
+> [Dataverse (現在の環境) コネクタ](/connectors/commondataserviceforapps/)は、最も多くの機能と最良のパフォーマンスを提供するため、まずはこれを選択してください。 ただし、現時点では、複数の環境に接続する機能などの Dynamics 365 と Common Data Service コネクタで提供されている機能には対応していません。 [Common Data Service コネクタ](/connectors/commondataservice/) は、Dynamics 365 connector と同様の機能を提供しますが、信頼性も大幅に向上します。
 
 
 Dynamics 365 connector を使用すると、Dynamics 365 やその他のサービスでイベントが発生し、これにより Dynamics 365 やその他のサービスでアクションが実行された際に、開始されるフローを作成することができます。 
@@ -41,17 +41,17 @@ Dynamics 365 connector を使用すると、Dynamics 365 やその他のサー�
 Power Automate では、お気に入りのアプリやサービス間で自動化されたワークフローを設定して、ファイルの同期、通知の取得、データの収集などを行うことができます。 詳細については、[Power Automateの使用を開始する](getting-started.md) を参照してください。
 
 > [!IMPORTANT] 
-> Power Automate トリガーを起動するには、フローで使用される Dataverse エンティティが **変更の追跡** を有効にしている必要があります。 詳細については、[変更の追跡を有効化してデータの同期をコントロールする](/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization)を参照してください。 
+> Power Automate トリガーを起動するには、フローと共にDataverse エンティティが使用する **変更の追跡** を有効にする必要があります。 詳細については、[変更の追跡を有効化してデータの同期をコントロールする](/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization)を参照してください。 
 
-## <a name="create-a-flow-from-a-template"></a>テンプレートからフローを作成する
+## <a name="create-a-cloud-flow-from-a-template"></a>テンプレートからクラウド フローを作成する
 
-利用可能となっている多くのテンプレートを使用して、以下の例で示すようなフローを作成することができます :
+さまざまなテンプレートが用意されています。このいずれかを使用してクラウド フローを作成することができます。次に例を示します。
 
 * オブジェクトが Dynamics 365 で作成されている場合は、SharePoint でリスト項目を作成します。
 * Excel の表から Dynamics 365 の潜在顧客レコードを作成する。
 * Dynamics 365 の取引先企業を Dynamics 365 for Operations の顧客にコピーします。
 
-テンプレートからフローを作成するには、次の手順に従います。
+テンプレートからクラウド フローを作成するには、次の手順に従います。
 
 1. [Power Automate Web サイト](https://flow.microsoft.com/)にサインインします。
 2. **サービス** をクリックまたはタップし、**Dynamics 365** をクリックまたはタップします。
@@ -59,7 +59,7 @@ Power Automate では、お気に入りのアプリやサービス間で自動�
 
 ## <a name="create-a-task-from-a-lead"></a>潜在顧客からタスクを作成する
 
-必要とする内容に対応するテンプレートが提供されていない場合は、はじめからフローを作成します。 このチュートリアルでは、Dynamics 365 で潜在顧客が作成されるたびに、 Dynamics 365 でタスクを作成する方法を説明します。
+必要とする内容に対応するテンプレートが提供されていない場合は、一からクラウド フローを作成します。 このチュートリアルでは、Dynamics 365 で潜在顧客が作成されるたびに、 Dynamics 365 でタスクを作成する方法を説明します。
 
 1. [Power Automate Web サイト](https://flow.microsoft.com/)にサインインします。
 2. **自分のフロー** をクリックまたはタップし、**はじめから作成する** をクリックまたはタップします。
@@ -99,9 +99,9 @@ Power Automate では、お気に入りのアプリやサービス間で自動�
 
 トリガーが発生すると、フローに通知が送信されますが、フローはアクションが実行された際に存在するデータに対して実行されます。  たとえば、新たなレコードが作成されたときにフローがトリガーされ、フローが実行される前にレコードを 2 回更新した場合、フローは最新のデータに対してのみ、 1 回だけ実行されます。
 
-## <a name="specify-advanced-options"></a>詳細なオプションを指定する
+## <a name="specify-advanced-options"></a>詳細オプションの指定
 
-フローにステップを追加する場合は、**詳細オプションの表示** をクリックまたはタップして、フロー内でのデータのフィルター処理の方法を制御するフィルターや並べ替えクエリを追加することができます。
+クラウド フローにステップを追加する場合は、**詳細オプションの表示** をクリックまたはタップして、フロー内でのデータのフィルター処理の方法を制御するフィルターまたは並べ替えクエリを追加することができます。
 
 たとえば、フィルター クエリを使用してアクティブな連絡先のみの取得や、姓で並べ替えることができます。 そのためには、OData フィルター クエリ **statuscode eq 1** を入力し、動的コンテンツのウィンドウから **姓** を選択します。 クエリによるフィルターと並べ替えの詳細については、[クエリ データ > 結果のフィルタリング](/powerapps/developer/common-data-service/webapi/query-data-web-api#filter-results) と [クエリ データ > 並び替え結果](/powerapps/developer/common-data-service/webapi/query-data-web-api#order-results)を参照してください。
 
@@ -162,7 +162,7 @@ Power Automate では、お気に入りのアプリやサービス間で自動�
 
 ## <a name="related-topics"></a>関連トピック
 
-[フローのトラブルシューティング](fix-flow-failures.md)
+[クラウド フローのトラブルシューティング](fix-flow-failures.md)
 
 [組織における Flow の Q & A](organization-q-and-a.md)
 

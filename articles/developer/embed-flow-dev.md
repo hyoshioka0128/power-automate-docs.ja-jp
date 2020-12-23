@@ -19,12 +19,12 @@ search.app:
 - Flow
 search.audienceType:
 - developer
-ms.openlocfilehash: 8ff34fc4190f5a0285e15c55779885016108c22b
-ms.sourcegitcommit: 741ae960b733c4569236089a1f00114508bbb451
+ms.openlocfilehash: 559c56f795a137fdd4534fea77db0899e0e9ec9c
+ms.sourcegitcommit: b043b7e8c29afee4f4f25bbf0d5a662d9af9272c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "3905078"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4709183"
 ---
 # <a name="integrate-power-automate-with-websites-and-apps"></a>Power Automate と Web サイトおよびアプリを統合する
 [!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "3905078"
 
 フロー ウィジェットは、ホスト ドキュメント内にある iframe です。 このドキュメントは Power Automate デザイナー内のページを指します。 フロー ウィジェットによって Power Automate の特定の機能がサードパーティ製アプリケーションに統合されます。
 
-ウィジェットはシンプルにすることができます。 たとえば、ホストと iframe の間で通信せずにテンプレートの一覧をレンダリングするようなウィジェットです。 ウィジェットは複雑にすることもできます。 たとえば、テンプレートからフローをプロビジョニングし、ホストとウィジェットの間の双方向通信によってフローをトリガーするようなウィジェットです。
+ウィジェットはシンプルにすることができます。 たとえば、ホストと iframe の間で通信せずにテンプレートの一覧をレンダリングするようなウィジェットです。 ウィジェットは複雑にすることもできます。 たとえば、テンプレートからフローをプロビジョニングし、ホストとウィジェットの間の双方向通信によってクラウド フローをトリガーするようなウィジェットです。
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -60,7 +60,7 @@ ms.locfileid: "3905078"
 | カテゴリ |フィルター処理で所与のテンプレート カテゴリに絞り込みます。 | 
 | parameters.{name} |フローに渡す追加のコンテキスト。 |
 
-宛先パラメーターが `new` の場合、ユーザーがテンプレートを開くと、 Power Automate デザイナーが開きます。 ユーザーはデザイナーでフローを作成できます。 ウィジェットをフルに活用したい場合は、次のセクションをご覧ください。
+宛先パラメーターが `new` の場合、ユーザーがテンプレートを開くと、 Power Automate デザイナーが開きます。 ユーザーはデザイナーでクラウド フローを作成できます。 ウィジェットをフルに活用したい場合は、次のセクションをご覧ください。
 
 ### <a name="passing-additional-parameters-to-the-flow-template"></a>フロー テンプレートに追加のパラメーターを渡す
 
@@ -84,7 +84,7 @@ ms.locfileid: "3905078"
 | ウィジェットの種類    | サポートされる機能                                                                                                                  | 
 |----------------|------------------------------------------------------------------------------------------------------------------------------------| 
 | フロー          | 個人フローと共有フローについて、タブにフローの一覧を表示します。 既存のフローを編集するか、テンプレートまたは白紙から新しいフローを作成します。 | 
-| flowCreation   | ホスト アプリケーションが提供するテンプレート ID からフローを作成します。                                                                | 
+| flowCreation   | ホスト アプリケーションから提供されるテンプレート ID からクラウド フローを作成します。                                                                | 
 | ランタイム        | ホスト アプリケーションが提供する手動またはハイブリッド トリガーのフローをトリガーします。                                                        | 
 | approvalCenter | 承認要求と送信済み承認を埋め込みます。                                                                                        | 
 | テンプレート      | テンプレートの一覧を表示します。 ユーザーは 1 つ選択し、新しいフローを作成します。                                                                         | 
@@ -233,9 +233,9 @@ templatesSettings?: {
 
 | パラメーター |必須/任意 | 内容                                                                        
 |-----------|-------------------|-----------------| 
-|`defaultParams` | 任意          | テンプレートからフローを作成するときに使用するデザイン時パラメーター、例: <br /> ``` defaultParams: {'parameters.sharepoint.site': 'https://microsoft.sharepoint.com/teams/ProcessSimple', 'parameters.sharepoint.list': 'b3a5baa8-fe94-44ca-a6f0-270d9f821668'   } ```| 
-| `destination` | 任意          | 有効な値は "new" または "details" です。 "details" に設定されると、テンプレートからフローを作成するとき、詳細ページが表示されます。     |
-| `pageSize` | 任意          | 表示するテンプレートの数。 既定のサイズ = 6 | 
+|`defaultParams` | 省略可能          | テンプレートからクラウド フローを作成するときに使用するタイム パラメーターのデザイン例: <br /> ``` defaultParams: {'parameters.sharepoint.site': 'https://microsoft.sharepoint.com/teams/ProcessSimple', 'parameters.sharepoint.list': 'b3a5baa8-fe94-44ca-a6f0-270d9f821668'   } ```| 
+| `destination` | 省略可能          | 有効な値は "new" または "details" です。 "details" に設定されると、テンプレートからクラウド フローを作成するとき、詳細ページが表示されます。     |
+| `pageSize` | 省略可能          | 表示するテンプレートの数。 既定のサイズ = 6 | 
 | `searchTerm` | 任意          | 指定された検索語句に一致するテンプレートを表示します| 
 | `templateCategory` | 任意          | 特定のカテゴリのテンプレートを表示します| 
  
@@ -317,9 +317,9 @@ widget.listen("<WIDGET_EVENT>", function() {
 |--------------------------------|------------------------------------------------------------------------------------------------------------------------------------| 
 | `FLOW_CREATION_CREATE_BUTTON`    | フロー作成とランタイム ウィジェットの両方でフロー作成ボタンに表示されるテキスト                                                | 
 | `FLOW_CREATION_CUSTOM_FLOW_NAME` | フロー作成ウィジェットのフロー名に使用する初期値。 allowCustomFlowName 設定が有効なときにのみ使用。 | 
-| `FLOW_CREATION_HEADER`           | フロー作成とランタイム ウィジェットの両方でフローの作成時に使用するヘッダー                                                    | 
-| `INVOKE_FLOW_HEADER`             | ランタイム ウィジェットでフローを呼び出すときに使用するヘッダー                                                                           | 
-| `INVOKE_FLOW_RUN_FLOW_BUTTON`    | ランタイム ウィジェットでフローを呼び出す/実行するために使用されるボタンに表示されるテキスト                                                       | 
+| `FLOW_CREATION_HEADER`           | クラウド フロー作成とランタイム ウィジェットの両方でフローの作成時に使用するヘッダー                                                    | 
+| `INVOKE_FLOW_HEADER`             | ランタイム ウィジェットでクラウド フローを呼び出すときに使用するヘッダー                                                                           | 
+| `INVOKE_FLOW_RUN_FLOW_BUTTON`    | ランタイム ウィジェットでクラウド フローを呼び出す/実行するために使用されるボタンに表示されるテキスト                                                       | 
 
 ### <a name="example"></a>例
 
@@ -338,7 +338,7 @@ widget.listen("GET_STRINGS", function(requestParam, widgetDoneCallback) {
 
 ホストはウィジェットのアクションを使用し、特定のアクションまたはメッセージをウィジェットに送信します。 ウィジェット JS SDK は、メッセージまたは JSON ペイロードをウィジェットに送信する `notify()` メソッドを提供します。 各ウィジェット アクションでは、特定のペイロード署名をサポートします。
 
-### <a name="usage"></a>使用法
+### <a name="usage"></a>使い方
 
 ```javascript
 widget.notify('<WIDGET_ACTION>', parameterMatchingParameterInterface)
@@ -348,7 +348,7 @@ widget.notify('<WIDGET_ACTION>', parameterMatchingParameterInterface)
 
 ### <a name="example"></a>例 
 
-次のコマンドをランタイム ウィジェットに送信し、フローを呼び出します 
+次のコマンドをランタイム ウィジェットに送信し、クラウド フローを呼び出します 
 
 ```javascript
 widget.notify('triggerFlow', { flowName: flowName, implicitData:implicitData });  
@@ -356,19 +356,19 @@ widget.notify('triggerFlow', { flowName: flowName, implicitData:implicitData });
 
 ### <a name="runtime-widget"></a>ランタイム ウィジェット
 
-| ウィジェットのアクション                               | 詳細                                                      | パラメーター インターフェイス  | 
+| ウィジェットのアクション                               | 詳細情報                                                      | パラメーター インターフェイス  | 
 |---------------------------------------------|--------------------------------------------------------------|----------------------| 
-| `triggerFlow`                                 | フロー実行をトリガーする                                          | `{ flowName: string, implicitData?: string } `| 
-| `triggerFlowByTemplate`                       | テンプレートによってフロー実行をトリガーする                              | `{ templateId: string, implicitData?: string, designTimeParameters?: Record<string, any> }` |
-| `getTriggerSchema`                            | フローのトリガー スキーマを取得する                               | `{   flowName: string, }` | 
+| `triggerFlow`                                 | クラウド フロー実行をトリガーする                                          | `{ flowName: string, implicitData?: string } `| 
+| `triggerFlowByTemplate`                       | テンプレートによってクラウド フロー実行をトリガーする                              | `{ templateId: string, implicitData?: string, designTimeParameters?: Record<string, any> }` |
+| `getTriggerSchema`                            | クラウド フローのトリガー スキーマを取得する                               | `{   flowName: string, }` | 
 | `closeWidget`                                 | 保留中のアクティビティをキャンセルし、WIDGET_CLOSE イベントを発生させる |                      | 
 
 ### <a name="flow-creation-widget"></a>フロー作成ウィジェット
 
-| ウィジェットのアクション                               | 詳細                                                      | パラメーター インターフェイス  | 
+| ウィジェットのアクション                               | 詳細情報                                                      | パラメーター インターフェイス  | 
 |---------------------------------------------|--------------------------------------------------------------|----------------------| 
-| `createFlowFromTemplate`                      | 選択したテンプレートのフローを作成する                     | `{ templateName: string, designTimeParameters?: Record<string, any> }`| 
-| `createFlowFromTemplateDefinition`            | 選択したテンプレート定義のフローを作成する          | `{ templateDefinition: string }` | 
+| `createFlowFromTemplate`                      | 選択したテンプレートのクラウド フローを作成する                     | `{ templateName: string, designTimeParameters?: Record<string, any> }`| 
+| `createFlowFromTemplateDefinition`            | 選択したテンプレート定義のクラウド フローを作成する          | `{ templateDefinition: string }` | 
 | `closeWidget`                                 | 保留中のアクティビティをキャンセルし、WIDGET_CLOSE イベントを発生させる |                      | 
 
 ### <a name="approval-widget"></a>承認ウィジェット
@@ -393,11 +393,11 @@ Flow サービス スコープ (委任されたアクセス許可) でクライ�
 2.  **Azure Active Directory** を選択します。
 3.  **管理** で **アプリの登録** を選択します。
 4.  Flow サービス スコープに対して構成するサード パーティ製アプリケーションを入力します。
-5.  **設定**を選択します。
+5.  **設定** を選択します。
       ![ウィジェット アーキテクチャ](../media/embed-flow-dev/AAD-App-Settings.png)
 6. **API アクセス**/ 配下で **必要なアクセス許可** を選択します
 7. **追加** を選択します。
-8. **API を選択します**を選択します。
+8. **API を選択します** を選択します。
       ![ウィジェット アーキテクチャ](../media/embed-flow-dev/AAD-App-Select-an-API.png)
 9. **Power Automate サービス** を探して選択します。 注意：Power Automate サービスを表示するには、テナントで少なくとも 1 人の AAD ユーザーが Flow ポータル (<https://flow.microsoft.com>) にサイン インしている必要があります
 10. アプリケーションに必要な Flow スコープを選択し、**保存** を選択します。
@@ -416,11 +416,11 @@ Flow サービス スコープ (委任されたアクセス許可) でクライ�
 3.  **アプリケーションの登録** ページが表示されたら、アプリケーションの名前を入力します。
 4.  **サポートされているアカウントの種類** で、任意の組織ディレクトリの **アカウント** を選択します。
 5.  **リダイレクト URL** セクションの配下で、Web プラットフォームを選択し、Web サーバーに基づいてアプリケーション\' URL に値を設定します。  この値を http://localhost:30662/ に構成し、サンプル アプリを実行します。
-6.  **登録**を選択します。
+6.  **登録** を選択します。
 7.  アプリの **概要** ページで、アプリケーション (クライアント) ID 値をメモします。
 8.  このサンプルでは、[暗黙的な許可フロー](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-implicit-grant-flow) を有効にする必要があります。 登録したアプリケーションの左のナビゲーション ウィンドウで、**認証** を選択します。
 9.  **詳細設定** の **暗黙的な許可** で **ID トークン** と **アクセス トークン** チェックボックスの両方をオンにします。 このアプリではユーザーをサインインし、Flow API を呼び出す必要があるため、ID トークンとアクセス トークンが必要になります。
-10. **保存**を選択します。
+10. **保存** を選択します。
 
 ### <a name="running-the-sample"></a>サンプルの実行
 <!-- todo where should I download from? -->
@@ -431,7 +431,7 @@ Flow サービス スコープ (委任されたアクセス許可) でクライ�
 4.  次のコマンドを実行して、依存関係をインストールし、サンプル アプリを実行します。
     > \> npm install \> node server.js
 5. ブラウザーを開き、http://localhost:30662 と入力します
-6. **サインイン** ボタンを選択し、AAD に認証し、フロー アクセス トークンを取得します。
+6. **サイン イン** ボタンを選択し、AAD に認証し、クラウド フロー アクセス トークンを取得します。
 7. **アクセス トークン** テキスト ボックスにアクセス トークンが含まれます。
     ![ウィジェット アーキテクチャ](../media/embed-flow-dev/SampleApp-AccessToken.png)
 8. **Load Flows widget (フロー ウィジェットを読み込む)** または **Load Templates widget (テンプレート ウィジェットを読み込む)** を選択し、対応するウィジェットを埋め込みます。

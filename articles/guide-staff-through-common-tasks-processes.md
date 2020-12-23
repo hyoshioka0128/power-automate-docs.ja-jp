@@ -22,16 +22,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: f375d3287fb8baa4f39852ee14fac4f28ee80a54
-ms.sourcegitcommit: 83e22ff7d539b02573548df5ca2a8bc41ea48227
+ms.openlocfilehash: 905b1081e2fc71d19a7f29bd1f4359b98c0f4149
+ms.sourcegitcommit: b043b7e8c29afee4f4f25bbf0d5a662d9af9272c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "4476871"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4708007"
 ---
 # <a name="create-custom-business-logic-through-processes"></a>プロセスを通じてカスタム ビジネス ロジックを作成する
 
-[!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
 
 一貫したビジネス プロセスの定義と実施は、ユーザーがモデル駆動型アプリを使用する大きな理由の1つです。 一貫性のあるプロセスにより、システムを使用することが、一連の手動の手順を忘れずに実行することに集中するのではなく、自分たちの仕事に確実に集中することができます。 プロセスは単純または複雑な場合があり、徐々に変更できます。  
   
@@ -67,7 +66,7 @@ Power Apps にはいくつかの種類のプロセスがあり、それぞれ異
 ## <a name="when-to-use-power-automate"></a>Power Automateを使用する場合
 
 
-Power Automate は、アクションをお使いの環境と Dynamics 365、Twitter、Dropbox、Google サービス、Microsoft 365、または SharePoint などのお気に入りのアプリやサービス間で実行する自動化ワークフローを作成する必要がある場合に使用します。 特定のアクションに基づいてフローをトリガー、またはアプリ内部から呼び出すことができます。 詳細については、[Power Automate を使用してサービス間のプロセスを自動化する](https://docs.microsoft.com/dynamics365/customer-engagement/basics/use-flow-automate-processes-across-services) を参照してください  
+Power Automate は、アクションをお使いの環境と Dynamics 365、Twitter、Dropbox、Google サービス、Microsoft 365、または SharePoint などのお気に入りのアプリやサービス間で実行する自動化ワークフローを作成する必要がある場合に使用します。 特定のアクションに基づいてクラウド フローをトリガー、またはアプリ内部から呼び出すことができます。 詳細については、[Power Automate を使用してサービス間のプロセスを自動化する](https://docs.microsoft.com/dynamics365/customer-engagement/basics/use-flow-automate-processes-across-services) を参照してください  
   
 <a name="BKMK_Where"></a>   
 ## <a name="where-do-i-go-to-create-processes"></a>プロセスをどこで作成できますか ?  

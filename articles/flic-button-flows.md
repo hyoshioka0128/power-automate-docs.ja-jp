@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: b0cb00d3e12d25986528ec445d0e3599d64a6e5d
-ms.sourcegitcommit: a28ad678feaac470cb8da0739f3820eff3329f0d
+ms.openlocfilehash: 682fc37ca54134175c1dd04dfd0172f62d1284d9
+ms.sourcegitcommit: b043b7e8c29afee4f4f25bbf0d5a662d9af9272c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3760144"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4708199"
 ---
 # <a name="run-your-flows-with-flics-smart-buttons-preview"></a>Flics スマート ボタンでフローを実行する (プレビュー)
 
@@ -55,8 +55,8 @@ Flic のモバイル アプリを使用して Flic のイベントをプログ�
 
 Flic イベントを Power Automate にリンクしたら、その Flic を、目的のフロー用のトリガーとして選択することができます。 このチュートリアルでは後でトリガーを選択します。
 
-## <a name="create-a-flow-thats-triggered-by-a-flic"></a>Flic によってトリガーされるフローを作成する
-このチュートリアルでは、Flic を使用して、コンサルタントが各クライアントで費やした時間を記録するフローを実行します。 コンサルタントはクライアントに到着したときに Flic を 1 回押し、クライアントを離れる直前にもう一度押します。 Flic を押すたびに、Flic が接続されているフローが実行されます。 フローにより、現在の時刻が Google Sheets に保存され、電子メール通知が送信されます。 電子メールには、フロー実行に関する詳細情報が含まれています。
+## <a name="create-a-cloud-flow-thats-triggered-by-a-flic"></a>Flic によってトリガーされるクラウド フローを作成する
+このチュートリアルでは、コンサルタントが各クライアントで費やした時間を記録するクラウド フローを作成します。 コンサルタントはクライアントに到着したときに Flic を 1 回押し、クライアントを離れる直前にもう一度押します。 Flic を押すたびに、Flic が接続されているフローが実行されます。 フローにより、現在の時刻が Google Sheets に保存され、電子メール通知が送信されます。 電子メールには、フロー実行に関する詳細情報が含まれています。
 
 注: Flic モバイル アプリを使用してペアリングが行われていることを確認し、Power Automate をトリガーするために 1 回以上の **クリック** 操作を構成します。 このスクリーンショットでは、Power Automate をトリガーするために **クリック** 操作を構成しています。 このチュートリアルでは後で、Flic が 1 回押された (クリックされた) ときにトリガーされるようにフローを構成します。
 

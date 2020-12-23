@@ -1,5 +1,5 @@
 ---
-title: フローでの承認待ち | Microsoft Docs
+title: クラウド フローでの承認待ち | Microsoft Docs
 description: フローでは、ユーザーが変更を承認または拒否するなどの外部イベントが発生するのを待ってから、決定の通知を送信するなどのアクションを実行できます。
 services: ''
 suite: flow
@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 4cd78984e505843277e76b8e8c54636b0b001f71
-ms.sourcegitcommit: a09a957460f7495c0b103e1d832f65963025fbac
+ms.openlocfilehash: bf98f93b733457105c6702240638a12cafafdf01
+ms.sourcegitcommit: b043b7e8c29afee4f4f25bbf0d5a662d9af9272c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "3696887"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4708655"
 ---
 # <a name="wait-for-approval-in-power-automate"></a>Power Automate で承認を待つ
 
@@ -33,7 +33,7 @@ ms.locfileid: "3696887"
 > [!VIDEO https://www.youtube.com/embed/W6oxcYRtW-8?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF]
 >
 
-SharePoint で項目を作成した場合に、承認電子メールを担当者に送信し、その項目が承認されたか拒否されたかが、その担当者から通知されるフローを作成します。 このチュートリアルに厳密に従うために、ここではトリガー アクションとしてシンプルな SharePoint リストを作成しますが、Dropbox、OneDrive などの別のデータ ソースを使用することもできます。
+SharePoint で項目を作成した場合は、承認メールを送信し、その項目が承認されたか拒否されたかが通知されるクラウド フローを作成します。 このチュートリアルに厳密に従うために、ここではトリガー アクションとしてシンプルな SharePoint リストを作成しますが、Dropbox、OneDrive などの別のデータ ソースを使用することもできます。
 
 ## <a name="prerequisites"></a>前提条件
 

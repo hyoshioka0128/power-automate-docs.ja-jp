@@ -1,6 +1,6 @@
 ---
-title: フローを作成してタスクを自動化する | Microsoft Docs
-description: フローを作成して、イベント (SharePoint  リストに行を追加するなど) が発生したときに 1 つ以上のアクション (メールの送信など) を自動的に実行します。
+title: クラウド フローを作成してタスクを自動化する | Microsoft Docs
+description: クラウド フローを作成して、SharePoint リストに行を追加するなどのイベントが発生したときに 1 つ以上のアクション (メールの送信など) を自動的に実行します。
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,16 +20,16 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: ca1a7f570eb76528c8d384cd08f92bb816f1e397
-ms.sourcegitcommit: df7fb20065cfafc153b4bc4019dff2c94f4ef567
+ms.openlocfilehash: 8ddf3591e21b3314b1ee2206e4ca82e309f6a6a5
+ms.sourcegitcommit: b043b7e8c29afee4f4f25bbf0d5a662d9af9272c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4553172"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4708103"
 ---
-# <a name="create-a-flow-in-power-automate"></a>Power Automate でフローを作成する
+# <a name="create-a-cloud-flow-in-power-automate"></a>Power Automate でクラウド フローを作成する
 
-イベントによってトリガーされたら 1 つまたは複数のタスクを自動的に実行するフローを作成します。 たとえば、指定したキーワードを含むツイートを送信した場合にメールで通知するというフローを作成するとします。 この例では、ツイートを送信するのがイベント、メールを送信するのがアクションです。
+イベントによってトリガーされたら 1 つまたは複数のタスクを自動的に実行するクラウド フローを作成します。 たとえば、指定したキーワードを含むツイートを送信した場合にメールで通知するというクラウド フローを作成するとします。 この例では、ツイートを送信するのがイベント、メールを送信するのがアクションです。
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -113,28 +113,28 @@ ms.locfileid: "4553172"
 
 ![メールを多機能編集する](media/get-started-logic-flow/email-rich-text.png)
 
-## <a name="manage-a-flow"></a>フローの管理
+## <a name="manage-a-cloud-flow"></a>クラウド フローを管理する
 
 1. [Power Automate](https://flow.microsoft.com) で左側のナビゲーション バーから **マイ フロー** を選択します。
 1. フローの一覧から次のいずれかを実行します:
 
-   * フローを一時停止する場合は、切り替えを **オフ** に設定します。
+   * クラウド フローを一時停止するには、**オフ** に切り替えます。
 
        ![フローを一時停止する](./media/get-started-logic-flow/pause-flow.png)
-   * フローを再開する場合は、切り替えを **オン** に設定します。
+   * クラウド フローを再開するには、**オン** に切り替えます。
 
        ![フローを再開する](./media/get-started-logic-flow/resume-flow.png)
-   * フローを編集する場合は、編集するフローに対応する鉛筆アイコンを選択します。
+   * クラウド フローを編集するには、編集するフローに対応している鉛筆アイコンを選択します。
 
        ![フローを選択します](./media/get-started-logic-flow/select-flow.png)
-   * フローを削除する場合は、**...** アイコンを選択して **削除** を選択し、表示されるメッセージ ボックスで **削除** を選択します。
+   * クラウド フローを削除するには、**...** アイコンを選択し、**削除** を選択し、表示されたメッセージ ボックスで **削除** 選択します。
 
-       ![[削除] アイコン](./media/get-started-logic-flow/delete-icon.png)
-   * フローの実行履歴を表示する場合は **マイ フロー** ページからフローを選択し、開いたページの **28 日間の実行履歴** セクションで履歴を確認します。
+       ![削除アイコン](./media/get-started-logic-flow/delete-icon.png)
+   * クラウド フローの実行履歴を表示するには、**マイ フロー** ページからフローを選択します。ページの **28 日間の実行履歴** セクションに履歴が表示されます。
 
        ![実行履歴](./media/get-started-logic-flow/run-history.png)
 
-     実行リストからフロー実行を選択して、各ステップの入力と出力を確認します。
+     実行の一覧からクラウド フロー実行を選択して、各ステップの入力と出力を表示します。
 
 > [!NOTE]
 > 1 つのアカウントが持てるフローは最大 600 件です。 既に 600 件のフローがある場合は、1 つ削除してからフローを作成してください。
@@ -145,5 +145,5 @@ ms.locfileid: "4553172"
 
 * さまざまな通知方法など、フローに [手順を追加します](multi-step-logic-flow.md)。
 * 毎日、特定の日付、特定の分数ごとにアクションを実行する場合は、[スケジュールに従ってタスクを実行します](run-scheduled-tasks.md)。
-* [アプリにフローを追加して](https://powerapps.microsoft.com/tutorials/using-logic-flows/)、クラウドでアプリがロジックを開始可能にします。
+* [クラウド フローをアプリに追加](https://powerapps.microsoft.com/tutorials/using-logic-flows/) して、アプリがクラウド内のロジックを開始できるようにします。
 * [チーム フローを開始し](create-team-flows.md)、他のユーザーを招待して一緒にフローを設計します。

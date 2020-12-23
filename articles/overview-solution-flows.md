@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 51cba49919aa2004c020d55de227bd71112f2f15
-ms.sourcegitcommit: df7fb20065cfafc153b4bc4019dff2c94f4ef567
+ms.openlocfilehash: a61151c61b617ba1e43d7f9c3d43e08d401781e3
+ms.sourcegitcommit: b043b7e8c29afee4f4f25bbf0d5a662d9af9272c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4553940"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4710143"
 ---
 # <a name="overview"></a>概要
 
@@ -41,7 +41,7 @@ ms.locfileid: "4553940"
 
 ソリューションを作成するためには、以下のコンポーネントが必要となり、ソリューションに対応したフローを作成する必要があります :
 
-- [Microsoft Dataverse](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
+- [Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
 - バージョン 9.1.0.267 またはそれ以上の環境。
 
   バージョンを確認するには、[Power Platform 管理センター](https://admin.powerplatform.microsoft.com/) に移動して、**環境** を選択し、目的の環境を選択します。 **詳細** タブには、選択した環境のすべての構成情報が表示されます。
@@ -70,9 +70,9 @@ ms.locfileid: "4553940"
 
 
   
-## <a name="learn-more"></a>詳細はこちら
+## <a name="learn-more"></a>詳細情報を見る
 
-- [ソリューションにフローを作成する](./create-flow-solution.md)
+- [ソリューションにクラウド フローを作成する](./create-flow-solution.md)
 - [ソリューションのエクスポート](./export-flow-solution.md)
 - [ソリューションのインポート](./import-flow-solution.md)
 - [ソリューション対応フローを編集する](./edit-solution-aware-flow.md)

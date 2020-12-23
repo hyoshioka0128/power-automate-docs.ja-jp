@@ -1,6 +1,6 @@
 ---
 title: 詳細オプションと複数のアクションの追加 | Microsoft Docs
-description: フローを拡張して、詳細オプション (たとえば、電子メールの優先度を高く設定するなど) を含め、同じイベントに対して他のアクションを追加します。
+description: クラウド フローを拡張して、詳細オプションを追加し (たとえば、電子メールの優先度を高く設定し)、同じイベントに対して他のアクションを追加します。
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,28 +20,28 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: b5577c50d0811368b860280725bde44151e7786c
-ms.sourcegitcommit: 2971e852bdb76efbe012b9de8df8e7f492063184
+ms.openlocfilehash: b1ca23a216a08d2ddbdfcfd1de7b0a006a2fa5b6
+ms.sourcegitcommit: b043b7e8c29afee4f4f25bbf0d5a662d9af9272c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "3900506"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4709279"
 ---
-# <a name="add-multiple-actions-and-advanced-options-to-a-flow"></a>フローへの複数のアクションと詳細オプションの追加
+# <a name="add-multiple-actions-and-advanced-options-to-a-cloud-flow"></a>クラウド フローへの複数のアクションと詳細オプションの追加
 
-同じトリガーに対して 1 つ以上の詳細オプションと複数のアクションを追加して、フローをカスタマイズします。 たとえば、電子メール メッセージを高い優先度で送信する詳細オプションを追加します。 SharePoint リストに項目が追加されたときに電子メールを送信するほか、同じ情報を含むファイルを Dropbox に作成します。
+同じトリガーに対して 1 つ以上の詳細オプションと複数のアクションを追加して、クラウド フローをカスタマイズします。 たとえば、電子メール メッセージを高い優先度で送信する詳細オプションを追加します。 SharePoint リストに項目が追加されたときに電子メールを送信するほか、同じ情報を含むファイルを Dropbox に作成します。
 
 [!INCLUDE [sharepoint-detailed-docs](includes/sharepoint-detailed-docs.md)]
 
 ## <a name="prerequisites"></a>前提条件
-* [フローの作成](get-started-logic-flow.md)
+* [クラウド フローを作成する](get-started-logic-flow.md)
 
 ## <a name="add-another-action"></a>他のアクションの追加
 この手順では、フローの途中にアクションを追加します。 このアクションでは、ファイルを Dropbox に保存し、アイテムをリストにアーカイブします。
 
 1. [flow.microsoft.com](https://flow.microsoft.com) で、上部のナビゲーション バーの **マイ フロー** を選択します。
 2. フローの一覧で、編集するフローを選択します。
-3. **新しいステップ**、**アクションの追加**の順に選択します。
+3. **新しいステップ**、**アクションの追加** の順に選択します。
    
     ![折りたたまれている追加](./media/multi-step-logic-flow/add-action.png)
 4. 使用できるアクションの一覧で **ファイルの作成** を検索し、**Dropbox - ファイルの作成** を選択します。
@@ -84,7 +84,7 @@ ms.locfileid: "3900506"
 
 ## <a name="copy-and-paste-actions"></a>アクションのコピーと貼り付け
 
-フローをデザインするときにアクションを複製する場合、コピーして貼り付けることができます。 たとえば、条件を作成しているときに、**はいの場合** 側と **いいえの場合** 側で同様のアクションが必要な場合、両方のアクションを一から作成するのではなく、一方で最初のアクションを作成してから、もう一方にコピーできます。
+クラウド フローをデザインするときにアクションを複製する場合、コピーして貼り付けることができます。 たとえば、条件を作成しているときに、**はいの場合** 側と **いいえの場合** 側で同様のアクションが必要な場合、両方のアクションを一から作成するのではなく、一方で最初のアクションを作成してから、もう一方にコピーできます。
 
 
 ### <a name="to-copy-an-action"></a>アクションをコピーするには
@@ -96,7 +96,7 @@ ms.locfileid: "3900506"
 1. 貼り付ける項目を選択します。
 
 ## <a name="add-advanced-options"></a>詳細オプションの追加
-**電子メールの送信** アクションが含まれるフローを開始します。
+**電子メールの送信** アクションが含まれるクラウド フローを開始します。
 
 1. **電子メールの送信** カードの下部にある **詳細オプションの表示** を選択します。
    

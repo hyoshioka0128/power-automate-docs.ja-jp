@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 81ae2f466fc2bdfa688b35544971871de2e45450
-ms.sourcegitcommit: 3fbffb299dd125a6a9a39fb2c1296abdfc362ba6
+ms.openlocfilehash: 9e4765a84387ffd83b6778cf52485a098d7ff9c1
+ms.sourcegitcommit: b043b7e8c29afee4f4f25bbf0d5a662d9af9272c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "3623719"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4709015"
 ---
 # <a name="introducing-instant-flows"></a>インスタント フローの概要
 
@@ -116,7 +116,7 @@ ms.locfileid: "3623719"
 3. 最後に、ページが更新され、インスタント フローの完了が示されます:  
    ![フローの完了の画像](./media/introduction-to-button-flows/trigger-button-3.png)   
 
-フローの実行はこれで終わりです。 
+クラウド フローの実行はこれで終わりです。 
 
 電子メールが送信されたことを示すプッシュ通知を受け取るはずです。  
 
@@ -138,10 +138,10 @@ Flow アプリの **My flows** (マイ フロー) タブで:
 2. 実行する操作に基づき、いずれかのオプションをタップできます:    
    ![フローの管理オプション](./media/introduction-to-button-flows/manage-flow-1.png)  
 
-   **フローの削除** をタップすると、フローが削除されます。  
+   **フローの削除** をタップすると、クラウド フローが削除されます。  
 
       >[!WARNING]
-      >フローを削除すると、すべての実行履歴が削除されます。
+      >クラウド フローを削除すると、すべての実行履歴が削除されます。
 
       ![フロー警告の削除の画像](./media/introduction-to-button-flows/manage-flow-2.png)   
 
@@ -151,7 +151,7 @@ Flow アプリの **My flows** (マイ フロー) タブで:
    **実行履歴** をタップすると、特定のインスタント フローの全実行結果が表示されます:    
    ![実行履歴を表示する](./media/introduction-to-button-flows/manage-flow-4.png)  
 
-   フローを無効にすると、**ボタン** タブで利用できなくなります。    
+   クラウド フローを無効にすると、**ボタン** タブで利用できなくなります。    
    ![無効なフローは [ボタン] タブにありません](./media/introduction-to-button-flows/manage-flow-5.png)  
 
 ## <a name="next-steps"></a>次の手順

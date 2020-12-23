@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 84cd5b0f6f0adf8bdbcc5d077bc48a3878e2c83e
-ms.sourcegitcommit: 6714fe9d5217e6aaa07656c7048c1c82ba7312c1
+ms.openlocfilehash: 405c725f949c3b0be7870c5b08b3855633cc2f74
+ms.sourcegitcommit: b043b7e8c29afee4f4f25bbf0d5a662d9af9272c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "3821060"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4709231"
 ---
 # <a name="create-flows-from-the-onedrive-for-business-launch-panel"></a>OneDrive for Business の起動パネルからフローを作成する
 
@@ -38,7 +38,7 @@ SharePoint の Power Automate [起動パネルと同様に](https://flow.microso
 
 このチュートリアルでは、多くの  [OneDrivefor Business テンプレート](https://flow.microsoft.com/search/?q=OneDrive) の 1 つを使用して、要求元の上司によるファイルの承認を要求するシンプルなフローを作成します。
 
-## <a name="create-a-flow-that-requests-manager-approval-for-a-file-in-onedrive-for-business"></a>OneDrive for Business のファイルに対して上司の承認を要求するフローを作成する
+## <a name="create-a-cloud-flow-that-requests-manager-approval-for-a-file-in-onedrive-for-business"></a>OneDrive for Business のファイルに対して上司の承認を要求するクラウド フローを作成する
 
 1. OneDrive for Business にサインインします。
 1. フローを作成するファイルを見つけて選択します。
@@ -69,7 +69,7 @@ SharePoint の Power Automate [起動パネルと同様に](https://flow.microso
 
 
 >[!TIP]
->このチュートリアルでは、テンプレートからフローを作成する方法について示しますが、一からフローを作成して、Power Automate で使用可能な多くのコネクタを使用することもできます。
+>このチュートリアルでは、テンプレートからクラウド フローを作成する方法について示しますが、一からクラウド フローを作成して、Power Automate で使用可能な多くのコネクタを使用することもできます。
 
 ## <a name="learn-more"></a>詳細情報を見る
 

@@ -20,16 +20,16 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 86633b3f976107aeaa8138405aecb2f2b493e9e4
-ms.sourcegitcommit: 2971e852bdb76efbe012b9de8df8e7f492063184
+ms.openlocfilehash: 77079b48d2a1b805ddce6594a917cc254a984fff
+ms.sourcegitcommit: b043b7e8c29afee4f4f25bbf0d5a662d9af9272c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "3900266"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4709951"
 ---
 # <a name="run-flows-on-a-schedule"></a>スケジュールに従ったフローの実行
 
-1 つ以上のタスクを実行するフローを作成します (例: メールによるレポートの送信):
+1 つ以上のタスクを実行するクラウド フローを作成します (メールによるレポートの送信など)。
 
 * 1 日、1 時間、または 1 分につき 1 回
 * 指定した日付に
@@ -39,7 +39,7 @@ ms.locfileid: "3900266"
 
 1. [Power Automate](https://flow.microsoft.com) にサインインし、左側のナビゲーション ウィンドウで **マイ フロー** を選択します。
 1. **新規** を選択した後、**スケジュール-空白から作成** を選択します。
-    ![フローを一から作成する](./media/run-scheduled-tasks/create-flow.png)
+    ![クラウド フローを一から作成する](./media/run-scheduled-tasks/create-flow.png)
 1. **開始** ボックスを編集してフローを開始するタイミングを指定し、**繰り返し間隔** ボックスを編集してフローの繰り返しを指定し、**作成** を選択します。
     ![定期的なアイテムの設定](./media/run-scheduled-tasks/select-recurrence.png)
 
@@ -57,11 +57,11 @@ ms.locfileid: "3900266"
 1. **頻度** で **日** を指定した場合は、フローを実行する時刻を指定します。
 1. **頻度** で **週** を指定した場合は、フローを実行する曜日 (1 日または複数の曜日) とフローを実行する時刻 (1 回または複数の実行時刻) を指定します。
 
-    たとえば、図のオプションのように、2018 年 1 月 1 日、月曜日の正午 (太平洋標準時) になったらすぐにフローを開始し、このフローを 2 週間に 1 回、火曜日の午後 5:30 (太平洋標準時) に実行するように設定します。
+    たとえば、図のオプションのように、2018 年 1 月 1 日、月曜日の正午 (太平洋標準時) になったらすぐにクラウド フローを開始し、このフローを 2 週間に 1 回、火曜日の午後 5:30 (太平洋標準時) に実行するように設定します。
 
     ![詳細なオプションを指定する](./media/run-scheduled-tasks/advanced-options.png)
-1. [ゼロからフローを作成](get-started-logic-flow.md) に関する記事に従って、フローで実行するアクションを追加します。
+1. [ゼロからクラウド フローを作成](get-started-logic-flow.md) の説明に従って、アクションまたはフローで実行するアクションを追加します。
 
-## <a name="learn-more"></a>詳細はこちら
+## <a name="learn-more"></a>詳細情報を見る
 
 [詳細オプション](https://docs.microsoft.com/azure/connectors/connectors-native-recurrence) とその構成方法の詳細をご覧ください。

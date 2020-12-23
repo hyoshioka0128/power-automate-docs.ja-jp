@@ -6,15 +6,15 @@ manager: annbe
 ms.service: flow
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/28/2020
+ms.date: 12/01/2020
 ms.author: kvivek
 ms.reviewer: kvivek
-ms.openlocfilehash: e82617b631b1016b307cd3407812fde82645d6bc
-ms.sourcegitcommit: 3a464880557cec658afccd87589d68559aeb679d
+ms.openlocfilehash: 726ef0376b719d52d47b07af9dd73e2b1963916d
+ms.sourcegitcommit: 29ceadd5efe294f23c1b5cc1c332d56c25fba5f8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4117427"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "4654102"
 ---
 # <a name="power-automate-webinars"></a>Power Automate ウェビナー
 
@@ -35,6 +35,10 @@ Stephanie Whitaker および Jonathan Lipsitz
 **実行中の Microsoft Power Automate の実例**  
 Jon Levesque および Matthew Weston<br/>
 [登録して今すぐ見る](https://info.microsoft.com/ww-Landing-Real-World-Examples-of-Microsoft-Power-Automate-in-Action.html?LCID=EN-US)
+
+**Microsoft Power Automate のロボティック プロセス オートメーションを使用したコカ・コーラの体験**  
+Lokeshwar ReddyVangala および PranavRastogi<br/>
+[登録して今すぐ見る](https://info.microsoft.com/ww-Landing-Coca-ColasJourneywithRPA.html?LCID=EN-US)
 
 ### <a name="see-also"></a>関連項目
 

@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 6b0e9fb177876b617273ada869420bdab8b286e6
-ms.sourcegitcommit: 36f637d65c8a857e011b9ebf76f79aa7ce1da6fb
+ms.openlocfilehash: d5c1e9f934b877cc2816d4741ba763d767304c7b
+ms.sourcegitcommit: b043b7e8c29afee4f4f25bbf0d5a662d9af9272c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "3686241"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4708319"
 ---
 # <a name="edit-a-solution-aware-flow"></a>ソリューション対応フローを編集する
 
@@ -43,15 +43,15 @@ ms.locfileid: "3686241"
 1. **...**(その他のコマンド) を選択し、**無効にする** を選択します。
 1. **...**(その他のコマンド) を選択し、**編集** を選択します。
 
-   ![フローの編集を表示します](./media/edit-solution-aware-flow/edit-flow.png "フローの編集を表示します")
+   ![クラウド フローの編集を表示する](./media/edit-solution-aware-flow/edit-flow.png "クラウド フローの編集を表示する")
    
 1. Power Automate デザイナーで編集し、変更をテストしたら、フローを保存します。
 1. フローを実行する必要がある場合は、フローを有効にします。
 
-## <a name="learn-more"></a>詳細はこちら
+## <a name="learn-more"></a>詳細情報を見る
 
 * [ソリューションの作成](./overview-solution-flows.md)
-* [ソリューションにフローを作成する](./create-flow-solution.md)
+* [ソリューションにクラウド フローを作成する](./create-flow-solution.md)
 * [ソリューションのエクスポート](./export-flow-solution.md)
 * [ソリューションのインポート](./import-flow-solution.md)
 * [ソリューション対応フローを削除する](./remove-solution-aware-flow.md)

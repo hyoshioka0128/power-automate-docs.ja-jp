@@ -1,16 +1,17 @@
 ---
 title: Power Automate のための学習カタログ
 description: Power Automate のすべてのトレーニング オプションを検索します
-author: loreleishannonmsft
+author: msftman
 ms.topic: article
 ms.date: 03/17/2020
-ms.author: v-lshann
-ms.openlocfilehash: 2fc308dbf18273495c890ee3489c0175d13ac5d3
-ms.sourcegitcommit: c86134235a4e3a819800c77fbc50034cfd8714c2
+ms.author: deonhe
+ms.service: flow
+ms.openlocfilehash: 4aa820508fc8902d98d826c5aa7e1f20597d8431
+ms.sourcegitcommit: b043b7e8c29afee4f4f25bbf0d5a662d9af9272c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3298574"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4710095"
 ---
 # <a name="learning-catalog-for-power-automate"></a>Power Automate のための学習カタログ
 
@@ -24,7 +25,7 @@ Power Apps のユーザーとしてのあなたの役割に適したオンライ
 
     ### <a name="business-and-technical-decision-makers"></a>業務および技術面の意思決定者
 
-    新しいテクノロジに投資するかどうかを決定する必要がありますか。 
+    新しいテクノロジーに投資するかどうか決定しますか? 
 
     [業務および技術面の意思決定者の学習カタログ](learning-catalog-bdm.md#)
 
@@ -33,11 +34,11 @@ Power Apps のユーザーとしてのあなたの役割に適したオンライ
 
     ### <a name="app-makers"></a>アプリ作成者
 
-    コードを記述することなく簡単にカスタム ビジネス アプリを作成する方法にご関心がありますか。 
+    コードを書かずにカスタム ビジネス アプリをすばやく作成することに興味がありますか? 
 
-    [アプリ作成者向けラーニング カタログ](learning-catalog-app-maker.md#)
+    [アプリ作成者の学習カタログ](learning-catalog-app-maker.md#)
 
-    [はじめに](learning-catalog-app-maker.md#get-started)
+    [開始する](learning-catalog-app-maker.md#get-started)
 
     [フローの作成](learning-catalog-app-maker.md#create-flows)
 
@@ -50,7 +51,7 @@ Power Apps のユーザーとしてのあなたの役割に適したオンライ
 
     ### <a name="developers"></a>開発者
 
-    コードを記述して他のデータ ソースと統合したり、システムのコア機能を拡張したり、複雑なアプリケーションを構築したりする必要がありますか。
+    他のデータ ソースとの統合、コア システム機能の拡張、または複雑なアプリケーションの構築のためコードを記述する必要がありますか?
 
     [開発者学習カタログ](learning-catalog-developer.md)
 
@@ -59,7 +60,7 @@ Power Apps のユーザーとしてのあなたの役割に適したオンライ
 
     ### <a name="administrators"></a>管理者
 
-    システムとデータのフロー、プロビジョニング、およびセキュリティ保護を 24 時間維持する必要がありますか。
+    システムとデータ フロー、プロビジョニング、およびセキュリティを 24 時間維持する必要がありますか?
 
     [管理者の学習カタログ](learning-catalog-administrator.md)
 
@@ -68,18 +69,18 @@ Power Apps のユーザーとしてのあなたの役割に適したオンライ
 :::row:::
     :::column:::
 
-    ### <a name="partner-sales-and-marketing"></a>パートナーの売上およびマーケティング
+    ### <a name="partner-sales-and-marketing"></a>パートナー営業およびマーケティング
 
-    顧客による適切なソリューションの購入のサポートを担当していますか。
+    顧客が適切なソリューションを購入できるよう支援する責任がありますか？
 
-    [パートナーの売上およびマーケティングに関するラーニング カタログ](learning-catalog-sales.md)
+    [パートナー営業およびマーケティングの学習カタログ](learning-catalog-sales.md)
 
      :::column-end:::
     :::column:::
 
-    ### <a name="functional-application-consultants"></a>アプリケーションの機能コンサルタント
+    ### <a name="functional-application-consultants"></a>機能アプリケーション コンサルタント
 
-    あなたはビジネス ドメインの実装の専門家ですか。 
+    あなたはビジネス ドメイン実装のエキスパートですか? 
 
     [機能アプリケーション コンサルタント学習カタログ](learning-catalog-functional-consultant.md)
 

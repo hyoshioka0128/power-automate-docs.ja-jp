@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 7a0916c4d1637a6d0b35d72d54e4807afd39ec9f
-ms.sourcegitcommit: a881042f3de3cce8087986174fed53fd26b163f3
+ms.openlocfilehash: 11043a7a5dc21731f2e3207f033c61a4c3da3f91
+ms.sourcegitcommit: b043b7e8c29afee4f4f25bbf0d5a662d9af9272c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "4365160"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4709902"
 ---
 # <a name="use-sharepoint-and-power-automate-to-build-workflows"></a>SharePoint と Power Automate を使用してワークフローを構築する
 
@@ -52,7 +52,7 @@ Power Automate を SharePoint で使用できる主なシナリオのいくつ�
 - 新しい注文が Salesforce に追加されたら、[SharePoint でアイテムを作成](https://docs.microsoft.com/sharepoint/dev/business-apps/power-automate/guidance/migrate-from-classic-workflows-to-power-automate-flows)します。
 - [リストからアイテムを取得するか、ライブラリからファイルを取得](https://docs.microsoft.com/sharepoint/dev/business-apps/power-automate/guidance/working-with-get-items-and-get-files)します。
 - [SharePoint または OneDrive でのリストまたはライブラリのフロー](https://support.microsoft.com/office/create-a-flow-for-a-list-or-library-in-sharepoint-or-onedrive-a9c3e03b-0654-46af-a254-20252e580d01)を作成します。
-- [フローを編集](https://support.microsoft.com/office/edit-a-flow-for-a-list-in-sharepoint-b6678daa-2c82-44eb-be3f-2a9cb56301e8)します。
+- [クラウド フローの編集](https://support.microsoft.com/office/edit-a-flow-for-a-list-in-sharepoint-b6678daa-2c82-44eb-be3f-2a9cb56301e8)。
 
 ### <a name="other-top-scenarios"></a>その他の上位シナリオ
 

@@ -1,6 +1,6 @@
 ---
-title: テンプレートからフローを作成する | Microsoft Docs
-description: 組み込みテンプレートのいずれかからフローを作成します。
+title: テンプレートからクラウド フローを作成する | Microsoft Docs
+description: 複数の組み込みテンプレートのいずれかを使ってクラウド フローを作成します。
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,19 +20,19 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: e9970521741f26607cc105d92ee20944bad1801c
-ms.sourcegitcommit: df7fb20065cfafc153b4bc4019dff2c94f4ef567
+ms.openlocfilehash: d7e53558428986374472c37738c1b99da76a2d61
+ms.sourcegitcommit: b043b7e8c29afee4f4f25bbf0d5a662d9af9272c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4553076"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4709519"
 ---
-# <a name="create-a-flow-from-a-template-in-power-automate"></a>Power Automate でテンプレートからフローを作成します
+# <a name="create-a-cloud-flow-from-a-template-in-power-automate"></a>Power Automate のテンプレートからクラウド フローを作成する
 
-多くの組み込みテンプレートのいずれかからフローを作成します。組み込みテンプレートでは、たとえば、Office 365 で上司からのメールを受け取ったときに Slack メッセージが送信されるようにすることができます。
+多くの組み込みテンプレートのいずれかからクラウド フローを作成します。組み込みテンプレートでは、たとえば、Office 365 で上司からのメールを受け取ったときに Slack メッセージが送信されるようにすることができます。
 
 >[!TIP]
->すでにプロセスのアイデアがあり、ちょうど良いテンプレートが見つからない場合は、[最初からフローを作成します](get-started-logic-flow.md)。
+>プロセスを既に計画していて、そのプロセスに適したテンプレートが見つからない場合は、[ゼロからクラウド フローを作成](get-started-logic-flow.md) してください。
 
 **前提条件**
 
@@ -71,6 +71,6 @@ ms.locfileid: "4553076"
 
 * [実行中のフローを確認する](see-a-flow-run.md)
 * [独自のテンプレートを公開する](publish-a-template.md)
-* [Microsoft Dataverse で使用するテンプレートをアップロードします](common-data-model-intro.md)
+* [Common Data Service で使用するテンプレートをアップロードします](common-data-model-intro.md)
 * [チーム フローを開始し](create-team-flows.md)、他のユーザーを招待して一緒にフローを設計します。
 

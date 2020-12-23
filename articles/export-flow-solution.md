@@ -15,12 +15,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: d359f1c065db1c089fb367d5b9ba1188da1e47a3
-ms.sourcegitcommit: 1ae0dc87353b2ddec8c639d8a3514b7119401977
+ms.openlocfilehash: 3431c85508efb01c36fa380f2b966093e7b8c088
+ms.sourcegitcommit: b043b7e8c29afee4f4f25bbf0d5a662d9af9272c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "3968286"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4708223"
 ---
 # <a name="export-a-solution"></a>ソリューションのエクスポート
 
@@ -32,7 +32,7 @@ ms.locfileid: "3968286"
 1. **エクスポートする前に** が右側に表示されます。 以下のオプションを選んだ後で、 **次へ** を選択してください。  
     - **すべての変更を公開する**。 アンマネージド ソリューションをエクスポートすると、公開されたコンポーネントのみがエクスポートされることに注意してください。 **すべての変更を公開** を選択して、すべてのコンポーネントがエクスポートされたソリューションに含まれていることを確認することをお勧めします。 
     - **問題を確認する**。 ソリューションに対してソリューション チェッカーを実行して、パフォーマンスと安定性の問題を検出します。
-1. **このソリューションをエクスポートする** が右側に表示されます。 次のオプションを入力または選択してから、**エクスポート**を選択してください。  
+1. **このソリューションをエクスポートする** が右側に表示されます。 次のオプションを入力または選択してから、**エクスポート** を選択してください。  
     - **バージョン ナンバー**：Power Automate現在のバージョンを表示し、ソリューションのバージョンを自動的にインクリメントします。 既定のバージョンを受け入れるか、独自のバージョンを入力できます。 
     - **エクスポート方式**:  **管理** 、または **非管理** のパッケージ タイプを選択します。 詳細: [管理ソリューションとアンマネージド ソリューション](/power-platform/alm/solution-concepts-alm#managed-and-unmanaged-solutions)
 
@@ -45,6 +45,6 @@ ms.locfileid: "3968286"
 
 
 * [ソリューションの作成](./overview-solution-flows.md)
-* [ソリューションにフローを作成する](./create-flow-solution.md)
+* [ソリューションにクラウド フローを作成する](./create-flow-solution.md)
 * [ソリューションのインポート](./import-flow-solution.md)
 * [ソリューション対応フローを編集する](./edit-solution-aware-flow.md)

@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: c94ca32053c3326c56e4f50137065efe9b303fbb
-ms.sourcegitcommit: df7fb20065cfafc153b4bc4019dff2c94f4ef567
+ms.openlocfilehash: d044d5f3cdd8d6b50efc29461b75363d5a96827d
+ms.sourcegitcommit: b043b7e8c29afee4f4f25bbf0d5a662d9af9272c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4553124"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4708127"
 ---
 # <a name="get-started-with-approvals"></a>承認を開始する
 
@@ -39,14 +39,14 @@ ms.locfileid: "4553124"
 - フローを作成するライセンス。
 
 
-## <a name="permissions-to-create-a-dataverse-database"></a>Dataverse データベースを作成するためのアクセス許可
+## <a name="permissions-to-create-a-dataverse-database"></a>Dataverse データベースを作成するアクセス許可
 
-作成した承認フローは、Dataverse に保存されます。 最初に既定ではない環境に存在するフローで承認コネクタを使用すると、システムは自動的にデータベースをプロビジョニングします。 正常に実行するためには、最初の承認フローを実行するユーザーがその環境の管理者ロールを持っている必要があります。
+承認フローを作成すると Dataverse に保存されます。 最初に、デフォルト以外の環境にあるクラウド フローで承認コネクタを使用すると、システムはデータベースを自動的にプロビジョニングします。 正常に実行するためには、最初の承認フローを実行するユーザーがその環境の管理者ロールを持っている必要があります。
 
 データベースのプロビジョニングが完了するまでに数分かかる場合があり、フローを初めて実行する際はこの遅延は明らかです。 承認フローを作成する他のユーザーに対して、環境の昇格したアクセス許可は必要ありません。
 
 >[!NOTE]
->既定の環境を使用している場合は、Dataverse データベースをプロビジョニングする必要はありません。 
+>既定の環境を使用する場合は Dataverse データベースのプロビジョニングは必要はありません。 
 
 ## <a name="license-to-create-flows"></a>フローを作成するライセンス
 
@@ -57,14 +57,14 @@ ms.locfileid: "4553124"
 
 ## <a name="assign-approvals-to-any-user-in-your-tenant"></a>テナントで任意のユーザーに承認を割り当てる
 
-現在の Dataverse 環境または Azure Active Directory (Azure AD) テナントのユーザー (ゲスト ユーザーも含む) に承認を割り当てることができます。 
+現在の Dataverse 環境のユーザーやゲスト ユーザーを含む Azure Active Directory (Azure AD) テナントに承認を割り当てできます。 
 
 現在の環境に存在しないユーザーに承認を割り当てる場合は、自動的に追加されるため応答を処理して承認履歴で保持できます。 
 
 これは以下のテナント構成で許可されていません:
 
 - Azure Active Directory (Azure AD) の AllowAdHocSubscriptions 設定が無効の場合。 この場合、テナント管理者に有効化を依頼できます。 この詳細はセルフサービス サインアップでご確認ください。
-- セキュリティ グループを使用して、Dataverse 環境にアクセスできるユーザーを制御している場合。
+- セキュリティ グループを使用して Dataverse 環境にアクセスできるユーザーを制御している場合。
 - Power Automate [米国政府機関プラン](https://docs.microsoft.com/power-automate/us-govt)。
 
 

@@ -20,18 +20,18 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: f338e4fd96dd0ff34c618e9bbe3ab97163990145
-ms.sourcegitcommit: a7a7f603d44a12e989efcbc138acda6956a8273c
+ms.openlocfilehash: f9907192ae6b1b1ba0e9b965a1230e81cd3f7706
+ms.sourcegitcommit: b043b7e8c29afee4f4f25bbf0d5a662d9af9272c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "3720669"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4710166"
 ---
 # <a name="create-parallel-approval-workflows-with-power-automate"></a>Power Automate を使用してパラレル承認ワークフローを作成する
 
 パラレル承認ワークフローでは、請求書、発注書、休暇申請などの項目を複数のユーザーが承認する必要があります。各ユーザーの承認は、他のすべての承認者から独立しています。
 
-このチュートリアルでは、Power Automate を使用してパラレル承認ワークフローを自動化するフローを作成します。 このフローにより、従業員の休暇申請プロセス (その従業員が日常的にサポートするすべてのユーザーまたはチームからの承認を求める) が自動化されます。 従業員は [SharePoint リスト](https://support.office.com/article/Introduction-to-lists-0a1c3ace-def0-44af-b225-cfa8d92c52d7) を使用して休暇を申請します。 休暇の承認は、従業員の直属のマネージャー、営業チーム、および人事チームから得る必要があります。 各休暇申請は、決定を行う各承認者に転送されます。 このフローでは、状態の変化を示す電子メールが送信され、決定情報によって SharePoint が更新されます。
+このチュートリアルでは、Power Automate を使用してパラレル承認ワークフローを自動化するフラウド フローを作成します。 このフローにより、従業員の休暇申請プロセス (その従業員が日常的にサポートするすべてのユーザーまたはチームからの承認を求める) が自動化されます。 従業員は [SharePoint リスト](https://support.office.com/article/Introduction-to-lists-0a1c3ace-def0-44af-b225-cfa8d92c52d7) を使用して休暇を申請します。 休暇の承認は、従業員の直属のマネージャー、営業チーム、および人事チームから得る必要があります。 各休暇申請は、決定を行う各承認者に転送されます。 このフローでは、状態の変化を示す電子メールが送信され、決定情報によって SharePoint が更新されます。
 
 [!INCLUDE [sharepoint-detailed-docs](includes/sharepoint-detailed-docs.md)]
 
@@ -113,7 +113,7 @@ SharePoint Online リストの名前と URL をメモします。 これらの�
 
 * **分岐内にステップを挿入:** カードの上または下にある *新しいステップの挿入* (**+**) ボタンを使用します。  このボタンは、分岐を選択するか、コネクタの矢印の上にカーソルを置くと表示されます)。 このボタンを選択すると、その **特定の分岐** にステップが追加されます。 このボタンは次のとおりです: ![新しいステップの挿入](./media/parallel-modern-approvals/Insert-new-step.png "+ 記号ボタンを使用して、分岐内にステップを挿入する")
 
-* **フローにステップを追加:** ワークフロー全体の下部にある大きい **+ 新しいステップ**ボタンを使用します。 このボタンによって追加したステップは、以前のすべての分岐が完了した後に実行されます。  このボタンは次のとおりです: ![新しいステップを追加](./media/parallel-modern-approvals/new-step.png "[+ 新しいステップ] ボタンを使用して、フロー全体にステップを追加する")
+* **フローにステップを追加:** ワークフロー全体の下部にある大きい **+ 新しいステップ** ボタンを使用します。 このボタンによって追加したステップは、以前のすべての分岐が完了した後に実行されます。  このボタンは次のとおりです: ![新しいステップを追加](./media/parallel-modern-approvals/new-step.png "[+ 新しいステップ] ボタンを使用して、フロー全体にステップを追加する")
 
 次のセクションでは、各ブランチ内にステップを追加します:
 

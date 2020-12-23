@@ -15,19 +15,19 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/06/2020
 ms.author: deonhe
-ms.openlocfilehash: 8d7432ee33ec468e9958cbdd09e805db8ed043a0
-ms.sourcegitcommit: a09a957460f7495c0b103e1d832f65963025fbac
+ms.openlocfilehash: 4a7c0eee348246febc7cd820ff0dfee256c5b087
+ms.sourcegitcommit: b043b7e8c29afee4f4f25bbf0d5a662d9af9272c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "3697007"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4709087"
 ---
 # <a name="manage-sharepoint-page-approvals-with-power-automate"></a>Power Automate を使用して SharePoint ページを管理する
 
 
 SharePoint のサイト管理者は、Power Automate を使用して、新規または更新されたサイト ページが発行される前に承認を求めることができます。
 
-この記事では、SharePoint サイトでフローを使用して、サイトへの変更を公開前に承認の要求を設定する方法を説明します。
+この記事では、SharePoint サイトを構成し、クラウド フローを使用してサイトへの変更が公開される前に承認されるようにする方法を説明します。
 
 ## <a name="configure-sharepoint-for-page-approvals"></a>SharePoint を構成してページの承認をする
 

@@ -1,6 +1,6 @@
 ---
-title: スマートフォンでフローを作成する | Microsoft Docs
-description: たとえば、指定したアドレスからメールを受信した際に、プッシュ通知を送信するフローをテンプレートから作成します
+title: 携帯電話からクラウド フローを作成する | Microsoft Docs
+description: テンプレートからクラウド フローを作成します。たとえば、指定したアドレスからメールを受信したときにプッシュ通知を送信します
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,18 +20,18 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 4b0dfb8efd5781e67f569bafddbf223ba2105f7e
-ms.sourcegitcommit: 772a71443a19ce3da5e02470eda849762ad83671
+ms.openlocfilehash: 32b6d1a17deac8f387a9998d8023631a9c14724a
+ms.sourcegitcommit: b043b7e8c29afee4f4f25bbf0d5a662d9af9272c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "3821009"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4709327"
 ---
-# <a name="create-a-flow-from-your-phone-by-using-power-automate"></a>Power Automate を使用して携帯電話からフローを作成する
+# <a name="create-a-cloud-flow-from-your-phone-by-using-power-automate"></a>Power Automate を使用して携帯電話からクラウド フローを作成する
 
-テンプレートを使用してスマートフォンからフローを作成します。テンプレートを見つけるには、サービスの一覧から検索するか、カテゴリを参照するか、キーワードを指定します。
+テンプレートを使用して、携帯電話からクラウド フローを作成します。テンプレートを見つけるには、サービスの一覧から検索するか、カテゴリを参照するか、キーワードを指定します。
 
-このトピックの手順では、上司からメールを受け取るとプッシュ通知をスマートフォンに送信するフローを作成します。
+このトピックの手順では、上司からのメールを受信するとプッシュ通知を携帯電話に送信するクラウド フローを作成します。
 
 Power Automate に慣れていない場合は、[概要を確認してください](getting-started.md)。
 

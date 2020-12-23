@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 040f666b15d3e8845336b3724e07749c9e2e7a7f
-ms.sourcegitcommit: bad509705b7d32f8fc20913573547e65e54cee5b
+ms.openlocfilehash: 319cdf5d668cc0dde202138b7c501d1cee530ac1
+ms.sourcegitcommit: b043b7e8c29afee4f4f25bbf0d5a662d9af9272c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "3958328"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4709039"
 ---
 # <a name="use-data-operations-with-power-automate"></a>Power Automate でデータ操作を使用する
 
@@ -38,7 +38,7 @@ ms.locfileid: "3958328"
 
 ## <a name="use-the-compose-action"></a>作成アクションを使用する
 
-**データ操作 - 作成** を使用する <!--note from editor: Here and throughout, you don't need to repeat the name of the action. The name in the UI isn't confusing, but these parenthetical phrases kind of are. Edits to the rest of this sentence are suggested.-->フローの設計時に同じデータを何度も入力する必要を解消するアクション。 この例では、フローの設計時に数値の配列 (`[0,1,2,3,4,5,6,7,8,9]`) を何度も入力する必要があります。 次の手順で説明するように、[作成] アクションを使用して配列を保存できます。
+**データ操作 - 作成** を使用する <!--note from editor: Here and throughout, you don't need to repeat the name of the action. The name in the UI isn't confusing, but these parenthetical phrases kind of are. Edits to the rest of this sentence are suggested.-->クラウド フローを設計するときに同じデータを複数回入力する必要がないようにするためのアクション。 この例では、フローの設計時に数値の配列 (`[0,1,2,3,4,5,6,7,8,9]`) を何度も入力する必要があります。 次の手順で説明するように、[作成] アクションを使用して配列を保存できます。
 
 1. **作成** を検索し、**データ操作 - 作成** アクションを選択します。
 

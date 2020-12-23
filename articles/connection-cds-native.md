@@ -1,6 +1,6 @@
 ---
 title: Common Data Service （現在の環境）のコネクターを使用して自動フローを作成する| Microsoft Docs
-description: Common Data Service (現在のコネクター) と Power Automate を使用してワークフローを作成する
+description: Common Data Service (現在の環境)コネクタ と Power Automate を使用してワークフローを作成する
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,26 +20,26 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 90ec5f16d153042293628af3be5274cf6c02202a
-ms.sourcegitcommit: df7fb20065cfafc153b4bc4019dff2c94f4ef567
+ms.openlocfilehash: 7e7300541f4d7963792bb2eca4b35dc37ba8558d
+ms.sourcegitcommit: b043b7e8c29afee4f4f25bbf0d5a662d9af9272c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4553460"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4708415"
 ---
-# <a name="create-an-automated-flow-by-using-common-data-service-current-environment-connector"></a>Common Data Service (現在の環境) を使用して自動フローを作成する
+# <a name="create-an-automated-flow-by-using-common-data-service-current-environment-connector"></a>Common Data Service (現在の環境) コネクタを使用して自動フローを作成する
 
 [!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
 
 >[!IMPORTANT]
->Dataverse への接続に使用できるコネクターには 3つの種類があります。 この記事では、Dataverse に接続する際に推奨される[Common Data Service (現在の環境)](./connection-cds.md)について解説しています。 推奨するコネクタが使用できない場合は、[Common Data Service Connector](./connection-cds.md) と [Dynamics 365 コネクタ](https://docs.microsoft.com/connectors/dynamicscrmonline/) も使用することができます。
+>Dataverse に接続できるコネクタは 3 つ存在します。 この記事では、Dataverse に接続する際に推奨される [Common Data Service (現在の環境)](./connection-cds.md) について解説しています。 推奨するコネクタが使用できない場合は、[Common Data Service Connector](./connection-cds.md) と [Dynamics 365 コネクタ](https://docs.microsoft.com/connectors/dynamicscrmonline/) も使用することができます。
 
 
-作成したフローは、Dataverse レコードが作成、更新、削除されたときにトリガーすることができます。
+作成したフローは、Dataverse レコードが作成、更新、削除されたタイミングでトリガーできます。
 
 さらに、Dataverse 内のレコードに対して、作成、更新、取得、削除のアクションを実行できます。
 
-## <a name="initiate-a-flow-with-common-data-service-current-environment-connector"></a>Common Data Service (current environment) コネクタでフローを開始する
+## <a name="initiate-a-cloud-flow-with-common-data-service-current-environment-connector"></a>Common Data Service (現在の環境) コネクタでクラウド フローを開始する
 
 **レコードの作成、更新、削除時** トリガーを使用してフローを開始します：
 
@@ -90,15 +90,15 @@ ms.locfileid: "4553460"
 
 ## <a name="trigger-privileges"></a>トリガーの権限
 
-レコードの作成、更新、削除に基づいてトリガーされるフローを作成するには、**コールバック登録** エンティティに対する作成、読み取り、書き込み、削除のユーザー レベル権限が必要となります。 さらに、定義されたスコープによっては、ユーザーは少なくとも同じエンティティの同等のレベルの読み取り権限が必要となる場合があります。  環境のセキュリティの詳細については、[こちらを参照してください](https://docs.microsoft.com/power-platform/admin/database-security)。
+レコードに対する作成、更新、または削除に基づいてトリガーされるクラウド フローを作成するには、**コールバック登録** エンティティに対する作成、読み取り、書き込み、削除のユーザー レベル権限がユーザーに必要です。 さらに、定義されたスコープによっては、ユーザーは少なくとも同じエンティティの同等のレベルの読み取り権限が必要となる場合があります。  環境のセキュリティの詳細については、[こちらを参照してください](https://docs.microsoft.com/power-platform/admin/database-security)。
 
-## <a name="write-data-into-dataverse"></a>Dataverse へのデータの書き込み
+## <a name="write-data-into-dataverse"></a>Dataverse にデータを書き込む
 
-Dataverse にデータを書き込むには、次のいずれかのアクションを使用します :
+Dataverse にデータを書き込むには、次のいずれかのアクションを使用します：
 
 ![アクションを表示するスクリーンショット](./media/cds-connector-native/actions.png)
 
-**対象範囲** 部署のいずれかのユーザーによって、**アカウント** が **作成される** たびに、名前と年間収益を含む通知を送信するフローの例です。
+ここでは、**取引先企業** が部署 **スコープ** 内のユーザーによって **作成** されるたびに、名前と年間収益を含む通知を送信するクラウド フローの例を示します。
 
 > ![フォローアップ タスク](./media/cds-connector-native/example-flow.png)
 
