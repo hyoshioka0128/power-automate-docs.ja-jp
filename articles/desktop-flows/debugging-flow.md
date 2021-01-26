@@ -1,5 +1,5 @@
 ---
-title: クラウド フローのデバッグ | Microsoft Docs
+title: デスクトップ フローのデバッグ | Microsoft Docs
 description: フロー デザイナーのデバッグ オプションを使用してフローをデバッグします。
 author: olegmelnykov
 ms.service: flow
@@ -12,24 +12,24 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: a28cec08b9f8d4c98507d6fc35479619bf11464b
-ms.sourcegitcommit: b043b7e8c29afee4f4f25bbf0d5a662d9af9272c
+ms.openlocfilehash: 8618768255767ad20ea71127a7390b38a79ce1e8
+ms.sourcegitcommit: be18d735934f4094fa8d894e232bd5a1acb31f6a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "4711659"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "4727545"
 ---
-# <a name="debug-a-cloud-flow"></a>クラウド フローをデバッグする
+# <a name="debug-a-desktop-flow"></a>デスクトップ フローのデバッグ
 
 
 
-システムに変更があった場合、クラウド フローにエラーが含まれていて実行できない場合には、一般的にフローをデバッグする必要があります。 
+システムに変更があった場合、デスクトップ フローにエラーが含まれていて実行できない場合には、フローをデバッグする必要があります。 
 <!--note from editor: It would be good to link to the topics about these things. -->
 
-次のツールを使用してクラウド フローをデバッグします:
+次のツールを使用してデスクトップ フローをデバッグします:
 * [エラー ペイン](errors.md)
 * [ブレークポイント](#adding-breakpoints)
-* [フロー アクションごとに実行する](#run-a-cloud-flow-by-action)
+* [フロー アクションごとに実行する](#run-a-desktop-flow-by-action)
 * [実行遅延を設定する](#the-status-bar)
 
 ## <a name="run-stop-and-pause-in-flow-designer"></a>フロー デザイナーからの実行、停止、一時停止
@@ -44,7 +44,7 @@ ms.locfileid: "4711659"
 
 ![ブレークポイントの追加](\media\adding-breakpoints\add-breakpoint.png)
 
-## <a name="run-a-cloud-flow-by-action"></a>アクションでクラウド フローを実行する
+## <a name="run-a-desktop-flow-by-action"></a>アクションを使用してデスクトップ フローを実行する
 
 **次のアクションを実行する** ボタンは、アクションごとにフロー アクションを実行します。 各アクションが完了すると、フローは一時停止します。 変数ペインを開いて、一時停止した時点での変数の値を確認します。 この機能はデバッグに役立ちます。
 

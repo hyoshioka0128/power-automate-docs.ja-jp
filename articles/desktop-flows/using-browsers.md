@@ -12,20 +12,23 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: d4fbf05bb9ad3c11178edce34d037d08938bb43a
-ms.sourcegitcommit: b043b7e8c29afee4f4f25bbf0d5a662d9af9272c
+ms.openlocfilehash: 4fa9137953afba6c04c34c39a55dbfd8deb06daf
+ms.sourcegitcommit: 3ee73d8cdfd40c8988f329ba5e8c6598f4704e12
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "4711678"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "4740465"
 ---
 # <a name="use-browsers-and-manage-extensions"></a>ブラウザーの使用と拡張機能の管理
 
 
 
-Web 関連のタスクを自動化するにあたって、Power Automate Desktop は、すぐに使用できる既成の **オートメーション ブラウザー** を提供します。 
+Web 関連のタスクの自動化には、Microsoft Power Automate Desktop が提供する既成の **オートメーション ブラウザー** を使用できます。 
 
 **オートメーション ブラウザ** に加えて、このプラットフォームでは 4 つの最も人気のあるブラウザーに対応しています: **Microsoft Edge**、**Internet Explorer**、**Google Chrome**、**Mozilla Firefox**。 これらのブラウザーが機能するには、追加の設定やブラウザーの拡張機能が必要です。
+
+> [!IMPORTANT]
+> Microsoft Edge を使用するには、Chromium に基づくバージョンがインストールされていることを確認してください。 それ以外の古いバージョンはサポートされていません。 
 
 ## <a name="configuring-internet-explorer"></a>Internet Explorer を構成する
 

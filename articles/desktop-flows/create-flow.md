@@ -4,24 +4,24 @@ description: Power Automate デザイナーを使用してデスクトップ フ
 author: olegmelnykov
 ms.service: flow
 ms.topic: article
-ms.date: 12/09/2020
+ms.date: 01/15/2021
 ms.author: olmelnyk
-ms.reviewer: olmelnyk
+ms.reviewer: deonhe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: bb488cef1ed8b173bfde7e9a68479f7c9b8233c6
-ms.sourcegitcommit: 25e860afc49c5cc38de74f56da4c2aa1bc36dac5
+ms.openlocfilehash: 1688f46d721581ff877062132aaa95cfb9ac1db1
+ms.sourcegitcommit: 423c1cac08d6db771e57d6a110da13cc44511921
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "4712984"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "5036793"
 ---
 # <a name="create-a-power-automate-desktop-flow"></a>Power Automate Desktop フローを作成する
 
-デスクトップ フローは、Web やデスクトップのタスクの自動化に使用します。 [Power Automate Desktop](introduction.md)を使用すると、デスクトップ上だけでなく Web 上のタスクも自動化することができます。 あるいは、デスクトップ フローを作成する 2 つのレガシーな方法 ([Windows レコーダー (V1) と Selenium ID](overview.md)) を使用することもできます。
+デスクトップ フローは、Web やデスクトップのタスクの自動化に使用します。 [Power Automate Desktop](introduction.md)を使用すると、デスクトップ上だけでなく Web 上のタスクも自動化することができます。 あるいは、2 つのレガシーな方法、[Windows レコーダー (V1) と Selenium ID](overview.md) を使用してデスクトップ フローを作成することもできます。
 
 
 ## <a name="trigger-the-console-from-the-portal"></a>ポータルからコンソールをトリガーする
@@ -57,7 +57,7 @@ ms.locfileid: "4712984"
    ![新しいステップ](\media\design-flow\new-step.png)
 
     <!--todo: Needs new screenshot and verify if action names are being updated-->
-1. **power automate desktop** を検索し、**Power Automate Desktop でビルドしたフローを実行する** アクションを選択します。
+1. **Power Automate Desktop** を検索し、**Power Automate Desktop でビルドしたフローを実行する** アクションを選択します。
 
    ![アクションの検索](\media\design-flow\action-search.png)
 
@@ -69,7 +69,7 @@ ms.locfileid: "4712984"
 
    ![ダイアログ ボックス](\media\design-flow\build-desktop-flow-dialog.png)
 
-1. ブラウザから、flow.microsoft.com でアプリケーションを開くことを許可するかどうかを尋ねるメッセージが表示される場合があります。 このアクションが Power Automate  Desktop で継続することを許可します。
+1. ブラウザから、flow.microsoft.com でアプリケーションを開くことを許可するかどうかを尋ねるメッセージが表示される場合があります。 このアクションが Power Automate Desktop で継続することを許可します。
 
    ![ブラウザーでのアプリケーションの起動](\media\design-flow\browser-open-application.png)
 

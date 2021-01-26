@@ -12,12 +12,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 204bafd8518de2694b76de4a6166664e52a42612
-ms.sourcegitcommit: b043b7e8c29afee4f4f25bbf0d5a662d9af9272c
+ms.openlocfilehash: 06fb36ec8ac22ece458e7891025a707c1e6da669
+ms.sourcegitcommit: 3ee73d8cdfd40c8988f329ba5e8c6598f4704e12
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "4711607"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "4740460"
 ---
 # <a name="automate-web-flows"></a>Web フローを自動化する
 
@@ -41,7 +41,7 @@ Web オートメーション フローを開始するには、新しいブラウ
 ![Web ブラウザーの起動](.\media\web-automation\launch-web-browser-action.png)
 
 > [!NOTE]
-> ブラウザによっては、Power Automate Desktop で使用する前に設定が必要な場合があります。 詳細については、関連記事を参照してください。
+> ブラウザによっては、Power Automate Desktop で使用する前に設定が必要な場合があります。 詳細については、[関連記事](using-browsers.md)を参照してください。
 
 ブラウザのセッションが変数に格納された後は、ブラウザのコンテンツとのやり取りに使用する他の Web オートメーションのアクションを追加します。 **Web フォーム記入** アクション グループは、Web ページへの入力に焦点を当て、**Web データの抽出** アクションは、フローで使用するデータを Web ページから引き出します。
 
