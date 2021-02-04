@@ -12,12 +12,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 4fa9137953afba6c04c34c39a55dbfd8deb06daf
-ms.sourcegitcommit: 3ee73d8cdfd40c8988f329ba5e8c6598f4704e12
+ms.openlocfilehash: ad8256b2237b1961d010126c16367582e3d4d785
+ms.sourcegitcommit: ea8954074525c40bb78fde7187f1138dd39a3382
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "4740465"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "5075002"
 ---
 # <a name="use-browsers-and-manage-extensions"></a>ブラウザーの使用と拡張機能の管理
 
@@ -34,19 +34,17 @@ Web 関連のタスクの自動化には、Microsoft Power Automate Desktop が�
 
 既定では、**Internet Explorer** は保護モードで動作し、外部アプリケーションからの制御を防ぎます。
 
-このモードを無効にして Power Automate Desktop がブラウザーを処理できるようにする方法:
+Power Automate Desktop は、この設定を有効にしても引き続き機能しますが、ブラウザーのキャッシュや Cookie をクリアすることはできません。
+
+保護モードを無効にして、Power Automate Desktop がブラウザーのキャッシュと Cookie をクリアするには:
 
 1. **Internet Explorer** を起動し、**歯車アイコン** をを選択します。メニューで **インターネット オプション** を選択します。
 
     ![Internet Explorer オプション。](media/using-browsers/internet-explorer-options.png)
 
-1. **インターネット設定** ダイアログ ボックスで、**セキュリティ** タブを開き、**インターネット** ゾーンを選択して **保護モードを有効にする** オプションを無効化します。
+1. **インターネット設定** ダイアログ ボックスで、**セキュリティ** タブを開き、**インターネット** ゾーンを選択して **保護モードを有効にする** オプションを無効化します。 **ローカル イントラネット** と **信頼済みサイト** ゾーンに対して同じ手順を繰り返します。
 
-    ![Internet Explorerオプションのセキュリティ タブ。](media/using-browsers/internet-explorer-internet-protected-mode.png)
-
-1. **ローカル イントラネット** と **信頼済みサイト** ゾーンに対して同じ手順を繰り返します。
-
-    ![Internet Explorerオプションのローカル イントラネットと信頼済みサイトゾーン。](media/using-browsers/internet-explorer-local-intranet-protected-mode.png)
+    ![Internet Explorerオプションのセキュリティ タブ。](media/using-browsers/internet-explorer-internet-protected-mode.png) ![Internet Explorerオプションのローカル イントラネットと信頼済みサイトゾーン。](media/using-browsers/internet-explorer-local-intranet-protected-mode.png)
 
 1. **適用** と **OK** を選択して変更婦負用を保存してダイアログ ボックスを閉じます。
 

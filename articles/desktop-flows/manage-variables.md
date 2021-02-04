@@ -12,12 +12,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: f49b15e4f8deb773581be0d0450f8dbcf89a0357
-ms.sourcegitcommit: b043b7e8c29afee4f4f25bbf0d5a662d9af9272c
+ms.openlocfilehash: bdb49976f82402059c4e42bf2960cc1ab81fcb08
+ms.sourcegitcommit: ea8954074525c40bb78fde7187f1138dd39a3382
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "4711647"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "5074993"
 ---
 # <a name="manage-variables-and-the-variables-pane"></a>変数と変数ペインを管理する
 
@@ -30,21 +30,35 @@ ms.locfileid: "4711647"
 
 **変数** ペインでは、変数の検索、名前の変更、使用率を確認し、タイプ別にフィルターできます。 
 
-フローが実行されると、各変数の名前の横に現在の値が表示されます。 無効化されたアクションの変数は省略されています。
+## <a name="the-variable-value-viewer"></a>変数値ビューアー
 
-![変数ペインに表示される現在の変数の値です。](media\variables-pane\variables-pane-run-values.png)
+フローが実行されると、各変数の名前の横に現在の値が表示されます。 無効化されたアクションの変数は省略されています。 すべての変数の値をクリアするには、ペインの下部にある消しゴム アイコンを選択します。
+
+![変数ペインに表示される現在の変数の値。](media\variables-pane\current-variable-values.png)
+
+変数の値をより詳細に表示するには、変数をダブルクリックします。 **変数値ビューアー** は、変数のデータ型を示し、データ行またはデータテーブルを展開して、その内容を表示します。
+
+![変数値ビューアーに表示される現在の変数値の詳細。](media\variables-pane\variable-viewer.png)
+
+特定のデータ型には、ネストされた要素を含めることができます。 たとえば、カスタム オブジェクト型の変数には、そのプロパティに別のカスタム オブジェクトを含めることができます。 次の図は、別のカスタム オブジェクト **会社** を含む **CustomerObject** 変数を示しています。 ネストされた要素のプロパティを表示するには、**詳細表示** を選択します。
+
+![親カスタム オブジェクトの例。](media\variables-pane\custom-object-parent.png)
+
+変数値ビューアーには、子カスタム オブジェクトのプロパティが表示されます。 親カスタム オブジェクトに戻るには、矢印を選択します。
+
+![子カスタム オブジェクトの例。](media\variables-pane\custom-object-child.png)
 
 ## <a name="renaming-a-desktop-variable"></a>デスクトップ変数の名前を変更する
 
 デスクトップ フロー変数の名前を変更するには、 **変数** ペインで名前を右クリックし、**名前の変更** を選択します。 変数の名前は、その発生するすべての場所で更新されます。
 
-![フロー変数の名前変更オプションです。](media\renaming-variables\rename-flow-variabe.png)
+![フロー変数の名前変更オプションです。](media\renaming-variables\rename-flow-variable.png)
 
 アクションを通して変数名を手動で更新することができますが、名前はこれらの特定のアクションでのみ変更され、グローバルには変更されません。 
 
 入出力変数の名前をグローバルに更新するには、**変数** ペインでその名前を右クリックし、**編集** を選択します。
 
-![入出力変数の名前を変更します。](media\renaming-variables\rename-external-variabe.png)
+![入出力変数の名前変更オプション。](media\renaming-variables\rename-external-variable.png)
 
 **変数の編集** ダイアログ ボックスで、内部変数名と外部変数名で使用する **変数名** フィールドと **外部名** フィールドを入力します。 
 

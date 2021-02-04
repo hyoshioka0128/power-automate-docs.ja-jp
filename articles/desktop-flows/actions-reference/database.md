@@ -12,16 +12,14 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 8e2f72ca43a8b54ec15a6ec9a638383bebbea86d
-ms.sourcegitcommit: b043b7e8c29afee4f4f25bbf0d5a662d9af9272c
+ms.openlocfilehash: 7decf8febd4706060791c254c5c1fab048a33210
+ms.sourcegitcommit: ea8954074525c40bb78fde7187f1138dd39a3382
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "4711603"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "5075007"
 ---
 # <a name="database"></a>データベース
-
-
 
 データベースに接続して SQL ステートメントを実行
 
@@ -93,3 +91,19 @@ ms.locfileid: "4711603"
 ##### <a name="exceptions"></a><a name="close_onerror"></a> 例外
 - このアクションには例外は含まれません
 
+### <a name="configuring-the-connection-string"></a>接続文字列を構成する
+SQL アクションにはデータベース接続が必要です。 データベースに接続するには、文字列を手動または変数として入力します。 アクションがデータベースに接続すると、その接続を SQL 接続変数に格納します。
+
+1. **接続文字列の作成** を選択し、**データリンクのプロパティ** ウィンドウを開きます。 データ リンク ツールは、ユーザーが必要な接続文字列を段階的に作成するのに役立ちます。 
+
+2. ウィザードにアクセスしたら、**プロバイダー** タブでデータベースの正しいドライバを選択します。
+
+   ![データ リンク プロパティのプロバイダー タブ](..\media\database\data-link-properties-provider-tab.png)
+
+3. 次に、**接続** タブで、サーバー名、ユーザー名、パスワード、データベース名などの残りの詳細を入力します。 **テスト接続** ボタンを選択して、接続文字列がデータベースに正常に接続することをテストします。 または、既製の接続文字列をコピーします。
+
+   ![データ リンク プロパティの接続タブ](..\media\database\data-link-properties-connection-tab.png)
+
+4. **詳細設定** タブで接続タイムアウトと追加のネットワーク設定を指定します。
+
+   ![データ リンク プロパティの詳細設定タブ](..\media\database\data-link-properties-advanced-tab.png)

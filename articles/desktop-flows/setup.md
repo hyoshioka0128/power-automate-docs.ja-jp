@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: ae3aa4589b88434807d35b3f565e06b5fc574143
-ms.sourcegitcommit: b043b7e8c29afee4f4f25bbf0d5a662d9af9272c
+ms.openlocfilehash: 69e0811beceb7d434462b691e5cf492f9cba2d8c
+ms.sourcegitcommit: c09223362f851d2b2fa33dc319a8ce34bb832bc5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "4711679"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "5053127"
 ---
 # <a name="set-up-power-automate-desktop"></a>Power Automate Desktop の設定
 
@@ -38,9 +38,18 @@ ms.locfileid: "4711679"
 
 - Power Automate アテンド型 RPA の [有償版](https://flow.microsoft.com/pricing/) または [試用版](https://flow.microsoft.com/manage/) のライセンス。
 
-- 管理者特権と Power Automate で Windows デバイスにサインインするための職場または学校アカウント。
+- Windows デバイスにサインインするための職場または学校のアカウント。管理者権限と Power Automate があること。
 
-- Windows 10 Pro、Windows 10 Entreprise、Windows Server 2016、Windows Server 2019 を実行するデバイス。
+- システム要件:
+
+   - Windows 10 Pro、Windows 10 Enterprise、Windows Server 2016、または Windows Server 2019 を実行するデバイス。
+      
+      - 最小限のハードウェア
+         - 記憶域: 1GB
+          - RAM: 2GB
+     - 推奨ハードウェア
+        - 記憶域: 2GB
+         - RAM: 4GB
 
 - [Microsoft Edge](https://www.microsoft.com/edge/) (バージョン 80 以降)   または Google Chrome ブラウザー。
 
@@ -114,6 +123,8 @@ ms.locfileid: "4711679"
 
 
 >[!IMPORTANT]
+>デスクトップ フローを自動化する各デバイスにオンプレミス ゲートウェイをインストールする必要があります。
+
 >ゲートウェイをインストールすると、既定で、Power Automate が使用するリージョンになります。
 
 
@@ -240,7 +251,7 @@ Windows レコーダー (V1) は、デスクトップ オートメーション�
 
 次の手順に従って、Windows レコーダー (V1) 拡張機能をインストールします:
 
-1. ストアから Micrsodt Edge や Google Chroome に拡張機能をインストールします (Firefox Windows レコーダー (V1) ではサポートされていません)
+1. ストアから Microsoft Edge または Google Chrome、あるいはその両方に拡張機能をインストールする (Firefox は Windows レコーダー (V1) ではサポートされていません)
 
 #### <a name="microsoft-edge"></a>Microsoft Edge: 
 - [Edge の拡張機能をインストールする](https://go.microsoft.com/fwlink/?linkid=2151412): **取得する** を選択し、プロンプトが表示されたら、**拡張機能の追加** を選択します。

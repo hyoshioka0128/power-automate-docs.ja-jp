@@ -12,12 +12,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: c798ee22e03a5589a9e6bc019fdccc86ce42d6e9
-ms.sourcegitcommit: b043b7e8c29afee4f4f25bbf0d5a662d9af9272c
+ms.openlocfilehash: e2b0871ed56f14607e518028e42a8ede50462a5b
+ms.sourcegitcommit: 26d5d2f9d2dd1225f9bea725c13592cb28f33c36
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "4711629"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "5073095"
 ---
 # <a name="excel"></a>Excel
 
@@ -557,7 +557,7 @@ Excel インスタンスのドキュメントに新しいワークシートを�
 |引数|型|内容|
 |-----|-----|-----|
 |FirstFreeColumn|数値|最初に完全に空になった列の数値です。 たとえば、F 列が最初の空の列の場合は、'6' が格納されます|
-|FirstFreeRow|数値|最初に完全に空になった列の数値です。 たとえば、F 列が最初の空の列の場合は、'6' が格納されます|
+|FirstFreeRow|数値|完全に空の最初の行の数値。 たとえば、7 行目が最初の空の行の場合は、'7' が格納されます|
 
 
 ##### <a name="exceptions"></a><a name="getfirstfreecolumnrow_onerror"></a> 例外

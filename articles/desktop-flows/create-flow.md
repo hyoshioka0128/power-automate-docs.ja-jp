@@ -12,17 +12,26 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 1688f46d721581ff877062132aaa95cfb9ac1db1
-ms.sourcegitcommit: 423c1cac08d6db771e57d6a110da13cc44511921
+ms.openlocfilehash: f46869fb7c1dbcb51f806a8846fcdc429d6199b8
+ms.sourcegitcommit: ea8954074525c40bb78fde7187f1138dd39a3382
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "5036793"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "5074997"
 ---
 # <a name="create-a-power-automate-desktop-flow"></a>Power Automate Desktop フローを作成する
 
 デスクトップ フローは、Web やデスクトップのタスクの自動化に使用します。 [Power Automate Desktop](introduction.md)を使用すると、デスクトップ上だけでなく Web 上のタスクも自動化することができます。 あるいは、2 つのレガシーな方法、[Windows レコーダー (V1) と Selenium ID](overview.md) を使用してデスクトップ フローを作成することもできます。
 
+## <a name="prerequisites"></a>前提条件
+
+- Power Automate でデスクトップ フローがトリガーするには、デバイスに[オンプレミス データ ゲートウェイ](https://go.microsoft.com/fwlink/?LinkID=820580&clcid=0x409) が必要となります。
+   
+   ゲートウェイは、Power Automate とデバイス (UI フローが実行される場所) 間のエンタープライズ グレードの安全な接続です。 Power Automate では、イベント、スケジュール、またはボタンから UI フローをトリガーできるように、ゲートウェイを使用してオンプレミス デバイスにアクセスします。
+- 職場または学校アカウント 
+
+   >[!IMPORTANT]
+   >ゲートウェイの設定、Power Automate へのサインイン、Windows デバイスへのログインには、同じ職場または学校アカウントを使用する必要があります。
 
 ## <a name="trigger-the-console-from-the-portal"></a>ポータルからコンソールをトリガーする
 

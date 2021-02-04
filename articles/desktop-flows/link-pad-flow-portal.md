@@ -12,16 +12,26 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: f5068f207ea54cff6b62bc98fbbbc4aca33031c5
-ms.sourcegitcommit: b043b7e8c29afee4f4f25bbf0d5a662d9af9272c
+ms.openlocfilehash: d3cdc731244137d6f7cf7ec5a0f8b9c5318dfdd9
+ms.sourcegitcommit: ea8954074525c40bb78fde7187f1138dd39a3382
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "4711648"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "5074987"
 ---
 # <a name="trigger-a-power-automate-desktop-flow-from-another-flow"></a>Power Automate Desktop フローを別のフローからトリガーする
 
 
+## <a name="prerequisites"></a>前提条件
+
+- Power Automate でデスクトップ フローがトリガーするには、デバイスに[オンプレミス データ ゲートウェイ](https://go.microsoft.com/fwlink/?LinkID=820580&clcid=0x409) が必要となります。
+   
+   ゲートウェイは、Power Automate とデバイス (UI フローが実行される場所) 間のエンタープライズ グレードの安全な接続です。 Power Automate では、イベント、スケジュール、またはボタンから UI フローをトリガーできるように、ゲートウェイを使用してオンプレミス デバイスにアクセスします。
+- 職場または学校アカウント 
+
+   >[!IMPORTANT]
+   >ゲートウェイの設定、Power Automate へのサインイン、Windows デバイスへのログインには、同じ職場または学校アカウントを使用する必要があります。
+   
 
 1. **flow.microsoft.com** にアクセスし、資格情報を使用してサインインします。 Power Automateでは、**マイ フロー** を選択します。 **+ 新規フロー** を選択し、ドロップダウンから **インスタント クラウド フロー** を選択します。
 
