@@ -11,12 +11,12 @@ metadata:
   ms.author: deonhe
   ms.date: 09/22/2020
   hide_bc: false
-  ms.openlocfilehash: efcd7f3ab25bc51af84f6390a824902374c14578
-  ms.sourcegitcommit: 970ad18a7ef795bff294f39ccfc8578bab9387d2
+  ms.openlocfilehash: 6919459441bc4e76903230f273c5f5242e60acc8
+  ms.sourcegitcommit: 3910e52921f7f862a379166bfb14e68fb6d0029d
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 12/10/2020
-  ms.locfileid: "4714129"
+  ms.lasthandoff: 01/13/2021
+  ms.locfileid: "4878802"
 highlightedContent:
   items:
   - title: Power Automate とは
@@ -41,6 +41,9 @@ conceptualContent:
     - text: 最初のフローの作成
       url: /power-automate/getting-started#create-your-first-flow
       itemType: how-to-guide
+    - text: Process Advisor (プレビュー) を含むプラン
+      url: /power-automate/process-advisor-overview
+      itemType: overview
     - text: Power Automate に関するよくあるご質問
       url: /power-automate/frequently-asked-questions
       itemType: reference
@@ -49,11 +52,11 @@ conceptualContent:
     - text: 自動フロー
       url: /power-automate/get-started-logic-flow
       itemType: overview
+    - text: 予定フロー
+      url: /power-automate/run-scheduled-tasks
+      itemType: overview
     - text: ボタン フロー
       url: /power-automate/introduction-to-button-flows
-      itemType: overview
-    - text: 承認フロー
-      url: /power-automate/modern-approvals
       itemType: overview
   - title: RPA のためのデスクトップ フローの作成
     links:
@@ -79,6 +82,9 @@ conceptualContent:
       itemType: overview
     - text: フォーム
       url: /power-automate/forms/overview
+      itemType: overview
+    - text: 承認
+      url: /power-automate/get-started-approvals
       itemType: overview
   - title: ALM 用のソリューションの使用
     links:

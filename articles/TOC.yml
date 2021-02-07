@@ -11,13 +11,41 @@
     - name: ガイド付き学習
       href: 'https://docs.microsoft.com/learn/paths/automate-process-using-flow'
     - name: 新機能
-      href: whats-new.md
+  href: whats-new.md
+- name: Process Advisor (プレビュー)
+  items:
+    - name: 概要
+      href: process-advisor-overview.md
+      displayName: Overview of process advisor
+    - name: プロセスと記録を使用する
+      href: process-advisor-processes.md
+    - name: プロセスを分析する
+      href: process-advisor-analyze.md
+    - name: プロセスを視覚化する
+      href: process-advisor-visualize.md
+    - name: プロセスを共有する
+      href: process-advisor-share.md
+    - name: 管理とセキュリティ
+      items:
+        - name: セキュリティとプライバシー
+          href: process-advisor-security.md
+          displayName: Security and privacy in process advisor
+        - name: データを保護する
+          href: process-advisor-protect.md
+        - name: 既知の問題
+          href: process-advisor-issues.md
+          displayName: Known issues in process advisor
+    - name: 用語集
+      href: process-advisor-glossary.md
+      displayName: Process advisor glossary
 - name: クラウド フロー
   items:
     - name: 開始する
       href: overview-cloud.md
     - name: トリガーの基本
       href: triggers-introduction.md
+    - name: Power Virtual Agents ボットからサポートを得る
+      href: contextual-help-bot.md
     - name: フローを共有する
       href: create-team-flows.md
     - name: Microsoft Dataverse を使用するフローを作成する
@@ -82,7 +110,7 @@
           href: disable-flow.md
     - name: 一般的なクラウド フローのシナリオ
       items:
-        - name: 承認フロー
+        - name: フローでの承認の使用
           items:
             - name: 承認の利用を開始する
               href: get-started-approvals.md
@@ -178,6 +206,8 @@
               href: ./teams/manage-approvals-app.md
             - name: Teams で承認をカスタマイズする
               href: ./teams/customize-approvals.md
+            - name: 承認フローでカスタム コネクタを使用する
+              href: ./teams/approvals-custom-connector.md
         - name: Microsoft Forms でフローを使用する
           items:
             - name: 概要
@@ -211,31 +241,9 @@
       items:
         - name: Power Automate で AI Builder を使用する
           href: use-ai-builder.md
-    - name: Process Advisor (プレビュー)
-      items:
-        - name: 概要
-          href: process-advisor-overview.md
-        - name: プロセスと記録を使用する
-          href: process-advisor-processes.md
-        - name: プロセスを分析する
-          href: process-advisor-analyze.md
-        - name: プロセスを視覚化する
-          href: process-advisor-visualize.md
-        - name: プロセスを共有する
-          href: process-advisor-share.md
-        - name: 管理とセキュリティ
-          items:
-            - name: セキュリティとプライバシー
-              href: process-advisor-security.md
-            - name: データを保護する
-              href: process-advisor-protect.md
-            - name: 既知の問題
-              href: process-advisor-issues.md
-        - name: 用語集
-          href: process-advisor-glossary.md
     - name: Microsoft Dataverse
       items:
-        - name: クラシック Microsoft Dataverse ワークフロー
+        - name: クラシック Dataverse ワークフロー
           items:
             - name: 概要
               href: workflow-processes.md
@@ -247,15 +255,15 @@
               href: best-practices-workflow-processes.md
             - name: フローでバックグラウンド ワークフローを置き換える
               href: replace-workflows-with-flows.md
-        - name: クラシック Microsoft Dataverse タスク フロー
+        - name: クラシック Dataverse タスク フロー
           items:
             - name: モバイル タスク フローを作成する
               href: create-mobile-task-flow.md
-        - name: クラシック Microsoft Dataverse ダイアログ
+        - name: クラシック Dataverse ダイアログ
           items:
-            - name: クラシック Microsoft Dataverse ダイアログを使用する
+            - name: クラシック Dataverse ダイアログを使用する
               href: use-cds-for-apps-dialogs.md
-            - name: クラシック Microsoft Dataverse ダイアログを置き換える
+            - name: クラシック Dataverse ダイアログを置き換える
               href: replace-dialogs.md
     - name: トラブルシューティング
       items:
@@ -399,6 +407,8 @@
           href: ./desktop-flows/actions-reference/cognitive.md
         - name: FTP
           href: ./desktop-flows/actions-reference/ftp.md
+    - name: Softomotive 製品のプロセス マイグレーター (プレビュー)
+      href: ./desktop-flows/softomotive-migrator.md
     - name: 他の種類のデスクトップ フロー (レガシ)
       items:
         - name: 他の種類のデスクトップ フローの概要
@@ -407,6 +417,8 @@
           href: ./desktop-flows/create-desktop.md
         - name: Windows レコーダー (V1) を使用してデスクトップ フローを編集する
           href: ./desktop-flows/edit-desktop.md
+        - name: Windows レコーダー (V1) から Power Automate Desktop に移行する
+          href: ./desktop-flows/migrate.md
         - name: Windows レコーダー (V1) を使用してデスクトップ フローで入力と出力を使用する
           href: ./desktop-flows/inputs-outputs-desktop.md
           items:
@@ -483,8 +495,13 @@
       href: admin-center-introduction.md
     - name: 環境を管理する
       href: environments-overview-admin.md
+    - name: IP アドレスの構成
+      href: ip-address-configuration.md
     - name: デスクトップ フロー分析を表示する
       href: ./desktop-flows/overview-analytics.md
+    - name: デスクトップ フローの監視
+      href: ./desktop-flows/monitor.md
+      displayName: Monitor desktop flows in the Center of Excellence (CoE)
     - name: データ損失の防止に役立つポリシーを設定する
       href: prevent-data-loss.md
     - name: モバイル アプリで Intune をサポートする
