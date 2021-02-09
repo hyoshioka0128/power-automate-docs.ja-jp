@@ -1,11 +1,5 @@
 1. **アクションの追加**を選択します。
-   
-    ![アクションの追加](media/modern-approvals/add-update-item-action.png)
-2. **[アクションの選択]** カードの検索ボックスに「**アイテムの更新**」と入力します。
-   
-    ![更新アクションの検索](media/modern-approvals/search-update-item-rejected.png)
-3. **SharePoint - アイテムの更新**アクションを選択します。
+2. **アクションの選択**カードの検索ボックスに**更新**と入力し、次に**アイテムの更新 - SharePoint** アクションを選択します。
    
     ![アイテムの更新を選択する](media/modern-approvals/select-update-item-no.png)
 4. カードを必要に応じて構成します。
-

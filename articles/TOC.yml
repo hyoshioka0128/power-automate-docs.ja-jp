@@ -1,125 +1,437 @@
-- name: Power Automate ドキュメント
+- name: Power Automate のドキュメント
   href: /power-automate/
 - name: 概要
   items:
+    - name: 開始する
+      href: getting-started.md
+    - name: フローの種類
+      href: flow-types.md
     - name: サインアップ
       href: sign-up-sign-in.md
-    - name: 作業の開始
-      href: getting-started.md
     - name: ガイド付き学習
       href: 'https://docs.microsoft.com/learn/paths/automate-process-using-flow'
-    - name: ブラウザーでフローを作成する
-      href: get-started-logic-template.md
-    - name: スマートフォンでフローを作成する
-      href: mobile-create-flow.md
-    - name: チーム フローを作成する
+    - name: 新機能
+  href: whats-new.md
+- name: Process Advisor (プレビュー)
+  items:
+    - name: 概要
+      href: process-advisor-overview.md
+      displayName: Overview of process advisor
+    - name: プロセスと記録を使用する
+      href: process-advisor-processes.md
+    - name: プロセスを分析する
+      href: process-advisor-analyze.md
+    - name: プロセスを視覚化する
+      href: process-advisor-visualize.md
+    - name: プロセスを共有する
+      href: process-advisor-share.md
+    - name: 管理とセキュリティ
+      items:
+        - name: セキュリティとプライバシー
+          href: process-advisor-security.md
+          displayName: Security and privacy in process advisor
+        - name: データを保護する
+          href: process-advisor-protect.md
+        - name: 既知の問題
+          href: process-advisor-issues.md
+          displayName: Known issues in process advisor
+    - name: 用語集
+      href: process-advisor-glossary.md
+      displayName: Process advisor glossary
+- name: クラウド フロー
+  items:
+    - name: 開始する
+      href: overview-cloud.md
+    - name: トリガーの基本
+      href: triggers-introduction.md
+    - name: Power Virtual Agents ボットからサポートを得る
+      href: contextual-help-bot.md
+    - name: フローを共有する
       href: create-team-flows.md
-    - name: Common Data Service を使用するフローを作成する
+    - name: Microsoft Dataverse を使用するフローを作成する
       href: common-data-model-intro.md
-    - name: 最新情報
-      href: whats-new.md
-    - name: ラーニング カタログ
+    - name: 自動フロー
       items:
-        - name: ラーニング カタログ
-          href: learning-catalog/learning-catalog.md
-        - name: アプリ作成者
-          href: learning-catalog/learning-catalog-app-maker.md
-        - name: 管理者
-          href: learning-catalog/learning-catalog-administrator.md
-        - name: 開発者
-          href: learning-catalog/learning-catalog-developer.md
-        - name: 機能コンサルタント
-          href: learning-catalog/learning-catalog-functional-consultant.md
-        - name: パートナーのプリセールスの役割
-          href: learning-catalog/learning-catalog-sales.md
-- name: 自動化されたフロー
-  items:
-    - name: ゼロからフローを作成する
-      href: get-started-logic-flow.md
-    - name: 電子メールでフローをトリガーする
-      href: email-triggers.md
-    - name: SharePoint のリマインダー フローを作成する
-      href: create-sharepoint-reminder-flows.md
-    - name: SharePoint ページの承認をカスタマイズするフローを作成する
-      href: customize-sharepoint-page-approvals.md
-    - name: Teams でフローを作成する
-      href: flows-teams.md
-    - name: Teams でアダプティブ カードのフローを作成する
-      href: create-adaptive-cards-teams.md
-    - name: Common Data Service (現在の環境) でフローを作成する
-      href: connection-cds-native.md
-    - name: Common Data Service でフローを作成する
-      href: connection-cds.md
-    - name: Dynamics 365 でフローを作成する
-      href: connection-dynamics365.md
-    - name: OneDrive for Business でフローを作成する
-      href: onedrive-business-launch-panel.md
-    - name: データのフィルターとコピー
-      href: odata-filters.md
-    - name: Flic を使用する
-      href: flic-button-flows.md
-    - name: bttn を使用する
-      href: bttn-button-flows.md
-- name: ボタン フロー
-  items:
-    - name: ボタン フローを作成する
-      href: introduction-to-button-flows.md
-    - name: トリガー トークンを使用してボタン フローを作成する
-      href: introduction-to-button-trigger-tokens.md
-    - name: ユーザー入力のあるボタン フローを作成する
-      href: button-flow-with-user-input-tokens.md
-    - name: ボタンを共有する
-      href: share-buttons.md
-- name: スケジュールされたフロー
-  items:
-    - name: スケジュールに従ってフローを実行する
-      href: run-scheduled-tasks.md
-    - name: 項目のリストを処理する
-      href: apply-to-each.md
-- name: 承認フロー
-  items:
-    - name: 1 つの承認
-      href: modern-approvals.md
-    - name: 添付ファイルを使用した承認
-      href: approval-attachments.md
-    - name: 連続した承認
-      href: sequential-modern-approvals.md
-    - name: 並行した承認
-      href: parallel-modern-approvals.md
-    - name: すべてのユーザーが承認する必要がある
-      href: all-assigned-must-approve.md
-    - name: 統合された承認
-      href: common-data-model-approve.md
-    - name: 書式設定承認要求
-      href: approvals-markdown-support.md
-    - name: カスタム承認応答オプション
-      href: create-approval-response-options.md
-- name: Microsoft Teams フロー
-  items:
-    - name: Teams メッセージからフローをトリガーする
-      href: trigger-flow-teams-message.md
-    - name: アダプティブ カードを使用してフローをモデル化する
+        - name: テンプレートからクラウド フローを作成する
+          href: get-started-logic-template.md
+        - name: ゼロからクラウド フローを作成する
+          href: get-started-logic-flow.md
+        - name: Common Data Service (current environment) コネクタでクラウド フローを作成する
+          href: connection-cds-native.md
+        - name: Common Data Service コネクタでクラウド フローを作成する
+          href: connection-cds.md
+        - name: Dynamics 365 でクラウド フローを作成する
+          href: connection-dynamics365.md
+        - name: OneDrive for Business でクラウド フローを作成する
+          href: onedrive-business-launch-panel.md
+        - name: データのフィルターとコピー
+          href: odata-filters.md
+        - name: Flicsでフローを実行する
+          href: flic-button-flows.md
+        - name: ボタンでフローを実行する
+          href: bttn-button-flows.md
+    - name: 予定フロー
       items:
-        - name: Teams 向けアダプティブ カードの概要
-          href: overview-adaptive-cards.md
-        - name: Teams 向けアダプティブ カードの作成
-          href: create-adaptive-cards.md
-        - name: サンプル - 候補のフィードバック
-          href: candidate-feedback-sample.md
-        - name: サンプル - 画像の共有
-          href: image-share-sample.md
-        - name: サンプル - リードのコレクション
-          href: lead-collection-sample.md
-        - name: サンプル - ポーリング ジェネレーター
-          href: poll-generator-sample.md
-        - name: サンプル - メタデータの更新
-          href: metadata-update-sample.md
-        - name: サンプル - 毎日の天気
-          href: daily-weather-sample.md
-        - name: サンプル - 頭字語フォーム
-          href: acronym-sample.md
-        - name: サンプル - リードの生成
-          href: lead-collection-sample.md
+        - name: スケジュールに従ってクラウド フローを実行する
+          href: run-scheduled-tasks.md
+        - name: 項目のリストを処理する
+          href: apply-to-each.md
+    - name: インスタント フロー
+      items:
+        - name: ボタン フローを作成する
+          href: introduction-to-button-flows.md
+        - name: スマートフォンでフローを作成する
+          href: mobile-create-flow.md
+        - name: トリガー トークンを使用してボタン フローを作成する
+          href: introduction-to-button-trigger-tokens.md
+        - name: ユーザー入力のあるボタン フローを作成する
+          href: button-flow-with-user-input-tokens.md
+        - name: ボタンを共有する
+          href: share-buttons.md
+    - name: 方法
+      items:
+        - name: アクションを追加する
+          href: multi-step-logic-flow.md
+        - name: 条件を追加する
+          href: add-condition.md
+        - name: データ操作を使用する
+          href: data-operations.md
+        - name: 条件で式を使用する
+          href: use-expressions-in-conditions.md
+        - name: Visio を使用してフローをモデル化する
+          href: visio-flows.md
+        - name: '参照: 式で関数を使用する'
+          href: 'https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference'
+        - name: スマートフォンでフローを管理する
+          href: mobile-manage-flows.md
+        - name: テンプレートを発行する
+          href: publish-a-template.md
+        - name: クラウド フローのオン/オフを切り替える
+          href: disable-flow.md
+    - name: 一般的なクラウド フローのシナリオ
+      items:
+        - name: フローでの承認の使用
+          items:
+            - name: 承認の利用を開始する
+              href: get-started-approvals.md
+            - name: 1 つの承認
+              href: modern-approvals.md
+            - name: 添付ファイルを使用した承認
+              href: approval-attachments.md
+            - name: 連続した承認
+              href: sequential-modern-approvals.md
+            - name: 並行した承認
+              href: parallel-modern-approvals.md
+            - name: すべてのユーザーが承認する必要がある
+              href: all-assigned-must-approve.md
+            - name: 統合された承認
+              href: common-data-model-approve.md
+            - name: 承認要求を書式設定する
+              href: approvals-markdown-support.md
+            - name: カスタム承認応答オプション
+              href: create-approval-response-options.md
+        - name: フローを Office 365 Outlook メールと共に使用する
+          items:
+            - name: 概要
+              href: email-overview.md
+              displayName: Use flows with Outlook
+            - name: メールを管理するフローを作成する
+              href: create-email-flows.md
+            - name: 一般的なメール シナリオのフローを作成する
+              href: email-top-scenarios.md
+            - name: 電子メールでクラウド フローをトリガーする
+              href: email-triggers.md
+            - name: フロー内のメールをカスタマイズする
+              href: email-customization.md
+            - name: フロー内のメールに関する問題のトラブルシューティング
+              href: email-troubleshooting.md
+        - name: SharePoint でのフローの使用
+          items:
+            - name: 概要
+              href: sharepoint-overview.md
+              displayName: Use flows with SharePoint
+            - name: SharePoint のリマインダー フローを作成する
+              href: create-sharepoint-reminder-flows.md
+            - name: SharePoint ページの承認を管理する
+              href: customize-sharepoint-page-approvals.md
+        - name: Microsoft Teams でのフローの使用
+          items:
+            - name: 概要
+              href: ./teams/overview.md
+              displayName: Use flows with Microsoft Teams
+            - name: Power Automate アプリをインストールする
+              href: ./teams/install-teams-app.md
+            - name: Microsoft Teams でフローを作成する
+              href: ./teams/teams-app-create.md
+            - name: Microsoft Teams でフローを管理する
+              href: ./teams/teams-app-home.md
+            - name: Teams メッセージからフローをトリガーする
+              href: trigger-flow-teams-message.md
+            - name: Power Apps アプリを使用してフローを作成する
+              href: ./teams/create-flows-power-apps-app.md
+            - name: アダプティブ カードを使用してフローをモデル化する
+              href: create-adaptive-cards.md
+              items:
+                - name: Teams 向けアダプティブ カードの概要
+                  href: overview-adaptive-cards.md
+                - name: Teams 向けアダプティブ カードの作成
+                  href: create-adaptive-cards.md
+                - name: サンプル - 候補のフィードバック
+                  href: candidate-feedback-sample.md
+                - name: サンプル - 画像の共有
+                  href: image-share-sample.md
+                - name: サンプル - リードのコレクション
+                  href: lead-collection-sample.md
+                - name: サンプル - ポーリング ジェネレーター
+                  href: poll-generator-sample.md
+                - name: サンプル - メタデータの更新
+                  href: metadata-update-sample.md
+                - name: サンプル - 毎日の天気
+                  href: daily-weather-sample.md
+                - name: サンプル - 頭字語フォーム
+                  href: acronym-sample.md
+                - name: サンプル - リードの生成
+                  href: lead-collection-sample.md
+        - name: Microsoft Teams で承認を作成する
+          items:
+            - name: Microsoft Teams での承認の概要
+              href: ./teams/native-approvals-in-teams.md
+            - name: チャットまたはチャネルで承認を作成する
+              href: ./teams/create-approval-from-chat.md
+            - name: 承認アプリから承認を作成する
+              href: ./teams/create-approval-from-teams-app.md
+            - name: Teams で承認に対応する
+              href: ./teams/respond-to-approvals-in-teams.md
+            - name: Teams で承認を管理する
+              href: ./teams/manage-approvals-app.md
+            - name: Teams で承認をカスタマイズする
+              href: ./teams/customize-approvals.md
+            - name: 承認フローでカスタム コネクタを使用する
+              href: ./teams/approvals-custom-connector.md
+        - name: Microsoft Forms でフローを使用する
+          items:
+            - name: 概要
+              href: ./forms/overview.md
+              displayName: Use flows with Microsoft Forms
+            - name: 開始する
+              href: ./forms/get-started.md
+            - name: トップ シナリオ
+              href: ./forms/popular-scenarios.md
+            - name: 方法
+              href: ./forms/how-to.md
+            - name: フォームに関する既知の問題のトラブルシューティング
+              href: ./forms/troubleshoot-issues.md
+    - name: ソリューション
+      items:
+        - name: 概要
+          href: overview-solution-flows.md
+        - name: ソリューションにクラウド フローを作成する
+          href: create-flow-solution.md
+        - name: 子フローの作成
+          href: create-child-flows.md
+        - name: ソリューションのエクスポート
+          href: export-flow-solution.md
+        - name: ソリューションのインポート
+          href: import-flow-solution.md
+        - name: ソリューション対応フローを編集する
+          href: edit-solution-aware-flow.md
+        - name: ソリューション対応フローを削除する
+          href: remove-solution-aware-flow.md
+    - name: AI Builder
+      items:
+        - name: Power Automate で AI Builder を使用する
+          href: use-ai-builder.md
+    - name: Microsoft Dataverse
+      items:
+        - name: クラシック Dataverse ワークフロー
+          items:
+            - name: 概要
+              href: workflow-processes.md
+            - name: バックグラウンド ワークフローのステージとステップを構成する
+              href: configure-workflow-steps.md
+            - name: バックグラウンド ワークフロー プロセスの監視と管理
+              href: monitor-manage-processes.md
+            - name: バックグラウンド ワークフロー プロセスのベスト プラクティス
+              href: best-practices-workflow-processes.md
+            - name: フローでバックグラウンド ワークフローを置き換える
+              href: replace-workflows-with-flows.md
+        - name: クラシック Dataverse タスク フロー
+          items:
+            - name: モバイル タスク フローを作成する
+              href: create-mobile-task-flow.md
+        - name: クラシック Dataverse ダイアログ
+          items:
+            - name: クラシック Dataverse ダイアログを使用する
+              href: use-cds-for-apps-dialogs.md
+            - name: クラシック Dataverse ダイアログを置き換える
+              href: replace-dialogs.md
+    - name: トラブルシューティング
+      items:
+        - name: トリガーに関する一般的な問題のトラブルシューティング
+          href: triggers-troubleshoot.md
+        - name: クラウド フローの確認
+          href: see-a-flow-run.md
+        - name: スマートフォンでフロー アクティビティを監視する
+          href: mobile-monitor-activity.md
+        - name: クラウド フローのトラブルシューティング
+          href: fix-flow-failures.md
+        - name: エラー チェッカーでエラーを検索して修正する
+          href: error-checker.md
+- name: デスクトップ フロー
+  items:
+    - name: デスクトップ フローの概要
+      href: ./desktop-flows/introduction.md
+    - name: Power Automate Desktop のセットアップ
+      href: ./desktop-flows/setup.md
+    - name: デスクトップ フローを作成する
+      href: ./desktop-flows/create-flow.md
+    - name: デスクトップ フローを実行する
+      href: ./desktop-flows/run-pad-flow.md
+    - name: デスクトップ フローを別のフローからトリガーする
+      href: ./desktop-flows/link-pad-flow-portal.md
+    - name: デスクトップ フローの管理
+      href: ./desktop-flows/manage.md
+    - name: デスクトップ フローの監視
+      items:
+        - name: デスクトップ フロー実行
+          href: ./desktop-flows/monitor-desktop-flow-runs.md
+        - name: デスクトップ フローのキュー (プレビュー)
+          href: ./desktop-flows/monitor-desktop-flow-queues.md
+    - name: Desktop コンソール
+      href: ./desktop-flows/console.md
+    - name: Desktop フロー デザイナー
+      href: ./desktop-flows/flow-designer.md
+      items:
+        - name: アクションとアクション ペインを構成する
+          href: ./desktop-flows/actions-pane.md
+        - name: フロー デザイナーのワークスペースを管理する
+          href: ./desktop-flows/designer-workspace.md
+        - name: デスクトップ フローのデバッグ
+          href: ./desktop-flows/debugging-flow.md
+        - name: 変数と変数ペインを管理する
+          href: ./desktop-flows/manage-variables.md
+        - name: 変数のデータ型
+          href: ./desktop-flows/variable-data-types.md
+        - name: 変数のデータ型のプロパティ
+          href: ./desktop-flows/datatype-properties.md
+        - name: 変数と % 表記を使用する
+          href: ./desktop-flows/variable-manipulation.md
+        - name: UI 要素を使用して自動化する
+          href: ./desktop-flows/ui-elements.md
+        - name: 画像を使用して自動化する
+          href: ./desktop-flows/images.md
+        - name: エラーを管理する
+          href: ./desktop-flows/errors.md
+        - name: フロー内で使用法を検索する
+          href: ./desktop-flows/finding-usages.md
+        - name: Power Automate Desktop でフローを記録する
+          href: ./desktop-flows/recording-flow.md
+        - name: ループを使用する
+          href: ./desktop-flows/use-loops.md
+        - name: 条件を使用する
+          href: ./desktop-flows/use-conditionals.md
+        - name: Web フローを自動化する
+          href: ./desktop-flows/automation-web.md
+        - name: ブラウザーの使用と拡張機能の管理
+          href: ./desktop-flows/using-browsers.md
+        - name: デスクトップ フローを自動化する
+          href: ./desktop-flows/desktop-automation.md
+    - name: Desktop アクションのリファレンス
+      href: ./desktop-flows/actions-reference.md
+      items:
+        - name: 変数
+          href: ./desktop-flows/actions-reference/variables.md
+        - name: 条件
+          href: ./desktop-flows/actions-reference/conditionals.md
+        - name: ループ
+          href: ./desktop-flows/actions-reference/loops.md
+        - name: 待機
+          href: ./desktop-flows/actions-reference/wait.md
+        - name: フロー コントロール
+          href: ./desktop-flows/actions-reference/flowcontrol.md
+        - name: システム
+          href: ./desktop-flows/actions-reference/system.md
+        - name: ファイル
+          href: ./desktop-flows/actions-reference/file.md
+        - name: フォルダー
+          href: ./desktop-flows/actions-reference/folder.md
+        - name: 圧縮
+          href: ./desktop-flows/actions-reference/compression.md
+        - name: UI オートメーション
+          href: ./desktop-flows/actions-reference/uiautomation.md
+        - name: Web
+          href: ./desktop-flows/actions-reference/web.md
+        - name: Web オートメーション
+          href: ./desktop-flows/actions-reference/webautomation.md
+        - name: Excel
+          href: ./desktop-flows/actions-reference/excel.md
+        - name: データベース
+          href: ./desktop-flows/actions-reference/database.md
+        - name: 電子メール
+          href: ./desktop-flows/actions-reference/email.md
+        - name: Exchange
+          href: ./desktop-flows/actions-reference/exchange.md
+        - name: Outlook
+          href: ./desktop-flows/actions-reference/outlook.md
+        - name: メッセージ ボックス
+          href: ./desktop-flows/actions-reference/display.md
+        - name: マウスとキーボード
+          href: ./desktop-flows/actions-reference/mouseandkeyboard.md
+        - name: クリップボード
+          href: ./desktop-flows/actions-reference/clipboard.md
+        - name: テキスト
+          href: ./desktop-flows/actions-reference/text.md
+        - name: Datetime
+          href: ./desktop-flows/actions-reference/datetime.md
+        - name: PDF
+          href: ./desktop-flows/actions-reference/pdf.md
+        - name: CMD セッション
+          href: ./desktop-flows/actions-reference/cmd.md
+        - name: ターミナル エミュレーション
+          href: ./desktop-flows/actions-reference/terminalemulation.md
+        - name: OCR
+          href: ./desktop-flows/actions-reference/ocr.md
+        - name: 暗号化
+          href: ./desktop-flows/actions-reference/cryptography.md
+        - name: サービス
+          href: ./desktop-flows/actions-reference/services.md
+        - name: XML
+          href: ./desktop-flows/actions-reference/xml.md
+        - name: Active Directory
+          href: ./desktop-flows/actions-reference/activedirectory.md
+        - name: AWS
+          href: ./desktop-flows/actions-reference/aws.md
+        - name: Azure
+          href: ./desktop-flows/actions-reference/azure.md
+        - name: コグニティブ
+          href: ./desktop-flows/actions-reference/cognitive.md
+        - name: FTP
+          href: ./desktop-flows/actions-reference/ftp.md
+    - name: Softomotive 製品のプロセス マイグレーター (プレビュー)
+      href: ./desktop-flows/softomotive-migrator.md
+    - name: 他の種類のデスクトップ フロー (レガシ)
+      items:
+        - name: 他の種類のデスクトップ フローの概要
+          href: ./desktop-flows/overview.md
+        - name: Windows レコーダー (V1) を使用してデスクトップ フローを作成およびテストする
+          href: ./desktop-flows/create-desktop.md
+        - name: Windows レコーダー (V1) を使用してデスクトップ フローを編集する
+          href: ./desktop-flows/edit-desktop.md
+        - name: Windows レコーダー (V1) から Power Automate Desktop に移行する
+          href: ./desktop-flows/migrate.md
+        - name: Windows レコーダー (V1) を使用してデスクトップ フローで入力と出力を使用する
+          href: ./desktop-flows/inputs-outputs-desktop.md
+          items:
+            - name: Windows レコーダー (V1) を使用してデスクトップ フローで入力方式エディター (IME) を使用する
+              href: ./desktop-flows/use-ime.md
+            - name: デスクトップ フローでの WinAutomation の使用
+              href: ./desktop-flows/create-processes.md
+        - name: Selenium IDE フローの作成とテスト
+          href: ./desktop-flows/create-web.md
+        - name: Selenium IDE でデスクトップ フローを編集する
+          href: ./desktop-flows/edit-web.md
+        - name: Selenium IDE を使用してデスクトップ フローで入力と出力を使用する
+          href: ./desktop-flows/inputs-outputs-web.md
 - name: ビジネス プロセス フロー
   items:
     - name: ビジネス プロセス フローの概要
@@ -132,118 +444,21 @@
       href: custom-controls-business-process-flows.md
     - name: ビジネス プロセス フロー属性のベスト プラクティス
       href: best-practices-entity-attributes.md
-- name: UI flows
-  items:
-    - name: UI flows の概要
-      href: ./ui-flows/overview.md
-    - name: 以前のリリースからの UI flows のアップグレード
-      href: ./ui-flows/upgrade.md
-    - name: UI flows の設定
-      href: ./ui-flows/setup.md
-    - name: デスクトップ UI フローの作成とテスト
-      href: ./ui-flows/create-desktop.md
-    - name: デスクトップ UI フローの編集
-      href: ./ui-flows/edit-desktop.md
-    - name: デスクトップ UI フローで入力と出力を使用する
-      href: ./ui-flows/inputs-outputs-desktop.md
-      items:
-        - name: UI flows での入力方式エディター (IME) の使用
-          href: ./ui-flows/use-ime.md
-    - name: Web UI フローの作成とテスト
-      href: ./ui-flows/create-web.md
-    - name: UI flows での WinAutomation の使用
-      href: ./ui-flows/create-processes.md
-    - name: Web UI フローの編集
-      href: ./ui-flows/edit-web.md
-    - name: Web UI フローで入力と出力を使用する
-      href: ./ui-flows/inputs-outputs-web.md
-    - name: 有人および無人の UI フローの実行
-      href: ./ui-flows/run-ui-flow.md
-    - name: UI フローの管理
-      href: ./ui-flows/manage.md
-- name: ソリューション
+- name: ラーニング カタログ
   items:
     - name: 概要
-      href: overview-solution-flows.md
-    - name: ソリューションにフローを作成する
-      href: create-flow-solution.md
-    - name: 子フローの作成
-      href: create-child-flows.md
-    - name: ソリューションのエクスポート
-      href: export-flow-solution.md
-    - name: ソリューションのインポート
-      href: import-flow-solution.md
-    - name: ソリューション対応フローを編集する
-      href: edit-solution-aware-flow.md
-    - name: ソリューション対応フローを削除する
-      href: remove-solution-aware-flow.md
-- name: Common Data Service
-  items:
-    - name: クラシック Common Data Service ワークフロー
-      items:
-        - name: 概要
-          href: workflow-processes.md
-        - name: ワークフローのステージとステップを構成する
-          href: configure-workflow-steps.md
-        - name: ワークフロー プロセスの監視と管理
-          href: monitor-manage-processes.md
-        - name: ワークフロー プロセスのベスト プラクティス
-          href: best-practices-workflow-processes.md
-        - name: フローでワークフローを置き換える
-          href: replace-workflows-with-flows.md
-    - name: クラシック Common Data Service アクション
-      items:
-        - name: アクションの使用
-          href: actions.md
-        - name: カスタム アクションを作成する
-          href: create-actions.md
-        - name: ワークフローからカスタム アクションを構成する
-          href: configure-actions.md
-        - name: ワークフローからカスタム アクションを呼び出す
-          href: invoke-custom-actions-workflow-dialog.md
-    - name: クラシック Common Data Service タスク フロー
-      items:
-        - name: モバイル タスク フローを作成する
-          href: create-mobile-task-flow.md
-    - name: クラシック Common Data Service ダイアログ
-      items:
-        - name: クラシック Common Data Service ダイアログを使用する
-          href: use-cds-for-apps-dialogs.md
-        - name: クラシック Common Data Service ダイアログを置き換える
-          href: replace-dialogs.md
-- name: AI Builder
-  items:
-    - name: Power Automate で AI Builder を使用する
-      href: use-ai-builder.md
-- name: 操作方法
-  items:
-    - name: アクションを追加する
-      href: multi-step-logic-flow.md
-    - name: 条件を追加する
-      href: add-condition.md
-    - name: データ操作を使用する
-      href: data-operations.md
-    - name: 条件で式を使用する
-      href: use-expressions-in-conditions.md
-    - name: Visio を使用してフローをモデル化する
-      href: visio-flows.md
-    - name: '参照: 式で関数を使用する'
-      href: 'https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference'
-    - name: スマートフォンでフローを管理する
-      href: mobile-manage-flows.md
-    - name: テンプレートを発行する
-      href: publish-a-template.md
-- name: トラブルシューティング
-  items:
-    - name: フローの確認
-      href: see-a-flow-run.md
-    - name: スマートフォンでフロー アクティビティを監視する
-      href: mobile-monitor-activity.md
-    - name: フローのトラブルシューティング
-      href: fix-flow-failures.md
-    - name: エラー チェッカーでエラーを検索して修正する
-      href: error-checker.md
-- name: データに接続する
+      href: learning-catalog/learning-catalog.md
+    - name: アプリ開発者
+      href: learning-catalog/learning-catalog-app-maker.md
+    - name: 管理者
+      href: learning-catalog/learning-catalog-administrator.md
+    - name: 開発者
+      href: learning-catalog/learning-catalog-developer.md
+    - name: 機能コンサルタント
+      href: learning-catalog/learning-catalog-functional-consultant.md
+    - name: パートナーのプリセールスの役割
+      href: learning-catalog/learning-catalog-sales.md
+- name: データへの接続
   items:
     - name: 利用可能な接続
       href: 'https://go.microsoft.com/fwlink/?linkid=832211'
@@ -274,12 +489,19 @@
   items:
     - name: 組織のフローの Q & A
       href: organization-q-and-a.md
-    - name: 価格設定
+    - name: 価格
       href: billing-questions.md
-    - name: 管理センターの概要
+    - name: 管理センター
       href: admin-center-introduction.md
     - name: 環境を管理する
       href: environments-overview-admin.md
+    - name: IP アドレスの構成
+      href: ip-address-configuration.md
+    - name: デスクトップ フロー分析を表示する
+      href: ./desktop-flows/overview-analytics.md
+    - name: デスクトップ フローの監視
+      href: ./desktop-flows/monitor.md
+      displayName: Monitor desktop flows in the Center of Excellence (CoE)
     - name: データ損失の防止に役立つポリシーを設定する
       href: prevent-data-loss.md
     - name: モバイル アプリで Intune をサポートする
@@ -320,9 +542,11 @@
       href: limits-and-config.md
     - name: Power Automate Web API
       href: web-api.md
-    - name: よく寄せられる質問
+    - name: よくあるご質問
       href: frequently-asked-questions.md
-- name: 他のユーザーの声
+    - name: Power Automate 用語集
+      href: glossary.md
+- name: 他のユーザーから学ぶ
   items:
     - name: ウェビナー
       href: 'https://flow.microsoft.com/blog/category/webinars/'

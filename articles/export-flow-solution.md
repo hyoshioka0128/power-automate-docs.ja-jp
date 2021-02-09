@@ -1,54 +1,50 @@
 ---
-title: ソリューション対応フローをエクスポートする方法に関する説明 | Microsoft Docs
-description: ソリューション対応フローをエクスポートする方法について説明します。
+title: ソリューション対応フローをエクスポートする方法の詳細情報 | Microsoft Docs
+description: ソリューション対応フローをエクスポートする方法の詳細情報。
 services: ''
 suite: flow
 documentationcenter: na
 author: msftman
 manager: kvivek
-editor: ''
-tags: ''
 ms.service: flow
-ms.devlang: na
 ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 11/05/2018
+ms.date: 10/06/2020
 ms.author: deonhe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 32f8269bce8e36774bf937683776f97fc618d41a
-ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
+ms.openlocfilehash: 3431c85508efb01c36fa380f2b966093e7b8c088
+ms.sourcegitcommit: b043b7e8c29afee4f4f25bbf0d5a662d9af9272c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "3296550"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4708223"
 ---
 # <a name="export-a-solution"></a>ソリューションのエクスポート
 
 
-次の手順に従って、ソリューションとその依存関係を新しい環境に移動します。
+次の手順に従ってソリューションとその依存関係を新しい環境に移動します。
 
-1. ナビゲーション バーから **[ソリューション]** を選択します。
-1. エクスポートするソリューションを選択します。
-1. 上部にあるメニューから **[エクスポート]** を選択します。
-1. **[アンマネージドとして]** を選択します。
+1. ナビゲーション バーから **ソリューション** を選択します。
+1. エクスポート対象のアンマネージド ソリューションを選択してから **エクスポート** を選択します。 マネージド ソリューションはエクスポートできません。 詳細: [管理ソリューションとアンマネージド ソリューション](/power-platform/alm/solution-concepts-alm#managed-and-unmanaged-solutions)
+1. **エクスポートする前に** が右側に表示されます。 以下のオプションを選んだ後で、 **次へ** を選択してください。  
+    - **すべての変更を公開する**。 アンマネージド ソリューションをエクスポートすると、公開されたコンポーネントのみがエクスポートされることに注意してください。 **すべての変更を公開** を選択して、すべてのコンポーネントがエクスポートされたソリューションに含まれていることを確認することをお勧めします。 
+    - **問題を確認する**。 ソリューションに対してソリューション チェッカーを実行して、パフォーマンスと安定性の問題を検出します。
+1. **このソリューションをエクスポートする** が右側に表示されます。 次のオプションを入力または選択してから、**エクスポート** を選択してください。  
+    - **バージョン ナンバー**：Power Automate現在のバージョンを表示し、ソリューションのバージョンを自動的にインクリメントします。 既定のバージョンを受け入れるか、独自のバージョンを入力できます。 
+    - **エクスポート方式**:  **管理** 、または **非管理** のパッケージ タイプを選択します。 詳細: [管理ソリューションとアンマネージド ソリューション](/power-platform/alm/solution-concepts-alm#managed-and-unmanaged-solutions)
 
-   ![](./media/export-flow-solution/flow-export-options.png)
+ エクスポートが完了するまでに数分かかる場合があります。 終了後、エクスポートされた zip ファイルは、Web ブラウザーで指定されたダウンロード フォルダーで使用可能になります。
 
-1. 任意の名前でソリューションを保存します。
+> [!NOTE]
+> 組織に正常なアプリケーション ライフサイクル管理 (ALM) を実装するには、ソース管理システムを使用してソリューションを格納およびコラボレーションし、ソリューションのエクスポート プロセスを自動化することを検討してください。 詳細: Power Platform ALMガイドの [ALMの基本](/power-platform/alm/basics-alm)。
 
-   > [!NOTE]
-   > 現在、**[マネージドとして]** はサポートされていません。
+## <a name="learn-more"></a>詳細情報を見る
 
-## <a name="learn-more"></a>詳細はこちら
-
-<!--from editor: Do you want to add Remove a solution-aware flow to this list?-->
 
 * [ソリューションの作成](./overview-solution-flows.md)
-* [ソリューションにフローを作成する](./create-flow-solution.md)
+* [ソリューションにクラウド フローを作成する](./create-flow-solution.md)
 * [ソリューションのインポート](./import-flow-solution.md)
 * [ソリューション対応フローを編集する](./edit-solution-aware-flow.md)

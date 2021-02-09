@@ -1,6 +1,6 @@
 ---
-title: 業務プロセス フローにオンデマンド ワークフローを追加する
-description: ''
+title: オンデマンド ワークフローをビジネス プロセス フローのステージに追加する | Microsoft Docs
+description: ビジネス プロセス フローにオンデマンド ワークフローを追加する方法について説明します。
 author: MSFTMAN
 ms.author: Deonhe
 manager: kvivek
@@ -17,14 +17,16 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 2c74e54c61e030bad788db97b14fca93f2a256fb
-ms.sourcegitcommit: 2284143cf147beb7d6071fd8005a41298e51e493
+ms.openlocfilehash: 6b21e8f8a6938544cbe75f237f6bb5352643d4b3
+ms.sourcegitcommit: 83e22ff7d539b02573548df5ca2a8bc41ea48227
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "3384999"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "4476943"
 ---
 # <a name="add-an-on-demand-workflow-to-a-business-process-flow"></a>業務プロセス フローにオンデマンド ワークフローを追加する
+
+[!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
 
 
 業務プロセス フロー内からオンデマンドでワークフローをトリガーすることができます。 たとえば、ステージが完了するたびにアクティビティ (タスク、電子メールなど) が作成されるように、オンデマンド ワークフローを業務プロセス フローに追加できます。 

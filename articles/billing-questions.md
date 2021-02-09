@@ -20,12 +20,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: a8b4ee39a7d40df41a1c8012a33860a77a51a092
-ms.sourcegitcommit: 8714786a5b632dfd60099871629cf369a31c4125
+ms.openlocfilehash: a9c7994871f821f3d55d4bbee515f0f64334e7a1
+ms.sourcegitcommit: b043b7e8c29afee4f4f25bbf0d5a662d9af9272c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "3346563"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4708487"
 ---
 # <a name="billing-and-metering-questions"></a>課金と使用状況の計測に関する質問
 
@@ -33,7 +33,7 @@ ms.locfileid: "3346563"
 この記事では、Power Automate の課金と使用状況の測定についてよく寄せられる質問とその回答を扱います。
 
 >[!NOTE]
-> 2019 年 10 月 1 日からは、Power Apps と Power Automate は [新しいライセンスモデル](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq) を使用します。 
+> Power Apps と Power Automate は 2019 年 10 月 1 日から [新しいライセンス モデル](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq) を使用しています。 
 
 ## <a name="where-can-i-find-out-what-pricing-plans-are-available"></a>利用可能な価格プランはどこで確認できますか？
 
@@ -67,11 +67,11 @@ Power Automate を使用することで、フローがより強力になりま�
 
 ## <a name="what-happens-if-i-try-to-execute-runs-too-frequently"></a>実行の試行頻度が高すぎる場合にはどうなりますか？
 
-プランに応じて、フローの実行頻度が決定されます。 たとえば、無料プランの場合、フローを実行できるのは 15 分ごととなります。 前回の実行から 15 分が経過しないうちにフローがトリガーされた場合、フローは 15 分が経過するまではキューに入れられます。
+プランに応じて、フローの実行頻度が決定されます。 たとえば、無料プランの場合、フローを実行できるのは 15 分ごととなります。 前回の実行から 15 分が経過しないうちにクラウド フローがトリガーされた場合、フローは 15 分が経過するまでキューに入れられます。
 
 ## <a name="what-counts-as-a-run"></a>実行と見なされる基準を教えてください
 
-自動トリガー、あるいは手動トリガーに関わらず、フローがトリガーされるたびに、1 回の実行と見なされます。 新規データの確認は実行とは見なされません。
+自動トリガーによるか手動での開始かにかかわらず、クラウド フローはトリガーされるたびに、1 つの実行と見なされます。 新規データの確認は実行とは見なされません。
 
 ## <a name="are-there-differences-between-microsoft-accounts-and-work-or-school-accounts-for-billing"></a>Microsoft アカウントと職場、学校アカウントでは、課金に違いがありますか？
 
@@ -83,7 +83,7 @@ Power Automate を使用することで、フローがより強力になりま�
 
 ## <a name="why-did-i-run-out-of-runs-when-my-flow-only-ran-a-few-times"></a>自分のフローでは数回しか実行していないにも関わらず、実行が制限に達してしまうのはなぜですか？
 
-フローによっては、予想したよりも頻繁に実行される場合があります。 たとえば、上司から電子メールが届くたびにプッシュ通知を送信するフローを作成することができます。 このフローはメールを受信するたびに実行される必要があります。受信するメールに対して、そのメールが上司からのものかどうかを確認する必要があるためです。 このアクションは、実行されたと見なされます。
+フローによっては、予想したよりも頻繁に実行される場合があります。 たとえば、上司から電子メールが届くたびにプッシュ通知を送信するクラウド フローを作成することができます。 このフローはメールを受信するたびに実行される必要があります。受信するメールに対して、そのメールが上司からのものかどうかを確認する必要があるためです。 このアクションは、実行されたと見なされます。
 
 この問題は、必要なフィルターをすべてトリガー内に含めることで回避できます。 このプッシュ通知の例では、**詳細オプション** メニューを展開し、**送信元** フィールドに上司のメール アドレスを指定します。
 

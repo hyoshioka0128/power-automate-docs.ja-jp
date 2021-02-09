@@ -1,10 +1,10 @@
 ---
-title: Common Data Service | Microsoft Docs
-description: Common Data Service を使用するテンプレートからフローを作成します。
+title: Microsoft Dataverse | Microsoft Docs
+description: Microsoft Dataverse を使用するテンプレートからクラウド フローを作成します。
 services: ''
 suite: flow
 documentationcenter: na
-author: stepsic-microsoft-com
+author: msftman
 manager: kvivek
 ms.service: flow
 ms.devlang: na
@@ -12,37 +12,39 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/17/2020
-ms.author: stepsic
+ms.author: deonhe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 25f719a3a8018a084f059125372a229c00f15190
-ms.sourcegitcommit: 89fca599830de21709b47087302a030d91e5fe29
+ms.openlocfilehash: f50ed06682bf934763eed1b3d9ab1ba0ccbc5ea1
+ms.sourcegitcommit: b043b7e8c29afee4f4f25bbf0d5a662d9af9272c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "3549754"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4708439"
 ---
-# <a name="create-a-flow-that-uses-common-data-service"></a>Common Data Service を使用するフローを作成する
+# <a name="create-a-cloud-flow-that-uses-microsoft-dataverse"></a>Microsoft Dataverse を使用するクラウド フローを作成する
 
-[Common Data Service](https://powerapps.microsoft.com/tutorials/data-platform-intro/) を使用するフローを作成することにより、ビジネス データの統合ビューで運用効率を向上させます。 
+[!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
+
+[Dataverse](https://powerapps.microsoft.com/tutorials/data-platform-intro/) を使用するフローを作成することにより、ビジネス データの統合ビューで運用効率を向上させます。 
 
 
-たとえば、Power Automate 内では、主に以下の方法で Common Data Service を使用できます。
+たとえば、Power Automate 内では、主に以下の方法で Dataverse を使用できます。
 
-* データのインポート、データのエクスポート、データ変更時のアクションの実行 (通知の送信など) を行うフローを作成します。 詳細な手順については、このトピックの後半にある手順を参照してください。
-* [電子メールを介した承認ループを作成する](wait-for-approvals.md)代わりに、承認状態をエンティティに格納するフローを作成した後、ユーザーが項目を承認または却下できるカスタム アプリをビルドします。 詳細な手順については、[Common Data Service を使用した承認ループの作成](common-data-model-approve.md) を参照してください。
+* データのインポート、データのエクスポート、データ変更時のアクションの実行 (通知の送信など) を行うクラウド フローを作成します。 詳細な手順については、このトピックの後半にある手順を参照してください。
+* [電子メールを介した承認ループを作成する](wait-for-approvals.md)代わりに、承認状態をエンティティに格納するクラウド フローを作成し、ユーザーが項目を承認または却下できるカスタム アプリをビルドします。 詳細な手順については、[Dataverse を使用した承認ループの作成](common-data-model-approve.md) を参照してください。
 
-この記事では、Common Data Service で*見込みのある潜在顧客に関するプロセス*により新しい*営業案件*が作成された時にメール通知を送信するフローを作成します。 通知には*潜在顧客*からの*メモ*が含まれています。
+この記事では、*適格な潜在顧客に関するプロセス* が Dataverse で新しい *営業案件* を作成したときに電子メール通知を送信するクラウド フローを作成します。 通知には *潜在顧客* からの *メモ* が含まれています。
 
 ## <a name="prerequisites"></a>前提条件
 
 * [Power Automate](https://flow.microsoft.com) と [Power Apps](https://make.powerapps.com) に登録します。
   
     問題が発生した場合は、所有するアカウントの種類が [Power Automate](sign-up-sign-in.md)  と [Power Apps](https://powerapps.microsoft.com/tutorials/signup-for-powerapps/) で対応しているかどうか、および組織が登録をブロックしていないことを確認してください。
-* これまで Common Data Service を使ったことがない場合、[Power Apps](https://web.powerapps.com/#/entities) の **エンティティ** タブを開き、**データベースを作成** を選択します。
+* 今まで Dataverse を使用したことがない場合は、Power Platform 管理センターのデータベースを使って [Dataverse 環境を作成](https://docs.microsoft.com/power-platform/admin/create-environment#create-an-environment-with-a-database)します。
 
 ## <a name="sign-in-to-your-environment"></a>環境にサインイン
 
@@ -58,7 +60,7 @@ ms.locfileid: "3549754"
 
 ## <a name="use-a-template"></a>テンプレートの使用
 
-1. 画面上部にある **アプリ、タスク、または業界のテンプレートを検索する** ボックスに、**一般**と入力し、**Enter** キーを押します。
+1. 画面上部にある **アプリ、タスク、または業界のテンプレートを検索する** ボックスに、**一般** と入力し、**Enter** キーを押します。
 
    Common Data Model を使用するテンプレートを含め、名前に「一般」という単語が含まれるテンプレートのリストが表示されます。
    
@@ -66,7 +68,7 @@ ms.locfileid: "3549754"
 
 1. テンプレートのリストで、実行するタスクを実行するテンプレートを選択します。
    
-    たとえば、次の手順に示すように、Common Data Service で潜在顧客から営業案件にメモをコピーするテンプレートを選択します。
+    たとえば、次の手順に示すように、Dataverse で潜在顧客から営業案件にメモをコピーするテンプレートを選択します。
    
     ![テンプレートを選択する](./media/common-data-model-intro/select-template.png)
    
@@ -96,7 +98,7 @@ ms.locfileid: "3549754"
 
 1. **Apply to each** カードを展開し、**潜在顧客メモを新しいメモにコピー** カードを削除します。
 
-1. **アクションを追加** を選択して**通知**を検索し、**メール通知を受け取る** を選択します。
+1. **アクションを追加** を選択して **通知** を検索し、**メール通知を受け取る** を選択します。
 
    ![電子メール通知](./media/common-data-model-intro/apply-to-each.png)
 
@@ -106,5 +108,5 @@ ms.locfileid: "3549754"
 
 
 >[!TIP]
->必要なことを実行するテンプレートが見つからない場合は、Common Data Service に基づいて動作するフローを[一から作成する](get-started-logic-flow.md)ことができます。
+>必要なテンプレートが見つからない場合は、Dataverse 上で動作する[クラウド フローをゼロから構築する](get-started-logic-flow.md) ことができます。
 

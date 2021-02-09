@@ -1,6 +1,6 @@
 ---
 title: Common Data Service （現在の環境）のコネクターを使用して自動フローを作成する| Microsoft Docs
-description: Common Data Service の（現在の環境）コネクターと Power Automate を使用してワークフローを作成する
+description: Common Data Service (現在の環境)コネクタ と Power Automate を使用してワークフローを作成する
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,30 +20,30 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: ca3dc36827423bffaed53b4ce19c50b94e09df81
-ms.sourcegitcommit: 2284143cf147beb7d6071fd8005a41298e51e493
+ms.openlocfilehash: 7e7300541f4d7963792bb2eca4b35dc37ba8558d
+ms.sourcegitcommit: b043b7e8c29afee4f4f25bbf0d5a662d9af9272c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "3384965"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4708415"
 ---
-# <a name="create-an-automated-flow-by-using-common-data-service-current-environment"></a>Common Data Service （現在の環境）を使用して自動化されたフローを作成する
+# <a name="create-an-automated-flow-by-using-common-data-service-current-environment-connector"></a>Common Data Service (現在の環境) コネクタを使用して自動フローを作成する
+
+[!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
 
 >[!IMPORTANT]
->Common Data Service に接続できるコネクタは 3 つ存在します。 この記事では、Common Data Service への接続に対して推奨される [Common Data Service (現在の環境) コネクタ](./connection-cds.md)について説明します。 推奨するコネクタが使用できない場合は、[Common Data Service Connector](./connection-cds.md) と [Dynamics 365 コネクタ](https://docs.microsoft.com/connectors/dynamicscrmonline/) も使用することができます。
+>Dataverse に接続できるコネクタは 3 つ存在します。 この記事では、Dataverse に接続する際に推奨される [Common Data Service (現在の環境)](./connection-cds.md) について解説しています。 推奨するコネクタが使用できない場合は、[Common Data Service Connector](./connection-cds.md) と [Dynamics 365 コネクタ](https://docs.microsoft.com/connectors/dynamicscrmonline/) も使用することができます。
 
 
-Common Data Service（現在の環境）コネクターを使用するには、[ソリューションを意識した](./overview-solution-flows.md) フローを作成する必要があります。 
+作成したフローは、Dataverse レコードが作成、更新、削除されたタイミングでトリガーできます。
 
-作成したフローは、Common Data Service レコードが作成、更新、削除されたタイミングでトリガーできます。
+さらに、Dataverse 内のレコードに対して、作成、更新、取得、削除のアクションを実行できます。
 
-さらに、Common Data Service 内のレコードに対して、作成、更新、取得、削除のアクションを実行できます。
-
-## <a name="initiate-a-flow-with-common-data-service-current-environment"></a>Common Data Service（現在の環境）でフローを開始する
+## <a name="initiate-a-cloud-flow-with-common-data-service-current-environment-connector"></a>Common Data Service (現在の環境) コネクタでクラウド フローを開始する
 
 **レコードの作成、更新、削除時** トリガーを使用してフローを開始します：
 
-   ![トリガーの選択](./media/cds-connector-native/native-trigger.png)
+   ![トリガーを表示するスクリーンショット](./media/cds-connector-native/native-trigger.png)
 
 トリガーの選択後は、次の設定を行う必要があります：
 
@@ -55,15 +55,15 @@ Common Data Service（現在の環境）コネクターを使用するには、[
 
 これらの条件のいずれかを追加して、フローがトリガーされるタイミングを正確に決定できます。
 
-   ![トリガーの選択](./media/cds-connector-native/trigger-conditions.png)
+   ![トリガーの条件を表示するスクリーンショット](./media/cds-connector-native/trigger-conditions.png)
 
-### <a name="the-entity-name"></a>エンティティの名前
+### <a name="the-entity-name"></a>エンティティ名
 
 トリガーが動作するエンティティを示す目的で使用可能な多数のエンティティのいずれかを選択します。
 
-   ![トリガーの選択](./media/cds-connector-native/entity-names.png)
+   ![エンティティ名を表示するスクリーンショット](./media/cds-connector-native/entity-names.png)
 
-### <a name="scope"></a>Scope
+### <a name="scope"></a>範囲
 
 スコープを使用して、自分、部署の誰か、組織内の任意のユーザーがレコードを作成した際にフローが実行されるかどうかを判断します。
 
@@ -86,19 +86,19 @@ Common Data Service（現在の環境）コネクターを使用するには、[
 
 このフローは、フローのユーザが所有する連絡先の姓、または名が更新されるたびにトリガーされます。
 
-![フィルター属性](./media/cds-connector-native/filtering-attributes.png)
+![フィルターの属性を表示するスクリーンショット](./media/cds-connector-native/filtering-attributes.png)
 
 ## <a name="trigger-privileges"></a>トリガーの権限
 
-レコードの作成、更新、削除に基づいてトリガーされるフローを作成するには、**コールバック登録** エンティティに対する作成、読み取り、書き込み、削除のユーザー レベル権限が必要となります。 さらに、定義されたスコープによっては、ユーザーは少なくとも同じエンティティの同等のレベルの読み取り権限が必要となる場合があります。  環境のセキュリティの詳細については、[こちらを参照してください](https://docs.microsoft.com/power-platform/admin/database-security)。
+レコードに対する作成、更新、または削除に基づいてトリガーされるクラウド フローを作成するには、**コールバック登録** エンティティに対する作成、読み取り、書き込み、削除のユーザー レベル権限がユーザーに必要です。 さらに、定義されたスコープによっては、ユーザーは少なくとも同じエンティティの同等のレベルの読み取り権限が必要となる場合があります。  環境のセキュリティの詳細については、[こちらを参照してください](https://docs.microsoft.com/power-platform/admin/database-security)。
 
-## <a name="write-data-into-common-data-service"></a>Common Data Service にデータを書き込む
+## <a name="write-data-into-dataverse"></a>Dataverse にデータを書き込む
 
-Common Data Service にデータを書き込むには、次のいずれかのアクションを使用します：
+Dataverse にデータを書き込むには、次のいずれかのアクションを使用します：
 
-![フィルター属性](./media/cds-connector-native/actions.png)
+![アクションを表示するスクリーンショット](./media/cds-connector-native/actions.png)
 
-**対象範囲** 部署のいずれかのユーザーによって、**アカウント** が **作成される** たびに、名前と年間収益を含む通知を送信するフローの例です。
+ここでは、**取引先企業** が部署 **スコープ** 内のユーザーによって **作成** されるたびに、名前と年間収益を含む通知を送信するクラウド フローの例を示します。
 
 > ![フォローアップ タスク](./media/cds-connector-native/example-flow.png)
 
@@ -120,7 +120,7 @@ Common Data Service にデータを書き込むには、次のいずれかのア
 
 ### <a name="trigger-behavior"></a>トリガーの動作
 
-レコードの更新に対してトリガーが登録されている場合は、指定されたレコードに対する*コミットされた*更新が行われる度にフローが実行されます。 サービスはフローを非同期的に呼び出し、呼び出しが発生した時点で取得されたペイロードを使用します。
+レコードの更新に対してトリガーが登録されている場合は、指定されたレコードに対する *コミットされた* 更新が行われる度にフローが実行されます。 サービスはフローを非同期的に呼び出し、呼び出しが発生した時点で取得されたペイロードを使用します。
 
 > [!NOTE]
 > 数秒以内に 2 つの更新が発生した場合には、最新バージョンのコンテンツフローが複数回トリガーされる可能性があります。

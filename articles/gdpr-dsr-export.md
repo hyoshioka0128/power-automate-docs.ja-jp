@@ -14,18 +14,18 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 4/24/2018
+ms.date: 08/14/2020
 search.app:
 - Flow
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: f9fee8a217cdec28f6a3b49dee6335c4f13a3d45
-ms.sourcegitcommit: 2284143cf147beb7d6071fd8005a41298e51e493
+ms.openlocfilehash: 92d79850ecea3fffdb709a66cad8a4f881237bee
+ms.sourcegitcommit: b043b7e8c29afee4f4f25bbf0d5a662d9af9272c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "3384941"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4709567"
 ---
 # <a name="responding-to-gdpr-data-subject-export-requests-for-power-automate"></a>Power Automate の GDPR データ対象者のエクスポート要求に対応する
 
@@ -38,7 +38,7 @@ ms.locfileid: "3384941"
 
 Power Automate は、特定のユーザーの個人データを検索またはエクスポートする以下のエクスペリエンスがあります:
 
-* **Web サイト アクセス:**  [Power Apps 管理センター](https://admin.powerapps.com/)、または [Power Automate 管理センター](https://admin.flow.microsoft.com/) にサインインします
+* **Web サイト アクセス:** [Power Apps 管理センター](https://admin.powerapps.com/)、または [Power Platform 管理センター](https://admin.powerplatform.microsoft.com/) にサインインします。
 
 * **PowerShell アクセス:**  [Power Apps 管理者 PowerShell コマンドレット](https://go.microsoft.com/fwlink/?linkid=871804)。
 
@@ -56,7 +56,7 @@ Power Automate は、特定のユーザーの個人データを検索または�
 |ゲートウェイ|Power Automate メーカー ポータル|オンプレミス データ ゲートウェイ PowerShell コマンドレット|
 |ゲートウェイのアクセス許可|Power Automate メーカー ポータル|オンプレミス データ ゲートウェイ PowerShell コマンドレット|
 
-## <a name="export-a-flow"></a>フローをエクスポートする
+## <a name="export-a-cloud-flow"></a>クラウド フローをエキスポート
 
 エンド ユーザーまたは自分自身にフローへのアクセス権を付与した管理者は、次の手順に従ってフローをエクスポートできます:
 
@@ -70,11 +70,11 @@ Power Automate は、特定のユーザーの個人データを検索または�
 
 1. **パッケージ (.zip)** を選択します。
 
-フローが zip 形式のパッケージとして使用可能になります。 詳しくは、[フローをエクスポートおよびインポートする方法](https://flow.microsoft.com/blog/import-export-bap-packages/) に関するブログ記事をご覧ください。
+フローが zip 形式のパッケージとして使用可能になります。 詳細については、[クラウド フローをエクスポートおよびインポートする方法](https://flow.microsoft.com/blog/import-export-bap-packages/)に関するブログ投稿をご覧ください。
 
 ## <a name="export-run-history"></a>実行履歴をエクスポートする
 
-実行履歴には、フローで発生したすべての実行の一覧が含まれています。 このデータには、トリガーとアクションに対するフローの状態、期間、継続時間、および入出力データが含まれます。
+実行履歴には、クラウド フローで発生したすべての実行の一覧が含まれています。 このデータには、トリガーとアクションに対するフローの状態、期間、継続時間、および入出力データが含まれます。
 
 エンド ユーザーまたは  Power Automate 管理センターでフローへのアクセス権を付与した管理者は、次の手順に従ってこのデータをエクスポートできます。
 

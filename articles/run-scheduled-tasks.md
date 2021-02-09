@@ -4,8 +4,8 @@ description: 毎日、毎時間などのスケジュールに従ってフロー�
 services: ''
 suite: flow
 documentationcenter: na
-author: stepsic-microsoft-com
-manager: anneta
+author: msftman
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -13,80 +13,55 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/14/2017
-ms.author: stepsic
+ms.date: 08/29/2020
+ms.author: deonhe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 4970554dee8e031a746cf604e2a628f41056b46c
-ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
+ms.openlocfilehash: 77079b48d2a1b805ddce6594a917cc254a984fff
+ms.sourcegitcommit: b043b7e8c29afee4f4f25bbf0d5a662d9af9272c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "3296638"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4709951"
 ---
 # <a name="run-flows-on-a-schedule"></a>スケジュールに従ったフローの実行
 
-1 つ以上のタスクを実行するフローを作成します (例: メールによるレポートの送信)。
+1 つ以上のタスクを実行するクラウド フローを作成します (メールによるレポートの送信など)。
 
-* 1 日、1 時間、または 1 分につき 1 回実行する
-* 指定した日付に実行する
-* 指定した日数、時間、分の経過後に実行する
+* 1 日、1 時間、または 1 分につき 1 回
+* 指定した日付に
+* 指定した日数、時間数、分数の経過後に
 
 ## <a name="create-a-recurring-flow"></a>定期的なフローの作成
-1. [Power Automate](https://flow.microsoft.com) にサインインし、上部のナビゲーション バーの **マイ フロー** を選択します。
-   
-    ![[マイ フロー] オプション](./media/run-scheduled-tasks/create-flow.png)
-2. **[一から作成]** を選択します。
-   
-    ![フローを白紙から作成します](./media/run-scheduled-tasks/create-from-blank.png)
-3. **[すべてのコネクタとトリガーを検索する]** ボックスに、「**繰り返し**」と入力し、**[スケジュール - 繰り返し]** を選択します。
-   
-    ![繰り返しのトリガーを検索](./media/run-scheduled-tasks/select-recurrence.png)
-4. **[Recurrence (繰り返し)]** ダイアログ ボックスで、フローを実行する頻度を指定します。
-   
-    たとえば、2 週間に 1 回フローを実行するには、**[間隔]** で **[2]** を指定し、**[頻度]** で **[週]** を指定します。
-   
-    ![定期的な実行の指定](./media/run-scheduled-tasks/specify-recurrence.png)
 
-## <a name="specify-advanced-options"></a>詳細オプションを指定する
-1. 前のセクションの手順に従って、**[詳細オプションの表示]** を選択します。
-   
-    **注**: このオプションは、**[間隔]** と **[頻度]** に設定された値に基づいて変更されます。 表示されている画面が、下図と異なる場合は **[間隔]** と **[頻度]** が下図と同じ値に設定されていることを確認してください。
-2. **[タイム ゾーン]** を選択し、**[開始時刻]** を指定する際にローカル タイム ゾーン、協定世界時 (UTC) などを反映するようにします。
-3. **[開始時刻]** を次の形式で指定します。
+1. [Power Automate](https://flow.microsoft.com) にサインインし、左側のナビゲーション ウィンドウで **マイ フロー** を選択します。
+1. **新規** を選択した後、**スケジュール-空白から作成** を選択します。
+    ![クラウド フローを一から作成する](./media/run-scheduled-tasks/create-flow.png)
+1. **開始** ボックスを編集してフローを開始するタイミングを指定し、**繰り返し間隔** ボックスを編集してフローの繰り返しを指定し、**作成** を選択します。
+    ![定期的なアイテムの設定](./media/run-scheduled-tasks/select-recurrence.png)
+
+## <a name="configure-advanced-options"></a>詳細設定オプションの構成
+
+1. 前のセクションの手順に従います。 次に **定期的なアイテム** > **詳細オプションの表示** を選択します。
+
+    ![詳細な定期的なアイテムオプションの表示](./media/run-scheduled-tasks/select-recurrence1.png)
+
+   > [!NOTE]
+   > このオプションは、**間隔** と **頻度** に設定された値に基づいて変更されます。 表示されている画面が、下図と異なる場合は **間隔** と **頻度** が下図と同じ値に設定されていることを確認してください。
+1. **タイム ゾーン** を選択し、**開始時刻** を指定する際にローカル タイム ゾーン、協定世界時 (UTC) などを反映するようにします。
+1. **開始時刻** を次の形式で指定します:
    <br>YYYY-MM-DDTHH:MM:SSZ
-4. **[頻度]** で **[日]** を指定した場合は、フローを実行する時刻を指定します。
-5. **[頻度]** で **[週]** を指定した場合は、フローを実行する曜日 (1 日または複数の曜日) とフローを実行する時刻 (1 回または複数の実行時刻) を指定します。
-   
-    たとえば、図のオプションのように、2018 年 1 月 1 日、月曜日の正午 (太平洋標準時) になったらすぐにフローを開始し、このフローを 2 週間に 1 回、火曜日の午後 5:30 (太平洋標準時) に実行するように設定します。
-   
-    ![詳細オプションを指定する](./media/run-scheduled-tasks/advanced-options.png)
-6. [ゼロからのフロー作成](get-started-logic-flow.md)に関する記事に従って、フローで実行するアクションを追加します。
+1. **頻度** で **日** を指定した場合は、フローを実行する時刻を指定します。
+1. **頻度** で **週** を指定した場合は、フローを実行する曜日 (1 日または複数の曜日) とフローを実行する時刻 (1 回または複数の実行時刻) を指定します。
 
-## <a name="delay-a-flow"></a>フローの延期
-1. [Power Automate](https://flow.microsoft.com) にサインインし、上部のナビゲーション バーの **マイ フロー** を選択します。
-   
-    ![フローを白紙から作成します](./media/run-scheduled-tasks/create-flow.png)
-2. **[一から作成]** を選択します。
-   
-    ![フローを白紙から作成します](./media/run-scheduled-tasks/create-from-blank.png)
-3. [ゼロからのフロー作成](get-started-logic-flow.md)に関する記事に従って、イベントを指定します。
-4. **[新しいステップ]** を選択してから、**[アクションの追加]** を選択します。
-   
-    ![フローにアクションを追加するオプション](./media/run-scheduled-tasks/add-action.png)
-5. アクションの一覧で、次のいずれかの操作を行います。
-   
-   * **[遅延]** を選択し、**[カウント]** を指定して、秒、分、時間などの **[単位]** を指定する。
-   * **[延期期限]** を選択し、日付を次の形式で指定します。<br>YYYY-MM-DDTHH:MM:SSZ
-     
-     ![遅延の追加](./media/run-scheduled-tasks/add-delay.png)
-     ![時間の単位で遅延を指定](./media/run-scheduled-tasks/delay.png)
-     ![延期期限を指定](./media/run-scheduled-tasks/delay-until.png)
+    たとえば、図のオプションのように、2018 年 1 月 1 日、月曜日の正午 (太平洋標準時) になったらすぐにクラウド フローを開始し、このフローを 2 週間に 1 回、火曜日の午後 5:30 (太平洋標準時) に実行するように設定します。
 
-## <a name="learn-more"></a>詳細はこちら
+    ![詳細なオプションを指定する](./media/run-scheduled-tasks/advanced-options.png)
+1. [ゼロからクラウド フローを作成](get-started-logic-flow.md) の説明に従って、アクションまたはフローで実行するアクションを追加します。
 
-[詳細オプション](https://docs.microsoft.com/azure/connectors/connectors-native-recurrence)とその構成方法の詳細をご覧ください。
+## <a name="learn-more"></a>詳細情報を見る
 
+[詳細オプション](https://docs.microsoft.com/azure/connectors/connectors-native-recurrence) とその構成方法の詳細をご覧ください。

@@ -1,11 +1,11 @@
 ---
-title: 携帯電話からのフローの作成 | Microsoft Docs
-description: テンプレートからフローを作成します。たとえば、指定したアドレスからメールを受け取るとプッシュ通知を送信するテンプレートから作成します
+title: 携帯電話からクラウド フローを作成する | Microsoft Docs
+description: テンプレートからクラウド フローを作成します。たとえば、指定したアドレスからメールを受信したときにプッシュ通知を送信します
 services: ''
 suite: flow
 documentationcenter: na
 author: adiregev
-manager: erikre
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -13,86 +13,84 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/18/2016
+ms.date: 09/18/2020
 ms.author: adiregev
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 393ae5f6a86363610c26aea78a04748f34dc4f97
-ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
+ms.openlocfilehash: 32b6d1a17deac8f387a9998d8023631a9c14724a
+ms.sourcegitcommit: b043b7e8c29afee4f4f25bbf0d5a662d9af9272c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "3296770"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4709327"
 ---
-# <a name="create-a-flow-from-your-phone-by-using-power-automate"></a>Power Automate を使用して携帯電話からフローを作成する
+# <a name="create-a-cloud-flow-from-your-phone-by-using-power-automate"></a>Power Automate を使用して携帯電話からクラウド フローを作成する
 
-テンプレートを使用して、携帯電話からフローを作成します。テンプレートを見つけるには、サービスの一覧から検索するか、カテゴリを参照するか、キーワードを指定します。 このトピックの手順では、マネージャーからメールを受け取るとプッシュ通知を携帯電話に送信するフローを作成します。
+テンプレートを使用して、携帯電話からクラウド フローを作成します。テンプレートを見つけるには、サービスの一覧から検索するか、カテゴリを参照するか、キーワードを指定します。
+
+このトピックの手順では、上司からのメールを受信するとプッシュ通知を携帯電話に送信するクラウド フローを作成します。
 
 Power Automate に慣れていない場合は、[概要を確認してください](getting-started.md)。
 
 ## <a name="prerequisites"></a>前提条件
 * [Power Automate の取引先企業](sign-up-sign-in.md)。
 * [Android](https://aka.ms/flowmobiledocsandroid)、[iOS](https://aka.ms/flowmobiledocsios)、[Windows Phone](https://aka.ms/flowmobilewindows) 向けの Power Automate モバイル アプリがインストールされた [対応している デバイス](getting-started.md#use-the-mobile-app)。 このトピックのグラフィックは iPhone バージョンのアプリを示していますが、インターフェイスは Android デバイスまたは Windows Phone にも共通しています。
-* このトピックで示すテンプレートを使用するには、以下も必要になります。
+* このトピックで示すテンプレートを使用する場合は、以下も必要です:
   
   * Office 365 の資格情報。
-  * 携帯電話でプッシュ通知が有効になっていること。
+  * スマートフォンでプッシュ通知を有効化すること。
 
-## <a name="find-a-template"></a>テンプレートの検索
-1. モバイル アプリを開き、画面下部にある **[Browse (参照)]** をタップします。
+## <a name="find-a-template"></a>テンプレートを探す
+1. モバイル アプリを開いて画面下部の **参照** をタップします。
    
-    ![[Browse (参照)] アイコン](./media/mobile-create-flow/browse-icon.png)
+    ![参照アイコン](./media/mobile-create-flow/browse-icon.png)
    
-    テンプレートは、次のいずれかの方法で検索できます。
+    次の方法でテンプレートを検索できます:
    
-   * 画面上部にある検索ボックスでキーワードを指定する。
-   * サービスの一覧でオプションをタップする。
-   * 下へスクロールしてさまざまなカテゴリを表示して、任意のカテゴリのテンプレートをタップする。
+   * 画面上部の検索ボックスにキーワードを指定します。
+   * サービス一覧からオプションをタップします。
+   * 下にスクロールして詳細なカテゴリを表示し、任意のカテゴリのテンプレートをタップします。
      
-       ![[Browse (参照)] タブ](./media/mobile-create-flow/browse-tab.png)
+  
+       ![[参照] タブ](./media/mobile-create-flow/browse-tab.png)
      
-     このチュートリアルでは、マネージャーからメールを受け取るとプッシュ通知を送信するテンプレートを開きます。
-2. サービスの一覧で、**[See sll (すべて表示)]** をタップします。
+     このチュートリアルでは上司からメールを受け取るとプッシュ通知を送信するテンプレートを開きます。
+1. サービス一覧から **すべて表示** をタップします。
    
-    ![サービスの一覧を表示](./media/mobile-create-flow/list-services.png)
-3. **[Push notification (プッシュ通知)]** のアイコンをタップします。
-   
+
+    ![サービス一覧を表示する](./media/mobile-create-flow/list-services.png)
+1. **通知** サービスのアイコンをタップします。
+    
     ![プッシュ通知](./media/mobile-create-flow/push-notifications.png)
-4. 検索バーに「**email**」と入力し、マネージャーからメッセージを受け取るとプッシュ通知を送信するテンプレートをタップします。
+1. 検索バーに **上司** と入力して、上司からメッセージを受け取るとプッシュ通知を送信するテンプレートをタップします。
    
+  
     ![テンプレートの選択](./media/mobile-create-flow/choose-template.png)
-5. 選択したテンプレートの詳細が示されている画面で、**[Use this template (このテンプレートを使用する)]** をタップします。
+1. 選択したテンプレートの詳細を表示した画面で **このテンプレートを使用する** をタップします。
    
-    ![テンプレートの確認](./media/mobile-create-flow/confirm-template.png)
+    ![テンプレートを確認する](./media/mobile-create-flow/confirm-template.png)
 
-## <a name="finish-the-flow"></a>フローの完了
+## <a name="finish-the-flow"></a>フローを完了する
 1. メッセージが表示されたら、**サインイン** をタップし、 Office 365 Outlook か Office 365 ユーザー、またはその両方の資格情報を指定します。
    
     ![Office 365 にサインインする](./media/mobile-create-flow/office-signin.png)
    
-    他のフローを作成するときと同じ接続を使用できます。
-2. 右上隅で **[次へ]** をタップします。
-   
-    ![[次へ] をタップ](./media/mobile-create-flow/next.png)
-   
-    次の画面に、トリガー イベントと、その結果として実行されるすべてのアクションが表示されます。
-   
-    ![トリガー イベントとアクション](./media/mobile-create-flow/flow-structure.png)
-   
-    このテンプレートでは、新しいメールによりフローがトリガーされます。このフローでは、マネージャーのアドレスを含む情報を取得し、そのアドレスからメールを受け取るとプッシュ通知を送信します。 テンプレートの中には、カスタマイズしないと適切に動作しないものがありますが、このテンプレートはカスタマイズ不要です。
-3. (省略可能) 画面上部で、フローに対して別の名前を入力します。
-   
-    ![フローの名前の変更](./media/mobile-create-flow/rename-flow.png)
-4. 右上隅で **[Create (作成)]** をタップします。
-   
-    ![フローの作成](./media/mobile-create-flow/create-flow.png)
-   
-    フローが作成され、そのフローを一時停止または削除するまで、マネージャーからのメールがチェックされます。
+    >[!TIP]
+    >他のフローを作成する際も同じ接続を使用できます。
 
-## <a name="next-steps"></a>次のステップ
-* [フロー アクティビティを監視](mobile-monitor-activity.md)します。
-* [フローを管理](mobile-manage-flows.md)します。
+1. 右上隅にある **作成** をタップします。
+   
+    ![[作成] をタップする](./media/mobile-create-flow/create.png)
+
+      
+    フローを作成しました。フローを一時停止または削除するまで上司からのメールを確認します。
+
+    ![完成したフロー](./media/mobile-create-flow/success.png)
+
+## <a name="next-steps"></a>次の手順
+* [フロー アクティビティを監視します](mobile-monitor-activity.md)。
+* [フローを管理します](mobile-manage-flows.md)。
 

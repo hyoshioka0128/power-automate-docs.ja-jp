@@ -20,12 +20,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - maker
-ms.openlocfilehash: b5ba3c826ae1db9991c92bc1217a07205cce491c
-ms.sourcegitcommit: aec3a74472b4e6eb70ed4554d14b57a7324d123d
+ms.openlocfilehash: 7b7db352244a08d05e5b23fbbb2cefe46a55d67a
+ms.sourcegitcommit: a09a957460f7495c0b103e1d832f65963025fbac
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "3498560"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "3697151"
 ---
 # <a name="create-custom-response-options-for-approval-flows"></a>承認フローのカスタム応答オプションを作成する
 
@@ -37,6 +37,8 @@ ms.locfileid: "3498560"
 
 - Power Automate アカウント。
 - 従業員が経費報告書の入力に使用する SharePoint リスト。
+
+[!INCLUDE [sharepoint-detailed-docs](includes/sharepoint-detailed-docs.md)]
 
 ## <a name="create-approval-flow"></a>承認フローを作成する
 1. [Power Automate](https://flow.microsoft.com) にサインインします。

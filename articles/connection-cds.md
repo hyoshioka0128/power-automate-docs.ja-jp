@@ -1,6 +1,6 @@
 ---
-title: Common Data Serviceで自動フローを作成する | Microsoft Docs
-description: Common Data Service の接続と Power Automate を使用してワークフローを作成する
+title: Microsoft Dataverseで自動フローを作成する | Microsoft Docs
+description: Microsoft Dataverse の接続と Power Automate を使用してワークフローを作成する
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,22 +20,24 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: ea1c52933af3c42397004ae62d15e0475e051f14
-ms.sourcegitcommit: aec3a74472b4e6eb70ed4554d14b57a7324d123d
+ms.openlocfilehash: 4fecc748f77dd201c142f8bc7f88c0bf9020617c
+ms.sourcegitcommit: b043b7e8c29afee4f4f25bbf0d5a662d9af9272c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "3498584"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4708390"
 ---
-# <a name="create-an-automated-flow-by-using-common-data-service"></a>Common Data Service を使用して自動化されたフローを作成する
+# <a name="create-an-automated-flow-by-using-microsoft-dataverse"></a>Microsoft Dataverse を使用して自動化されたフローを作成する
+
+[!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
 
 >[!IMPORTANT]
->Common Data Service に接続できるコネクタは 3 つ存在します。 推奨される [Common Data Service（現在の環境）コネクタ](./connection-cds-native.md) を使用してください。 この記事に記載している **Common Data Serviceコネクタ**、[Dynamics 365 Connector](https://docs.microsoft.com/connectors/dynamicscrmonline/) は、推奨コネクタが使用できない場合にご利用いただけます。
+>Dataverse に接続できるコネクタは 3 つ存在します。 推奨される [Common Data Service（現在の環境）コネクタ](./connection-cds-native.md) を使用してください。 この記事に記載している **Common Data Serviceコネクタ**、[Dynamics 365 Connector](https://docs.microsoft.com/connectors/dynamicscrmonline/) は、推奨コネクタが使用できない場合にご利用いただけます。
 
 
-Common Data Service コネクタを使用すると、Common Data Service 内で作成、更新されるイベントによって開始するフローを作成できます。 さらに、Common Data Service 内のレコードに対して、作成、更新、取得、削除のアクションを実行できます。
+Common Data Service コネクタを使用すると、Dataverse 内で作成、更新されるイベントによって開始するフローを作成できます。 さらに、Dataverse 内のレコードに対して、作成、更新、取得、削除のアクションを実行できます。
 
-## <a name="initiate-a-flow-from-common-data-service"></a>Common Data Service からフローを開始する
+## <a name="initiate-a-cloud-flow-from-dataverse"></a>Dataverse からクラウド フローを開始する
 
 次のいずれかのトリガーを使用してフローを開始できます。
 
@@ -77,11 +79,11 @@ Common Data Service コネクタを使用すると、Common Data Service 内で�
 
 ## <a name="trigger-privileges"></a>トリガーの権限
 
-レコードの作成、更新、削除に基づいてトリガーされるフローを作成するには、コールバック登録 エンティティに対する作成、読み取り、書き込み、削除のユーザー レベル権限が必要となります。 さらに、定義されたスコープによっては、ユーザーは少なくとも同じエンティティの同等のレベルの読み取り権限が必要となる場合があります。  環境のセキュリティの詳細については、[こちらを参照してください](https://docs.microsoft.com/power-platform/admin/database-security)。
+レコードに対する作成、更新、または削除に基づいてトリガーされるクラウド フローを作成するには、コールバック登録エンティティに対する作成、読み取り、書き込み、削除のユーザー レベル権限がユーザーに必要です。 さらに、定義されたスコープによっては、ユーザーは少なくとも同じエンティティの同等のレベルの読み取り権限が必要となる場合があります。  環境のセキュリティの詳細については、[こちらを参照してください](https://docs.microsoft.com/power-platform/admin/database-security)。
 
-## <a name="write-data-into-common-data-service"></a>Common Data Service にデータを書き込む
+## <a name="write-data-into-dataverse"></a>Dataverse にデータを書き込む
 
-Common Data Service にデータを書き込むには、次のいずれかのアクションを使用します：
+Dataverse にデータを書き込むには、次のいずれかのアクションを使用します：
 
 - 新しいレコードを作成します
 - レコードの更新
@@ -105,11 +107,11 @@ Common Data Service にデータを書き込むには、次のいずれかのア
 
 ### <a name="enable-upsert-behavior"></a>upsert 動作を有効化する
 
-**レコードを更新する**コマンドを利用して upsert アクションを指定することができます。これにより、レコードが既に存在する場合はレコードを更新するか、新しいレコードを作成します。 upsert を呼び出すには、エンティティと GUID キーを指定します。 指定した種類とキーを持つレコードが存在する場合は、更新が行われます。 それ以外の場合は、指定したキーを持つレコードが作成されます。
+**レコードを更新する** コマンドを利用して upsert アクションを指定することができます。これにより、レコードが既に存在する場合はレコードを更新するか、新しいレコードを作成します。 upsert を呼び出すには、エンティティと GUID キーを指定します。 指定した種類とキーを持つレコードが存在する場合は、更新が行われます。 それ以外の場合は、指定したキーを持つレコードが作成されます。
 
 ### <a name="trigger-behavior"></a>トリガーの動作
 
-レコードの更新に対してトリガーが登録されている場合は、指定されたレコードに対する*コミットされた*更新が行われる度にフローが実行されます。 サービスはフローを非同期的に呼び出し、呼び出しが発生した時点で取得されたペイロードを使用します。
+レコードの更新に対してトリガーが登録されている場合は、指定されたレコードに対する *コミットされた* 更新が行われる度にフローが実行されます。 サービスはフローを非同期的に呼び出し、呼び出しが発生した時点で取得されたペイロードを使用します。
 
 ご利用の環境内にシステム ジョブのバックログがある場合は、フローの実行が遅延する可能性があります。  この遅延が発生した場合、フローは、フローを呼び出すシステム ジョブが実行されたときにトリガーされます。
 

@@ -7,24 +7,24 @@ author: msftman
 ms.service: flow
 ms.devlang: na
 ms.topic: article
-ms.date: 06/11/2020
+ms.date: 10/08/2020
 ms.author: deonhe
 search.app:
 - Flow
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: d8080bd33c0015a8e0ed6886378feff7a47e2f38
-ms.sourcegitcommit: 4dfd4013e4e632a91041783df64845651a8935c3
+ms.openlocfilehash: 71c52f82451bf6a9fcfd7de6eb6e078acaccc0ca
+ms.sourcegitcommit: b043b7e8c29afee4f4f25bbf0d5a662d9af9272c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "3442715"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4710263"
 ---
 # <a name="power-automate-us-government"></a>Power Automate US Government
 
 
-米国の公的機関の特有の進化し続ける要件に応じるために、Microsoft は Power Automate US Government プランを作成しました。 このセクションでは、Power Automate US Government に特有の機能の概要を示します。 この補足セクションと、Power Automate サービス [はじめに](https://docs.microsoft.com/flow/getting-started) トピックをお読みになることをお勧めします。 簡潔にするために、このサービスは一般に *Flow GCC* と呼ばれます。
+米国の公的機関の特有の進化し続ける要件に応じるために、Microsoft は Power Automate US Government プランを作成しました。 このセクションでは、Power Automate US Government に特有の機能の概要を示します。 この補足セクションと、Power Automate サービス [はじめに](https://docs.microsoft.com/flow/getting-started) トピックをお読みになることをお勧めします。 簡潔にするため、このサービスは一般に Power Automate 政府コミュニティ クラウド (GCC) もしくは Power Automate 政府コミュニティクラウド – High (GCC High) と呼ばれます。
 
 Power Automate US Government サービスの詳細は、一般的な Power Automate サービスの説明のオーバーレイとして機能します。 2016 年 10 月からお客様に提供されている一般的な Power Automate オファリングと比較して、ユニークなコミットメントと差異が定義されています。
 
@@ -58,18 +58,14 @@ Power Automate US Government の資格について質問があるエンティテ
 
 Power Automate US Government プランへのアクセスは、以下のセクションで示すオファーに制限されます。各プランは月単位のサブスクリプションとして提供され、無制限数のユーザーにライセンスを付与することができます。
 
-- Power Automate/Power Apps プラン 1 US Government
+- 政府機関向け Power Automate のフローごとプラン
+- 政府機関向け Power Automate のユーザーごとプラン
 
-- Power Automate/Power Apps プラン 2 US Government
-
-- Power Automate と Power Apps 機能は、スタンドアロン プランだけでなく特定の Office 365 US Government および Dynamics 365 US Government プランにも含まれ、顧客は Power Automate と Power Apps の機能を使って Office 365 と Dynamics 365 を拡張およびカスタマイズできます。
-
-> [!NOTE]
-> ライセンスは、2019 年 4 月中旬から顧客テナントで利用できます。
+- スタンドアロン プランに加えて、Microsoft 365 US Government と Dynamics 365 US Government プランは Power Apps と Power Automate の機能も含み、顧客は Microsoft 365 と顧客エンゲージメント アプリ (Dynamics 365 Sales、Dynamics 365 Customer Service、Dynamics 365 Field Service、Dynamics 365 Project Service Automation) を拡張およびカスタマイズできます。 
 
 これらのライセンスのグループ間の機能の違いに関する追加情報と詳細については、ここで詳しく説明されています: [Power Automate ライセンス情報](https://flow.microsoft.com/pricing/)。
 
-Power Automate US Government は、ボリューム ライセンスおよびクラウド ソリューション プロバイダーの購入チャンネルを通じて取得できます。
+Power Automate US Government は、ボリューム ライセンスおよびクラウド ソリューション プロバイダーの購入チャンネルを通じて取得できます。 GCC High の顧客は、クラウド ソリューション プロバイダー プログラムを現在ご利用いただけません。
 
 ## <a name="differences-between-customer-data-and-customer-content"></a>顧客データと顧客コンテンツの違い
 
@@ -82,8 +78,6 @@ Power Automate による顧客データを保護する方法の詳細につい�
 ## <a name="data-segregation-for-government-community-cloud"></a>政府コミュニティ クラウドのデータの分離
 
 Power Automate US Government の一部として準備されている場合は、Power Automate サービスは国立標準技術研究所 (NIST) Special Publication 800-145 に基づいて使用されます。
-
-Microsoft は、政府コミュニティ クラウド (GCC) としてこのサービスについて説明します。
 
 Power Automate Government サービスでは、アプリケーション レイヤーでの顧客コンテンツの論理的な分離だけでなく、商用の Power Automate 顧客向けに使用されるインフラストラクチャから分離されたインフラストラクチャを使用することで、顧客コンテンツ用にセカンダリ レイヤーの物理的な分離が組織に提供されます。 これには Azure の government クラウドのAzure サービスの使用が含まれます。 詳細については、[Azure Government](https://azure.microsoft.com/global-infrastructure/government/) を参照してください。
 
@@ -116,10 +110,10 @@ Power Automate のサポートおよびサービスのエンジニア スタッ�
 
 Power Automate US Government は高い影響レベルで、Federal Risk and Authorization Management Program (FedRAMP) の認証評価をサポートするように設計されています。 このプログラムは、DoD DISA IL2 との調整を示します。 FedRAMP のアーティファクトは FedRAMP に準拠する必要がある政府顧客による確認のために使用できます。 連邦政府機関は、Authority to Operate (ATO) を付与するための確認の裏付けとして、これらの成果物を調査できます。
 
-> [!NOTE]
-> 現在、Power Automate US Government サービスは FedRAMP の確認中ですが、正規の [3PAO](https://www.fedramp.gov/3pao-requirements-update/) により Security Assessment Report (SAR) が付与されています。
+>[!NOTE]
+>Power Automate は Azure Government FedRAMP ATO のサービスとして承認されています。 FedRAMP ドキュメントの利用方法などの詳細は [FedRAMP マーケットプレイス](https://marketplace.fedramp.gov/#!/product/azure-government-includes-dynamics-365?sort=productName&productNameSearch=azure%20government) をご確認ください。
 
-Microsoft が FedRAMP アーティファクトの更新を、標準監査サイクルの一部に移行したために、コンテンツはそれに応じて更新されます。
+
 
 Power Automate US Government には、法執行機関のための顧客の CJIS ポリシーの要件をサポートするように設計された機能があります。 認証と認定についての詳細情報は、セキュリティ センターにある Power Automate US Government の製品ページをご覧ください。
 
@@ -143,6 +137,22 @@ Power Automate US Government には、[コネクタ](https://docs.microsoft.com/
 
 > [!TIP]
 > 自分の組織に対するこれらのサービスの適切な使用を評価する場合は、サード パーティによって提供されるプライバシーとコンプライアンスのステートメントを確認してください。
+
+[Power Apps と Power Automate のガバナンスに関する考慮事項](https://docs.microsoft.com/power-platform/admin/governance-considerations) を利用すると、アーキテクチャ、セキュリティ、アラートとアクション、監視など、関連するテーマで組織が利用できる機能を認識できます。
+
+## <a name="configure-mobile-clients"></a>モバイル クライアントの構成
+
+Power Apps Mobile クライアントでサインインする際に必要な手順は次のとおりです。
+
+1. サインイン ページの右下隅から歯車アイコンを選択します。
+1. **リージョンの設定** を選択します。
+1. 次のいずれかを選択してください。
+   - GCC: 米国政府 GCC
+   - GCC High: 米国政府 GCC High。
+1. OK を選択します。
+1. サインイン ページで、**サインイン** を選択します。
+
+今後はモバイル アプリケーションが米国政府クラウドを使用します。
 
 ## <a name="power-automate-us-government-and-azure-services"></a>Power Automate US Government および Azure サービス
 
@@ -170,7 +180,7 @@ Azure AD アカウント管理サービスは Microsoft Global Foundation Servic
 業務用バージョン | US Government バージョン
 ------ | --------
 [https://flow.microsoft.com](https://flow.microsoft.com) | [https://gov.flow.microsoft.us (GCC)](https://gov.flow.microsoft.us) および [https://high.flow.microsoft.us (GCC High)](https://high.flow.microsoft.us)
-[https://admin.flow.microsoft.com](https://admin.flow.microsoft.com) | [https://gov.admin.flow.microsoft.us (GCC)](https://gov.admin.flow.microsoft.us) および [https://high.admin.flow.microsoft.us (GCC High)](https://high.admin.flow.microsoft.us)
+[https://admin.powerplatform.microsoft.com/](https://admin.powerplatform.microsoft.com/) | [https://gov.admin.flow.microsoft.us (GCC)](https://gov.admin.flow.microsoft.us) および [https://high.admin.flow.microsoft.us (GCC High)](https://high.admin.flow.microsoft.us)
 [https://flow.microsoft.com/connectors](https://flow.microsoft.com/connectors) | [https://gov.flow.microsoft.us/connectors (GCC)](https://gov.flow.microsoft.us/connectors) および [https://high.flow.microsoft.us/connectors (GCC High)](https://high.flow.microsoft.us/connectors)
 
 
@@ -222,24 +232,13 @@ Power Automate 内に構築されたキャンバス アプリと、クラウド�
 
 Flow US Government の顧客は、Flow の業務用バージョンで使用できる機能の一部を使用できません。 Flow チームは、US Government の顧客がこの機能を使用できるように積極的に取り組んでおり、この機能が使用可能になった時点でこの記事を更新する予定です。
 
-- SharePoint 一覧 *からの* Power Automate US Government フローをトリガーする
-
-- Dynamics 365 GCC *からの* Power Automate US Government フローのトリガー
-
 - [AI Builder](https://docs.microsoft.com/ai-builder/) GCC および GCC High テナントにはまだ未対応です。
 
 - [承認](./modern-approvals.md) は GCC と GCC High テナントで、以下に従って利用できます。
   * アクション可能な承認に対するサポートはありません。 承認メールには、ユーザーが応答するための Power Automate 承認センターへのリンクが記載されています。
   * 承認メールに対するマークダウン サポートはありません。 
 
-- [利用状況分析](https://flow.microsoft.com/blog/admin-analytics/)
-
-- [Power Automate モバイル アプリケーション](https://docs.microsoft.com/flow/mobile-manage-flows)
-
 - [テンプレートの送信](https://docs.microsoft.com/flow/publish-a-template)
-
-    > [!NOTE]
-    > エンタープライズ データのガバナンスとデータ フローの問題に対処するために、GCC ではテンプレートの送信は無効になっています。
 
 - [コネクタ](https://docs.microsoft.com/connectors/index) – 商用サービスで使用されている (使用テレメントリに基づく) 最も利用率の高いコネクタが公開されています。商用サービスで使用可能なコネクタで、展開されていないコネクタがある場合は、サポートに連絡してください。
 
@@ -249,4 +248,8 @@ Flow US Government の顧客は、Flow の業務用バージョンで使用で�
 
 ### <a name="see-also"></a>関連項目
 
-[Power Apps US Government](https://docs.microsoft.com/power-platform/admin/powerapps-us-government)
+- [UI flows](https://docs.microsoft.com/power-automate/desktop-flows/overview)。
+
+- [Dynamics 365 US Government](https://docs.microsoft.com/power-platform/admin/microsoft-dynamics-365-government)。
+
+- [Power Apps 米国政府](https://docs.microsoft.com/power-platform/admin/powerapps-us-government)。

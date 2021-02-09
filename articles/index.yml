@@ -1,133 +1,167 @@
-### YamlMime:Landing
-title: Power Automate ドキュメント
+### YamlMime:Hub
+title: Microsoft Power Automate のドキュメント
 summary: Power Automate は、よく使うアプリやサービスとの間に自動化されたワークフローを作成し、ファイルの同期、通知の受信、データの収集などを行うことができるようにするためのサービスです。
+brand: dynamics
 metadata:
-  title: Power Automate ドキュメント
-  description: Power Automate のドキュメントで、強調表示されている領域にアクセスできます
-  services: service
-  ms.service: flow
-  ms.subservice: subservice
-  ms.topic: landing-page
-  ms.collection: collection
+  title: Power Automate のドキュメント
+  description: お気に入りのアプリとサービスの間でのワークフローを作成し、ファイルの同期、通知の取得、データの収集などを行う方法がわかります。
+  ms.service: power-platform
+  ms.topic: hub-page
   author: MSFTMAN
-  ms.author: Deonhe
-  ms.date: 01/18/2020
-  ms.openlocfilehash: 1db41def6d71c0aa64e255e3bdb36fa03a44862a
-  ms.sourcegitcommit: 26bd05fc4729481ba09681aea2b82ebbeef1e1ec
+  ms.author: deonhe
+  ms.date: 09/22/2020
+  hide_bc: false
+  ms.openlocfilehash: 6919459441bc4e76903230f273c5f5242e60acc8
+  ms.sourcegitcommit: 3910e52921f7f862a379166bfb14e68fb6d0029d
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 05/27/2020
-  ms.locfileid: "3407452"
-landingContent:
-- title: Power Automate について
-  linkLists:
-  - linkListType: overview
+  ms.lasthandoff: 01/13/2021
+  ms.locfileid: "4878802"
+highlightedContent:
+  items:
+  - title: Power Automate とは
+    itemType: overview
+    url: getting-started.md
+  - title: Power Automate の新機能
+    itemType: whats-new
+    url: whats-new.md
+  - title: Power Automate のビデオ
+    itemType: video
+    url: https://www.youtube.com/channel/UCG98S4lL7nwlN8dxSF322bA
+  - title: Microsoft Learn での Power Automate のトレーニング
+    itemType: learn
+    url: https://docs.microsoft.com/learn/browse/?products=power-automate
+conceptualContent:
+  items:
+  - title: Power Automate に関する入門情報
     links:
-    - text: Power Automate とは
-      url: /power-automate/getting-started
-    - text: Power Automate にサインアップ
+    - text: 無料でサインアップ
       url: /power-automate/sign-up-sign-in
-    - text: Power Automate に関する FAQ
+      itemType: get-started
+    - text: 最初のフローの作成
+      url: /power-automate/getting-started#create-your-first-flow
+      itemType: how-to-guide
+    - text: Process Advisor (プレビュー) を含むプラン
+      url: /power-automate/process-advisor-overview
+      itemType: overview
+    - text: Power Automate に関するよくあるご質問
       url: /power-automate/frequently-asked-questions
-  - linkListType: learn
+      itemType: reference
+  - title: クラウド フローの作成
     links:
-    - text: Power Automate の学習
-      url: https://docs.microsoft.com/learn/browse/?products=power-automate&term=Power%20Automate
-  - linkListType: video
-    links:
-    - text: Power Automate の概要
-      url: https://www.youtube.com/channel/UCG98S4lL7nwlN8dxSF322bA
-  - linkListType: whats-new
-    links:
-    - text: リリース計画
-      url: https://docs.microsoft.com/power-platform-release-plan/2020wave1/power-automate/planned-features
-- title: Power Automate を使用してフローを作成する
-  linkLists:
-  - linkListType: get-started
-    links:
-    - text: 自動化されたフロー
+    - text: 自動フロー
       url: /power-automate/get-started-logic-flow
+      itemType: overview
+    - text: 予定フロー
+      url: /power-automate/run-scheduled-tasks
+      itemType: overview
     - text: ボタン フロー
       url: /power-automate/introduction-to-button-flows
-    - text: スケジュールされたフロー
-      url: /power-automate/run-scheduled-tasks
-    - text: 承認フロー
-      url: /power-automate/modern-approvals
-    - text: ビジネス プロセス フロー
-      url: /power-automate/business-process-flows-overview
-  - linkListType: concept
+      itemType: overview
+  - title: RPA のためのデスクトップ フローの作成
     links:
-    - text: '接続: オンライン データに接続する'
-      url: /power-automate/add-manage-connections
-    - text: 'ゲートウェイ: オンプレミスのデータに接続する'
-      url: /power-automate/gateway-manage
-- title: UI flows を使用した RPA
-  linkLists:
-  - linkListType: overview
+    - text: デスクトップ フローとは
+      url: /power-automate/desktop-flows/introduction
+      itemType: overview
+    - text: Power Automate Desktop のセットアップ
+      url: /power-automate/desktop-flows/setup
+      itemType: how-to-guide
+    - text: デスクトップ フローの作成
+      url: /power-automate/desktop-flows/create-flow
+      itemType: how-to-guide
+  - title: '...でのフローの使用'
     links:
-    - text: UI flows とは
-      url: /power-automate/ui-flows/overview
-  - linkListType: how-to-guide
-    links:
-    - text: UI flows の設定
-      url: /power-automate/ui-flows/setup
-    - text: デスクトップ UI フローの作成
-      url: /power-automate/ui-flows/create-desktop
-    - text: Softomotive の WinAutomation の使用 (新機能!)
-      url: /power-automate/ui-flows/create-processes
-    - text: Web UI フローの作成
-      url: /power-automate/ui-flows/create-web
-    - text: UI flows の実行
-      url: /power-automate/ui-flows/run-ui-flow
-  - linkListType: video
-    links:
-    - text: UI flows に関するビデオ
-      url: https://www.youtube.com/playlist?list=PLwh1E-0OEEGJQwqxCmNZYhJFzo_Eif9s8
-- title: ソリューションを使用した ALM
-  linkLists:
-  - linkListType: overview
+    - text: Teams
+      url: /power-automate/teams/overview
+      itemType: overview
+    - text: SharePoint
+      url: /power-automate/sharepoint-overview
+      itemType: overview
+    - text: 電子メール
+      url: /power-automate/email-overview
+      itemType: overview
+    - text: フォーム
+      url: /power-automate/forms/overview
+      itemType: overview
+    - text: 承認
+      url: /power-automate/get-started-approvals
+      itemType: overview
+  - title: ALM 用のソリューションの使用
     links:
     - text: ソリューションを使用してフローを配布する
       url: /power-automate/overview-solution-flows
-  - linkListType: how-to-guide
-    links:
-    - text: ソリューションにフローを作成する
+      itemType: overview
+    - text: ソリューションにクラウド フローを作成する
       url: /power-automate/create-flow-solution
-    - text: ソリューションのエクスポート
-      url: /power-automate/export-flow-solution
-    - text: ソリューションのインポート
-      url: /power-automate/import-flow-solution
-- title: フローでより多くのことを実現する
-  linkLists:
-  - linkListType: how-to-guide
+      itemType: overview
+    - text: ソリューションを使用して健全な ALM を実装する
+      url: /power-platform/alm/overview-alm
+      itemType: overview
+  - title: フローでより多くのことを実現する
     links:
     - text: AI を取り入れたフローに AI Builder を使用する
       url: /power-automate/use-ai-builder
+      itemType: overview
     - text: アダプティブ カードを使用する
       url: /power-automate/overview-adaptive-cards
+      itemType: how-to-guide
     - text: データ操作を使用する
       url: /power-automate/data-operations
-    - text: 式と関数を使用する
-      url: /power-automate/use-expressions-in-conditions
-    - text: Visio を使用してフローをモデル化する
-      url: /power-automate/visio-flows
-  - linkListType: concept
+      itemType: how-to-guide
+  - title: ラーニング カタログ
     links:
-    - text: 開発者、ISV、パートナーのための Power Automate
-      url: /power-automate/developer/dev-enterprise-intro
-- title: サポートとライセンス
-  linkLists:
-  - linkListType: reference
+    - text: アプリ開発者
+      url: /power-automate/learning-catalog/learning-catalog-app-maker
+      itemType: reference
+    - text: 管理者
+      url: /power-automate/learning-catalog/learning-catalog-administrator
+      itemType: reference
+    footerLink:
+      url: /power-automate/learning-catalog/learning-catalog
+      text: その他
+  - title: サポートとライセンス
     links:
-    - text: フローのトラブルシューティング
+    - text: クラウド フローのトラブルシューティング
       url: /power-automate/fix-flow-failures
-    - text: Power Automate チェッカーを使用する
-      url: /power-automate/error-checker
+      itemType: how-to-guide
     - text: Power Automate のコミュニティ
       url: https://powerusers.microsoft.com/t5/Microsoft-Power-Automate/ct-p/MPACommunity
-    - text: Power Automate ブログ
-      url: https://flow.microsoft.com/en-us/blog/
+      itemType: reference
     - text: Power Automate ライセンス
       url: /power-automate/billing-questions
-    - text: Power Automate US Government のプラン
-      url: /power-automate/us-govt
+      itemType: reference
+  - title: プロジェクトのガイダンスを表示...
+    links:
+    - text: フローの計画
+      url: /power-automate/guidance/planning/planning-phase
+      itemType: reference
+    - text: フローの設計
+      url: /power-automate/guidance/planning/process-design
+      itemType: reference
+    - text: フローの作成とテスト
+      url: /power-automate/guidance/planning/making-phase
+      itemType: reference
+    - text: フローの展開
+      url: /power-automate/guidance/planning/deploy-to-production
+      itemType: reference
+additionalContent:
+  sections:
+  - title: その他の Microsoft Power Platform 製品
+  - items:
+    - title: Power Apps
+      summary: プロセスを最新化し、組織の厳しいビジネス上の課題を解決するコードの少ないアプリを、Power Apps を使用してすばやく構築します。
+      url: https://docs.microsoft.com/powerapps
+    - title: Power BI
+      summary: 関連性のないデータ ソースを、一貫性のある視覚的にイマーシブでインタラクティブな分析情報に変えます。
+      url: https://docs.microsoft.com/power-bi
+    - title: Power Virtual Agents
+      summary: データ サイエンティストや開発者がいなくても、コードなしのガイド付きグラフィカル インターフェイスを使用して、強力なボットを作成できます。
+      url: https://docs.microsoft.com/power-virtual-agents
+  - title: 関連項目
+    items:
+    - title: Dynamics 365
+      summary: 次世代の CRM および ERP アプリケーション
+      url: https://docs.microsoft.com/dynamics365/
+    - title: Microsoft Azure
+      summary: ビジネス チャレンジに直面する組織に役立つ、拡大しつづけるクラウド コンピューティング サービス セット
+      url: https://docs.microsoft.com/azure

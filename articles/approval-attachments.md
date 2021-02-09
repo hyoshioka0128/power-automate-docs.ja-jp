@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: c7bc2995b520a7723c56c2f1627d6b877a88648a
-ms.sourcegitcommit: 9ee79e5b559429dc0e772b6fed763856dc8b51ee
+ms.openlocfilehash: 860d66823ac6da92fcb1a5b0db2aafa380f973a5
+ms.sourcegitcommit: b043b7e8c29afee4f4f25bbf0d5a662d9af9272c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "3518079"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4708559"
 ---
 # <a name="create-approval-flows-with-attachments"></a>添付ファイル付きの承認フローを作成する
 
@@ -40,16 +40,16 @@ ms.locfileid: "3518079"
 
     ![新しい空白のインスタント フロー](./media/approval-attachments/new-instand-blank.png)
 
-1. フローに名前を付け、**手動でフローをトリガーします** を検索して選択した後、**作成** を選択します。
+1. クラウド フローに名前を付け、**手動でクラウド フローをトリガーする** を検索して選択した後、**作成** を選択します。
 
     ![フローに名前を付け、トリガーを選択する](./media/approval-attachments/name-flow-trigger.png)
 
-1. **手動でフローをトリガーします** トリガー > **入力の追加** > **ファイル** の順に選択します。
+1. **手動でクラウド フローをトリガーする** トリガー > **入力の追加** > **ファイル** の順に選択します。
 
      前の手順により、フローを実行したときに、ユーザーからファイルを要求してフローをトリガーするようにフローが構成されます。
 
-1. **新しいステップ**を選択
-1. **承認**を検索して、**承認の開始と待機** を選択します。
+1. **新しいステップ** を選択
+1. **承認** を検索して、**承認の開始と待機** を選択します。
 1. **承認の開始と待機** カードの **承認の種類** 一覧から **承認/拒否 - 最初に応答** を選択します。
 1. **承認の開始と待機** カードに次の情報を入力します。
 
@@ -71,13 +71,13 @@ ms.locfileid: "3518079"
 
      ![承認要求カードの詳細オプション](./media/approval-attachments/approval-request-card-advanced-options.png)
 
-1. **保存**を選択して、 フローを保存します。
+1. **保存** を選択して、 フローを保存します。
 
 ## <a name="test-your-flow"></a>フローをテスト
 
 フローをテストするには、**テスト** を選択してから、.xlsx ファイルをアップロードします。
 
-1. **テスト**を選択します。
+1. **テスト** を選択します。
 1. **トリガーアクションを実行する** を選択します。
 
      ![フローをテスト](./media/approval-attachments/test-flow.png)
@@ -88,7 +88,7 @@ ms.locfileid: "3518079"
      ![インポート ボタンを選択](./media/approval-attachments/import-file.png)
 1. ファイルを見つけて選択した後、**開く** を選択して、承認用に送信するファイルまたは画像をアップロードします。
 
-1. **フローの実行**を選択します。
+1. **フローの実行** を選択します。
 
    テストの実行が開始されます。
 
@@ -107,5 +107,5 @@ ms.locfileid: "3518079"
 
 ## <a name="learn-more"></a>詳細はこちら
 
-ほとんどの承認フローでは、決定の承認を要求したユーザーに通知することをお勧めします。 承認フローに**条件**を追加して、要求の**結果**に基づいて特定のアクションを実行する方法については、[最新の承認に関する記事](modern-approvals.md#add-an-email-action-for-approvals)を参照してください。
+ほとんどの承認フローでは、決定の承認を要求したユーザーに通知することをお勧めします。 承認フローに **条件** を追加して、要求の **結果** に基づいて特定のアクションを実行する方法については、[最新の承認に関する記事](modern-approvals.md#add-an-email-action-for-approvals)を参照してください。
 

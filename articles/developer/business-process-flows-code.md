@@ -1,6 +1,6 @@
 ---
-title: コードを使用して業務プロセス フローを操作する | MicrosoftDocs
-description: 業務プロセス フローをプログラミングによって操作して、さらに効率的かつ合理的な業務プロセスを作成する方法を説明します。
+title: コードを使用してビジネス プロセス フローで作業をする | MicrosoftDocs
+description: ビジネス プロセス フローをプログラム化して、より効率的で合理化されたビジネス プロセスを作成する方法について説明します。
 ms.custom: ''
 ms.date: 07/09/2018
 ms.reviewer: ''
@@ -14,24 +14,24 @@ search.app:
 - Flow
 search.audienceType:
 - developer
-ms.openlocfilehash: d65be1552c3e748e4910c4fb942a60322f6f1e19
-ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
+ms.openlocfilehash: 84eef3c8f6590347759f66010da9c3b7ba3082c9
+ms.sourcegitcommit: b043b7e8c29afee4f4f25bbf0d5a662d9af9272c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "3296572"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4709159"
 ---
-# <a name="work-with-business-process-flows-using-code"></a>コードを使用して業務プロセス フローを操作する
+# <a name="work-with-business-process-flows-using-code"></a>コードを使用してビジネス プロセス フローを操作する
 [!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
-*業務プロセス フロー*により、効率的で、より効率的な営業、サービス、および他の業務プロセスを作成できます。 それはエンティティ フォーム最上部に特別なコントロールを設定することで、ビジネス プロセスのビジュアル化を作成します。 ユーザーは完了に向け、営業、マーケティング、顧客サービス プロセスのさまざまなステージで導かれます。 各プロセスでは、複数のステージおよびステップをサポートします。 ステップを追加または削除したり、ステップの順序を変更したり、業務プロセス フローに新しいエンティティを追加できます。  
+*業務プロセス フロー* により、効率的で、より効率的な営業、サービス、および他の業務プロセスを作成できます。 それはエンティティ フォーム最上部に特別なコントロールを設定することで、ビジネス プロセスのビジュアル化を作成します。 ユーザーは完了に向け、営業、マーケティング、顧客サービス プロセスのさまざまなステージで導かれます。 各プロセスでは、複数のステージおよびステップをサポートします。 ステップを追加または削除したり、ステップの順序を変更したり、業務プロセス フローに新しいエンティティを追加できます。  
   
 異なる業務プロセス フローのインスタンスが、同じエンティティ レコードに対して同時に実行できます。 ユーザーは同時のビジネス プロセス インスタンスを切り替えでき、プロセスの現在の段階での作業を再開できます。 
 
 このトピックでは、業務プロセス フローをプログラムで使用する方法を説明します。
 
 > [!NOTE]
-> 業務プロセス フローを操作するためにコードを記述する必要はありません。 UI を使用した業務プロセス フローの作成と管理について詳しくは、「[Business process flows overview](../business-process-flows-overview.md)」 (業務プロセス フローの概要) を参照してください。  
+> 業務プロセス フローを使用するためにコードを記述する必要はありません。 UI を使用したビジネス プロセス フローの作成と管理についての詳細は、[ビジネス プロセス フローの概要](../business-process-flows-overview.md) を参照してください  
 
 <a name="PrereqsBPF"></a>   
 ## <a name="prerequisites-for-business-process-flow"></a>業務プロセス フローの前提条件 
@@ -58,26 +58,26 @@ UI フォームを更新したユーザー定義エンティティおよびエ�
  プロセス フローを使用するには、その前に、それをアクティブ化する必要があります。 それをアクティブ化するには、`Workflow` エンティティの `prvActivateBusinessProcessFlow` の特権が必要です。 `Activated` に、`Workflow` エンティティ レコードの状態を設定するには <xref:Microsoft.Xrm.Sdk.Messages.UpdateRequest> メッセージを使用します。 詳細については、[更新を使用して特化された操作を実行する](/dynamics365/customer-engagement/developer/org-service/perform-specialized-operations-using-update)を参照してください。 
 
  > [!NOTE]
- > 業務プロセス フロー デザイナーを使用して、業務プロセス フローをアクティブ化することもできます。 
+ > 視覚的な業務プロセス フロー デザイナーを使用して、業務プロセス フローをアクティブ化することもできます。 
 
 <a name="BPFEntity"></a>   
 ## <a name="business-process-flow-entity"></a>業務プロセス フロー エンティティ 
- 対応する `Workflow` エンティティ レコードの状態を変更したり、または業務プロセス フロー デザイナーを使用して、業務プロセス フローの定義をアクティブ化すると、以下の名前のユーザー定義エンティティが自動的に作成され、アクティブ化した業務プロセス フローの定義を格納します:「*\<activesolutionprefix>*_*\<uniquename>*」、ここで uniquename は指定する名前から引き出されます。  
+ 対応する `Workflow` エンティティ レコードの状態を変更したり、またはビジネス プロセス フロー デザイナーを使用して、ビジネス プロセス フローの定義をアクティブ化すると、以下の名前のユーザー定義エンティティが自動的に作成され、アクティブ化したビジネス プロセス フローの定義を保存します: "*\<activesolutionprefix>* _ *\<uniquename>*"、ここで uniquename は指定する名前から派生します。  
   
  たとえば、業務プロセス フローの定義の名前として「My Custom BPF」を指定して、アクティブ ソリューションの既定の発行元 (新規) を使用している場合、プロセス インスタンスの格納用に作成されたユーザー定義エンティティの名前は「new_mycustombpf」になります。  
   
- `uniquename` の値が業務プロセス フロー定義に対して存在しない場合、たとえば業務プロセス フローが以前のバージョンのソリューションからインポートされた場合は、カスタム エンティティの既定名が"`\<activesolutionprefix>_bpf_<GUID_BPF_Definition>`: になります。  
+ ビジネス プロセス フローの定義で `uniquename` の値が利用できない場合、たとえば、ビジネス プロセス フローが以前のバージョンからソリューションからインポートされた場合は、カスタム エンティティの既定の名前は `\<activesolutionprefix>_bpf_<GUID_BPF_Definition>` になります。  
   
 > [!IMPORTANT]
->  サンプルの業務プロセス フロー レコードは、システム エンティティを使用して、対応する業務プロセス フロー インスタンス レコードを格納します。  
+>  サンプルのビジネス プロセス フローは、システム エンティティを使用して、対応するビジネス プロセス フロー インスタンス レコードを格納します。  
 >   
->  ただし、新しく作成するすべての業務プロセス フロー定義は、前述したようにカスタム エンティティを使用してインスタンス レコードを格納します。 
+>  ただし、作成する新しい業務プロセス フロー定義すべては、前に説明したように、ユーザー定義エンティティを使用してインスタンス レコードを保存します。 
 
 次の方法のいずれかを使用して業務プロセス フロー エンティティの名前を取得できます。
 
 - **UI を使用する**: 業務プロセス フロー エンティティを参照するためにカスタマイズ UI を使用します:
 
-    ![](media/bpf-entity-name.png)
+    ![UI を使用してビジネス プロセス フローエンティティを参照する](media/bpf-entity-name.png)
 - **Web API を使用する**: 次の要求を使用します:
 
     **要求**
@@ -86,7 +86,7 @@ UI フォームを更新したユーザー定義エンティティおよびエ�
     GET [Organization URI]/api/data/v9.0/workflows?$filter=name eq 'My Custom BPF'&$select=uniquename HTTP/1.1
     ```
 
-    **Response**
+    **回答**
     ```
     {  
     "@odata.context":"[Organization URI]/api/data/v9.0/$metadata#workflows(uniquename)",
@@ -99,7 +99,7 @@ UI フォームを更新したユーザー定義エンティティおよびエ�
       ]
     }
     ```
-- **組織サービスを使用**: 次のコード サンプルを使用します。
+- **組織サービスを使用する**: 次のコード サンプルを使用します :
 
     ```c#
     QueryExpression query = new QueryExpression
@@ -122,7 +122,7 @@ UI フォームを更新したユーザー定義エンティティおよびエ�
     Workflow Bpf = (Workflow)_serviceProxy.RetrieveMultiple(query).Entities[0]; 
     ```
 > [!NOTE]
-> <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsBPFEntity> プロパティは、業務プロセス フローのエンティティに対しては `true` となります。 インスタンス内の業務プロセス フロー エンティティをすべて取得するには、次の Web API 要求を実行します。
+> <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsBPFEntity> プロパティは、ビジネス プロセス フローのエンティティに対しては `true` となります。 インスタンス内のビジネス プロセス フロー エンティティをすべて取得するには、次の Web API 要求を実行します :
 > ```http
 > GET [Organization URI]/api/data/v9.0/EntityDefinitions?$select=SchemaName,LogicalName,DisplayName&$filter=IsBPFEntity eq true HTTP/1.1
 > ```
@@ -130,31 +130,31 @@ UI フォームを更新したユーザー定義エンティティおよびエ�
 <a name="BPFSecurity"></a>   
 ## <a name="manage-security-for-business-process-flows"></a>業務プロセス フローのセキュリティを管理する
 
-業務プロセス フローをアクティブにすると自動的に作成され、業務プロセス フロー インスタンスを保存するカスタム エンティティは、 Common Data Service の他のカスタム エンティティと同様に、標準のセキュリティモデルに準拠します。 つまり、そのエンティティに付与された特権に基づいて、実行時に業務プロセス フローのユーザーに付与される許可が定義されます。
+業務プロセス フローをアクティブにすると自動的に作成され、業務プロセス フロー インスタンスを保存するカスタム エンティティは、 Common Data Service の他のカスタム エンティティと同様に、標準のセキュリティモデルに準拠します。 これは、それらのエンティティに付与される特権が、業務プロセス フローにおけるユーザー用のランタイム アクセス許可を定義することを意味します。
 
-業務プロセス フローのユーザー定義エンティティは、組織のスコープがあります。 このエンティティに対する通常の作成、取得、更新、削除の特権によって、ユーザーが自分に割り当てられたロールに基づいて持つことになるアクセス許可が定義されます。 既定では、業務プロセス フローのユーザー定義エンティティが作成されると、**システム管理者**および**システム カスタマイザー**のセキュリティ ロールにのみアクセス許可が与えられ、他のセキュリティ ロールについては必要に応じて新しい業務プロセス フローのエンティティ (たとえば、**My Custom BPF**) に対してアクセス許可を明示的に付与する必要があります。
+業務プロセス フローのユーザー定義エンティティは、組織のスコープがあります。 このエンティティに対する通常の作成、取得、更新、および削除の特権は、割り当てられた役割に基づいてユーザーが持つアクセス許可を定義します。 既定では、業務プロセス フローのユーザー定義エンティティが作成されると、**システム管理者** および **システム カスタマイザー** のセキュリティ ロールにのみアクセス許可が与えられ、他のセキュリティ ロールについては必要に応じて新しい業務プロセス フローのエンティティ (たとえば、**My Custom BPF**) に対してアクセス許可を明示的に付与する必要があります。
 
-![](media/bpf-privileges.png)
+![セキュリティ ロールの管理](media/bpf-privileges.png)
 
 <a name="ManageBPF"></a>   
-## <a name="create-retrieve-update-and-delete-business-process-flow-entity-records-process-instances"></a>業務プロセス フローのエンティティ レコード (プロセス インスタンス) の作成、取得、更新、削除  
- 業務プロセス フロー定義をアクティブにしたときに自動的に作成されるカスタム エンティティに、その業務プロセス フロー定義に対応するすべてのプロセス インスタンスが格納されます。 このカスタム エンティティは、Web API と CRM 2011 エンドポイントを使用する、標準的なプログラミングによるレコード (プロセス インスタンス) の作成と管理をサポートしています。
+## <a name="create-retrieve-update-and-delete-business-process-flow-entity-records-process-instances"></a>ビジネス プロセス フローのエンティティ レコード (プロセス インスタンス) の作成、取得、更新、削除  
+ 業務プロセス フローの定義をアクティブ化する際に自動的に作成されるユーザー定義エンティティは、業務プロセス フローの定義のすべてのプロセス インスタンスを保存します。 カスタム エンティティは、Web API と CRM 2011 エンドポイントを使用したレコード (プロセス インスタンス) の標準的なプログラムによる作成と管理をサポートしています。
 
 > [!IMPORTANT]
-> エンティティ レコードのプロセス インスタンスを別のインスタンスに切り替えることは、UI (クライアント) で行うか、このセクションで示す情報を使用してプログラミングで行うことだけがサポートされています。 `SetProcess` メッセージ (<xref href="Microsoft.Dynamics.CRM.SetProcess?text=SetProcess Action" /> または <xref:Microsoft.Crm.Sdk.Messages.SetProcessRequest>) を使用してプログラミングでターゲット エンティティ レコードのプロセスを切り替える (別の業務フローをアクティブなプロセス インスタンスとして設定する) ことはできなくなりました。 
+> エンティティ レコードの別のプロセス インスタンスへの切り替えは、UI (クライアント) を介して、またはこのセクションで利用可能な情報を使用してプログラムでのみサポートされています。 `SetProcess` メッセージ (<xref href="Microsoft.Dynamics.CRM.SetProcess?text=SetProcess Action" /> または <xref:Microsoft.Crm.Sdk.Messages.SetProcessRequest>) を使用して、対象のエンティティ レコードのプロセスをプログラム的に切り替える (別のビジネス プロセス フローをアクティブなプロセス インスタンスとして設定する) ことはできなくなります。 
 
- 複数のエンティティにまたがる業務プロセス フローがあるとします。名前は "My Custom BPF" で、S1:Account、S2:Account、S3:Contact の 3 つのステージがあります。 
+ 以下の例では、3 つのステージ (S1: アカウント、S2: アカウント、S3: コンタクト) を持つクロス エンティティのビジネス プロセス フロー 「カスタム BPF」 について考えてみます。 
 
- ![](media/sample-bpf.png)
+ ![カスタム ビジネス プロセス フロー](media/sample-bpf.png)
  
-### <a name="retrieve-all-the-records-instances-for-a-business-process-flow-entity"></a>1 つの業務プロセス フロー エンティティに対応するレコード (インスタンス) をすべて取得する
- 業務プロセス フロー エンティティの名前が "new_mycustombpf" の場合に、この業務プロセス フロー エンティティに対応するレコード (プロセス インスタンス) をすべて取得するには次のクエリを使用します。  
+### <a name="retrieve-all-the-records-instances-for-a-business-process-flow-entity"></a>ひとつつのビジネス プロセス フロー エンティティに対応するレコード (インスタンス) をすべて取得する
+ ビジネス プロセス フローのエンティティ名が「new_mycustombpf」の場合、以下のクエリを使用して、ビジネス プロセス フロー エンティティのすべてのレコード (プロセス インスタンス) を取得します。  
   
 ```http
 GET [Organization URI]/api/data/v9.0/new_mycustombpfs HTTP/1.1 
 ```
 
-この時点では、インスタンスが存在しないため、応答でインスタンスを取得できません。 このトピック後半の業務プロセス フローの定義のインスタンスを作成した後に、この要求を実行します。
+この時点で、何も存在しない場合は、応答でインスタンスを取得しない場合もあります。 このトピック後半の業務プロセス フローの定義のインスタンスを作成した後に、この要求を実行します。
 
 > [!NOTE]
 > 業務プロセス フロー エンティティの名前を取得する方法を確認するには、前のセクション、[業務プロセス フロー エンティティ](#business-process-flow-entity) を参照してください。
@@ -225,7 +225,7 @@ OData-Version: 4.0
 OData-EntityId: [Organization URI]/api/data/v9.0/new_mycustombpfs(cc3f721b-026e-e811-80ff-00155d513100)
 ```
 
-最初のステージ***以外***のステージでアクティブ ステージ セットによる業務プロセス フローの定義のインスタンスを作成する場合は、要求で `traversedpath` も提供する必要があることに注意してください。 渡ったパスは業務プロセス フロー インスタンスのアクセス済みステージを表すプロセス ステージ ID のコンマ区切り文字列です。 次の要求は、取引先企業レコード(ID=679b2464-71b5-e711-80f5-00155d513100)のインスタンスを作成し、第二ステージS2 (ID=19a11fc0-3398-4214-8522-cb2a97f66e4b)としてアクティブ ステージ セットを作成します。
+アクティブなステージを第 1 ステージ**_以外_* のステージとして設定したビジネス プロセス フロー定義のインスタンスを作成する場合は、リクエストに `traversedpath` を指定する必要があることに注意してください。 渡ったパスは業務プロセス フロー インスタンスのアクセス済みステージを表すプロセス ステージ ID のコンマ区切り文字列です。 次の要求は、取引先企業レコード(ID=679b2464-71b5-e711-80f5-00155d513100)のインスタンスを作成し、第二ステージS2 (ID=19a11fc0-3398-4214-8522-cb2a97f66e4b)としてアクティブ ステージ セットを作成します。
 
 ```http
 POST [Organization URI]/api/data/v9.0/new_mycustombpfs HTTP/1.1 
@@ -267,7 +267,7 @@ OData-Version: 4.0
 
 #### <a name="change-the-state-of-a-process-instance-abort-reactivate-or-finish"></a>プロセス インスタンスの状態の変更: 中止、再アクティブ化、または終了 
 
-プロセス インスタンスには、次の状態のうち 1 つを使用できます: **アクティブ**、**終了**、または**中止**。 状態はプロセス インスタンス レコードの次の属性によって決まります:
+プロセス インスタンスには、*アクティブ*、**終了**、**中止** のうち 1 つを使用できます。 状態はプロセス インスタンス レコードの次の属性によって決まります:
 
 - **statecode**: プロセス インスタンスの状態を表示します。
 
@@ -284,7 +284,7 @@ OData-Version: 4.0
     |2    |終了|
     |3    |中止|
 
-そのため、プロセスのインスタンスを**中止**するには、次の要求を使用して `statecode` と `statuscode` の値を適切に設定します:
+そのため、プロセスのインスタンスを **中止** するには、次の要求を使用して `statecode` と `statuscode` の値を適切に設定します:
 
 ```http
 PATCH [Organization URI]/api/data/v9.0/new_mycustombpfs(dc2ab599-306d-e811-80ff-00155d513100) HTTP/1.1   
@@ -301,9 +301,9 @@ OData-Version: 4.0
 > [!NOTE]
 > 任意のステージでプロセス インスタンスを中止できます。
 
-同様に、プロセス インスタンスを再アクティブ化するには、上記のコードの`statecode` と `statuscode` の値を**0**と**1**にそれぞれ置き換えます。
+同様に、プロセス インスタンスを再アクティブ化するには、上記のコードの`statecode` と `statuscode` の値を **0** と **1** にそれぞれ置き換えます。
 
-最後に、プロセス インスタンスの状態を、プロセス インスタンスの最終ステージでのみ有効な**終了**に設定するには、上記のコードの `statecode` と `statuscode` の値を**0**と**2** にそれぞれ置き換えます。
+最後に、プロセス インスタンスの状態を、プロセス インスタンスの最終ステージでのみ有効な **終了** に設定するには、上記のコードの `statecode` と `statuscode` の値を **0** と **2** にそれぞれ置き換えます。
 
 #### <a name="cross-entity-navigation"></a>複数のエンティティにまたがるナビゲーション
 
@@ -338,7 +338,7 @@ DELETE [Organization URI]/api/data/v9.0/new_mycustombpfs(dc2ab599-306d-e811-80ff
 
 ## <a name="use-retrieveprocessinstances-and-retrieveactivepath-messages"></a>RetrieveProcessInstances and RetrieveActivePath メッセージを使用する
 
-`RetrieveProcessInstances` メッセージ (<xref href="Microsoft.Dynamics.CRM.RetrieveProcessInstances?text=RetrieveActivePath Function" /> または <xref:Microsoft.Crm.Sdk.Messages.RetrieveProcessInstancesRequest>) を使用して、すべての業務プロセス フローの定義でエンティティ レコードのすべての業務ビジネス フローのインスタンスを取得します。 エンティティに対して返される業務プロセス フロー インスタンスは、インスタンスの `modifiedon` 属性に基づいて順序付けられます。 たとえば、最後に変更された業務プロセス フロー インスタンスは、返されたコレクションの*最初*のレコードになります。 最後に変更された業務プロセス フロー インスタンスは、エンティティ レコードの UI でアクティブなインスタンスです。  
+`RetrieveProcessInstances` メッセージ (<xref href="Microsoft.Dynamics.CRM.RetrieveProcessInstances?text=RetrieveActivePath Function" /> または <xref:Microsoft.Crm.Sdk.Messages.RetrieveProcessInstancesRequest>) を使用して、すべての業務プロセス フローの定義でエンティティ レコードのすべての業務ビジネス フローのインスタンスを取得します。 エンティティに対して返される業務プロセス フロー インスタンスは、インスタンスの `modifiedon` 属性に基づいて順序付けられます。 たとえば、最後に変更された業務プロセス フロー インスタンスは、返されたコレクションの *最初* のレコードになります。 最後に変更された業務プロセス フロー インスタンスは、エンティティ レコードの UI でアクティブなインスタンスです。  
   
 `RetrieveProcessInstances` メッセージを使用した結果としてエンティティ レコードに対して返された各業務プロセス フロー インスタンスのレコードは、アクティブ ステージの ID を `processstageid` 属性に格納します。この ID は、アクティブ ステージを検出して、前または次のステージに移動するために使用されます。 これを行うには、まず業務プロセス フロー インスタンスのアクティブ パスと、`RetrieveActivePath` メッセージ (<xref href="Microsoft.Dynamics.CRM.RetrieveActivePath?text=RetrieveActivePath Function" /> または <xref:Microsoft.Crm.Sdk.Messages.RetrieveActivePathRequest>) を使用してプロセス フロー インスタンスで使用できるステージを見つける必要があります。   
   
@@ -355,7 +355,7 @@ DELETE [Organization URI]/api/data/v9.0/new_mycustombpfs(dc2ab599-306d-e811-80ff
 1. 業務プロセス フロー定義レコードの **Workflow.PrimaryEntity** 属性に基づいて、新しいエンティティ レコードに適用可能なすべての業務プロセス フローを識別します。
 2. 現在のユーザーがアクセスできる業務プロセス フロー定義を識別します。 業務プロセス フローへのアクセスがどのように決定され管理されるかについては、このトピックで前述した「[業務プロセス フローのセキュリティを管理する](#BPFSecurity)」を参照してください。<br/>  
 3. システム内のすべての業務プロセス フローには、エンティティごとにグローバル順序が適用されます。 業務プロセス フローの順序は、**Workflow.ProcessOrder** 属性に格納されています。 エンティティの業務プロセス フローの定義は、この順序に基づいて並べ替えられ、順序の値が最も低いものが選択されます。
-4. 最後に、エンティティ レコードがビジネス アプリ (アプリ モジュール) から作成された場合、新しいエンティティ レコードに自動的に適用される業務プロセス フローを選択するために、フィルタリングの追加のレベルが適用されます。アプリで操作する場合、ユーザーはビジネス アプリに割り当てられたセキュリティ ロールゆえにアクセスできる該当するエンティティ、業務プロセス フロー、ビュー、およびフォームにしかアクセスできません。 
+4. 最後に、エンティティ レコードがビジネス アプリ (アプリ モジュール) から作成された場合、新しいエンティティ レコードに自動的に適用される業務プロセス フローを選択するために、フィルタリングの追加のレベルが適用されます。 アプリで操作する場合、ユーザーはビジネス アプリに割り当てられたセキュリティ ロールゆえにアクセスできる該当するエンティティ、業務プロセス フロー、ビュー、およびフォームにしかアクセスできません。 
     - ビジネス アプリに業務プロセス フローが含まれない場合、手順 3 まで説明されたとおりに業務プロセス フローが適用されます。
     - ビジネス アプリに 1 つ以上の業務プロセス フローがある場合、アプリにある業務プロセス フローのみが適用されます。 この場合、ユーザーがビジネス アプリのコンテキスト内で作業しているなら、手順 3 の業務プロセス フローのリストはアプリ モジュール内にあるビジネス アプリの一部であるものにフィルタリングされ、プロセス順序に基づいて並べ替えられます。 
     - エンティティのビジネス アプリに業務プロセス フローがない場合、またはユーザーがアクセスできるものに業務プロセス フローがない場合、新しいエンティティ レコードに業務プロセス フローは適用されません。
@@ -371,13 +371,13 @@ DELETE [Organization URI]/api/data/v9.0/new_mycustombpfs(dc2ab599-306d-e811-80ff
 
 ## <a name="legacy-process-related-attributes-in-entities"></a>エンティティのレガシ プロセス関連属性
 
-業務プロセス フローで有効なエンティティのレガシ プロセス関連属性 (**ProcessId**、**StageId**、**TraversedPath**など) は既に削除されています。 ターゲット エンティティ レコードのこれら レガシ プロセス関連属性を操作することは、業務プロセス フローの状態の一貫性を保証するものでなく、サポートされているシナリオでは***ありません***。 推奨されている方法は、セクション [業務プロセス フロー エンティティ レコードの作成、取得、更新、および削除 (プロセス インスタンス)](#create-retrieve-update-and-delete-business-process-flow-entity-records-process-instances) の前半で説明されるように、業務プロセス フロー エンティティの属性を使用することです。
+業務プロセス フローで有効なエンティティのレガシ プロセス関連属性 (**ProcessId**、**StageId**、**TraversedPath** など) は既に削除されています。 ターゲット エンティティ レコードのこれらレガシー プロセスの関連属性を操作することは、ビジネス プロセス フローの状態の一貫性を保証するものでなく、サポートされているシナリオでは *_ありません_*。 推奨されている方法は、セクション [業務プロセス フロー エンティティ レコードの作成、取得、更新、および削除 (プロセス インスタンス)](#create-retrieve-update-and-delete-business-process-flow-entity-records-process-instances) の前半で説明されるように、業務プロセス フロー エンティティの属性を使用することです。
 
-これの唯一の例外は、プログラムで**ProcessId**属性を変更すると同時に、前のセクション: [エンティティ レコードの作成時に業務プロセス フローを適用する](#ApplyBPF) で説明されているように、業務プロセス フローの既定のアプリケーションを新しいレコードで上書きすることです。
+これの唯一の例外は、プログラムで _ *ProcessId** 属性を変更すると同時に、前のセクション: [エンティティ レコードの作成時にビジネス プロセス フローを適用する](#ApplyBPF) で説明されているように、ビジネス プロセス フローの既定のアプリケーションを新しいレコードで上書きすることです。
 
 <a name="BKMK_clientSideScript"></a>   
-## <a name="client-side-programmability-support-for-business-process-flows"></a>業務プロセス フローに関するクライアント側でのプログラミングのサポート  
- クライアント側のオブジェクトを使用して、フォーム スクリプト内で業務プロセス フローと対話することができます。 業務プロセス フローは、プロセスがレコードに適用されたり、ステージが変更されたり、状態が `Active`、`Finished`、または `Aborted` に変更されたりするたびにクライアント側のイベントをトリガします。 詳細については、[ormContext.data.process (クライアント API 参照)](/dynamics365/customer-engagement/developer/clientapi/reference/formcontext-data-process.md) を参照してください。  
+## <a name="client-side-programmability-support-for-business-process-flows"></a>業務プロセス フローのクライアント側でのプログラムのサポート  
+ フォーム スクリプトの中でビジネス プロセス フローと対話するために使用できるクライアント サイドのオブジェクトがあります。 業務プロセス フローは、プロセスがレコードに適用されたり、ステージが変更されたり、状態が `Active`、`Finished`、または `Aborted` に変更されたりするたびにクライアント側のイベントをトリガします。 詳細については、[ormContext.data.process (クライアント API 参照)](/dynamics365/customer-engagement/developer/clientapi/reference/formcontext-data-process.md) を参照してください。  
   
 <a name="BKMK_MaxSettings"></a>   
 ## <a name="maximum-number-of-processes-stages-and-steps"></a>プロセス、ステージおよび手順の最大数  
@@ -389,5 +389,5 @@ DELETE [Organization URI]/api/data/v9.0/new_mycustombpfs(dc2ab599-306d-e811-80ff
   
 -   各ステージのステップの最大数は 30 です。  
   
--   プロセス フローに含めることができるエンティティの最大数は 5 です。  
+-   プロセス フローに参加できるエンティティの最大数は 5 です。  
 
